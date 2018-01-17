@@ -1,0 +1,46 @@
+// OFFSET //
+$offset: 20;
+
+/* Width */
+.width-full
+	 width: 100% !important
+
+@for $i from 1 through $offset
+	 .width-#{25 * $i}
+		  width: 25px * $i !important
+
+.no-gap
+	 margin-right: 0
+	 margin-left: 0
+	 > [class|="col"]
+		  padding-right: 0
+		  padding-left: 0
+
+/* Margin */
+.no-margin
+	margin: 0 !important
+
+@for $i from 1 through $offset
+	.margin-#{5 * $i}
+		margin: 5px * $i !important
+
+	@each $value in $position
+		.margin-#{$value}-#{5 * $i}
+			margin-#{$value}: 5px * $i !important
+
+/* Padding */
+.no-padding
+	padding: 0 !important
+.no-padding-left
+	padding-left: 0
+
+@for $i from 1 through $offset
+	.padding-#{5 * $i}
+		padding: 5px * $i !important
+
+	@each $value in $position
+		.padding-#{$value}-#{5 * $i}
+			padding-#{$value}: 5px * $i !important
+
+.posRelative
+	position: relative

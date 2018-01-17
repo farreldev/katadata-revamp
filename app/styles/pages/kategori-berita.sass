@@ -1,0 +1,58 @@
+.kategori-berita
+   .head-kategori
+      h2
+         font-family: gothamNarr_book
+         font-size: 46px
+         margin-bottom: 10px
+      .topik-pil
+         padding: 20px 0
+         margin: 0 0 32px
+         border-top: 1px solid #ddd
+         border-bottom: 1px solid #ddd
+         strong,
+            font-family: robotoMedium
+            display: inline-block
+            margin-right: 55px
+         a
+            font-family: RobotoLight
+            color: $black
+   .content-kategori
+      position: relative
+      padding-bottom: 25px
+      margin-bottom: 25px
+      @extend %thin-line-custom-bottom
+      .smallKategori
+         li
+            +ownGrid(2, 6%)
+            +breakpoint(mobile)
+               +ownGrid(1, 0)               
+            h4
+               margin-bottom: 10px
+            p
+               font-size: 17px
+   .list-kategori
+      ul
+         li
+            position: relative
+            padding-bottom: 25px
+            margin-bottom: 25px
+            +clearit
+            +borderDot
+            p.small
+               display: inline-block
+               vertical-align: top
+               margin: 0 35px 0 0
+               font-size: 16px
+            article
+               display: inline-block
+               width: 550px
+               h4
+                  margin-bottom: 10px
+                  a
+                     font-family: gothamNarr_book
+                     font-size: 20px
+               p
+                  font-size: 18px
+            figure
+               float: right
+               width: 180px

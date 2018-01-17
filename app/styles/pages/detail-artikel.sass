@@ -1,0 +1,128 @@
+.detail-artikel
+	.wrapperDetailArtikel
+		margin-bottom: 20px
+		position: relative
+		border-bottom: 1px solid #ddd
+		h2
+			font-family: gothamNarr_book
+			font-size: 35px
+		figure.mainDetailPict
+			position: relative
+			padding-bottom: 10px
+			margin-bottom: 15px
+			@extend %thin-line-custom-bottom
+			figcaption
+				padding: 3px 5px
+				font-family: robotoLight
+				font-size: 13px
+				line-height: 1.5
+				strong
+					font-family: robotoBold
+		.tweetLine
+			margin-top: 30px
+			position: relative
+			padding: 15px 0
+			border-top: 1px solid #ddd
+			border-bottom: 1px solid #ddd
+			&:before
+				position: absolute
+				top: -24px
+				content: 'Tweet This'
+				font-family: robotoMedium
+				font-size: 16px
+			ul
+				li
+					position: relative
+					width: 750px
+					padding-left: 30px
+					margin-bottom: 15px
+					+breakpoint(mobile)
+						width: 100%
+					&:last-child
+						margin-bottom: 0
+					&:before
+						position: absolute
+						top: 2px
+						left: 0
+						content: '\f099'
+						font-family: fontawesome
+						font-size: 22px
+						color: #03a9f4
+					a
+						font-family: robotoLight
+						font-size: 15px
+						line-height: 1.5
+						color: $black
+		.terkait
+			ul
+				margin-top: 20px
+				li
+					position: relative
+					+clearit
+					padding-bottom: 5px
+					margin-bottom: 15px
+					+borderDot
+					figure
+						margin-right: 15px
+						margin-bottom: 20px
+						float: left
+						width: 106px
+						height: 71px
+						overflow: hidden
+						img
+							width: 100%
+					a
+						font-family: gothamNarr_book
+						font-size: 18px
+						line-height: 1.2
+						color: $black
+		article.textArticle
+			p
+				margin-bottom: 20px
+				font-family: robotoLight
+				font-size: 18px
+				line-height: 1.5
+				a
+					font-family: robotoRegular
+			h4
+				margin-bottom: 10px
+				font-family: robotoMedium
+			.newsletter
+				&.inDetail
+					p
+						font-size: 14px
+						margin-bottom: 0
+						&.small
+							font-size: 12px
+							margin-bottom: 0
+	.tagLink
+		margin-bottom: 20px
+		strong
+			display: inline-block
+			vertical-align: middle
+			font-family: robotoBold
+			font-size: 15px
+			text-transform: uppercase
+		ul
+			margin-left: 10px
+			display: inline-block
+			vertical-align: middle     
+			+breakpoint(mobile)
+				margin-top: 15px
+				margin-left: 0
+			li
+				display: inline-block
+				margin-right: 10px
+				margin-bottom: 10px
+				a
+					padding: 10px 20px
+					font-family: robotoRegular
+					display: block
+					+border-radius(3px)
+					border: 1px solid #ccc
+					color: $black
+					&:hover
+						text-decoration: none
+						background: $orange
+						color: white
+						border: 1px solid $orange

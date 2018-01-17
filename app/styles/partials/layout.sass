@@ -1,0 +1,28 @@
+/* Space out content a bit */
+
+/* body */
+
+*
+  box-sizing: border-box
+
+html
+  position: relative
+  min-height: 100%
+  box-sizing: border-box
+
+body
+  box-sizing: inherit
+  min-height: 100%
+  .wrapper
+    overflow: hidden
+    main
+      // margin-bottom: 600px
+      .contentWrapper
+        padding: 90px 0 70px
+
+/* Customize container */
+.container
+  +breakpoint(desktop)
+    max-width: 1170px
+
+  

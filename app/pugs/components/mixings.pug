@@ -1,0 +1,28 @@
+block append config
+	mixin otherNews(imgName, txtLink)
+		div
+			figure
+				img(src=pathImg[0]+imgName, alt="")
+			article
+				a(href="#").
+					#{txtLink}
+					
+	mixin breadcrumb(nameUrls)
+		- var itung = nameUrls.length
+		ol.breadcrumb
+			each nameUrl, idx in nameUrls
+				if idx !== itung - 1
+					li
+						a(href="") #{nameUrl}
+				else
+					li.active #{nameUrl}
+	
+
+	mixin topikPil(nameTopik)
+		- var itung = nameTopik.length
+		each topik, idx in nameTopik
+			if idx !== itung - 1
+				a(href="#") #{topik}, 
+			else
+				a(href="#") #{topik}
+

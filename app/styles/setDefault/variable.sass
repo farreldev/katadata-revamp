@@ -1,0 +1,77 @@
+// FONT FAMILY
+$font_idx: 1;
+$font_default: Helvetica, Arial, sans-serif !default;
+
+// Font Family Ex. (name, 'fonts/path')
+$font_family: (gothamNarr_light: '../fonts/GothamNarrow-Light.eot', gothamNarr_bold: '../fonts/GothamNarrow-Bold.eot', gothamNarr_medium: '../fonts/GothamNarrow-Medium.eot', gothamNarr_book: '../fonts/GothamNarrow-Book', robotoLight: '../fonts/roboto-light-webfont', robotoRegular: '../fonts/roboto-regular-webfont', robotoMedium: '../fonts/roboto-medium-webfont', robotoBold: '../fonts/roboto-bold-webfont')
+
+$position: top right bottom left
+
+/* Buttons */
+$buttons: ('btn-red', #D9534F, #FFFFFF), ('btn-blue', #00aeef, #FFFFFF), ('btn-orange', #f5843c, #FFFFFF), ('btn-abu', #eeeeee, #333333), ('btn-abu-gelap', #aaaaaa, #FFFFFF), ('btn-green', #5CB85C, #FFFFFF)
+
+/* Color */
+
+$black: #111111
+$blue: #042c4b
+$blue-cap: #095189
+$blue-light: #86a6b2
+$blue-light2: #8eadb2
+$graygreen: #ced3cc
+$orange: #f5843c
+
+// media-query
+$media-query: (retina, (min-width: 2048px)), (big-desk, (min-width: 1440px)), (laptop, (min-width: 1366px)), (desktop, (min-width: 1200px)), (wide, (min-width: 992px)), (tablet, (min-width: 768px) and (max-width: 991px)), (mobile, (max-width: 767px)), (small-mobile, (max-width: 360px))
+
+%line-custom-top
+	position: absolute
+	content: ''
+	top: -7px
+	left: 50%
+	transform: translateX(-50%)
+	width: 100%
+	height: 7px
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAJFRUX/GWF8EKevr48RLADjgNiMyByQAACy6Q5a1WmoKgAAAABJRU5ErkJggg==") repeat
+
+%line-custom-bottom
+	&:after
+		position: absolute
+		content: ''
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		height: 7px
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAJFRUX/GWF8EKevr48RLADjgNiMyByQAACy6Q5a1WmoKgAAAABJRU5ErkJggg==") repeat
+
+%thin-line-custom-top
+	&:after
+		position: absolute
+		content: ''
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		height: 1px
+		background-color: #ddd
+	&.no-top-border
+		&:after
+			width: 0
+			height: 0
+			background-color: transparent
+
+%thin-line-custom-bottom
+	&:after
+		position: absolute
+		content: ''
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		height: 1px
+		background-color: #ddd
+	&.no-bottom-border
+		&:after
+			width: 0
+			height: 0
+			background-color: transparent

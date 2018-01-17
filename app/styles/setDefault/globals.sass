@@ -1,0 +1,183 @@
+html,body
+	.abu
+		background-color: #ced3cc
+	.hitam
+		background-color: #191a1e
+	.putihLink
+		color: white
+	figure
+		overflow-y: hidden
+		width: 100%
+		margin-bottom: 5px
+		&.thumb-article-img
+			margin-bottom: 20px
+			max-height: 177px
+			width: 100%
+			+breakpoint(mobile)
+				max-height: 100%
+			img
+				width: auto
+				height: 177px
+				+breakpoint(mobile)
+					width: 100%
+					height: auto
+		img
+			width: 100%
+	a
+		font-family: gothamNarr_medium
+		&.linkIndex
+			position: relative
+			display: inline-block
+			font-family: robotoRegular
+			font-size: 16px
+			padding: 4px 0
+			margin-left: 50px
+			span
+				&:before
+					position: absolute
+					top: 50%
+					left: -26px
+					transform: translateY(-50%)
+					content: ''
+					display: inline-block
+					width: 2px
+					height: 80%
+					background-color: #333
+
+	p
+		font-family: robotoLight
+		font-size: 20px
+		line-height: 1.4
+		color: #333
+	h2,h4
+		a
+			font-family: gothamNarr_book
+			color: $black
+	h2
+		margin-bottom: 20px
+		font-size: 2rem
+		line-height: 1.2
+		a
+			color: $black
+	h3
+		font-family: robotoMedium
+		display: inline-block
+		margin-bottom: 30px
+		font-size: 22px
+		color: $blue-cap
+		&.white
+			color: white
+	article
+		h3
+			margin-bottom: 15px
+			a
+				font-family: gothamNarr_book
+				display: inline-block
+				color: $black
+				line-height: 1.4
+	h4
+		font-size: 1.2rem
+		line-height: 1.4
+	.topik-link
+		padding: 5px 10px
+		margin-bottom: 10px
+		font-family: robotoMedium
+		font-size: 11px
+		color: #fff
+		text-transform: uppercase
+		display: inline-block
+		background: $orange
+
+	.followSosmed
+		position: relative
+		span
+			font-family: gothamNarr_book
+			font-size: 12px
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+		ul
+			display: inline-block
+			vertical-align: middle
+			li
+				margin: 0 5px
+				display: inline-block
+		a
+			font-size: 14px
+	span.lineCaption2
+		position: relative
+		display: block
+		margin-bottom: 40px
+		&:before
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			content: ''
+			width: 100%
+			height: 7px
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAJFRUX/GWF8EKevr48RLADjgNiMyByQAACy6Q5a1WmoKgAAAABJRU5ErkJggg==") repeat
+		h3
+			margin: 0
+			padding: 5px 25px
+			position: relative
+			left: 50%
+			transform: translateX(-50%)
+			border: 1px solid #ccc
+			+border-radius(3px)
+			+box-shadow(0,0,10px, rgba(0,0,0,.15))
+			background: white
+
+	p.infoArtikel
+		margin-bottom: 10px
+		font-size: 15px
+		color: #727272
+		strong
+			font-family: robotoMedium
+			font-weight: bold
+			color: #333
+		&.white
+			color: white
+			strong
+				color: inherit
+	.newsletter
+		+clearit
+		padding: 20px 0
+		border-top: 1px solid #ddd
+		border-bottom: 1px solid #ddd
+		margin-bottom: 25px
+		img
+			float: left
+			margin-right: 10px
+		strong
+			display: block
+			font-family: robotoBold
+			font-size: 20px
+			margin-bottom: 8px
+		p
+			font-family: robotoLight
+			font-size: 18px
+			line-height: 1.3
+			&.small
+				font-size: 14px
+		.customInput
+			display: inline-block
+			width: 70%
+		input[type="submit"]
+			padding: 11px 0
+			font-family: gothamNarr_book
+			float: right
+			width: 27%
+	.arrowNavigation
+		position: absolute
+		top: 0
+		right: 15px
+		.prevArrowNav,
+		.nextArrowNav
+			display: inline-block
+			font-family: fontawesome
+			width: 35px
+			height: 35px
+			border: 1px solid #000
+			&:focus
+				outline: none

@@ -1,0 +1,72 @@
+.footer
+  position: absolute
+  width: 100%
+  height: auto
+  bottom: 0
+  padding: 20px 0 0
+  color: #777
+  border-top: 10px solid #ddd
+  background: $graygreen
+  a.goUp
+    position: absolute
+    top: -45px
+    right: 150px
+    display: inline-block
+    width: 40px
+    height: 40px
+    text-align: center
+    background: $blue-light2
+    color: white
+    z-index: 5
+    +border-radius(50%)
+    i
+      font-size: 23px
+      line-height: 1.6
+  .logo-bottom
+    margin-bottom: 30px
+  strong
+    margin-bottom: 10px
+    display: inline-block
+    font-family: robotoMedium
+    font-size: 16px
+    font-weight: bold
+    color: $black
+  a
+    strong
+      display: inline-block
+      font-family: robotoMedium
+      font-size: 16px
+      font-weight: bold
+      color: $black
+  ul
+    li
+      padding: 0 0 10px
+      a
+        display: block
+        font-family: robotoRegular
+        font-size: 14px
+        line-height: 1.4
+        color: $black
+  p.small
+    margin-bottom: 25px
+  .copyright
+    margin-top: 20px
+    padding: 10px 0
+    background: #191a1e
+    text-align: center
+    ul *
+      font-family: robotoLight
+      font-size: 14px
+    ul
+      padding: 0
+      li
+        padding: 0 10px
+        display: inline-block
+        color: rgba(255,255,255,.7)
+        line-height: 1
+        border-right: 1px solid rgba(255,255,255,.7)
+        &:last-child
+          border-right: 0
+        a
+          color: rgba(255,255,255,.7)
+          line-height: 1
