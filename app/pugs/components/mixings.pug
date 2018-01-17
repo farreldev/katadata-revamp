@@ -6,6 +6,15 @@ block append config
 			article
 				a(href="#").
 					#{txtLink}
+
+	mixin ekonoGraphic(imgName, txtLink)
+		div
+			a(href="#")
+				figure
+					img(src=pathImg[1]+imgName, alt="" class="img-responsive")
+			article
+				a(href="#").
+					#{txtLink}
 					
 	mixin breadcrumb(nameUrls)
 		- var itung = nameUrls.length
