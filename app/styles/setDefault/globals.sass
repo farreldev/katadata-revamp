@@ -46,7 +46,7 @@ html,body
 
 	p
 		font-family: robotoLight
-		font-size: 20px
+		font-size: 18px
 		line-height: 1.4
 		color: #333
 	h2,h4
@@ -76,8 +76,8 @@ html,body
 				color: $black
 				line-height: 1.4
 	h4
-		font-size: 1.2rem
-		line-height: 1.4
+		font-size: 1.08rem
+		line-height: 1.3
 	.topik-link
 		padding: 5px 10px
 		margin-bottom: 10px
@@ -181,3 +181,22 @@ html,body
 			border: 1px solid #000
 			&:focus
 				outline: none
+	.ekonoBigImg
+		position: relative
+		padding-bottom: 25px
+		margin-bottom: 25px
+		border-bottom: 1px solid #ddd
+		+clearit
+		figure
+			margin-bottom: 15px
+			border: 5px solid #ddd
+			img
+				display: block
+				width: 100%
+				height: auto
+		a
+			display: inline-block
+			vertical-align: middle
+			+breakpoint(mobile)
+				display: block
+				margin-bottom: 20px

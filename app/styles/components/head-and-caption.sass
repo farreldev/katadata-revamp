@@ -1,0 +1,73 @@
+.head-and-caption
+	+clearit
+	h2
+		font-family: gothamNarr_book
+		font-size: 46px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 50px
+		margin-bottom: 10px
+		+breakpoint(mobil)
+			float: left
+	strong,p
+		display: inline-block
+		+breakpoint(mobile)
+			margin-left: 0
+			margin-bottom: 15px
+	strong
+		font-family: robotoMedium
+	p
+		&.sendMail
+			float: right
+			margin-top: 20px
+			+breakpoint(mobile)
+				text-align: right
+				width: 180px
+				font-size: 16px
+				margin-top: 8px				
+		a
+			font-family: robotoMedium
+		+breakpoint(mobile)
+			margin-left: 0
+			margin-bottom: 15px
+	.topik-pil
+		display: block
+		padding: 20px 0
+		margin: 0 0 32px
+		border-top: 1px solid #ddd
+		border-bottom: 1px solid #ddd
+		strong,
+			font-family: robotoMedium
+			display: inline-block
+			margin-right: 55px
+		a
+			font-family: RobotoLight
+			color: $black
+
+.blueHead
+	position: relative
+	top: -24px
+	padding-top: 10px
+	background-color: $blue-sec-head2
+	.head-and-caption
+		h2
+			color: white
+			margin-bottom: 0
+			vertical-align: baseline
+		ul
+			display: inline-block
+			li
+				display: inline-block
+				margin-right: 35px
+				box-sizing: border-box
+				&.pilih
+					> a
+						border-bottom: 5px solid $black
+				&:nth-child(3)
+					margin-right: 0
+				a
+					padding: 10px 0 11px
+					display: block
+					font-family: robotoRegular
+					font-size: 17px
+					color: white

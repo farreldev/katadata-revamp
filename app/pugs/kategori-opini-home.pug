@@ -5,56 +5,44 @@ block content
 	.second-head
 		.container
 			.second-head-left.pull-left
-				+breadcrumb(["Home", "Berita"])
+				+breadcrumb(["Home", "Opini"])
 			.second-head-right
-				
-	section.kategori-berita
+	section.homeOpini
 		.container
 			.head-and-caption
-				h2 Berita
+				h2 Opini
+				p.sendMail Kirimkan opini Anda ke #[a(href="mailto:opini@katadata.co.id") opini@katadata.co.id]
 				.topik-pil
 					strong Topik Pilihan
 					+topikPil(['Energi', 'Digital', 'Makro', 'Nasional', 'Pertambangan', 'Perdagangan', 'Bursa'])
-			.content-kategori
-				.row
-					.col-md-6
-						figure
-							img(src="images/article-img/HL-pict.jpg", alt="")
-							p.small.pull-right
-								| Arief Kamaludin/Katadata
-						a(href="#", alt="{topik}", class="topik-link") Energi
-						article
+			section.headlines2
+				.headlinesWrapper
+					.row
+						.col-md-3
+							a(href="#", alt="{topik}", class="topik-link") Energi
 							h3
+								a(href="#") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+							article
+								p.infoArtikel 
+									| Oleh 
+									strong Yuliawati
+									|, 1 Januari 2018
+								p.
+									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
+						.col-md-6
+							figure
+								img(src="images/article-img/HL-pict.jpg", alt="")
+								p.small.pull-right
+									| Arief Kamaludin/Katadata
+						.col-md-3
+							//- include includes/artikel-terpopuler
+							figure.thumb-article-img
+								img(src="images/thumb-img/thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							h4
 								a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
-							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
 							p.
 								Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
-					.col-md-6
-						ul.smallKategori
-							li.matchingHeight
-								figure.thumb-article-img
-									img(src="images/thumb-img/thumb1.jpg", alt="")
-								a(href="#", alt="{topik}", class="topik-link") Energi
-								h4
-									a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
-								p.
-									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
-							li.matchingHeight
-								figure.thumb-article-img
-									img(src="images/thumb-img/thumb1.jpg", alt="")
-								a(href="#", alt="{topik}", class="topik-link") Energi
-								h4
-									a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
-								p.
-									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
-							li.matchingHeight
-								a(href="#", alt="{topik}", class="topik-link") Energi
-								h4
-									a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
-							li.matchingHeight
-								a(href="#", alt="{topik}", class="topik-link") Energi
-								h4
-									a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
 			.listing
 				.row
 					.col-md-9
@@ -130,5 +118,6 @@ block content
 								figure
 									img(src="images/thumb-img/thumb1.jpg", alt="")
 					.col-md-3
-						figure
-							img(src="images/banners/bannerSmall3.png", alt="")
+						h3 Opini Terpopuler
+						include includes/opini-terpopuler
+						
