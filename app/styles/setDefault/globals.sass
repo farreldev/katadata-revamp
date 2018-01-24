@@ -149,6 +149,10 @@ html,body
 		img
 			float: left
 			margin-right: 10px
+			+breakpoint(tablet)
+				margin-bottom: 20px
+			+breakpoint(mobile)
+				margin-bottom: 20px
 		strong
 			display: block
 			font-family: robotoBold
@@ -163,24 +167,18 @@ html,body
 		.customInput
 			display: inline-block
 			width: 70%
+			+breakpoint(mobile)
+				display: block
+				width: 100%
+				margin-bottom: 12px
 		input[type="submit"]
 			padding: 11px 0
 			font-family: gothamNarr_book
 			float: right
 			width: 27%
-	.arrowNavigation
-		position: absolute
-		top: 0
-		right: 15px
-		.prevArrowNav,
-		.nextArrowNav
-			display: inline-block
-			font-family: fontawesome
-			width: 35px
-			height: 35px
-			border: 1px solid #000
-			&:focus
-				outline: none
+			+breakpoint(mobile)
+				width: 100%
+				margin-bottom: 8px
 	.ekonoBigImg
 		position: relative
 		padding-bottom: 25px

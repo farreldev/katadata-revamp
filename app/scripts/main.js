@@ -15,24 +15,24 @@
 								slidesToShow: 3,
 								slidesToScroll: 1,
 								infinite: true,
-								prevArrow: false,
-								nextArrow: false,
+								prevArrow: '.prevArrowNav',
+								nextArrow: '.nextArrowNav'
 							}
 						},{
 							breakpoint: 600,
 							settings: {
 								slidesToShow: 2,
 								slidesToScroll: 1,
-								prevArrow: false,
-								nextArrow: false,
+								prevArrow: '.prevArrowNav',
+								nextArrow: '.nextArrowNav'
 							}
 						},{
 							breakpoint: 480,
 							settings: {
 								slidesToShow: 1,
 								slidesToScroll: 1,
-								prevArrow: false,
-								nextArrow: false,
+								prevArrow: '.prevArrowNav',
+								nextArrow: '.nextArrowNav'
 							}
 						}
 					]
@@ -92,7 +92,7 @@
 		}
 	
 		if(screen.width > 768) {
-			$('.matchingHeight').matchHeight();
+			$('.matchingHeight, .itemListAnalisis').matchHeight();
 		}
 
 		$('#datetimepicker1').datetimepicker()

@@ -1,26 +1,36 @@
 .listing
-   ul:not(.opiniTerpopuler)
-      li
-         position: relative
-         padding-bottom: 25px
-         margin-bottom: 25px
-         +clearit
-         +borderDot
-         p.small
-            display: inline-block
-            vertical-align: top
-            margin: 0 35px 0 0
-            font-size: 16px
-         article
-            display: inline-block
-            width: 550px
-            h4
-               margin-bottom: 10px
-               a
-                  font-family: gothamNarr_book
-                  font-size: 20px
-            p
-               font-size: 18px
-         figure
-            float: right
-            width: 180px
+	ul:not(.opiniTerpopuler)
+		li
+			position: relative
+			padding-bottom: 25px
+			margin-bottom: 25px
+			display: inline-block
+			+clearit
+			+borderDot
+			p.small
+				display: inline-block
+				vertical-align: top
+				margin: 0 35px 0 0
+				font-size: 16px
+				+breakpoint(mobile)
+					margin-bottom: 20px
+			article
+				display: inline-block
+				width: 550px
+				+breakpoint(mobile)
+					width: auto
+				h4
+					margin-bottom: 10px
+					a
+						font-family: gothamNarr_book
+						font-size: 20px
+				p
+					font-size: 18px
+					+breakpoint(mobile)
+						margin-bottom: 20px
+			figure
+				float: right
+				width: 180px
+				+breakpoint(mobile)
+					float: none
+					width: 100%

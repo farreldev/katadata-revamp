@@ -4,11 +4,18 @@
 		padding-bottom: 25px
 		margin-bottom: 40px
 		@extend %thin-line-custom-bottom
+		+breakpoint(mobile)
+			padding-bottom: 0
+			margin-bottom: 25px
+		article
+			+breakpoint(mobile)
+				margin-bottom: 20px
 		.smallKategori
 			li
 				+ownGrid(2, 6%)
 				+breakpoint(mobile)
-					+ownGrid(1, 0)               
+					+ownGrid(1, 0)
+					margin-bottom: 20px               
 				h4
 					margin-bottom: 10px
 				p

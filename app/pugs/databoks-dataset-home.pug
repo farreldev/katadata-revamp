@@ -8,36 +8,36 @@ block content
             h2 Databoks
             ul
                li
-                  a(href="#") Analisis
+                  a(href="./databoks-analisis-home.html") Analisis
                li
                   a(href="#") Statistik
                li.pilih
-                  a(href="#") Dataset
+                  a(href="./databoks-dataset-home.html") Dataset
    .container
       section.formSearch
          form
             .row
-               .col-md-4
+               .col-md-4.col-sm-6
                   .form-group
                      input(type="text" class="form-control" placeholder="Kata kunci")
-               .col-md-2
+               .col-md-2.col-sm-6
                   .form-group
                      select(class="form-control")
                         option Topik Satu
                         option Topik Dua
                         option Topik Tiga
                         option(selected="selected") Pilih Topik..
-               .col-md-2
+               .col-md-2.col-sm-6
                   .form-group
                      select(class="form-control")
                         option Topik Satu
                         option Topik Dua
                         option Topik Tiga
                         option(selected="selected") Pilih Subtopik..
-               .col-md-2
+               .col-md-2.col-sm-6
                   .form-group
                      input(type="text" class="form-control" id="datetimepicker1" placeholder="Short by Date")
-               .col-md-2
+               .col-md-2.col-sm-12
                   input(type="submit" class="btn btn-block btn-orange" value="Cari Dataset")
    section.databoks-dataset
       .container
@@ -127,7 +127,7 @@ block content
                         p #[strong Diperbarui:] 11 Mei 2017
                      a(href="#" class="btn btn-orange") Unduh
                   
-                  a(href="#")
+               a(href="#" class="btn") Dataset Lainnya
             .col-md-3
                .kaitan-list
                   h3 Terbanyak Diunduh
