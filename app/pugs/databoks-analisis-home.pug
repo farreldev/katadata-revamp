@@ -10,35 +10,11 @@ block content
 					li.pilih
 						a(href="./databoks-analisis-home.html") Analisis
 					li
-						a(href="#") Statistik
+						a(href="./databoks-statistik-home.html") Statistik
 					li
 						a(href="./databoks-dataset-home.html") Dataset
 	.container
-		section.formSearch
-			form
-				.row
-					.col-md-4.col-sm-6
-						.form-group
-							input(type="text" class="form-control" placeholder="Kata kunci")
-					.col-md-2.col-sm-6
-						.form-group
-							select(class="form-control")
-								option Topik Satu
-								option Topik Dua
-								option Topik Tiga
-								option(selected="selected") Pilih Topik..
-					.col-md-2.col-sm-6
-						.form-group
-							select(class="form-control")
-								option Topik Satu
-								option Topik Dua
-								option Topik Tiga
-								option(selected="selected") Pilih Subtopik..
-					.col-md-2.col-sm-6
-						.form-group
-							input(type="text" class="form-control" id="datetimepicker1" placeholder="Short by Date")
-					.col-md-2.col-sm-12
-						input(type="submit" class="btn btn-block btn-orange" value="Cari Analisis")
+		+formSearch('Analisis')
 	section.databoks-analisis
 		.container
 			h3 Analisis Terkini
@@ -108,7 +84,7 @@ block content
 							article
 								p Indonesia dalam Satu Dekade Deindustrialisasi
 								p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
-					a(href="#" class="btn") Analisis Lainnya
+					a(href="#" class="btn block-half") Analisis Lainnya
 				.col-md-3
 					.kaitan-list
 						h3 Analisis Terpopuler

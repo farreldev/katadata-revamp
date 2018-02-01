@@ -20,11 +20,11 @@ block append config
 		- var itung = nameUrls.length
 		ol.breadcrumb
 			each nameUrl, idx in nameUrls
-				if idx !== itung - 1
-					li
-						a(href="") #{nameUrl}
-				else
-					li.active #{nameUrl}
+					if idx !== itung - 1
+						li
+							a(href="index.html") #{nameUrl}
+					else
+						li.active #{nameUrl}
 	
 
 	mixin topikPil(nameTopik)
@@ -34,4 +34,56 @@ block append config
 				a(href="#") #{topik}, 
 			else
 				a(href="#") #{topik}
-
+	
+	mixin formSearch(namePages)
+		section.formSearch
+			form
+				.row
+					.col-md-4.col-sm-6
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Topik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-2.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Subtopik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-2.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Sort By Date
+								option Sort By Name A-Z
+								option Sort By Name Z-A
+					.col-md-2.col-sm-12
+						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages)
+	mixin formSearch2(namePages2)
+		section.formSearch
+			form
+				.row
+					.col-md-4.col-sm-6
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-3.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Topik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-3.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Subtopik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-2.col-sm-12
+						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages2)

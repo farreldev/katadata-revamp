@@ -1,0 +1,68 @@
+nav.wwNavigation
+   position: fixed
+   display: none
+   top: 66px
+   width: 100%
+   height: 100%
+   z-index: 4
+   background-color: rgba(0,0,0,.7)
+   ul
+      position: relative
+      display: inline-block
+      li
+         position: relative
+         background-color: rgb(25,26,30)
+         &.hasSub
+            &:after
+               position: absolute
+               top: 15px
+               right: 10px
+               font-family: fontawesome
+               content: '\f101'
+               color: white
+            &:hover
+               &:after
+                  color: #ddb66a
+               ul
+                  left: 100%
+                  display: block
+
+         a
+            padding: 15px 50px 15px 20px
+            display: block
+            font-family: robotoRegular
+            font-size: 16px
+            color: white
+            &:hover
+               text-decoration: none
+               color: #ddb66a
+      ul
+         padding-left: 10px
+         position: absolute
+         top: 0
+         left: 0
+         width: 30em
+         display: none
+         z-index: 3
+         &:before
+            position: inherit
+            top: 17px
+            left: 5px
+            content: ''
+            display: block
+            width: 15px
+            height: 15px
+            transform: rotate(45deg)
+            background-color: rgb(25,26,30)
+         li
+            display: inline-block
+            +ownGrid(3, 0)
+            background: rgb(25,26,30)
+
+// .wwNavigation-overlay
+//    position: fixed
+//    display: none
+//    width: 100%
+//    height: 100%
+//    background-color: rgba(0,0,0,.7)
+//    z-index: 1

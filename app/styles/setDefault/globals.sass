@@ -6,9 +6,9 @@ html,body
 	.putihLink
 		color: white
 	figure
-		overflow-y: hidden
+		// overflow-y: hidden
 		width: 100%
-		margin-bottom: 5px
+		margin-bottom: 18px
 		&.thumb-article-img
 			margin-bottom: 20px
 			max-height: 177px
@@ -24,7 +24,7 @@ html,body
 		img
 			width: 100%
 	a
-		font-family: gothamNarr_medium
+		font-family: robotoMedium
 		&.linkIndex
 			position: relative
 			display: inline-block
@@ -32,6 +32,9 @@ html,body
 			font-size: 16px
 			padding: 4px 0
 			margin-left: 50px
+			+breakpoint(mobile)
+				margin-left: 20px
+				float: right
 			span
 				&:before
 					position: absolute
@@ -46,10 +49,10 @@ html,body
 
 	p
 		font-family: robotoLight
-		font-size: 18px
-		line-height: 1.4
+		font-size: 17px
+		line-height: 1.5
 		color: #333
-	h2,h4
+	h2
 		a
 			font-family: gothamNarr_book
 			color: $black
@@ -62,7 +65,7 @@ html,body
 	h3
 		font-family: robotoMedium
 		display: inline-block
-		margin-bottom: 30px
+		margin-bottom: 20px
 		font-size: 22px
 		color: $blue-cap
 		&.white
@@ -71,18 +74,21 @@ html,body
 		h3
 			margin-bottom: 15px
 			a
-				font-family: gothamNarr_book
+				font-family: robotoMedium
 				display: inline-block
 				color: $black
 				line-height: 1.4
 	h4
 		font-size: 1.08rem
 		line-height: 1.3
+		a
+			color: $black
 	.topik-link
 		padding: 5px 10px
-		margin-bottom: 10px
+		margin-bottom: 5px
+		letter-spacing: 1px
 		font-family: robotoMedium
-		font-size: 11px
+		font-size: 10px
 		color: #fff
 		text-transform: uppercase
 		display: inline-block
@@ -130,6 +136,7 @@ html,body
 
 	p.infoArtikel
 		margin-bottom: 10px
+		display: inline-block
 		font-size: 15px
 		color: #727272
 		strong

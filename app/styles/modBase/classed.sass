@@ -6,8 +6,8 @@ $offset: 20;
 	 width: 100% !important
 
 @for $i from 1 through $offset
-	 .width-#{25 * $i}
-		  width: 25px * $i !important
+	 .width-#{5 * $i}
+		  width: 5% * $i !important
 
 .no-gap
 	 margin-right: 0
@@ -20,6 +20,9 @@ $offset: 20;
 	border-top: 1px solid #ddd
 .shortcutBorderBottom
 	border-bottom: 1px solid #ddd
+.shortcutBorderBottomCustom
+	position: relative
+	@extend %line-custom-bottom
 
 /* Margin */
 .no-margin

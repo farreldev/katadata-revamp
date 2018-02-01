@@ -11,11 +11,32 @@ block content
 		.container
 			.wrapperDetailArtikel
 				.row
-					.col-md-8
-						h2.
+					.col-md-12
+						h2.width-65
 							Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
 						p.infoArtikel.
 							Oleh #[strong Yuliawati], 1 Januari 2018
+						ul.btn-sosmed
+							li
+								a(href="#")
+									i(class="fa fa-facebook" aria-hidden="true")
+									span Share
+							li
+								a(href="#")
+									i(class="fa fa-twitter" aria-hidden="true")
+									span Tweet
+							li
+								a(href="#") 
+									i(class="fa fa-linkedin" aria-hidden="true")
+									span Linkedin
+							li
+								a(href="#")
+									i(class="fa fa-paper-plane-o" aria-hidden="true")
+									span Email
+							li
+								a(href="#")
+									i(class="fa fa-link" aria-hidden="true")
+									span Copy URl
 				.row
 					.col-md-12
 						.tweetLine
@@ -73,7 +94,7 @@ block content
 							p.
 								Menurut Nadiem, akusisi ini menjadi lompatan perusahaan dari penyedia layanan transportasi hingga menguasai teknologi multi-platform yang fokus pada pembayaran digital. Kartuku, Midtrans, dan Mapan tercatat memproses total transaksi lebih dari Rp 67,5 triliun per tahun melalui kartu kredit, debit, maupun dompet digital.
 					.col-md-4
-						.kaitan-list
+						.kaitan-list.margin-bottom-25
 							h3 Terkait
 							ul
 								li
@@ -94,6 +115,7 @@ block content
 									a(href="").
 										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
 									p.infoArtikel 1 Januari 2018
+						include includes/artikel-terpopuler
 				.tagLink
 					strong.
 						Tags
@@ -111,9 +133,9 @@ block content
 				h3 Baca Juga
 				a(href="#", class="linkIndex") #[span Indeks »]
 				.arrowNavigation
-					button.prevArrowNav
+					a.prevArrowNav
 						i(class="fa fa-chevron-left" aria-hidden="true")
-					button.nextArrowNav
+					a.nextArrowNav
 						i(class="fa fa-chevron-right" aria-hidden="true")
 				//- slider
 				.berita-slide

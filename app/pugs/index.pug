@@ -31,7 +31,7 @@ block content
 						.col-md-4
 							a(href="#", alt="{topik}", class="topik-link") Energi
 							h2
-								a(href="#") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								a(href="detail-artikel.html") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
 							article
 								p.infoArtikel 
 									| Oleh 
@@ -98,9 +98,9 @@ block content
 				h3 Berita Terbaru Lainnya
 				a(href="#", class="linkIndex") #[span Indeks »]
 				.arrowNavigation
-					button.prevArrowNav
+					a.prevArrowNav
 						i(class="fa fa-chevron-left" aria-hidden="true")
-					button.nextArrowNav
+					a.nextArrowNav
 						i(class="fa fa-chevron-right" aria-hidden="true")
 				//- slider
 				.berita-slide
@@ -115,9 +115,14 @@ block content
 					figure
 						img(src="images/banners/banner1.jpg", alt="")
 		section.ekono
-			.container
+			.container.posRelative
 				h3 Ekonografik
 				a(href="#", class="linkIndex pull-right") Halaman Ekonografik »
+				.arrowNavigation2
+					a.prevArrowNav2
+						i(class="fa fa-chevron-left" aria-hidden="true")
+					a.nextArrowNav2
+						i(class="fa fa-chevron-right" aria-hidden="true")
 				.ekonoGraphics
 					+ekonoGraphic('ekono1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+ekonoGraphic('ekono2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')

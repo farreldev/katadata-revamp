@@ -1,66 +1,69 @@
 .btn-sosmed
-   float: right
-   +breakpoint(mobile)
-      float: none
-      text-align: center
-      display: block
-   li
-      display: inline-block
-      margin-right: 5px
-      a
-         font-family: gothamNarr_book
-         font-size: 12px
-         text-transform: uppercase
-         display: block
-         color: white
-         padding: 10px 20px
-         +border-radius(2px)
-         +breakpoint(mobile)
-            padding: 0
-            margin-bottom: 0
-            font-size: 16px
-            width: 45px
-            height: 45px
-            +border-radius(50%)
-            line-height: 45px
-         i
-            margin-right: 10px
-            +breakpoint(mobile)
-               margin-right: 0
-         span
-            +breakpoint(mobile)
-               display: none
-      &:nth-child(1)
-         a
-            background-color: $fb
-            &:hover
-               background-color: darken($fb, 5%)
-      &:nth-child(2)
-         a
-            background-color: $tw
-            &:hover
-               background-color: darken($tw, 5%)
-      &:nth-child(3)
-         a
-            background-color: $lnkd
-            &:hover
-               background-color: darken($lnkd, 5%)
-      &:nth-child(4)
-         a
-            background-color: $other
-            &:hover
-               background-color: darken($other, 5%)
-      &:nth-child(5)
-         a
-            background-color: $other
-            &:hover
-               background-color: darken($other, 5%)
+	float: right
+	+breakpoint(mobile)
+		float: none
+		text-align: center
+		display: block
+	li
+		display: inline-block
+		margin-right: 5px
+		&:last-child
+				margin-right: 0
+		a
+			font-family: gothamNarr_book
+			font-size: 12px
+			text-transform: uppercase
+			text-decoration: none
+			display: block
+			color: white
+			padding: 10px 20px
+			+border-radius(2px)
+			+breakpoint(mobile)
+				padding: 0
+				margin-bottom: 0
+				font-size: 16px
+				width: 45px
+				height: 45px
+				+border-radius(50%)
+				line-height: 45px
+			i
+				margin-right: 10px
+				+breakpoint(mobile)
+					margin-right: 0
+			span
+				+breakpoint(mobile)
+					display: none
+		&:nth-child(1)
+			a
+				background-color: $fb
+				&:hover
+					background-color: darken($fb, 5%)
+		&:nth-child(2)
+			a
+				background-color: $tw
+				&:hover
+					background-color: darken($tw, 5%)
+		&:nth-child(3)
+			a
+				background-color: $lnkd
+				&:hover
+					background-color: darken($lnkd, 5%)
+		&:nth-child(4)
+			a
+				background-color: $other
+				&:hover
+					background-color: darken($other, 5%)
+		&:nth-child(5)
+			a
+				background-color: $other
+				&:hover
+					background-color: darken($other, 5%)
 .penulis-opini
-   .btn-sosmed
-      float: none
-      position: absolute
-      right: 0
-      bottom: 35px
-      +breakpoint(mobile)
-         position: static
-         margin-top: 20px
+	.btn-sosmed
+		float: none
+		position: absolute
+		right: 0
+		bottom: 35px
+		+breakpoint(mobile)
+			position: static
+			margin-top: 20px
