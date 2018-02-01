@@ -8,9 +8,16 @@ input[type='submit'].btn,
 	font-size: 16px
 	color: #333333
 	background: #f2f2f2
-	border: 1px darken(#aaaaaa, 1%) solid
+	border: 1px darken(#ccc, 1%) solid
 	border-radius: 3px
 	vertical-align: middle
+
+	&.block-half
+		margin: 0 auto
+		display: block
+		width: 75%
+		+breakpoint(mobile)
+			margin-bottom: 30px
 
 	&.large
 		font-size: 20px
@@ -21,7 +28,7 @@ input[type='submit'].btn,
 		padding: 5px 20px
 
 	&:hover
-		background: darken(#FFFFFF, 5%)
+		background: darken(#FFFFFF, 7%)
 
 	@each $class, $background, $font_color in $buttons
 		&.#{$class}

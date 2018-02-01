@@ -1,5 +1,75 @@
+.arrowNavigation
+	position: absolute
+	top: -5px
+	right: 15px
+	z-index: 3
+	+breakpoint(mobile)
+		top: 50px
+		right: 25px
+	.prevArrowNav
+		margin-right: 3px
+	.prevArrowNav,
+	.nextArrowNav
+		display: inline-block
+		font-family: fontawesome
+		width: 35px
+		height: 35px
+		border: 1px solid #aeaeae
+		color: #727272
+		+border-radius(5px)
+		text-align: center
+		cursor: pointer
+		background-color: rgba(255,255,255,.5)
+		&:focus
+			outline: none
+		i
+			line-height: 35px
+		&:hover
+			background-color: $orange
+			border: 1px solid $orange
+			i
+				color: white
+
+.arrowNavigation2
+	position: absolute
+	top: 45%
+	left: 0
+	transform: translateY(-45%)
+	width: 100%
+	z-index: 1
+	.prevArrowNav2,
+	.nextArrowNav2
+		position: inherit
+		background: $orange
+		width: 50px
+		height: 50px
+		text-align: center
+		cursor: pointer
+		border: 3px solid white
+		+border-radius(50%)
+		+box-shadow(0, 2px, 10px, rgba(0,0,0,.35))
+		i
+			font-size: 22px
+			line-height: 47px
+			color: white
+		+breakpoint(mobile)
+			width: 40px
+			height: 40px
+			i
+				font-size: 18px
+				line-height: 37px
+	.prevArrowNav2
+		left: -10px
+		+breakpoint(mobile)
+			left: 5px
+	.nextArrowNav2
+		right: -10px
+		+breakpoint(mobile)
+			right: 5px
+
 .berita-slide
 	width: 100%
+	overflow-x: hidden
 	.slick-slider
 		overflow: hidden
 	.slick-slide
@@ -12,10 +82,15 @@
 				overflow: hidden
 				width: 100%
 				height: 177px
+				+breakpoint(mobile)
+					height: 180px
 				img
 					position: absolute
 					width: 256px
 					height: 100%
+					+breakpoint(mobile)
+						width: 100%
+						height: auto
 			article
 				margin-bottom: 20px
 				a
@@ -28,14 +103,15 @@
 
 .ekonoGraphics
 	width: 100%
+	overflow-x: hidden
 	.slick-slider
 		overflow: hidden
 	.slick-slide
 		width: 294px
 		padding: 0
-		margin: 0 10px
+		margin: 0 15px
 	.slick-list
-		margin: 0 -10px
+		margin: 0 -15px
 		div
 			a
 				display: block

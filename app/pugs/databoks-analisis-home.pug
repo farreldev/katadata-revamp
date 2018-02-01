@@ -1,0 +1,107 @@
+extends base/home
+include components/mixings
+
+block content
+	.blueHead
+		.container
+			.head-and-caption
+				h2 Databoks
+				ul
+					li.pilih
+						a(href="./databoks-analisis-home.html") Analisis
+					li
+						a(href="./databoks-statistik-home.html") Statistik
+					li
+						a(href="./databoks-dataset-home.html") Dataset
+	.container
+		+formSearch('Analisis')
+	section.databoks-analisis
+		.container
+			h3 Analisis Terkini
+			.row.headListAnalisis
+				.col-md-4
+					div.itemListAnalisis
+						h4 #[a(href="#") Indonesia dalam Satu Dekade Deindustrialisasi]
+						figure
+							img(src="images/analisis/db-head-analisis1.jpg", alt="")
+						p.
+							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+				.col-md-4
+					div.itemListAnalisis
+						h4 #[a(href="#") Membidik Potensi Pengembangan Bisnis Fintech di Indonesia]
+						figure
+							img(src="images/analisis/db-head-analisis2.jpg", alt="")
+						p.
+							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+				.col-md-4
+					div.itemListAnalisis
+						h4 #[a(href="#") Membidik Potensi Pengembangan Bisnis Fintech di Indonesia]
+						figure
+							img(src="images/analisis/db-head-analisis1.jpg", alt="")
+						p.
+							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+			
+			.row
+				.col-md-9
+					h3 Baca Juga
+					ul.boxAnalisis
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Indonesia dalam Satu Dekade Deindustrialisasi
+								p.infoArtikel Oleh #[strong Agus Dwi Darmawan]
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Indonesia dalam Satu Dekade Deindustrialisasi
+								p.infoArtikel Oleh #[strong Agus Dwi Darmawan]
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+						li.matchingHeight
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							article
+								p Indonesia dalam Satu Dekade Deindustrialisasi
+								p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+					a(href="#" class="btn block-half") Analisis Lainnya
+				.col-md-3
+					.kaitan-list
+						h3 Analisis Terpopuler
+						ul
+							li
+								figure
+									img(src="images/thumb-img/thumb1.jpg", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+							li
+								figure
+									img(src="images/thumb-img/thumb3.jpg", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+							li
+								figure
+									img(src="images/thumb-img/thumb2.jpg", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+			
