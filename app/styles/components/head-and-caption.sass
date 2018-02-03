@@ -51,7 +51,7 @@
 
 .blueHead
 	position: relative
-	top: -24px
+	top: -25px
 	padding-top: 10px
 	background-color: $blue-sec-head2
 	.head-and-caption
@@ -59,6 +59,12 @@
 			color: white
 			margin-bottom: 0
 			vertical-align: baseline
+			+breakpoint(mobile)
+				margin-bottom: 2px
+				font-size: 38px
+			small
+				+breakpoint(mobile)
+					font-size: 20px
 		ul
 			display: inline-block
 			li

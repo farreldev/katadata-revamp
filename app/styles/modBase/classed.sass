@@ -42,6 +42,16 @@ $offset: 20;
 .no-padding-left
 	padding-left: 0
 
+/* MatchHeight */
+.row
+	&.is-table-row
+		+breakpoint(wide)
+			display: table
+			[class*="col-"]
+				float: none
+				display: table-cell
+				vertical-align: top
+
 @for $i from 1 through $offset
 	.padding-#{5 * $i}
 		padding: 5px * $i !important

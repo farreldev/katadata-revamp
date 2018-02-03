@@ -1,6 +1,5 @@
 (function($){
 	var kd = function() {
-
 		function kdSlider() {
 			$('.berita-slide').slick({
 				infinite: true,
@@ -136,7 +135,7 @@
 		})
 
 		if(screen.width > 768) {
-			$('.matchingHeight, .itemListAnalisis').matchHeight();
+			$('.matchingHeight, .itemListAnalisis, .sprite-ico li').matchHeight();
 		}
 
 		$('#datetimepicker1').datetimepicker()
