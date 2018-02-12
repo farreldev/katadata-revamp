@@ -141,6 +141,6 @@
 		$('#datetimepicker1').datetimepicker()
 	
 		kdSlider()
-
+		
 	}()
 })(jQuery)
