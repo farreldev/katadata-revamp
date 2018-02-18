@@ -7,7 +7,7 @@ block content
 			.second-head-left.pull-left
 				+breadcrumb(["Home", "Databoks", "Statistik", "Demografi"])
 			.second-head-right
-				ul.btn-sosmed.hidden-xs
+				ul.btn-sosmed.margin-min-top-10.hidden-xs
 					li
 						a(href="#")
 							i(class="fa fa-facebook" aria-hidden="true")
@@ -28,10 +28,84 @@ block content
 						a(href="#")
 							i(class="fa fa-link" aria-hidden="true")
 							span Copy URl
-	section
+	section.databoks-statistik-detail
 		.container
+			.head-and-caption
+				.row
+					.col-md-9
+						h2.margin-mm-right-10 Berapa Jumlah Penduduk Jakarta?
+						article
+							p 1 Jan 2018
+							p.strong.
+								Selama dua tahun terakhir, jumlah penduduk di Ibu Kota bertambah 269 jiwa setiap hari atau 11 orang per jam.
+						p.detailTaiching.
+							Berdasarkan data Badan Pusat Statisik, jumlah penduduk DKI Jakarta pada 2015 mencapai 10,18 juta jiwa. Kemudian meningkat menjadi 10,28 juta jiwa pada 2016, dan bertambah menjadi 10,37 juta jiwa pada 2017. Artinya, selama dua tahun terkahir jumlah penduduk di Ibu Kota bertambah 269 jiwa setiap hari atau 11 orang per jam.
+							#[a(href="#" class="btn block-half margin-top-25 margin-bottom-20") Dataset Lainnya]
+			.row
+				.col-md-9
+					p.margin-bottom-15 #[strong Jumlah Penduduk DKI Jakarta (1961-2017)]
+					figure
+						img(src="images/databoks/chart-statistik.jpg", alt="")
+					.tagLink
+						strong.
+							Tags
+						ul
+							li
+								a(href="#") Go-Pay
+							li
+								a(href="#") Go-Jek
+							li
+								a(href="#") Go-Pay
+							li
+								a(href="#") Go-Jek
+				.col-md-3
+						#embedChart.embedChart-wrapper
+							.embedChart-section
+								ul.embedChart-widget.embedChart-widget-content-tabs-id
+									li.embedChart-tab
+										a(href="#embedChart-id1") Unduh
+									li.embedChart-tab
+										a(href="#embedChart-id2") Opsi Lain
+								div(class="embedChart-widget-content embedChart-widget-content-widget-id" id="embedChart-id1")
+									.format-file
+										ul
+											li
+												a
+													img(src="images/icons/pdf-icon.png", alt="")
+													|  Pdf
+											li
+												a
+													img(src="images/icons/png-icon.png", alt="")
+													|  Png
+											li
+												a
+													img(src="images/icons/xls-icon.png", alt="")
+													|  Xls
+									span(class="sidebar" id="sidebartab1" preferred="yes")
+										ul.embed-details
+											li
+												strong Sumber
+												p Lembaga: Badan Pusat Statistik (BPS) 
+												p Survey: -
+											li
+												strong Rilis
+												p Badan Pusat Statistik (BPS), 2017
+											li
+												strong Informasi lain
+												p Daerah: DKI Jakarta 
+												p Survei Waktu Penerbit: 2016
+											li
+												strong Embed Chart
+												form
+													textarea(class="form-control" rows="4" placeholder="<div class='embed-responsive embed-responsive-16by9' style='height:550px;' ><iframe class='embed-responsive-item' width ='930' height='550' src='https://databoks.katadata.co.id/datapublishembed/109198/tahukah-anda-obyek-wisata-favorit-di-jakarta'>")
+								div(class="embedChart-widget-content embedChart-widget-content-widget-id" id="embedChart-id2")
+									span(class="sidebar" id="sidebartab1" preferred="yes")
+										p.
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, necessitatibus!
+			.shortcutBorderBottom.margin-bottom-20
 			.row
 				.col-md-9.listing
+					h3 Baca Juga
 					ul
 						li
 							p.small 1 Jan 2018
@@ -110,20 +184,21 @@ block content
 						ul
 							li
 								figure
-									img(src="images/thumb-img/thumb1.jpg", alt="")
+									img(src="images/databoks/statistik.jpg", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
 							li
 								figure
-									img(src="images/thumb-img/thumb3.jpg", alt="")
+									img(src="images/databoks/statistik.jpg", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
 							li
 								figure
-									img(src="images/thumb-img/thumb2.jpg", alt="")
+									img(src="images/databoks/statistik.jpg", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+			.shortcutBorderTop.margin-top-25.padding-top-35
 			.row
-				.col-md-12.shortcutBorderTop.margin-top-25.padding-top-35
+				.col-md-12
 					h3 Pilihan Topik
 					include includes/link-topik

@@ -1,42 +1,113 @@
 .databoks-analisis
-   .headListAnalisis
-      padding-bottom: 25px
-      margin-bottom: 25px
-      border-bottom: 1px solid #ddd
-      .itemListAnalisis
-         padding: 15px
-         +box-shadow(0,0,10px, rgba(0,0,0,.15))
-         +breakpoint(mobile)
-            margin-bottom: 25px
-         h4
-            font-family: gothamNarr_book
-            font-size: 18px
-            margin-bottom: 15px
-         p
-            margin-bottom: 20px
-   ul.boxAnalisis
-      padding: 0 0 20px
-      margin-bottom: 25px
-      display: block
-      border-bottom: 1px solid #ddd
-      +clearit
-      li
-         position: relative
-         padding: 12px
-         +box-shadow(0,0,10px,rgba(0,0,0,.15))
-         +breakpoint(wide)
-            +ownGrid(3, 3%)
-         +breakpoint(tablet)
-            +ownGrid(2, 3%)
-         +breakpoint(mobile)
-            +ownGrid(1, 0)
-            margin-bottom: 25px
-         article
-            margin-bottom: 10px
-            p
-               font-size: 16px
-               margin-bottom: 15px
-               &.infoArtikel
-                  margin-bottom: 0
-               strong
-                  font-family: robotoMedium
+	.headListAnalisis
+		padding-bottom: 35px
+		+breakpoint(mobile)
+			padding-bottom: 10px
+		.itemListAnalisis
+			position: relative
+			padding: 15px 15px 35px
+			+box-shadow(0,0,10px, rgba(0,0,0,.15))
+			+breakpoint(mobile)
+				margin-bottom: 25px
+				.itemListAnalisis:last-of-type
+					margin-bottom: 0
+			a
+				color: $black
+				h4
+					font-family: robotoMedium
+					font-size: 18px
+					margin-bottom: 15px
+			p
+				margin-bottom: 20px
+				&.infoArtikel
+					margin-bottom: 0
+					position: absolute
+					bottom: 12px
+	ul.boxAnalisis
+		padding: 0 0 20px
+		margin-bottom: 25px
+		display: block
+		border-bottom: 1px solid #ddd
+		+clearit
+		+breakpoint(mobile)
+			padding-bottom: 0
+		li
+			position: relative
+			padding: 12px 12px 35px
+			+box-shadow(0,0,10px,rgba(0,0,0,.15))
+			+breakpoint(wide)
+				+ownGrid(3, 3%)
+			+breakpoint(tablet)
+				+ownGrid(2, 3%)
+			+breakpoint(mobile)
+				+ownGrid(1, 0)
+				margin-bottom: 25px
+			article
+				margin-bottom: 10px
+				p
+					font-size: 16px
+					margin-bottom: 15px
+					&.infoArtikel
+						margin-bottom: 0
+						position: absolute
+						bottom: 12px
+					strong
+						font-family: robotoMedium
+
+.databoks-analisis-details
+	ul.boxAnalisis
+		padding: 0 0 20px
+		margin-bottom: 25px
+		display: block
+		border-bottom: 1px solid #ddd
+		+clearit
+		+breakpoint(mobile)
+			padding-bottom: 0
+		li
+			position: relative
+			padding: 12px 12px 35px
+			+box-shadow(0,0,10px,rgba(0,0,0,.15))
+			+breakpoint(wide)
+				+ownGrid(4, 2%)
+			+breakpoint(tablet)
+				+ownGrid(2, 3%)
+			+breakpoint(mobile)
+				+ownGrid(1, 0)
+				margin-bottom: 25px
+			article
+				margin-bottom: 10px
+				p
+					font-size: 16px
+					margin-bottom: 15px
+					&.infoArtikel
+						position: absolute
+						bottom: 12px
+						margin-bottom: 0
+					strong
+						font-family: robotoMedium
+	h2
+		font-size: 45px
+	.analisis-detail-info-article
+		padding-bottom: 25px
+		margin-bottom: 25px
+		border-bottom: 1px solid #ddd
+		+clearit
+		.left-caption
+			float: left
+			.writer-name
+				font-family: robotoMedium
+		.right-caption
+			float: right
+			width: 640px
+			+breakpoint(mobile)
+				margin-top: 15px
+				width: auto
+			p
+				font-family: robotoMedium
+	.analisi-detail-content-article
+		float: right
+		width: 640px
+		+breakpoint(mobile)
+			width: auto
+		p
+			margin-bottom: 20px

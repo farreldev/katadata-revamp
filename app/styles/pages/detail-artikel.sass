@@ -15,18 +15,19 @@
 			font-size: 24px
 			line-height: 1.4
 			color: $black
-		figure.mainDetailPict
-			position: relative
-			padding-bottom: 10px
-			margin-bottom: 15px
-			@extend %thin-line-custom-bottom
-			figcaption
-				padding: 3px 5px
-				font-family: robotoLight
-				font-size: 13px
-				line-height: 1.5
-				strong
-					font-family: robotoBold
+		figure
+			&.mainDetailPict
+				position: relative
+				padding-bottom: 10px
+				margin-bottom: 15px
+				@extend %thin-line-custom-bottom
+				figcaption
+					padding: 3px 5px
+					font-family: robotoLight
+					font-size: 13px
+					line-height: 1.5
+					strong
+						font-family: robotoBold
 		.penulis-opini
 			position: relative
 			padding-bottom: 20px
@@ -82,6 +83,8 @@
 						font-size: 15px
 						line-height: 1.5
 						color: $black
+		.detail-article-caption
+			font-family: robotoMedium
 		article.textArticle
 			width: 87%
 			margin: 0 0 0 auto
@@ -105,34 +108,3 @@
 						&.small
 							font-size: 12px
 							margin-bottom: 0
-	.tagLink
-		margin-bottom: 20px
-		strong
-			display: inline-block
-			vertical-align: middle
-			font-family: robotoBold
-			font-size: 15px
-			text-transform: uppercase
-		ul
-			margin-left: 10px
-			display: inline-block
-			vertical-align: middle     
-			+breakpoint(mobile)
-				margin-top: 15px
-				margin-left: 0
-			li
-				display: inline-block
-				margin-right: 10px
-				margin-bottom: 10px
-				a
-					padding: 10px 20px
-					font-family: robotoRegular
-					display: block
-					+border-radius(3px)
-					border: 1px solid #ccc
-					color: $black
-					&:hover
-						text-decoration: none
-						background: $orange
-						color: white
-						border: 1px solid $orange

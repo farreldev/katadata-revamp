@@ -39,7 +39,7 @@
 							}
 						}
 					]
-			})
+			});
 			
 			$('.ekonoGraphics').slick({
 				infinite: true,
@@ -91,37 +91,51 @@
 						// settings: "unslick"
 						// instead of a settings object
 					]
-			})
+			});
 		}
 	
 		var ua = navigator.userAgent.toLowerCase(); 
 		var $tinggi = $('.footer').height();
 		
-		$('.wrapper main').css('marginBottom', $tinggi)
+		$('.wrapper main').css('marginBottom', $tinggi);
 		
 		if (ua.indexOf('safari') != -1) { 
 			if (ua.indexOf('chrome') > -1) {
-				$('.wrapper main').css('marginBottom', $tinggi)
+				$('.wrapper main').css('marginBottom', $tinggi);
 			} else {
-				$('.wrapper main').css('marginBottom', $tinggi - 140)
+				$('.wrapper main').css('marginBottom', $tinggi - 140);
 			}
 		}
 
 		$('.humburger-btn, .humburger-btn ~ a').on('click', function(e) {
 			e.preventDefault();
 			if(!$('.humburger-btn').hasClass('humTrigger')) {
-				$('.wwNavigation').fadeIn()
+				$('.wwNavigation').fadeIn();
 				$('.humburger-btn').toggleClass('humTrigger');
 			} else {
-				$('.wwNavigation').fadeOut()
+				$('.wwNavigation').fadeOut();
 				$('.humburger-btn').toggleClass('humTrigger');
 			}
 		});
 
 		$('.wwNavigation').on('click', function() {
 			$('.humburger-btn').toggleClass('humTrigger');
-			$('.wwNavigation').fadeOut()
-		})
+			$('.wwNavigation').fadeOut();
+		});
+
+		$(".embedChart-widget-content-widget-id").hide();
+		$("ul.embedChart-widget-content-tabs-id li:first a").addClass("embedChart-widget-current").show();
+		$(".embedChart-widget-content-widget-id:first").show();
+
+		$("ul.embedChart-widget-content-tabs-id li a").on('click', function(ev) {
+			ev.preventDefault();
+			$("ul.embedChart-widget-content-tabs-id li a").removeClass("embedChart-widget-current");
+			$(this).addClass("embedChart-widget-current");
+			$(".embedChart-widget-content-widget-id").hide();
+			var activeTab = $(this).attr("href");
+				$(activeTab).fadeIn();
+				return false;
+		});
 
 		// $('.wwNavigation-overlay').on('click', function() {
 		// 	$('.humburger-btn').toggleClass('humTrigger');
@@ -132,15 +146,15 @@
 			a.preventDefault();
 			$('html, body').animate({ scrollTop: 0}, { duration: 1500 });
 			return false;
-		})
+		});
 
 		if(screen.width > 768) {
 			$('.matchingHeight, .itemListAnalisis, .sprite-ico li').matchHeight();
 		}
 
-		$('#datetimepicker1').datetimepicker()
+		$('#datetimepicker1').datetimepicker();
 	
-		kdSlider()
+		kdSlider();
 		
-	}()
-})(jQuery)
+	}();
+})(jQuery);

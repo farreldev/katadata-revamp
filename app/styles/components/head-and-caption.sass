@@ -6,8 +6,9 @@
 		display: inline-block
 		vertical-align: middle
 		margin-right: 50px
-		margin-bottom: 10px
-		+breakpoint(mobil)
+		margin-bottom: 25px
+		+breakpoint(mobile)
+			font-size: 35px
 			float: left
 		small
 			font-family: robotoLight
@@ -21,6 +22,34 @@
 			margin-bottom: 15px
 	strong
 		font-family: robotoMedium
+	article
+		+clearit
+		margin-bottom: 12px
+		padding-bottom: 12px
+		border-bottom: 1px solid #ddd
+		display: block
+		p
+			display: inline-block
+		p.strong
+			float: right
+			font-family: robotoMedium
+			font-size: 18px
+			width: 86.5%
+			+breakpoint(tablet)
+				margin-top: 10px
+				width: 100%
+			+breakpoint(mobile)
+				width: 100%
+				margin-top: 0
+				margin-bottom: 0
+
+	p.detailTaiching
+		padding-left: 114px
+		margin-bottom: 20px
+		+breakpoint(tablet)
+			padding-left: 0
+		+breakpoint(mobile)
+			padding-left: 0
 	p
 		&.sendMail
 			float: right

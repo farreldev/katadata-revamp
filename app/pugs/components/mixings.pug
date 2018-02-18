@@ -116,3 +116,28 @@ block append config
 								option Topik Tiga
 					.col-md-2.col-sm-6
 						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages2)
+	mixin formSearch4(namePages2)
+		section.formSearch
+			form
+				.row
+					.col-md-2.col-xs-12
+						h2 Analisis
+					.col-md-4.col-sm-6
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Topik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-2.col-sm-6
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Subtopik..
+								option Topik Satu
+								option Topik Dua
+								option Topik Tiga
+					.col-md-2.col-sm-6
+						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages2)

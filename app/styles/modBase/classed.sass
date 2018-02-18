@@ -6,8 +6,15 @@ $offset: 20;
 	 width: 100% !important
 
 @for $i from 1 through $offset
-	 .width-#{5 * $i}
-		  width: 5% * $i !important
+	.width-#{5 * $i}
+		width: 5% * $i !important
+		+breakpoint(mobile)
+			.xs-width-#{5 * $i}
+				width: 5% * $i !important
+
+.xs-width-auto
+	+breakpoint(mobile)
+		width: auto !important
 
 .xs-width-full
 	+breakpoint(mobile)
@@ -39,10 +46,24 @@ $offset: 20;
 	margin: 0 !important
 
 @for $i from 1 through $offset
+	.margin-min-#{5 * $i}
+		margin: -#{5px * $i} !important
+
+	@each $value in $position
+		.margin-min-#{$value}-#{5 * $i}
+			margin-#{$value}: -#{5px * $i} !important
+
+@for $i from 1 through $offset
 	.margin-#{5 * $i}
 		margin: 5px * $i !important
 
 	@each $value in $position
+		+breakpoint(tablet)
+			.margin-mm-#{$value}-#{5 * $i}
+				margin-#{$value}: 5px * $i !important	
+		+breakpoint(mobile)
+			.margin-mm-#{$value}-#{5 * $i}
+				margin-#{$value}: 5px * $i !important	
 		.margin-#{$value}-#{5 * $i}
 			margin-#{$value}: 5px * $i !important
 
