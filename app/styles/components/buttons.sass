@@ -16,6 +16,12 @@ input[type='submit'].btn,
 		margin: 0 auto
 		display: block
 		width: 75%
+		@for $i from 1 through $offset
+			&.switch-#{5 * $i}
+				width: 5% * $i !important
+			+breakpoint(mobile)
+				&.xs-switch-#{5 * $i}
+					width: 5% * $i !important
 		+breakpoint(mobile)
 			margin-bottom: 30px
 

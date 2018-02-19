@@ -1,0 +1,34 @@
+extends base/home
+include components/mixings
+
+block content
+	.blueHead
+		.container
+			.head-and-caption
+				h2 Databoks #[small / Statistik]
+	.container
+		+formSearch2('Statistik')
+	section.databoks-statistik
+		.container
+			.row
+				.col-md-9
+					include includes/link-topik-all
+				.col-md-3
+					.kaitan-list
+						h3 Statistik Terpopuler
+						ul
+							li
+								figure
+									img(src="images/databoks/stat-thumb.png", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+							li
+								figure
+									img(src="images/databoks/stat-thumb.png", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+							li
+								figure
+									img(src="images/databoks/stat-thumb.png", alt="")
+								a(href="").
+									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019

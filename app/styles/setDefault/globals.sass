@@ -23,6 +23,36 @@ html,body
 					height: auto
 		img
 			width: 100%
+	.tagLink
+		margin-bottom: 20px
+		strong
+			display: inline-block
+			vertical-align: middle
+			font-family: robotoBold
+			font-size: 15px
+			text-transform: uppercase
+		ul
+			margin-left: 10px
+			display: inline-block     
+			+breakpoint(mobile)
+				margin-top: 15px
+				margin-left: 0
+			li
+				display: inline-block
+				margin-right: 10px
+				margin-bottom: 10px
+				a
+					padding: 10px 20px
+					font-family: robotoRegular
+					display: block
+					+border-radius(3px)
+					border: 1px solid #ccc
+					color: $black
+					&:hover
+						text-decoration: none
+						background: $orange
+						color: white
+						border: 1px solid $orange
 	a
 		font-family: robotoMedium
 		&.linkIndex
@@ -49,16 +79,17 @@ html,body
 
 	p
 		font-family: robotoLight
-		font-size: 17px
+		font-size: 18px
 		line-height: 1.5
 		color: #333
 	h2
+		font-family: gothamNarr_book
 		a
 			font-family: gothamNarr_book
 			color: $black
 	h2
 		margin-bottom: 20px
-		font-size: 2rem
+		font-size: 2.2rem
 		line-height: 1.2
 		a
 			color: $black

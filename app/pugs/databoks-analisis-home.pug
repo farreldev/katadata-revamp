@@ -2,51 +2,48 @@ extends base/home
 include components/mixings
 
 block content
-	.blueHead
+	.second-head
 		.container
-			.head-and-caption
-				h2 Databoks
-				ul
-					li.pilih
-						a(href="./databoks-analisis-home.html") Analisis
-					li
-						a(href="./databoks-statistik-home.html") Statistik
-					li
-						a(href="./databoks-dataset-home.html") Dataset
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Analisis"])
+			.second-head-right
 	.container
-		+formSearch('Analisis')
+		+formSearch4('Analisis')
 	section.databoks-analisis
 		.container
 			h3 Analisis Terkini
 			.row.headListAnalisis
 				.col-md-4
 					div.itemListAnalisis
-						h4 #[a(href="#") Indonesia dalam Satu Dekade Deindustrialisasi]
-						figure
-							img(src="images/analisis/db-head-analisis1.jpg", alt="")
+						a(href="#")
+							h4 Indonesia dalam Satu Dekade Deindustrialisasi
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
 						p.
 							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
 						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
 				.col-md-4
 					div.itemListAnalisis
-						h4 #[a(href="#") Membidik Potensi Pengembangan Bisnis Fintech di Indonesia]
-						figure
-							img(src="images/analisis/db-head-analisis2.jpg", alt="")
+						a(href="#")
+							h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+							figure
+								img(src="images/analisis/db-head-analisis2.jpg", alt="")
 						p.
 							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
 						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
 				.col-md-4
 					div.itemListAnalisis
-						h4 #[a(href="#") Membidik Potensi Pengembangan Bisnis Fintech di Indonesia]
-						figure
-							img(src="images/analisis/db-head-analisis1.jpg", alt="")
+						a(href="#")
+							h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+							figure
+								img(src="images/analisis/db-head-analisis1.jpg", alt="")
 						p.
 							Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
 						p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
-			
+			.shortcutBorderBottom.margin-bottom-25
 			.row
 				.col-md-9
-					h3 Baca Juga
+					h3 Analisis Lainnya
 					ul.boxAnalisis
 						li.matchingHeight
 							figure

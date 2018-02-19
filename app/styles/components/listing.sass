@@ -17,7 +17,11 @@
 			article
 				padding-right: 35px
 				display: inline-block
-				width: 550px
+				+breakpoint(wide)
+					width: 550px
+				+breakpoint(tablet)
+					padding-right: 20px
+					width: calc(595px - 180px)
 				+breakpoint(mobile)
 					width: auto
 				h4

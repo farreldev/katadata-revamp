@@ -1,0 +1,27 @@
+.databoks-home
+   .databoks-info
+      margin-bottom: 30px
+      display: inline-block
+      width: 80%
+      height: auto
+      +breakpoint(mobile)
+         margin-bottom: 20px      
+         display: block
+         width: 100%
+      p
+         margin-bottom: 4px
+      ~ a.btn
+         float: right
+         width: calc(100% - 80%)
+         +breakpoint(mobile)
+            margin-bottom: 25px
+            display: block
+            width: 100%
+   .listing
+      ul
+         li
+            &:last-child
+               +noBorderDot
+   .boxDataset
+      border-bottom: none
+      margin-bottom: 0

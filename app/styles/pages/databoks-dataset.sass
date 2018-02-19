@@ -1,44 +1,30 @@
 .databoks-dataset
-   ul.boxDataset
-      padding: 0 0 20px
-      margin-bottom: 25px
-      display: block
-      border-bottom: 1px solid #ddd
-      +clearit
-      li
-         position: relative
-         padding: 12px
-         +breakpoint(wide)
-            +ownGrid(3, 3%)
-         +box-shadow(0,0,10px,rgba(0,0,0,.15))
-         +breakpoint(tablet)
-            +ownGrid(2, 3%)
-         +breakpoint(mobile)
-            +ownGrid(1, 0)
-            margin-bottom: 25px
-         article
-            padding-bottom: 40px
-            margin-bottom: 20px
-            h4
-               font-family: gothamNarr_book
-               font-size: 18px
-               margin-bottom: 15px
-            p
-               font-size: 16px
-               margin-bottom: 3px
-               strong
-                  font-family: robotoMedium
-         a.btn
-            position: absolute
-            left: 50%
-            bottom: 12px
-            width: 90%
-            transform: translateX(-50%)
-            +breakpoint(tablet)
-               width: 88%
-            +breakpoint(mobile)
-               width: 93%
-   ul.boxDataset ~ a.btn
-      margin: 0 auto 35px
-      display: block
-      width: 75%
+	.detail-dataset
+		position: relative
+		padding-bottom: 20px
+		border-bottom: 1px solid #ddd
+		+clearit
+		.boxDetail
+			float: left
+			width: 60%
+			margin-right: 20px
+			+breakpoint(mobile)
+				width: auto
+				margin-right: 0
+			p
+				strong
+					font-family: robotoMedium
+					color: #333
+		a.btn
+			width: 30%
+			margin-bottom: 8px
+			+breakpoint(mobile)
+				margin-top: 20px
+				width: 100%
+		span
+			font-family: robotoLight
+			display: inline-block
+			width: 30%
+			text-align: center
+			+breakpoint(mobile)
+				width: 100%
