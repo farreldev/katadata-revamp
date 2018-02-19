@@ -5,23 +5,22 @@
 			padding-bottom: 25px
 			margin-bottom: 25px
 			display: inline-block
+			width: 100%
 			+clearit
 			+borderDot
 			p.small
-				display: inline-block
+				float: left
 				vertical-align: top
-				margin: 0 30px 0 0
-				font-size: 16px
+				// margin: 0 30px 0 0
+				font-size: 15px
+				width: 15%
 				+breakpoint(mobile)
+					width: auto
 					margin-bottom: 20px
 			article
-				padding-right: 35px
-				display: inline-block
-				+breakpoint(wide)
-					width: 550px
-				+breakpoint(tablet)
-					padding-right: 20px
-					width: calc(595px - 180px)
+				float: left
+				padding-right: 20px
+				width: calc(100% - 35%)
 				+breakpoint(mobile)
 					width: auto
 				h4
@@ -35,7 +34,10 @@
 						margin-bottom: 20px
 			figure
 				float: right
-				width: 180px
+				width: 20%
+				img
+					width: 100%
+					height: auto
 				+breakpoint(mobile)
 					float: none
 					width: 100%
