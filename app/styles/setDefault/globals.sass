@@ -27,7 +27,7 @@ html,body
 		margin-bottom: 20px
 		strong
 			margin-right: 10px
-			margin-bottom: 15px
+			margin-bottom: 5px
 			display: inline-block
 			vertical-align: middle
 			font-family: robotoBold
@@ -36,7 +36,7 @@ html,body
 			+breakpoint(mobile)
 				margin-bottom: 0
 		ul
-			// margin-left: 10px
+			margin-bottom: 10px
 			display: inline-block     
 			+breakpoint(mobile)
 				margin-top: 15px
@@ -44,7 +44,10 @@ html,body
 			li
 				display: inline-block
 				margin-right: 10px
-				margin-bottom: 10px
+				+breakpoint(mobile)
+					margin-bottom: 10px
+				&:last-child
+					margin-right: 0
 				a
 					padding: 10px 20px
 					font-family: robotoRegular
@@ -83,9 +86,9 @@ html,body
 
 	p
 		font-family: robotoLight
-		font-size: 18px
-		line-height: 1.5
-		color: #333
+		font-size: 17px
+		line-height: 1.4
+		color: $black
 	h2
 		font-family: gothamNarr_book
 		a

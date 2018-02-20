@@ -45,7 +45,9 @@ block content
 								p.small.pull-right
 									| Arief Kamaludin/Katadata
 						.col-md-3
-							include includes/artikel-terpopuler
+							.otherBanner.clear-top-padding.no-top-border
+								img(src="images/banners/bannerSmall2.gif", alt="")
+							//- include includes/artikel-terpopuler
 							//- figure.thumb-article-img
 							//- 	img(src="images/thumb-img/thumb1.jpg", alt="")
 							//- a(href="#", alt="{topik}", class="topik-link") Energi
@@ -109,11 +111,48 @@ block content
 					+otherNews('thumb3.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+otherNews('thumb2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
-		div.spotBanner
+				.shortcutBorderBottom.margin-top-5
+		section.berita-terpopuler
 			.container
-				.spotBannerWrap
-					figure
-						img(src="images/banners/banner1.jpg", alt="")
+				h3 Berita Terpopuler
+				ul
+					li
+						strong 1
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 2
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 3
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 4
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 5
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 6
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 7
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 8
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+		//- div.spotBanner
+		//- 	.container
+		//- 		.spotBannerWrap
+		//- 			figure
+		//- 				img(src="images/banners/banner1.jpg", alt="")
 		section.ekono
 			.container.posRelative
 				h3 Ekonografik

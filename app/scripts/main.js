@@ -42,10 +42,10 @@
 			});
 			
 			$('.ekonoGraphics').slick({
-				infinite: true,
+				infinite: false,
 				slidesToShow: 4,
 				slidesToScroll: 1,
-				autoplay: true,
+				autoplay: false,
 				prevArrow: '.prevArrowNav2',
 				nextArrow: '.nextArrowNav2',
 				responsive: [
@@ -55,7 +55,7 @@
 								slidesToShow: 1,
 								slidesToScroll: 1,
 								infinite: true,
-								autoplay: true,
+								autoplay: false,
 								prevArrow: '.prevArrowNav2',
 								nextArrow: '.nextArrowNav2',
 							}
@@ -64,7 +64,7 @@
 							settings: {
 								slidesToShow: 1,
 								slidesToScroll: 1,
-								autoplay: true,
+								autoplay: false,
 								prevArrow: '.prevArrowNav2',
 								nextArrow: '.nextArrowNav2',
 							}
@@ -73,7 +73,7 @@
 							settings: {
 								slidesToShow: 1,
 								slidesToScroll: 1,
-								autoplay: true,
+								autoplay: false,
 								prevArrow: '.prevArrowNav2',
 								nextArrow: '.nextArrowNav2',
 							},
@@ -82,7 +82,7 @@
 							settings: {
 								slidesToShow: 1,
 								slidesToScroll: 1,
-								autoplay: true,
+								autoplay: false,
 								prevArrow: '.prevArrowNav2',
 								nextArrow: '.nextArrowNav2',
 							},
@@ -123,16 +123,16 @@
 			$('.wwNavigation').fadeOut();
 		});
 
-		$(".embedChart-widget-content-widget-id").hide();
-		$("ul.embedChart-widget-content-tabs-id li:first a").addClass("embedChart-widget-current").show();
-		$(".embedChart-widget-content-widget-id:first").show();
+		$('.embedChart-widget-content-widget-id').hide();
+		$('ul.embedChart-widget-content-tabs-id li:first a').addClass('embedChart-widget-current').show();
+		$('.embedChart-widget-content-widget-id:first').show();
 
-		$("ul.embedChart-widget-content-tabs-id li a").on('click', function(ev) {
+		$('ul.embedChart-widget-content-tabs-id li a').on('click', function(ev) {
 			ev.preventDefault();
-			$("ul.embedChart-widget-content-tabs-id li a").removeClass("embedChart-widget-current");
-			$(this).addClass("embedChart-widget-current");
-			$(".embedChart-widget-content-widget-id").hide();
-			var activeTab = $(this).attr("href");
+			$('ul.embedChart-widget-content-tabs-id li a').removeClass('embedChart-widget-current');
+			$(this).addClass('embedChart-widget-current');
+			$('.embedChart-widget-content-widget-id').hide();
+			var activeTab = $(this).attr('href');
 				$(activeTab).fadeIn();
 				return false;
 		});
@@ -149,7 +149,7 @@
 		});
 
 		if(screen.width > 768) {
-			$('.matchingHeight, .itemListAnalisis, .sprite-ico li').matchHeight();
+			$('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li').matchHeight();
 		}
 
 		$('#datetimepicker1').datetimepicker();
