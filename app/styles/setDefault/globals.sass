@@ -26,13 +26,17 @@ html,body
 	.tagLink
 		margin-bottom: 20px
 		strong
+			margin-right: 10px
+			margin-bottom: 15px
 			display: inline-block
 			vertical-align: middle
 			font-family: robotoBold
 			font-size: 15px
 			text-transform: uppercase
+			+breakpoint(mobile)
+				margin-bottom: 0
 		ul
-			margin-left: 10px
+			// margin-left: 10px
 			display: inline-block     
 			+breakpoint(mobile)
 				margin-top: 15px
