@@ -55,6 +55,64 @@
 						font-family: robotoMedium
 
 .databoks-analisis-details
+	.analisis-detail-info-article
+		padding-bottom: 25px
+		margin-bottom: 25px
+		border-bottom: 1px solid #ddd
+		+breakpoint(mobile)
+			padding-bottom: 15px
+		+clearit
+		.left-caption
+			float: left
+			.writer-name
+				font-family: robotoMedium
+		.right-caption
+			float: right
+			width: 640px
+			+breakpoint(mobile)
+				margin-top: 15px
+				width: auto
+			p
+				font-family: robotoMedium
+	.analisi-detail-content-article
+		float: right
+		width: 640px
+		+breakpoint(mobile)
+			width: auto
+		p
+			margin-bottom: 20px
+	.analisis-info-writer
+		padding: 20px 0
+		margin-bottom: 20px
+		border-top: 1px solid #ddd
+		border-bottom: 1px solid #ddd
+		+clearit
+		figure
+			position: relative
+			left: 100px
+			float: left
+			margin-bottom: 0
+			width: 86px
+			height: 86px
+			overflow: hidden
+			border-radius: 50%
+			+breakpoint(mobile)
+				left: 50%
+				transform: translateX(-50%)
+				margin-bottom: 20px
+			img
+				width: 100%
+		article
+			float: right
+			width: 640px
+			+breakpoint(mobile)
+				width: auto
+			p
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+				strong
+					font-family: robotoRegular
 	ul.boxAnalisis
 		padding: 0 0 20px
 		margin-bottom: 25px
@@ -87,27 +145,3 @@
 						font-family: robotoMedium
 	h2
 		font-size: 45px
-	.analisis-detail-info-article
-		padding-bottom: 25px
-		margin-bottom: 25px
-		border-bottom: 1px solid #ddd
-		+clearit
-		.left-caption
-			float: left
-			.writer-name
-				font-family: robotoMedium
-		.right-caption
-			float: right
-			width: 640px
-			+breakpoint(mobile)
-				margin-top: 15px
-				width: auto
-			p
-				font-family: robotoMedium
-	.analisi-detail-content-article
-		float: right
-		width: 640px
-		+breakpoint(mobile)
-			width: auto
-		p
-			margin-bottom: 20px
