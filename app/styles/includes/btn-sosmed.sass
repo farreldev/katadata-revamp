@@ -10,7 +10,7 @@
 		&:last-child
 				margin-right: 0
 		a
-			font-family: gothamNarr_book
+			font-family: robotoRegular
 			font-size: 14px
 			text-transform: uppercase
 			text-decoration: none
@@ -58,6 +58,23 @@
 				background-color: $other
 				&:hover
 					background-color: darken($other, 5%)
+
+	&.xs-no-circle
+		a
+			font-size: 13px
+			padding: 8px 12px
+			+breakpoint(mobile)
+				width: auto
+				height: auto
+				line-height: 0
+				+border-radius(3px)
+			i
+				+breakpoint(mobile)
+					margin-right: 10px
+			span
+				+breakpoint(mobile)
+					display: inline
+
 .penulis-opini
 	.btn-sosmed
 		float: none

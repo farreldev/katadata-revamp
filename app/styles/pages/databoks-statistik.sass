@@ -2,7 +2,7 @@
 	h3
 		display: block
 	.big-chart
-		margin-bottom: 20px
+		margin-bottom: 30px
 		figure
 			margin-bottom: 15px
 		p
@@ -26,16 +26,23 @@
 				margin-bottom: 5px
 				display: block
 	.stat-desc
+		padding-bottom: 20px
 		p
 			position: relative
-			padding-bottom: 30px
-			&:after
-				position: absolute
-				left: 0
-				content: ''
-				bottom: 0
-				width: 80px
-				height: 5px
-				background-color: $blue
-			+breakpoint(mobile)
-				margin-bottom: 20px
+			margin-bottom: 20px
+			&.text-note
+				padding: 10px 15px 12px
+				font-family: robotoMedium
+				font-size: 15px
+				background-color: #fef59c
+				color: #c96419
+		&:after
+			position: absolute
+			left: 15px
+			content: ''
+			bottom: 0
+			width: 80px
+			height: 5px
+			background-color: $blue-sec-head2
+		+breakpoint(mobile)
+			margin-bottom: 20px
