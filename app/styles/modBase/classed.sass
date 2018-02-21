@@ -71,7 +71,21 @@ $offset: 20;
 .no-padding
 	padding: 0 !important
 .no-padding-left
-	padding-left: 0
+	padding-left: 0 !important
+.no-padding-right
+	padding-right: 0 !important
+.xs-no-padding-right
+	+breakpoint(mobile)
+		padding-right: 0
+.xs-no-padding-left
+	+breakpoint(mobile)
+		padding-left: 0
+.tb-no-padding-right
+	+breakpoint(tablet)
+		padding-right: 0
+.tb-no-padding-left
+	+breakpoint(tablet)
+		padding-left: 0
 
 /* MatchHeight */
 .row
@@ -88,6 +102,12 @@ $offset: 20;
 		padding: 5px * $i !important
 
 	@each $value in $position
+		+breakpoint(tablet)
+			.padding-tb-#{$value}-#{5 * $i}
+				padding: 5px * $i !important
+		+breakpoint(mobile)
+			.padding-mm-#{$value}-#{5 * $i}
+				padding: 5px * $i !important
 		.padding-#{$value}-#{5 * $i}
 			padding-#{$value}: 5px * $i !important
 

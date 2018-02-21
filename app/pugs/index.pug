@@ -279,18 +279,20 @@ block content
 		section.newsletter
 			.container
 				.row
-					.col-md-6
-						img(src="images/icons/bel.png", alt="")
+					.col-md-4.no-padding-right
+						img(src="images/icons/bel.png", alt="" class="icon-bell")
 						strong News Alert
 						p.
 							Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda
-					.col-md-6
+					.col-md-3.no-padding-right
 						form
 							.customInput.withBorder
 								input(type="email" name="" placeholder="Email anda...")
-							input(type="submit" name="" value="Daftar" class="btn btn-orange")
 							p.small.
 								Dengan mendaftar, Anda setuju untuk menerima Newsletter dari Katadata. Anda bisa melakukan Unsubscribe kapan pun.
+					.col-md-5
+						img(src="images/recaptcha.png", alt="")
+						input(type="submit" name="" value="Daftar" class="btn btn-orange")
 		section.opini
 			.container
 				.row
