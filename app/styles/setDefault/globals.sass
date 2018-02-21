@@ -126,10 +126,10 @@ html,body
 		letter-spacing: 1px
 		font-family: robotoMedium
 		font-size: 10px
-		color: #fff
+		color: $black
 		text-transform: uppercase
 		display: inline-block
-		background: $orange
+		background: $yellow-wood
 
 	.followSosmed
 		position: relative
@@ -210,7 +210,7 @@ html,body
 		strong
 			font-family: robotoMedium
 			font-weight: bold
-			color: #333
+			color: $black
 		&.white
 			color: white
 			strong
@@ -218,45 +218,47 @@ html,body
 	.newsletter
 		+clearit
 		padding: 20px 0
-		border-top: 1px solid #ddd
-		border-bottom: 1px solid #ddd
+		// border-top: 1px solid #ddd
+		// border-bottom: 1px solid #ddd
 		margin-bottom: 25px
+		background-color: #eee
 		img
 			float: left
-			margin-right: 10px
-			width: auto
-			&.icon-bell
-				width: 60px
-				margin-bottom: 20px
+			margin-right: 15px
 			+breakpoint(tablet)
 				margin-bottom: 20px
 			+breakpoint(mobile)
 				margin-bottom: 20px
-		strong
-			display: block
-			font-family: robotoBold
-			font-size: 20px
-			margin-bottom: 8px
-		p
-			font-family: robotoLight
-			font-size: 14px
-			line-height: 1.3
-			&.small
-				font-size: 12px
+		article
+			float: right
+			width: calc(100% - 100px)
+			strong
+				display: block
+				font-family: robotoBold
+				font-size: 20px
+				margin-bottom: 8px
+			p
+				margin-bottom: 25px
+				font-family: robotoLight
+				font-size: 16px
+				line-height: 1.4
+				&.small
+					margin-bottom: 10px
+					font-size: 14px
 		.customInput
 			display: inline-block
-			width: 100%
+			width: 75%
 			+breakpoint(mobile)
-				display: block
-				width: 100%
+				// display: block
+				width: 62%
 				margin-bottom: 12px
 		input[type="submit"]
 			padding: 11px 0
-			font-family: gothamNarr_book
+			font-family: robotoMedium
 			float: right
-			width: 30%
+			width: 23%
 			+breakpoint(mobile)
-				width: 100%
+				width: 35%
 				margin-bottom: 8px
 	// .ekonoBigImg
 	// 	position: relative

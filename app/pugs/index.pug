@@ -279,20 +279,21 @@ block content
 		section.newsletter
 			.container
 				.row
-					.col-md-4.no-padding-right
-						img(src="images/icons/bel.png", alt="" class="icon-bell")
-						strong News Alert
-						p.
-							Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda
-					.col-md-3.no-padding-right
+					.col-md-6
+						img(src="images/icons/bel.png", alt="")
+						article
+							strong News Alert
+							p.
+								Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda.
+								Dengan mendaftar, Anda setuju untuk menerima Newsletter dari Katadata. Anda bisa melakukan Unsubscribe kapan pun.
+						//- strong Berlangganan Newsletter Kami
+					.col-md-6
 						form
 							.customInput.withBorder
 								input(type="email" name="" placeholder="Email anda...")
-							p.small.
-								Dengan mendaftar, Anda setuju untuk menerima Newsletter dari Katadata. Anda bisa melakukan Unsubscribe kapan pun.
-					.col-md-5
-						img(src="images/recaptcha.png", alt="")
-						input(type="submit" name="" value="Daftar" class="btn btn-orange")
+							input(type="submit" name="" value="Daftar" class="btn btn-orange")
+							.recaptha-space
+								img(src="images/recaptcha.png", alt="")
 		section.opini
 			.container
 				.row
@@ -300,7 +301,7 @@ block content
 						h3 Opini
 					.col-md-1
 					.col-md-5
-						h3 Opini Populer
+						h3.hidden-xs Opini Populer
 				span.lineHor
 				.row
 					.col-md-6.matchingHeight
@@ -347,6 +348,7 @@ block content
 						span.lineVer
 					.col-md-5.matchingHeight
 						.opiniRight
+							h3.visible-xs Opini Populer
 							ul
 								li
 									span 1
@@ -434,10 +436,10 @@ block content
 										ul
 											li
 												a(href="#")
-													img(src="./images/icons/fb-white.png", alt="")
+													<i class="fa fa-facebook"></i>
 											li
 												a(href="#")
-													img(src="./images/icons/tweet-white.png", alt="")
+													<i class="fa fa-twitter"></i>
 										a(href="", class="linkIndex pull-right putihLink") Buka di halaman Multimedia »
 								#tab-2.tab-content
 									
