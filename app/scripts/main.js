@@ -146,12 +146,12 @@
 			useCurrent: false
 		});
 
-		$('#fromDate').on("dp.change", function (ed) {
-			$('#toDate').data("DateTimePicker").minDate(ed.date);
+		$('#fromDate').on('dp.change', function (ed) {
+			$('#toDate').data('DateTimePicker').minDate(ed.date);
 		});
 
-		$('#toDate').on("dp.change", function (ed) {
-			$('#fromDate').data("DateTimePicker").maxDate(ed.date);
+		$('#toDate').on('dp.change', function (ed) {
+			$('#fromDate').data('DateTimePicker').maxDate(ed.date);
 		});
 		
 		$('a.goUp').on('click', function(a) {
