@@ -5,18 +5,27 @@ block content
 	.second-head
 		.container
 			.second-head-left.pull-left
-				+breadcrumb(["Home", "Indeks"])
+				+breadcrumb(["Home", "Pencarian", "Sri Mulyani"])
 			.second-head-right
-	section.indeks-pages
+	section.search-results
 		.container
 			.head-and-caption.shortcutBorderBottom.margin-bottom-30
-				h2.margin-bottom-5 Indeks
+				h2.margin-bottom-5 Pencarian
 			.row
 				.col-md-9.listing2
 					+formSearch5
+					.search-information
+						.left-search
+							strong.
+								Menampilkan 1—25 dari 35321 hasil pencarian
+						.right-search
+							.pg-style-2-wrapper
+								a(href="#", class="pg-style-2 prev")
+								span Halaman 1 dari 32
+								a(href="#", class="pg-style-2 next")
 					ul
 						li
-							p.small 1 Jan 2018
+							p.small 21 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -26,7 +35,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 21 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -36,7 +45,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 11 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -46,7 +55,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 31 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -56,7 +65,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 19 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -66,7 +75,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 17 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -76,7 +85,7 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						li
-							p.small 1 Jan 2018
+							p.small 22 Jan 2018
 							figure
 								img(src="images/thumb-img/thumb1.jpg", alt="")
 							article
@@ -85,33 +94,23 @@ block content
 										Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
-					.kd-paging-nav
-						ul.paging-wrapper
-							li.pagination__item.first
-								a.pagination__link.first(href='#')  Pertama
-								
-							li.pagination__item.previous
-								a.pagination__link.previous(href='#')
-
-								// Daftar Paging
-								
-							li.pagination__item
-								a.pagination__link(href='#') 1
-							li.pagination__item
-								a.pagination__link(href='#') 2
-							li.pagination__item.page-is-active
-								a.pagination__link(href='#') 3
-							li.pagination__item
-								a.pagination__link(href='#') 4
-							li.pagination__item
-								a.pagination__link(href='#') 5
-								
-								// End Daftar Paging
-
-							li.pagination__item.next
-								a.pagination__link.next(href='#')
-
-							li.pagination__item.last
-								a.pagination__link.last(href='#')  Terakhir 
+					.pg-style-2-wrapper.pull-right.margin-mm-bottom-20.xs-float-none.text-center
+						a(href="#", class="pg-style-2 prev")
+						span Halaman 1 dari 32
+						a(href="#", class="pg-style-2 next")
 				.col-md-3
+					.topik-terkait
+						strong Topik Terkait
+						ul
+							li
+								a(href="") kemenkeu
+							li 
+								a(href="") moneter
+							li 
+								a(href="") keuangan
+							li 
+								a(href="") daya beli
+							li 
+								a(href="") kemiskinan
 					include includes/box-scheduler
+				

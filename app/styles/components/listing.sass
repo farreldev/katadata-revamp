@@ -1,5 +1,6 @@
 .listing
-	ul:not(.opiniTerpopuler)
+	+clearit
+	> ul:not(.opiniTerpopuler):not(.paging-wrapper)
 		li
 			position: relative
 			padding-bottom: 25px
@@ -44,10 +45,36 @@
 
 .listing2
 	@extend .listing
-	ul:not(.opiniTerpopuler)
+	> ul:not(.opiniTerpopuler):not(.paging-wrapper)
+		padding-top: 20px
 		li
 			figure
 				padding-right: 20px
 				float: left
 			article
 				float: right
+			&:last-child
+				margin-bottom: 10px
+	
+	.search-information
+		padding: 15px 0
+		border-bottom: 1px solid #ddd
+		+clearit
+		.left-search
+			float: left
+			+breakpoint(mobile)
+				float: none
+				text-align: center
+				margin-bottom: 10px
+			strong
+				padding: 8px 0
+				display: inline-block
+				font-family: robotoMedium
+				line-height: 1.3
+				font-size: 17px
+				color: $black
+		.right-search
+			float: right
+			+breakpoint(mobile)
+				float: none
+				text-align: center

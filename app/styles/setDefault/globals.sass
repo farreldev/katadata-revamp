@@ -1,4 +1,7 @@
 html,body
+	input[type="radio"], 
+	input[type="checkbox"]
+		margin: 0
 	.abu
 		background-color: #ced3cc
 	.hitam
@@ -11,20 +14,28 @@ html,body
 		margin-bottom: 18px
 		&.thumb-article-img
 			margin-bottom: 20px
-			max-height: 177px
+			height: 210px
+			max-height: 280px
 			width: 100%
+			overflow: hidden
+			+breakpoint(tablet)
+				overflow: hidden
+				height: 230px
 			+breakpoint(mobile)
-				max-height: 100%
+				height: auto
 			img
-				width: auto
-				height: 177px
+				width: 100%
+				height: 100%
+				+breakpoint(tablet)
+					width: 100%
+					height: auto
 				+breakpoint(mobile)
 					width: 100%
 					height: auto
 		img
 			width: 100%
 	.tagLink
-		margin-bottom: 20px
+		margin-bottom: 10px
 		strong
 			margin-right: 10px
 			margin-bottom: 10px
@@ -59,6 +70,10 @@ html,body
 						background: $orange
 						color: white
 						border: 1px solid $orange
+		&.match-margin
+			padding-left: 48px
+			+breakpoint(mobile)
+				padding-left: 0
 	a
 		font-family: robotoMedium
 		&.linkIndex
@@ -123,10 +138,9 @@ html,body
 	.topik-link
 		padding: 5px 10px
 		margin-bottom: 5px
-		letter-spacing: 1px
 		font-family: robotoMedium
-		font-size: 10px
-		color: $black
+		font-size: 11px
+		color: white
 		text-transform: uppercase
 		display: inline-block
 		background: $yellow-wood
@@ -240,7 +254,7 @@ html,body
 			p
 				margin-bottom: 25px
 				font-family: robotoLight
-				font-size: 16px
+				font-size: 15px
 				line-height: 1.4
 				&.small
 					margin-bottom: 10px

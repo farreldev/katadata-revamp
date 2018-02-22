@@ -1,0 +1,23 @@
+.box-scheduler
+   strong Waktu
+   form
+      .radio
+         label
+            input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='true')
+            |	7 hari terakhir
+      .radio
+         label
+            input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+            |	30 hari terakhir
+      .radio
+         label
+            input#optionsRadios3(type='radio', name='optionsRadios', value='option3')
+            |	Tahun lalu
+      .form-group
+         label(for='fromDate', class="width-full") Dari
+            input#fromDate.form-control(type='text', placeholder='dd/mm/yyyy')
+      .form-group
+         label(for='toDate', class="width-full") Hingga
+            input#toDate.form-control(type='text', placeholder='dd/mm/yyyy')
+      button(class="btn btn-abu-hijau", type="submit") Terapkan
+      button(class="btn btn-link", type="reset") Hapus filter
