@@ -19,6 +19,10 @@ $offset: 20;
 .xs-width-full
 	+breakpoint(mobile)
 	 	width: 100% !important
+
+.tb-float-none
+	+breakpoint(tablet)
+		float: none !important
 .xs-float-none
 	+breakpoint(mobile)
 		float: none !important
@@ -59,7 +63,7 @@ $offset: 20;
 
 	@each $value in $position
 		+breakpoint(tablet)
-			.margin-mm-#{$value}-#{5 * $i}
+			.margin-tb-#{$value}-#{5 * $i}
 				margin-#{$value}: 5px * $i !important	
 		+breakpoint(mobile)
 			.margin-mm-#{$value}-#{5 * $i}
@@ -104,10 +108,10 @@ $offset: 20;
 	@each $value in $position
 		+breakpoint(tablet)
 			.padding-tb-#{$value}-#{5 * $i}
-				padding: 5px * $i !important
+				padding-#{$value}: 5px * $i !important
 		+breakpoint(mobile)
 			.padding-mm-#{$value}-#{5 * $i}
-				padding: 5px * $i !important
+				padding-#{$value}: 5px * $i !important
 		.padding-#{$value}-#{5 * $i}
 			padding-#{$value}: 5px * $i !important
 
