@@ -1,6 +1,7 @@
 .ekonoList
    ul.listGraph
       +clearit
+      width: 100%
       li
          padding: 15px
          +box-shadow(0,0,10px, rgba(0,0,0,.1))
@@ -31,6 +32,44 @@
                background: rgba(0,0,0, .5)
                transition: opacity .3s ease-in-out
                z-index: 2
+               span.btnLinksWrapper
+                  position: inherit
+                  top: 50%
+                  left: 50%
+                  transform: translate(-50%, -50%)
+                  a.btn
+                     margin-bottom: 12px
+                     position: relative
+                     color: #fff
+                     display: block
+                     transition: all .3s ease-in-out
+                     top: -80px
+                  span.share-ekono
+                     position: relative
+                     top: 80px
+                     padding: 10px 25px
+                     display: block
+                     color: #fff
+                     text-align: center
+                     border-radius: 3px
+                     transition: all .3s ease-in-out
+                     background-color: #dedede
+                     a
+                        margin-right: 10px
+                        display: inline-block
+                        width: 28px
+                        height: 28px
+                        line-height: 1.5
+                        border-radius: 50%
+                        color: white
+                        &:nth-child(1)
+                           background-color: $fb
+                        &:nth-child(2)
+                           background-color: $tw
+                        &:nth-child(3)
+                           background-color: $lnkd
+                        i
+                           font-size: 16px
                &:hover
                   opacity: 1
                   background: rgba(0,0,0, .5)
@@ -38,27 +77,13 @@
                   span.btnLinksWrapper
                      a.btn
                         transition: all .3s ease-in-out
-                        &:nth-child(1)
-                           top: 0
-                        &:nth-child(2)
-                           top: 0	
-               span.btnLinksWrapper
-                  position: inherit
-                  top: 50%
-                  left: 50%
-                  transform: translate(-50%, -50%)
-                  a.btn
-                     position: relative
-                     color: #fff
-                     margin-bottom: 12px
-                     display: block
-                     transition: all .3s ease-in-out
-                     &:nth-child(1)
-                        top: -80px
-                     &:nth-child(2)
-                        top: 80px
+                        top: 0
+                     span.share-ekono
+                        transition: all .3s ease-in-out
+                        top: 0
+
          a
-            font-family: gothamNarr_book
+            font-family: robotoMedium
             font-size: 18px
             line-height: 1.4
             color: $black
