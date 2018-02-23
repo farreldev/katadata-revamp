@@ -1,4 +1,5 @@
 .otherKatalog
+   position: relative
    .otherKat
       position: relative
       padding: 25px 0
@@ -8,11 +9,17 @@
             margin-bottom: 30px
             &:last-child
                margin-bottom: 0
-      a:not(.linkIndex)
+      a:not(.linkIndex):not(.brand-microsite)
          font-family: gothamNarr_book
          font-size: 18px
          line-height: 1.3
          color: $black
+      a.brand-microsite
+         display: inline-block
+         vertical-align: middle
+         width: 155px
       img
          margin-bottom: 10px
          width: 100%
+   &.abu
+      background-color: #f2f2f2
