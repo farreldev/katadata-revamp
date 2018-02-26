@@ -1,0 +1,71 @@
+extends base/home
+include components/mixings
+
+block content
+	section.kd-about
+		.hero-banner-about
+			a(href="#")
+				img(src="images/icons/icon-play.png", alt="")
+			figure
+				img(src="images/foto-profil-kd.jpg")
+		.container
+			.row
+				.col-md-2
+					ul.about-side-nav
+						li
+							a(href="kd-about.html") Profil
+						li
+							a(href="kd-about(produk).html") Produk
+						li
+							a(href="") Tim
+						li
+							a(href="") Pedoman Pemberitaan Media Siber
+						li
+							a(href="") Karier
+						li
+							a(href="") Advertising
+						li
+							a(href="kd-about(produk).html" class="select-mnu") Hubungi Kami
+				.col-md-7.about-content
+					article
+						p.
+							Silakan hubungi kami melalui email atau form kontak di bawah ini. Kami akan membalas pesan Anda secepat mungkin.
+					form.formSearch
+						.form-group
+							select(class="form-control")
+								option(selected="selected") Pilih Divisi..
+								option Divisi Satu
+								option Divisi Dua
+								option Divisi Tiga
+						.form-group
+							input(type="text" class="form-control" placeholder="Nama Lengkap")
+						.form-group
+							input(type="email" class="form-control" placeholder="Email")
+						.form-group
+							input(type="text" class="form-control" placeholder="Judul Pesan")
+						.form-group
+							textarea(class="form-control", name="", rows="10" placeholder="Pesan")
+						button(class="btn btn-block btn-abu-hijau") Kirim
+					.prev-next-about
+						a(href="#", class="btn btn-link pull-left")
+							i(class="far fa-angle-double-left")
+							|  [Prev-title-content]
+				.col-md-3
+					.kd-location
+						span.margin-bottom-20 Alamat
+						.map-place.margin-bottom-20
+							img(src="images/peta.jpg", alt="")
+
+						span PT Katadata Indonesia
+						address
+							p.
+								Permata Senayan Blok D No. 31, Jl. Tentara Pelajar, Jakarta, Indonesia, 12210
+							p 
+								strong Telepon:
+								a(href="tel:+622157940835")  +6221 5794 0835
+							p 
+								strong Email: 
+								a(href="mailto:redaksi@katadata.co.id")  redaksi@katadata.co.id
+							p 
+								strong Web: 
+								a(href="https://katadata.co.id")  https://katadata.co.id 
