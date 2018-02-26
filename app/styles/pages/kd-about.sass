@@ -1,0 +1,54 @@
+.kd-about
+   .about-side-nav
+      li
+         display: block
+         a
+            padding: 15px 0
+            font-family: robotoMedium
+            font-size: 18px
+            display: block
+            border-bottom: 1px solid #ddd
+            color: $black
+            &.select-mnu,
+            &:hover
+               text-decoration: none
+               border-bottom: 3px solid $orange
+   strong
+      display: inline-block
+      margin-bottom: 5px
+      font-family: robotoMedium
+      line-height: 1.4
+   p
+      strong
+         margin-bottom: 0
+   .about-content
+      p
+         margin-bottom: 20px
+      .prev-next-about
+         padding: 10px 0
+         border-top: 1px solid #ddd
+         +clearit
+         i
+            font-family: fontawesome
+   .kd-location
+      .map-place
+         width: 100%
+         height: 254px
+         overflow: hidden
+         +breakpoint(tablet)
+            height: 354px
+            > *
+               width: 100%
+         +breakpoint(mobile)
+            height: auto
+            > *
+               width: 100%
+      span
+         display: block
+         font-family: robotoRegular
+         font-size: 20px
+      p
+         margin-bottom: 10px
+         a
+            font-family: robotoRegular
+            color: $blue

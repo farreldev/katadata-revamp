@@ -39,3 +39,33 @@
 				transform: translateY(-50%)
 				font-family: fontawesome
 				font-size: 22px
+
+.hero-banner-about
+	margin-top: 65px
+	position: relative
+	width: 100%
+	height: auto
+	figure
+		position: relative
+		width: 100%
+		img
+			display: block
+	a
+		position: absolute
+		display: inline-block
+		width: 60px
+		height: 60px
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		img
+			width: 100%
+	&:after
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.4)
