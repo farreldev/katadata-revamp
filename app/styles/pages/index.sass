@@ -176,23 +176,28 @@
 				+clearit
 				figure
 					float: left
+					width: 32%
 					margin-right: 15px
-					margin-bottom: 55px
-					width: 190px
-					+breakpoint(mobile)
-						margin-bottom: 0
+					margin-bottom: 15px
 					img
 						width: 100%
+					+breakpoint(mobile)
+						float: none
+						width: 100%
 				article
+					width: calc(100% - (32% + 15px))
+					display: inline-block
 					p
 						margin-bottom: 10px
+					+breakpoint(mobile)
+						width: auto
 			ul
 				padding: 15px 0
 				li
 					padding-bottom: 10px
 					a
 						margin-bottom: 5px
-						display: inline-block
+						display: block
 						font-family: gothamNarr_book
 						font-size: 20px
 						line-height: 1.4
@@ -241,7 +246,7 @@
 					padding-bottom: 10px
 					a
 						margin-bottom: 5px
-						display: inline-block
+						display: block
 						font-family: gothamNarr_book
 						font-size: 20px
 						line-height: 1.4
