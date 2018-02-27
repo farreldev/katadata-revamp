@@ -63,7 +63,7 @@ block append config
 								option Sort By Name A-Z
 								option Sort By Name Z-A
 					.col-md-2.col-sm-12
-						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages)
+						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch3(namePages)
 		section.formSearch.sectionGray
 			form
@@ -92,7 +92,7 @@ block append config
 								option Aceh
 								option Batam
 					.col-md-2.col-sm-12
-						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages)
+						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch2(namePages2)
 		section.formSearch
 			form
@@ -115,7 +115,7 @@ block append config
 								option Topik Dua
 								option Topik Tiga
 					.col-md-2.col-sm-6
-						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages2)
+						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages2)
 	mixin formSearch4(namePages2)
 		section.formSearch
 			form
@@ -140,7 +140,7 @@ block append config
 								option Topik Dua
 								option Topik Tiga
 					.col-md-2.col-sm-6
-						input(type="submit" class="btn btn-block btn-orange" value="Cari "+namePages2)
+						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages2)
 
 	mixin formSearch5
 		section.formSearch.otherStyle
@@ -164,5 +164,17 @@ block append config
 								option Topik Dua
 								option Topik Tiga
 					.col-md-2.col-sm-6.tb-no-padding-right.padding-mm-right-15
-						a(href="", class="btn btn-block btn-orange")
+						a(href="", class="btn btn-block btn-blue-pastel")
 							i(class="fa fa-search")
+	mixin formSearch6
+		section.formSearch.otherStyle.removeBorder
+			form
+				.row
+					.col-md-4.no-padding-right
+						strong Artikel oleh Yura Syahrul
+					.col-md-6.no-padding-right.col-sm-6.padding-mm-right-15
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6.tb-no-padding-right.padding-mm-right-15
+						a(href="", class="btn btn-block btn-blue-pastel")
+							i(class="fa fa-search") 

@@ -1,12 +1,13 @@
 .head-and-caption
+	position: relative
 	+clearit
 	h2
 		font-family: gothamNarr_book
-		font-size: 46px
+		font-size: 42px
 		display: inline-block
 		vertical-align: middle
 		margin-right: 50px
-		margin-bottom: 25px
+		margin-bottom: 15px
 		+breakpoint(mobile)
 			font-size: 35px
 			float: left
@@ -64,7 +65,13 @@
 		+breakpoint(mobile)
 			margin-left: 0
 			margin-bottom: 15px
-
+	&.no-breadcrumb
+		margin-top: 90px
+		.linkIndex
+			float: none
+			margin-top: 15px
+			+breakpoint(mobile)
+				margin-top: 8px
 .topik-pil
 	display: block
 	padding: 20px 0

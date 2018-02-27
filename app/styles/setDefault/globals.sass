@@ -104,7 +104,7 @@ html,body
 						background-color: transparent
 	p
 		font-family: robotoLight
-		font-size: 17px
+		font-size: 18px
 		line-height: 1.4
 		color: $black
 	h2
@@ -170,26 +170,6 @@ html,body
 				display: inline-block
 				&:last-child
 					margin-right: 0
-				&:nth-child(1)
-					a
-						background-color: $fb
-						&:hover
-							background-color: darken($fb, 5%)
-				&:nth-child(2)
-					a
-						background-color: $tw
-						&:hover
-							background-color: darken($tw, 5%)
-				&:nth-child(3)
-					a
-						background-color: $insta
-						&:hover
-							background-color: darken($insta, 5%)
-				&:nth-child(4)
-					a
-						background-color: $lnkd
-						&:hover
-							background-color: darken($lnkd, 5%)
 				a
 					display: block
 					width: 28px
@@ -201,6 +181,43 @@ html,body
 						font-size: 16px
 						line-height: 28px
 						color: #FFFFFF
+				a[class*="facebook"]
+					background-color: $fb
+					&:hover
+						background-color: darken($fb, 5%)
+				a[class*="twitter"]
+					background-color: $tw
+					&:hover
+						background-color: darken($tw, 5%)
+				a[class*="instagram"]
+					background-color: $insta
+					&:hover
+						background-color: darken($insta, 5%)
+				a[class*="linkedin"]
+					background-color: $lnkd
+					&:hover
+						background-color: darken($lnkd, 5%)
+					
+				// &:nth-child(1)
+				// 	a
+				// 		background-color: $fb
+				// 		&:hover
+				// 			background-color: darken($fb, 5%)
+				// &:nth-child(2)
+				// 	a
+				// 		background-color: $tw
+				// 		&:hover
+				// 			background-color: darken($tw, 5%)
+				// &:nth-child(3)
+				// 	a
+				// 		background-color: $insta
+				// 		&:hover
+				// 			background-color: darken($insta, 5%)
+				// &:nth-child(4)
+				// 	a
+				// 		background-color: $lnkd
+				// 		&:hover
+				// 			background-color: darken($lnkd, 5%)
 	span.lineCaption2
 		position: relative
 		display: block

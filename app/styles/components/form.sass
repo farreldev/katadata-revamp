@@ -33,12 +33,36 @@
 		line-height: 1.4
 	textarea
 		font-family: gothamNarr_book
+	input.form-control,
+	textarea.form-control
+		&::-webkit-input-placeholder
+			font-family: robotoRegular
+			color: #aaa
+		&::-moz-placeholder
+			font-family: robotoRegular
+			color: #aaa
+		&:-ms-input-placeholder
+			font-family: robotoRegular
+			color: #aaa
+		&:-moz-placeholder
+			font-family: robotoRegular
+			color: #aaa
 	input[type="submit"]
 		padding: 8px 0
+	&.removeBorder
+		border-bottom: 0
 	&.otherStyle
+		position: relative
 		margin-bottom: 0
 		border-bottom: 3px solid #ddd
+		strong
+			padding: 10px 0
+			display: inline-block
+			vertical-align: middle
+			font-family: robotoMedium
 		a.btn
 			padding: 8px 0
 			i
 				font-size: 20px
+		&.removeBorder
+			border-bottom: 0

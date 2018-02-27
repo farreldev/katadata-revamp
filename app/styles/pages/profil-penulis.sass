@@ -1,0 +1,42 @@
+.profil-penulis
+	.bio-penulis 
+		width: 100%
+		margin-bottom: 20px
+		+clearit
+		figure
+			margin-right: 20px
+			display: inline-block
+			width: 120px
+			height: 120px
+			border-radius: 50%
+			overflow: hidden
+			+breakpoint(mobile)
+				width: 130px
+				height: 130px
+				margin-bottom: 5px
+				display: block
+				float: left
+			img
+				width: 100%
+		article
+			float: right
+			width: calc(100% - 140px)
+			strong
+				font-family: robotoMedium
+				display: block
+				font-size: 35px
+				margin-bottom: 15px
+			+breakpoint(mobile)
+				float: none
+				width: 100%
+	.followSosmed
+		margin-top: 55px
+		margin-left: 25px
+		+breakpoint(mobile)
+			margin-top: 0
+			margin-left: 0
+		span
+			display: block
+			margin-bottom: 10px
+			+breakpoint(mobile)
+				display: inline

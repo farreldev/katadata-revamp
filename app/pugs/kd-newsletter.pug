@@ -1,0 +1,52 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Newsletter"])
+			.second-head-right
+	section.newsletter-page
+		.container
+			.head-and-caption.shortcutBorderBottom.margin-bottom-30
+				h2 Newsletter
+				strong Dapatkan informasi terkini dari Katadata.co.id langsung lewat email Anda.
+			.row
+				.col-md-8.col-md-offset-2
+					form.formSearch.removeBorder
+						.form-group
+							input(type="text" class="form-control" placeholder="Nama Depan*")
+						.form-group
+							input(type="text" class="form-control" placeholder="Nama Belakang*")
+						.form-group
+							input(type="email" class="form-control" placeholder="Email*")
+						.form-group
+							input(type="text" class="form-control" placeholder="Telepon/Mobile (obligatory for paid subscription only)")
+						.simple-captcha
+							img(src="images/captcha.jpg", alt="")
+						.form-group.txt-captcha
+							input(type="text" class="form-control" placeholder="Isi Kode captcha")
+
+						ul.subscribe-ceklis
+							li
+								.checklist-nl
+									input#cek-nl-1(type='checkbox', class="styling-checkbox", name='cek-nl-1')
+									label(for="cek-nl-1")
+								article
+									p #[strong Daily Newsletter] (FREE SUBSCRIPTION)
+										br
+										| Dapatkan informasi dan infografik terbaru dari Katadata dikirimkan langsung ke Inbox Anda.
+										br
+										a(href="") Lihat sampel »
+							li
+								.checklist-nl
+									input#cek-nl-2(type='checkbox', class="styling-checkbox", name='cek-nl-2')
+									label(for="cek-nl-2")
+								article
+									p #[strong Oil and Gas Newsletter] (PAID SUBSCRIPTION)
+										br
+										| Artikel dan infografik pilihan mengenai industri migas di tanah air dilengkapi dengan informasi-informasi eksklusif yang didapatkan Katadata.
+										br
+										a(href="") Lihat sampel »
+						button(class="btn btn-block btn-blue-pastel") Langganan

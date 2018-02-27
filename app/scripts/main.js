@@ -153,7 +153,22 @@
 		$('#toDate').on('dp.change', function (ed) {
 			$('#fromDate').data('DateTimePicker').maxDate(ed.date);
 		});
+
+		$('.chooseSchedule').click(function() {
+			if ($('#sevenDay').is(':checked') || $('#thirdTeen').is(':checked')) {
+				$('#fromDate').prop('disabled', true);
+				$('#toDate').prop('disabled', true);
+			} else {
+				$('#fromDate').removeAttr('disabled');
+				$('#toDate').removeAttr('disabled');
+			}
+	 	});
 		
+		 $('button[type="reset"]').on('click', function() {
+			 $('#fromDate').removeAttr('disabled');
+				$('#toDate').removeAttr('disabled');
+		 });
+
 		$('a.goUp').on('click', function(a) {
 			a.preventDefault();
 			$('html, body').animate({ scrollTop: 0}, { duration: 1500 });
