@@ -1,0 +1,27 @@
+.kd-subscribe
+   .subscribe-info
+      span
+         margin-bottom: 10px
+      ul
+         li
+            position: relative
+            display: block
+            margin-bottom: 10px
+            &::before
+               position: absolute
+               top: 8px
+               left: -20px
+               content: ''
+               width: 10px
+               height: 10px
+               background-color: #ccc
+      +breakpoint(tablet)
+         ul
+            li
+               margin-left: 20px
+      +breakpoint(mobile)
+         ul
+            li
+               margin-left: 20px
+   .recaptha-space
+      margin-bottom: 10px

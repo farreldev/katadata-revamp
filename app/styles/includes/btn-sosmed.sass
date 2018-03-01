@@ -40,31 +40,55 @@
 				display: none
 				// +breakpoint(mobile)
 				// 	display: none
-		&:nth-child(1)
-			a
-				background-color: $fb
-				&:hover
-					background-color: darken($fb, 5%)
-		&:nth-child(2)
-			a
-				background-color: $tw
-				&:hover
-					background-color: darken($tw, 5%)
-		&:nth-child(3)
-			a
-				background-color: $lnkd
-				&:hover
-					background-color: darken($lnkd, 5%)
-		&:nth-child(4)
-			a
-				background-color: $other
-				&:hover
-					background-color: darken($other, 5%)
-		&:nth-child(5)
-			a
-				background-color: $other
-				&:hover
-					background-color: darken($other, 5%)
+		a[class*="facebook"]
+			background-color: $fb
+			&:hover
+				background-color: darken($fb, 5%)
+		a[class*="twitter"]
+			background-color: $tw
+			&:hover
+				background-color: darken($tw, 5%)
+		a[class*="instagram"]
+			background-color: $insta
+			&:hover
+				background-color: darken($insta, 5%)
+		a[class*="linkedin"]
+			background-color: $lnkd
+			&:hover
+				background-color: darken($lnkd, 5%)
+		a[class*="paper-plane"]
+			background-color: $other
+			&:hover
+				background-color: darken($other, 5%)
+		a[class*="link-chain"]
+			background-color: $other
+			&:hover
+				background-color: darken($other, 5%)
+		// &:nth-child(1)
+		// 	a
+		// 		background-color: $fb
+		// 		&:hover
+		// 			background-color: darken($fb, 5%)
+		// &:nth-child(2)
+		// 	a
+		// 		background-color: $tw
+		// 		&:hover
+		// 			background-color: darken($tw, 5%)
+		// &:nth-child(3)
+		// 	a
+		// 		background-color: $lnkd
+		// 		&:hover
+		// 			background-color: darken($lnkd, 5%)
+		// &:nth-child(4)
+		// 	a
+		// 		background-color: $other
+		// 		&:hover
+		// 			background-color: darken($other, 5%)
+		// &:nth-child(5)
+		// 	a
+		// 		background-color: $other
+		// 		&:hover
+		// 			background-color: darken($other, 5%)
 
 	&.xs-no-circle
 		a
