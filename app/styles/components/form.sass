@@ -27,10 +27,29 @@
 		border-bottom: none
 		margin-bottom: 45px
 	input[type="text"],
-	select
+	input[type="email"],
+	input[type="password"]
 		font-family: gothamNarr_book
-		height: 40px
-		line-height: 1.4
+		padding: 20px 10px
+		// height: 40px
+		// line-height: 1.4
+	label:not(.label-checkbox)
+		position: relative
+		width: 100%
+		select
+			font-family: gothamNarr_book
+			height: 42px
+			appearance: none
+		&:before
+			position: absolute
+			content: '\f0d7'
+			font-family: fontawesome
+			font-size: 22px
+			top: 50%
+			right: 12px
+			color: lighten($black, 45%)
+			transform: translateY(-50%)
+
 	textarea
 		font-family: gothamNarr_book
 	input.form-control,
