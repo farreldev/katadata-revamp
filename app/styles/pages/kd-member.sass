@@ -1,0 +1,73 @@
+.member-area
+	.member-cap
+		padding: 15px 0 8px
+		margin-top: 72px
+		border-bottom: 1px solid #ddd
+		+clearit
+		.member-left
+			float: left
+			p
+				strong
+					font-family: robotoMedium
+		.member-right
+			float: right
+
+	.member-cntn
+		padding: 20px 0
+		aside
+			ul
+				margin-top: 55px
+				+breakpoint(mobile)
+					margin-top: 0
+					margin-bottom: 20px
+					white-space: nowrap
+					overflow-x: auto
+				li
+					display: block
+					+breakpoint(mobile)
+						display: inline-block
+						margin-right: 15px
+						&:last-child
+							margin-right: 0
+					&.pilih
+						+breakpoint(mobile)
+							border-bottom: 2px solid $blue-pastel
+						a
+							font-family: robotoMedium
+					a
+						padding: 10px 0
+						font-family: robotoLight
+						font-size: 18px
+						display: block
+						color: $black
+						&:hover
+							text-decoration: underline
+		.box-member
+			+clearit
+			.box-member-header
+				height: 55px
+				+clearit
+				.box-header-left
+					margin-left: 15px
+					float: left
+					h3
+						margin-top: 16px
+						margin-right: 22px
+						margin-bottom: 0
+					a
+						text-decoration: underline
+						font-family: robotoLight
+						&:hover
+							text-decoration: none
+				.box-header-right
+					float: right
+					a.btn
+						padding: 4px 10px
+						margin-top: 12px
+						font-size: 15px
+			.box-member-body
+				padding: 20px 20px 30px
+				border: 1px solid #ddd
+				p
+					strong
+						font-family: robotoMedium

@@ -1,0 +1,33 @@
+#style1
+	width: 100%
+	overflow: auto
+	> table
+		width: 100%
+		text-align: left
+		border-collapse: collapse
+		th
+			font-family: robotoMedium
+			font-weight: normal
+			padding: 14px 10px
+			background: #e9effa
+			border-top: 3px solid #a8bad8
+			border-bottom: 1px solid #dce2e7
+			color: #394353
+		td
+			cursor: pointer
+			font-family: robotoLight
+			padding: 12px 10px
+			border-bottom: 1px solid #dce2e7
+			color: $black
+			&:nth-child(4)
+				background-color: rgba(243,245,248, .7)
+			a[title~="Delete"]
+				color: $blue-pastel
+				&:hover
+					color: tomato
+				i
+					font-size: 21px
+		tr:hover td
+			background: #f3f5f8
+			// border-bottom: 1px solid #dce2e7
+			color: $black

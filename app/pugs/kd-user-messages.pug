@@ -1,0 +1,119 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li
+								a(href="#") Profil
+							li
+								a(href="#") Datablog/Analisis
+							li
+								a(href="#") Koleksi
+							li.pilih
+								a(href="#") Pesan Masuk
+							li
+								a(href="#") Alert
+							li
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Pesan Masuk
+							.box-header-right
+								a(href="" class="btn btn-blue-pastel") 
+									i(class="fa fa-arrow-circle-left")
+									|  Kembali
+						.box-member-body
+							#style1
+								table
+									thead
+										tr
+											th User
+											th Pesan
+											th(class="text-right") Tanggal
+											th(class="text-center") Hapus
+									tbody
+										tr
+											td Admin
+											td Selamat siang, terima kasih sudah mendaftar di Katadata.co.id.
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Promosi berlangganan Dinside.id
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Selamat siang, terima kasih sudah mendaftar di Katadata.co.id.
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Promosi berlangganan Dinside.id
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Selamat siang, terima kasih sudah mendaftar di Katadata.co.id.
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Promosi berlangganan Dinside.id
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Selamat siang, terima kasih sudah mendaftar di Katadata.co.id.
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+										tr
+											td Admin
+											td Promosi berlangganan Dinside.id
+											td(class="text-right") 26 Feb 2018
+											td(class="text-center")
+												a(href="#", title="Delete")
+													i.fa.fa-trash
+
+
+
+
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container
