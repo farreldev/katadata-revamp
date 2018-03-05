@@ -1,0 +1,129 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li
+								a(href="#") Profil
+							li
+								a(href="#") Datablog/Analisis
+							li.pilih
+								a(href="#") Koleksi
+							li
+								a(href="#") Pesan Masuk
+							li
+								a(href="#") Alert
+							li
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Koleksi
+							.box-header-right
+								//- a(href="" class="btn btn-blue-pastel") 
+								//- 	i(class="fa fa-arrow-circle-left")
+								//- 	|  Kembali
+						.box-member-body
+							form.formSearch
+								.row
+									.col-md-5.no-padding-right.padding-mm-right-15
+										.form-group
+											input(type="text" class="form-control" placeholder="Kata kunci")
+									.col-md-1
+										a(href="", class="btn btn-block btn-blue-pastel")
+											i(class="fa fa-search") 
+							ul.boxAnalisis
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis1.jpg", alt="")
+									article
+										p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+										p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis2.jpg", alt="")
+									article
+										p Indonesia dalam Satu Dekade Deindustrialisasi
+										p.infoArtikel Oleh #[strong Agus Dwi Darmawan]
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis1.jpg", alt="")
+									article
+										p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+										p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis2.jpg", alt="")
+									article
+										p Indonesia dalam Satu Dekade Deindustrialisasi
+										p.infoArtikel Oleh #[strong Agus Dwi Darmawan]
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis1.jpg", alt="")
+									article
+										p Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+										p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+								li.matchingHeight
+									.tools-box
+										a(href="" title="Hapus")
+											i(class="fa fa-trash")
+										a(href="" title="Lihat")
+											i(class="fa fa-eye")
+									figure
+										img(src="images/analisis/db-head-analisis2.jpg", alt="")
+									article
+										p Indonesia dalam Satu Dekade Deindustrialisasi
+										p.infoArtikel Oleh #[strong Nazmi Haddyat Tamara]
+
+
+
+
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container

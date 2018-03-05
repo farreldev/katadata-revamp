@@ -141,6 +141,32 @@
 		// 	$('.humburger-btn').toggleClass('humTrigger');
 		// 	$('.wwNavigation-overlay').fadeOut()
 		// })
+		
+		function btnGoUp() {
+			var $gotoUp = $('a.goUp');
+			
+			$(window).scroll(function() {
+				var topPos = $(this).scrollTop();
+				
+				var tinggiMin = 1800; // Setting minimal tinggi scroll
+
+				if (topPos > tinggiMin) {
+					$gotoUp.css({ opacity: 1, bottom: 90 });
+				} else {
+					$gotoUp.css({ opacity: 0, bottom: -100 });
+				}
+			}); 
+			
+			$('a.goUp').on('click', function(a) {
+				a.preventDefault();
+				$('html, body').animate({ scrollTop: 0}, { duration: 1500 });
+				return false;
+			});
+		}
+
+
+		$('#tgl-lahir').datetimepicker();
+
 		$('#fromDate').datetimepicker();
 		$('#toDate').datetimepicker({
 			useCurrent: false
@@ -169,11 +195,6 @@
 				$('#toDate').removeAttr('disabled');
 		 });
 
-		$('a.goUp').on('click', function(a) {
-			a.preventDefault();
-			$('html, body').animate({ scrollTop: 0}, { duration: 1500 });
-			return false;
-		});
 
 		if(screen.width > 768) {
 			$('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li').matchHeight();
@@ -182,6 +203,7 @@
 		$('#datetimepicker1').datetimepicker();
 	
 		kdSlider();
+		btnGoUp();
 		
 	}();
 })(jQuery);

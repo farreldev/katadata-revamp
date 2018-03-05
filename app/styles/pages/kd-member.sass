@@ -67,7 +67,73 @@
 						font-size: 15px
 			.box-member-body
 				padding: 20px 20px 30px
-				border: 1px solid #ddd
+				border: 1px solid #eaeaea
+				box-shadow: 0 2px 12px rgba(0,0,0, .1)
 				p
 					strong
 						font-family: robotoMedium
+				.formSearch
+					label.tgl-lahir
+						&:before
+							content: '\f073'
+					label:not(.tgl-lahir)
+						padding: 10px 0
+						font-family: robotoLight
+						width: auto
+						&:before
+							content: ''
+					// button.btn
+					// 	padding: 5px 10px
+					// 	margin-top: 12px
+					// 	font-size: 15px
+				ul.boxAnalisis
+					padding: 0 0 20px
+					margin-bottom: 25px
+					display: block
+					+clearit
+					+breakpoint(mobile)
+						padding-bottom: 0
+					li
+						position: relative
+						overflow: hidden
+						padding: 12px 12px 35px
+						+box-shadow(0,0,10px,rgba(0,0,0,.15))
+						+breakpoint(wide)
+							+ownGrid(3, 3%)
+						+breakpoint(tablet)
+							+ownGrid(2, 3%)
+						+breakpoint(mobile)
+							+ownGrid(1, 0)
+							margin-bottom: 25px
+						article
+							margin-bottom: 10px
+							p
+								font-size: 16px
+								margin-bottom: 15px
+								&.infoArtikel
+									margin-bottom: 0
+									position: absolute
+									bottom: 12px
+								strong
+									font-family: robotoMedium
+						&:hover
+							.tools-box
+								right: 0
+								transition: right .3s ease-in-out
+						.tools-box
+							position: absolute
+							top: 0
+							right: -30px
+							transition: right .3s ease-in-out
+							a
+								width: 30px
+								height: 30px
+								line-height: 30px
+								display: block
+								text-align: center
+								text-decoration: none
+								color: white
+								background-color: rgba(0,0,0,.7)
+								i
+									font-family: fontawesome
+									font-size: 18px

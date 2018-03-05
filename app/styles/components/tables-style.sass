@@ -3,11 +3,8 @@
 	overflow: auto
 	> table
 		width: 100%
-		text-align: left
-		border-collapse: collapse
 		th
 			font-family: robotoMedium
-			font-weight: normal
 			padding: 14px 10px
 			background: #e9effa
 			border-top: 3px solid #a8bad8
@@ -31,3 +28,25 @@
 			background: #f3f5f8
 			// border-bottom: 1px solid #dce2e7
 			color: $black
+
+#tbl-info
+	width: 100%
+	overflow: auto
+	table
+		width: 100%
+		td
+			font-family: robotoLight
+			padding: 12px 0
+			color: $black
+			white-space: nowrap
+			&:first-child
+				padding-right: 10px
+				width: 25%
+			strong
+				font-family: robotoMedium
+			a
+				margin-left: 10px
+				font-family: robotoLight
+				text-decoration: underline
+				&:hover
+					text-decoration: none
