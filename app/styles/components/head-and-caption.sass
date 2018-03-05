@@ -15,7 +15,7 @@
 			font-family: robotoLight
 			font-size: 25px
 			letter-spacing: 1px
-			color: white
+			color: $black
 	span
 		margin-bottom: 20px
 		font-family: gothamNarr_book
@@ -100,20 +100,19 @@
 		font-family: RobotoLight
 		color: $black
 
+.whiteHead,
 .blueHead
 	position: relative
 	top: -25px
 	padding-top: 10px
-	background-color: $blue-sec-head2
 	.head-and-caption
-		margin-top: 90px
+		margin-top: 95px
 		h2
-			color: white
 			margin-bottom: 0
 			vertical-align: baseline
 			+breakpoint(mobile)
 				margin-bottom: 2px
-				font-size: 38px
+				// font-size: 38px
 			small
 				+breakpoint(mobile)
 					font-size: 20px
@@ -133,4 +132,20 @@
 					display: block
 					font-family: robotoRegular
 					font-size: 17px
-					color: white
+.blueHead
+	background-color: $blue-pastel
+	color: white
+	h2
+		small
+			color: white
+	a
+		color: white
+.whiteHead
+	color: $black
+	border-bottom: 1px solid #ddd
+	background-color: white
+	h2
+		small
+			color: $black
+	a
+		color: $black

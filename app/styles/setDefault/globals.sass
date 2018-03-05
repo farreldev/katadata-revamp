@@ -86,9 +86,13 @@ html,body
 			padding: 4px 0
 			margin-left: 50px
 			+breakpoint(mobile)
-				margin-left: 20px
 				float: right
+				margin-left: 20px
+			+breakpoint(small-mobile)
+				float: right
+				font-size: 14px
 			span
+				display: inline-block
 				&:before
 					position: absolute
 					top: 50%
@@ -141,6 +145,8 @@ html,body
 			padding: 15px 18px
 			color: white
 			background-color: $blue-sea
+		+breakpoint(small-mobile)
+			font-size: 19px
 
 	article
 		h3
