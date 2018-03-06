@@ -17,6 +17,11 @@
 		aside
 			ul
 				margin-top: 55px
+				+breakpoint(tablet)
+					margin-top: 0
+					margin-bottom: 20px
+					white-space: nowrap
+					overflow-x: auto
 				+breakpoint(mobile)
 					margin-top: 0
 					margin-bottom: 20px
@@ -24,6 +29,11 @@
 					overflow-x: auto
 				li
 					display: block
+					+breakpoint(tablet)
+						display: inline-block
+						margin-right: 15px
+						&:last-child
+							margin-right: 0
 					+breakpoint(mobile)
 						display: inline-block
 						margin-right: 15px
@@ -66,9 +76,15 @@
 						margin-top: 12px
 						font-size: 15px
 			.box-member-body
+				position: relative
 				padding: 20px 20px 30px
 				border: 1px solid #eaeaea
 				box-shadow: 0 2px 12px rgba(0,0,0, .1)
+				+clearit
+				.kd-paging-nav
+					float: none
+					text-align: center
+					display: block
 				p
 					strong
 						font-family: robotoMedium
