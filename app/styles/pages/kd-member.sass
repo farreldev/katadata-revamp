@@ -1,0 +1,155 @@
+.member-area
+	.member-cap
+		padding: 15px 0 8px
+		margin-top: 72px
+		border-bottom: 1px solid #ddd
+		+clearit
+		.member-left
+			float: left
+			p
+				strong
+					font-family: robotoMedium
+		.member-right
+			float: right
+
+	.member-cntn
+		padding: 20px 0
+		aside
+			ul
+				margin-top: 55px
+				+breakpoint(tablet)
+					margin-top: 0
+					margin-bottom: 20px
+					white-space: nowrap
+					overflow-x: auto
+				+breakpoint(mobile)
+					margin-top: 0
+					margin-bottom: 20px
+					white-space: nowrap
+					overflow-x: auto
+				li
+					display: block
+					+breakpoint(tablet)
+						display: inline-block
+						margin-right: 15px
+						&:last-child
+							margin-right: 0
+					+breakpoint(mobile)
+						display: inline-block
+						margin-right: 15px
+						&:last-child
+							margin-right: 0
+					&.pilih
+						+breakpoint(mobile)
+							border-bottom: 2px solid $blue-pastel
+						a
+							font-family: robotoMedium
+					a
+						padding: 10px 0
+						font-family: robotoLight
+						font-size: 18px
+						display: block
+						color: $black
+						&:hover
+							text-decoration: underline
+		.box-member
+			+clearit
+			.box-member-header
+				height: 55px
+				+clearit
+				.box-header-left
+					margin-left: 15px
+					float: left
+					h3
+						margin-top: 16px
+						margin-right: 22px
+						margin-bottom: 0
+					a
+						text-decoration: underline
+						font-family: robotoLight
+						&:hover
+							text-decoration: none
+				.box-header-right
+					float: right
+					a.btn
+						padding: 4px 10px
+						margin-top: 12px
+						font-size: 15px
+			.box-member-body
+				position: relative
+				padding: 20px 20px 30px
+				border: 1px solid #eaeaea
+				box-shadow: 0 2px 12px rgba(0,0,0, .1)
+				+clearit
+				.kd-paging-nav
+					float: none
+					text-align: center
+					display: block
+				p
+					strong
+						font-family: robotoMedium
+				.formSearch
+					label.tgl-lahir
+						&:before
+							content: '\f073'
+					label:not(.tgl-lahir)
+						padding: 10px 0
+						font-family: robotoLight
+						width: auto
+						&:before
+							content: ''
+					// button.btn
+					// 	padding: 5px 10px
+					// 	margin-top: 12px
+					// 	font-size: 15px
+				ul.boxAnalisis
+					padding: 0 0 20px
+					margin-bottom: 25px
+					display: block
+					+clearit
+					+breakpoint(mobile)
+						padding-bottom: 0
+					li
+						position: relative
+						overflow: hidden
+						padding: 12px 12px 35px
+						+box-shadow(0,0,10px,rgba(0,0,0,.15))
+						+breakpoint(wide)
+							+ownGrid(3, 3%)
+						+breakpoint(tablet)
+							+ownGrid(2, 3%)
+						+breakpoint(mobile)
+							+ownGrid(1, 0)
+							margin-bottom: 25px
+						article
+							margin-bottom: 10px
+							p
+								font-size: 16px
+								margin-bottom: 15px
+								&.infoArtikel
+									margin-bottom: 0
+									position: absolute
+									bottom: 12px
+								strong
+									font-family: robotoMedium
+						&:hover
+							.tools-box
+								right: 0
+								transition: right .3s ease-in-out
+						.tools-box
+							position: absolute
+							top: 0
+							right: -30px
+							transition: right .3s ease-in-out
+							a
+								width: 30px
+								height: 30px
+								line-height: 30px
+								display: block
+								text-align: center
+								text-decoration: none
+								color: white
+								background-color: rgba(0,0,0,.7)
+								i
+									font-family: fontawesome
+									font-size: 18px

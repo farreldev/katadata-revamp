@@ -1,0 +1,201 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li
+								a(href="#") Profil
+							li.pilih
+								a(href="#") Datablog/Analisis
+							li
+								a(href="#") Koleksi
+							li
+								a(href="#") Pesan Masuk
+							li
+								a(href="#") Alert
+							li
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Analisis
+							.box-header-right
+								a(href="" class="btn btn-blue-pastel") 
+									i(class="glyphicon glyphicon-open")
+									|  Tambah Artikel
+						.box-member-body
+							form.formSearch
+								.row
+									.col-md-5.no-padding-right.padding-mm-right-15
+										.form-group
+											input(type="text" class="form-control" placeholder="Kata kunci")
+									.col-md-1
+										a(href="", class="btn btn-block btn-blue-pastel")
+											i(class="fa fa-search")
+							#style1
+								table
+									thead
+										tr
+											th Judul
+											th(class="text-right") Dibuat
+											th(class="text-right") Diubah
+											th Status
+											th(class="text-center") Opsi
+									tbody
+										tr
+											td Bahaya Laten Gizi Buruk di Papua
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Belum Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+													i.fa.fa-edit
+												a(href="", class="Delete")
+													i.fa.fa-trash
+										tr
+											td Harga Beras Naik, Kemiskinan Terancam Naik
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete")
+													i.fa.fa-trash
+										tr
+											td Bahaya Laten Gizi Buruk di Papua
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Belum Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15 nonAktif")
+													i.fa.fa-edit
+												a(href="", class="Delete nonAktif")
+													i.fa.fa-trash
+										tr
+											td Harga Beras Naik, Kemiskinan Terancam Naik
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete")
+													i.fa.fa-trash
+										tr
+											td Investasi Naik, Pengangguran Turun?
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete nonAktif")
+													i.fa.fa-trash
+										tr
+											td Harga Beras Naik, Kemiskinan Terancam Naik
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Belum Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15 nonAktif")
+														i.fa.fa-edit
+												a(href="", class="Delete")
+													i.fa.fa-trash
+										tr
+											td Investasi Naik, Pengangguran Turun?
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Belum Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete nonAktif")
+													i.fa.fa-trash
+										tr
+											td Harga Beras Naik, Kemiskinan Terancam Naik
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete")
+													i.fa.fa-trash
+										tr
+											td Bahaya Laten Gizi Buruk di Papua
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15 nonAktif")
+													i.fa.fa-edit
+												a(href="", class="Delete nonAktif")
+													i.fa.fa-trash
+										tr
+											td Harga Beras Naik, Kemiskinan Terancam Naik
+											td(class="text-right") 26/2/2018 18.05
+											td(class="text-right") 26/2/2018 18.05
+											td Belum Disetujui
+											td(class="text-center")
+												a(href="", class="Edit margin-right-15")
+														i.fa.fa-edit
+												a(href="", class="Delete nonAktif")
+													i.fa.fa-trash
+							.kd-paging-nav
+								ul.paging-wrapper
+									li.pagination__item.first
+										a.pagination__link.first(href='#')  Pertama
+										
+									li.pagination__item.previous
+										a.pagination__link.previous(href='#')
+
+										// Daftar Paging
+										
+									li.pagination__item
+										a.pagination__link(href='#') 1
+									li.pagination__item
+										a.pagination__link(href='#') 2
+									li.pagination__item.page-is-active
+										a.pagination__link(href='#') 3
+									li.pagination__item
+										a.pagination__link(href='#') 4
+									li.pagination__item
+										a.pagination__link(href='#') 5
+										
+										// End Daftar Paging
+
+									li.pagination__item.next
+										a.pagination__link.next(href='#')
+
+									li.pagination__item.last
+										a.pagination__link.last(href='#')  Terakhir 
+										
+
+
+
+
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container

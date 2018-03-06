@@ -15,10 +15,17 @@
 					+breakpoint(mobile)
 						width: 100%
 						height: auto
+					+breakpoint(small-mobile)
+						width: 100%
+						height: auto
 					img
 						position: absolute
 						width: 100%
 						height: 100%
+						+breakpoint(mobile)
+							position: static
+							width: 100%
+							height: auto
 						+breakpoint(mobile)
 							position: static
 							width: 100%
@@ -56,26 +63,56 @@
 		.tabs-list-wrapper
 			overflow: auto
 			height: 635px
+			+breakpoint(mobile)
+				height: auto
 			ul.tabs-list
 				li.tab-link
-					margin-bottom: 20px
+					margin-bottom: 25px
 					display: block
+					+clearit
 					article
 						width: 255px
 						margin: 0 auto
 						figure
-							padding: 5px
+							// padding: 5px
 							margin-bottom: 10px
 							position: relative
 							width: 100%
+							height: 166px
+							overflow: hidden
 							+box-shadow(0,0,10px, rgba(0,0,0,.15))
-							img
+							a
 								width: 100%
+								img
+									display: block
+									width: 100%
+						img
+							display: inline-block
+							width: 24px
+							margin-right: 10px
 						a
+							float: right
+							width: calc(100% - 34px)
 							font-family: gothamNarr_book
 							font-size: 17px
 							line-height: 1.4
 							color: $black
+				+breakpoint(mobile)
+					width: auto
+					height: 100%
+					overflow-x: auto
+					white-space: nowrap
+					li.tab-link
+						display: inline-block
+						*display: inline
+						zoom: 1
+						margin-right: 10px
+						&:last-child
+							margin-right: 0
+						article
+							a
+								white-space: pre-wrap
+
 		&.whiteText
 			.tab-content
 				*

@@ -1,0 +1,85 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li(class="pilih")
+								a(href="#") Profil
+							li(class="")
+								a(href="#") Datablog/Analisis
+							li(class="")
+								a(href="#") Koleksi
+							li(class="")
+								a(href="#") Pesan Masuk
+							li(class="")
+								a(href="#") Alert
+							li(class="")
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Profil
+								a(href="") Ubah Profil
+							.box-header-right
+						.box-member-body
+							p.margin-bottom-20 Anda menggunakan email #[strong bayu@katadata.co.id] untuk login—juga untuk berlangganan Newsletter, notifikasi, dan email-email lainnya.
+							#tbl-info
+								table
+									tbody
+										tr
+											td Nama Lengkap
+											td :
+											td Bayu Madhani
+										tr
+											td Jenis Kelamin
+											td :
+											td Laki-laki
+										tr
+											td Email
+											td :
+											td #[strong bayu@katadata.co.id]
+										tr
+											td Password
+											td :
+											td xxxxxxxxxxx #[a(href="") Ubah Password]
+										tr
+											td Telepon
+											td :
+											td 
+										tr
+											td Alamat
+											td :
+											td 
+										tr
+											td Perusahaan
+											td :
+											td 
+										tr
+											td Biodata
+											td :
+											td 
+
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container

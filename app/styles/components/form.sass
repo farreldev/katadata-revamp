@@ -33,7 +33,7 @@
 		padding: 20px 10px
 		// height: 40px
 		// line-height: 1.4
-	label:not(.label-checkbox)
+	label:not(.label-checkbox):not(.radio-inline):not([for="ingatkan"])
 		position: relative
 		width: 100%
 		select
@@ -66,8 +66,6 @@
 		&:-moz-placeholder
 			font-family: robotoRegular
 			color: #aaa
-	input[type="submit"]
-		padding: 8px 0
 	&.removeBorder
 		border-bottom: 0
 	&.otherStyle

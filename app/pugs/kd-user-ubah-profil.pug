@@ -1,0 +1,117 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li.pilih
+								a(href="#") Profil
+							li
+								a(href="#") Datablog/Analisis
+							li
+								a(href="#") Koleksi
+							li
+								a(href="#") Pesan Masuk
+							li
+								a(href="#") Alert
+							li
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Ubah Profil
+							.box-header-right
+								a(href="" class="btn btn-blue-pastel") 
+									i(class="fa fa-arrow-circle-left")
+									|  Kembali
+						.box-member-body
+							p.margin-bottom-20 Berikut informasi profil anda saat ini
+							form(action="" method="" class="formSearch removeBorder")
+								.row.margin-bottom-20
+									.col-md-3
+										label Nama Lengkap
+									.col-md-5
+										input(type="text" class="form-control" id="nama")
+								.row.margin-bottom-20
+									.col-md-3
+										label Alamat
+									.col-md-5
+										textarea(rows="5" class="form-control" id="alamat")
+								.row.margin-bottom-20
+									.col-md-3
+										label Email
+									.col-md-5
+										input(type="email" class="form-control" id="email")
+								.row.margin-bottom-20
+									.col-md-3
+										label Telepon
+									.col-md-5
+										input(type="text" class="form-control" id="telp")
+								.row.margin-bottom-20
+									.col-md-3
+										label Perusahaan
+									.col-md-5
+										input(type="text" class="form-control" id="perusahaan")
+								.row.margin-bottom-20
+									.col-md-3
+										label Tanggal Lahir
+									.col-md-5 
+										label.tgl-lahir
+											input(type="text" class="form-control" id="tgl-lahir" placeholder="MM/DD/YYYY")
+								.row.margin-bottom-20
+									.col-md-3
+										label Profesi
+									.col-md-5
+										input(type="text" class="form-control" id="profesi")
+								.row.margin-bottom-20
+									.col-md-3
+										label Jenis Kelamin
+									.col-md-7
+										label.margin-right-20
+											input(type="radio" name="jenkel" id="man" value="Laki-laki")
+											|  Laki - laki
+										label
+											input(type="radio" name="jenkel" id="woman" value="Perempuan")
+											|  Perempuan
+								.row.margin-bottom-20
+									.col-md-3
+										label Akun Twitter
+									.col-md-5
+										input(type="text" class="form-control" id="acc-tw")
+								.row.margin-bottom-20
+									.col-md-3
+										label Akun Facebook
+									.col-md-5
+										input(type="text" class="form-control" id="acc-fb")
+								.row.margin-bottom-20
+									.col-md-3.hidden-xs
+									.col-md-5
+										button.btn.btn-blue-pastel.margin-right-5 Simpan
+										button(type="reset").btn Batal
+											
+
+
+
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container

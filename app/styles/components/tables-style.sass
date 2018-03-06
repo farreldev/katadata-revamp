@@ -1,0 +1,62 @@
+#style1
+	margin-bottom: 20px
+	width: 100%
+	overflow: auto
+	> table
+		width: 100%
+		th
+			font-family: robotoMedium
+			padding: 14px 10px
+			background: #e9effa
+			border-top: 3px solid #a8bad8
+			border-bottom: 1px solid #dce2e7
+			color: #394353
+		td
+			cursor: pointer
+			font-family: robotoLight
+			font-size: 15px
+			padding: 12px 10px
+			border-bottom: 1px solid #dce2e7
+			color: $black
+			&:last-child
+				background-color: rgba(243,245,248, .7)
+			a[class~="Edit"]
+				&:hover
+					color: yellowgreen
+			a[class~="Delete"]
+				&:hover
+					color: tomato
+			a[class~="Edit"],
+			a[class~="Delete"]
+				color: $blue-pastel
+				i
+					font-size: 20px
+				&.nonAktif
+					cursor: not-allowed
+					color: #ddd
+		tr:hover td
+			background: #f3f5f8
+			// border-bottom: 1px solid #dce2e7
+			color: $black
+
+#tbl-info
+	width: 100%
+	overflow: auto
+	table
+		width: 100%
+		td
+			font-family: robotoLight
+			padding: 12px 0
+			color: $black
+			white-space: nowrap
+			&:first-child
+				padding-right: 10px
+				width: 25%
+			strong
+				font-family: robotoMedium
+			a
+				margin-left: 10px
+				font-family: robotoLight
+				text-decoration: underline
+				&:hover
+					text-decoration: none
