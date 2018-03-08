@@ -1,0 +1,93 @@
+extends base/member
+include components/mixings
+
+block member-caption
+	.container
+		.row
+			.col-md-12
+				.member-cap
+					.member-left
+						p Hello, #[strong Bayu Madhani]
+					.member-right
+						p Anda menjadi member sejak 20 Februari 2018
+
+block member-content
+	.container
+		.member-cntn
+			.row
+				.col-md-2
+					aside
+						ul
+							li
+								a(href="#") Profil
+							li.pilih
+								a(href="#") Datablog/Analisis
+							li
+								a(href="#") Koleksi
+							li
+								a(href="#") Pesan Masuk
+							li
+								a(href="#") Alert
+							li
+								a(href="#") Keluar
+				.col-md-10
+					.box-member
+						.box-member-header
+							.box-header-left
+								h3 Analisis
+							.box-header-right
+								a(href="" class="btn btn-blue-pastel") 
+									i(class="fa fa-arrow-circle-left")
+									|  Kembali
+						.box-member-body
+							form(action="" method="" class="formSearch removeBorder")
+								.row.margin-bottom-20
+									.col-md-3
+										label Data Publish*
+									.col-md-9
+										a(href="#", class="btn btn-orange") Pilih Data
+								.row.margin-bottom-20
+									.col-md-3
+										label Judul*
+									.col-md-9
+										input(type="text" class="form-control" id="nama")
+								.row.margin-bottom-20
+									.col-md-3
+										label Summary*
+									.col-md-9
+										input(type="text" class="form-control" id="summary")
+								.row.margin-bottom-20
+									.col-md-3
+										label Tags
+									.col-md-9
+										input(type="email" class="form-control" id="tags")
+								.row.margin-bottom-20
+									.col-md-3
+										label Body*
+									.col-md-9
+										textarea#addArticle(name="", rows="10")
+								.row.margin-bottom-20
+									.col-md-3
+										label Cover*
+									.col-md-9
+										input(type="file" id="fileUpload")
+										p.small.margin-top-10 Upload gambar dengan ukuran file maksimum 1 MB dan dimensi gambar minimum 1000 x 667 px. File harus berekstensi: .jpg / .jpeg / .png / .gif
+								.row.margin-bottom-20
+									.col-md-3
+										label Source script
+									.col-md-9
+										textarea(name="", class="form-control", cols="30" rows="10")
+								.row.margin-bottom-20
+									.col-md-3.hidden-xs
+									.col-md-9
+										button.btn.btn-blue-pastel.margin-right-5 Simpan
+										//- button(type="reset").btn Batal
+											
+//- block content
+	//- .second-head
+	//- 	.container
+	//- 		.second-head-left.pull-left
+	//- 			+breadcrumb(["Home", "Indeks"])
+	//- 		.second-head-right
+	//- section.indeks-pages
+	//- 	.container

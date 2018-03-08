@@ -38,8 +38,15 @@
 			background: #f3f5f8
 			// border-bottom: 1px solid #dce2e7
 			color: $black
+		tfoot
+			td
+				background-color: transparent
+				font-family: robotoMedium
+				font-size: 20px
+				&:last-child
+					background-color: transparent
 
-#tbl-info
+.tbl-info
 	width: 100%
 	overflow: auto
 	table
@@ -52,6 +59,28 @@
 			&:first-child
 				padding-right: 10px
 				width: 25%
+			strong
+				font-family: robotoMedium
+			a
+				margin-left: 10px
+				font-family: robotoLight
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+
+.tbl-for-chart
+	width: 100%
+	overflow: auto
+	table
+		width: 100%
+		td
+			font-family: robotoLight
+			padding: 12px 0
+			color: $black
+			white-space: nowrap
+			&:first-child
+				padding-right: 10px
+				width: auto
 			strong
 				font-family: robotoMedium
 			a
