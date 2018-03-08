@@ -1,0 +1,89 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Newsletter"])
+			.second-head-right
+	section.newsletter-page
+		.container
+			.head-and-caption.shortcutBorderBottom.margin-bottom-30
+				h2 Your Cart
+			.row.margin-bottom-20
+				.col-md-4
+					.tbl-for-chart
+						table
+							tbody
+								tr
+									td Nama Lengkap
+									td :
+									td Mino Samini
+								tr
+									td Email
+									td :
+									td samini@meikarta.com
+								tr
+									td Telepon
+									td :
+									td 0811 933834
+				.col-md-1
+				.col-md-4
+					.tbl-for-chart
+						table
+							tbody
+								tr
+									td Tanggal
+									td :
+									td 2018/05/01
+								tr
+									td Order ID
+									td :
+									td 1467896
+			.row
+				.col-md-12
+					h3 Order Details
+					form.clearfix
+						#style1
+							table
+								thead
+									tr
+										th Pilihan Paket
+										th Satuan
+										th(class="text-right") Diskon
+										th(class="text-right") Total
+								tbody
+									tr
+										td 
+											.form-group.no-margin-bottom
+												label
+													select(class="form-control")
+														option(selected="selected") Pilih Subtopik..
+														option Topik Satu
+														option Topik Dua
+														option Topik Tiga
+										td Bulan
+										td(class="text-right")
+										td(class="text-right") Rp. 500.000
+								tfoot
+									tr
+										td(class="text-right", colspan="4") Total Rp 500.000
+						.paySuport
+							span Kami Menerima
+							ul
+								li
+									img(src="images/icons/atm-bersama.png", alt="")
+								li
+									img(src="images/icons/alto.png", alt="")
+								li
+									img(src="images/icons/prima.png", alt="")
+								li
+									img(src="images/icons/mandiri.png", alt="")
+								li
+									img(src="images/icons/visa.png", alt="")
+								li
+									img(src="images/icons/mastercard.png", alt="")
+						.pull-right
+							a(href="#", class="btn margin-right-15") Kembali
+							a(href="#", class="btn btn-blue-pastel") Lanjut Ke Pembayaran »
