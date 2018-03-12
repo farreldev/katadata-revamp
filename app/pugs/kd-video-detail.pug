@@ -1,0 +1,133 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Multimedia", "Video", "Industri"])
+			.second-head-right
+	section.video-detail
+		section.video-head-detail
+			.container
+				.row
+					.col-md-9
+					.col-md-3
+						a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+						p.infoArtikel 27 Januari 2018 #[span 15 Foto]
+						h1.putih Mengejar Pesawat dengan Kereta Bandara
+						p.
+							Presiden Joko Widodo (Jokowi) meresmikan kereta Bandara Soekarno-Hatta, Selasa, 2 Januari kemarin. Berdasarkan Peraturan Presiden (Perpres) Nomor 83 Tahun 2011, Kereta Api Indonesia (KAI) bersama PT Angkasa Pura II (Persero) membentuk anak usaha bernama PT Railink untuk mengoperasikan kereta bandara.
+						.topik-terkait
+							span Tags: 
+							ul
+								li
+									a(href="#") kereta,
+								li
+									a(href="#") pt inka,
+								li
+									a(href="#") ekspor,
+								li
+									a(href="#") transportasi
+						.share-it
+							p.putih.margin-bottom-10 Sebarkan:
+							ul.btn-sosmed
+								li
+									a.facebook
+										i(class="fa fa-facebook" aria-hidden="true")
+								li
+									a.twitter
+										i(class="fa fa-twitter" aria-hidden="true")
+								li
+									a.pinterest
+										i(class="fa fa-pinterest" aria-hidden="true")
+								li
+									a.paper-plane
+										i(class="fa fa-paper-plane-o" aria-hidden="true")
+								li
+									a.btn-like
+										i(class="fa fa-thumbs-up" aria-hidden="true")
+										|	like 312
+		.container
+			.row
+				.col-md-9
+					ul.video-list
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+				.col-md-3
+					h3 Video Terpopuler
+					ul.list-terpopuler
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+			.shortcutBorderTop.margin-bottom-25
+			.row
+				.col-md-12.text-center
+					a(href="#" class="btn width-50 xs-width-full") Video Lainnya
+
+block myscript
+	// build:js scripts/multimedia.js
+	script(src="scripts/multimedia.js")
+	// endbuild

@@ -36,9 +36,6 @@ $offset: 20;
 
 .shortcutBorderTop
 	border-top: 1px solid #ddd
-	+breakpoint(mobile)
-		margin-left: 15px
-		margin-right: 15px
 .shortcutBorderBottom
 	border-bottom: 1px solid #ddd
 .shortcutBorderBottomCustom
@@ -97,6 +94,18 @@ $offset: 20;
 
 .no-margin-bottom
 	margin-bottom: 0 !important
+.xs-no-margin
+	+breakpoint(small-mobile)
+		margin: 0 !important
+.xs-no-margin-bottom
+	+breakpoint(small-mobile)
+		margin-bottom: 0 !important
+.m-no-margin
+	+breakpoint(mobile)
+		margin: 0 !important
+.m-no-margin-bottom
+	+breakpoint(mobile)
+		margin-bottom: 0 !important
 
 /* MatchHeight */
 .row

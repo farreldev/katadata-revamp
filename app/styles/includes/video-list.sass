@@ -1,0 +1,27 @@
+.video-list
+	width: 100%
+	+clearit
+	margin-bottom: 10px
+	li
+		padding: 10px
+		+breakpoint(wide)
+			+ownGrid(3, 2%)
+		+breakpoint(tablet)
+			+ownGrid(2, 2%)
+		+breakpoint(mobile)
+			+ownGrid(1, 2%)
+		box-shadow: 0 2px 10px rgba(0,0,0,.15)
+		a:not(.topik-link):not(.linkVid)
+			display: block
+			overflow: hidden
+			margin-bottom: 10px
+			img
+				width: 100%
+				display: block
+		span
+			display: inline-block;
+			vertical-align: top;
+			padding: 3px;
+			font-family: robotoMedium;
+			font-size: 14px;
+			margin-left: 10px;
