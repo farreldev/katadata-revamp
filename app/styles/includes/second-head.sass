@@ -29,8 +29,20 @@
 			padding: 5px 0 3px 0
 			background-color: transparent
 			li
-				font-family: gothamNarr_book				
+				font-family: robotoRegular
+				text-transform: uppercase
+				&.active
+					font-size: 13px
+					color: #888888
+				&:before
+					padding: 0 2px
+				+breakpoint(small-mobile)
+					font-size: 12px
 				a
-					font-family: gothamNarr_book
+					font-family: robotoRegular
+					text-transform: uppercase
+					font-size: 13px
+					+breakpoint(small-mobile)
+						font-size: 12px
 	.second-head-right
 		float: right

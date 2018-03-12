@@ -1,0 +1,31 @@
+ul.list-terpopuler
+	li
+		padding: 10px 0
+		position: relative
+		display: inline-block
+		+borderDot
+		+noBorderDot
+		+clearit
+		+breakpoint(mobile)
+			padding-bottom: 15px
+		&:first-child
+			padding-top: 0
+		a
+			figure
+				display: inline-block
+				width: 103px
+				margin-right: 15px
+				margin-bottom: 0
+				img
+					display: block
+					width: 100%
+			p
+				position: relative
+				top: -7px
+				float: right
+				font-size: 17px
+				width: calc(100% - 118px)
+			&:hover
+				p
+					cursor: pointer
+					text-decoration: underline

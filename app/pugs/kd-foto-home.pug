@@ -1,0 +1,101 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Multimedia", "Foto"])
+			.second-head-right
+				
+	section.foto-home
+		.container
+			.head-and-caption
+				h2 Multimedia #[small / Foto]
+			.row
+				.topik-pil
+					strong Topik Pilihan
+					+topikPil(['Energi', 'Digital', 'Makro', 'Nasional', 'Pertambangan', 'Perdagangan', 'Bursa'])
+
+		section.foto-slider-wrapper
+			.container
+				.row
+					.col-md-8.col-md-offset-2
+						.arrowNavigation3
+							a.prevArrowNav3
+								i(class="fa fa-chevron-left" aria-hidden="true")
+							a.nextArrowNav3
+								i(class="fa fa-chevron-right" aria-hidden="true")
+						.foto-slider
+							div
+								figure
+									img(src="images/foto-slides/foto-slide1.jpg", alt="", srcset="")
+									figcaption
+								article
+									div.layerBox
+										span
+									p Mengejar Pesawat dengan Kereta Bandara
+							div
+								figure
+									img(src="images/foto-slides/foto-slide1.jpg", alt="", srcset="")
+									figcaption
+		.container
+			.row
+				.col-md-9
+					ul.foto-list
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+				.col-md-3
+					h3 Foto Terpopuler
+					ul.list-terpopuler
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+			.shortcutBorderTop.margin-bottom-25
+			.row
+				.col-md-12.text-center
+					a(href="#" class="btn width-50 xs-width-full") Gallery Foto Lainnya

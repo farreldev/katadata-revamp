@@ -1,0 +1,230 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Berita"])
+			.second-head-right
+				
+	section.multimedia-home
+		.container
+			.head-and-caption
+				h2 Multimedia
+			.row
+				.topik-pil
+					strong Topik Pilihan
+					+topikPil(['Energi', 'Digital', 'Makro', 'Nasional', 'Pertambangan', 'Perdagangan', 'Bursa'])
+			a(href="#")
+				h3 Video »
+			a(href="#", class="linkIndex pull-right") Halaman Video »
+		.arrowNavigation2
+		section.video-slider-wrapper
+			.container
+				.row
+					.col-md-8.col-md-offset-2.col-xs-12
+						.arrowNavigation4
+							a.prevArrowNav4
+								i(class="fa fa-chevron-left" aria-hidden="true")
+							a.nextArrowNav4
+								i(class="fa fa-chevron-right" aria-hidden="true")
+						.video-slider
+							//- .item.image
+							//- 	span.loading Loading...
+							//- 	figure
+							//- 		.slide-image.slide-media
+							//- 			img.image-entity(data-lazy='https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRkY4S0JDTk1BbE0')
+							//- 		figcaption.caption Static Image
+
+							//- .item.vimeo(data-video-start='4')
+							//- 	iframe.embed-player.slide-media(src='https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=1', width='100%', height='100%', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+							//- 	p.caption Vimeo
+
+							//- .item.image
+							//- 	figure
+							//- 		.slide-image.slide-media
+							//- 			img.image-entity(data-lazy='https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM')
+							//- 		figcaption.caption Static Image
+
+							.item.youtube
+								iframe.embed-player.slide-media(width='100%', height='550', src='https://www.youtube.com/embed/QhyleSmQO8w?enablejsapi=1&version=3&modestbranding=0&controls=1&fs=1&rel=0&showinfo=0&loop=1&playlist=QhyleSmQO8w', frameborder='0', allowfullscreen='')
+								//- p.caption YouTube
+							.item.youtube
+								iframe.embed-player.slide-media(width='100%', height='550', src='https://www.youtube.com/embed/YeFrSx5Uuj8?enablejsapi=1&version=3&modestbranding=0&controls=1&fs=1&rel=0&showinfo=0&loop=1&playlist=YeFrSx5Uuj8', frameborder='0', allowfullscreen='')
+								//- p.caption YouTube
+
+
+							//- .item.image
+							//- 	figure
+							//- 		.slide-image.slide-media(style="background-image:url('https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ');")
+							//- 			img.image-entity(data-lazy='https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ')
+							//- 		figcaption.caption Static Image
+
+							//- .item.video
+							//- 	video.slide-video.slide-media(loop='', muted='', preload='metadata', poster='https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00')
+							//- 		source(src='https://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112', type='video/mp4')
+							//- 	p.caption HTML 5 Video
+
+		.container
+			.row
+				.col-md-9
+					ul.video-list
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							span 1:58
+							a.linkVid.
+								Target Pajak Tinggi, Pengusaha Resah
+				.col-md-3
+					h3 Video Terpopuler
+					ul.list-terpopuler
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+			.shortcutBorderTop.margin-bottom-25
+			.row
+				.col-md-12.text-center
+					a(href="#" class="btn width-50 xs-width-full") Ke Halaman Video
+			.shortcutBorderBottom.padding-top-25.margin-bottom-25
+			a(href="#") #[h3 Foto »]
+			a(href="#", class="linkIndex pull-right") Halaman Foto »
+
+			.row
+				.col-md-9
+					.foto-head
+						figure
+							img(src="images/foto-head.jpg", alt="")
+						article
+							div.layerBox
+								span
+							a(href="#") Lihat Galeri
+							p 15 Foto
+				.col-md-3
+					a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+					a(href="#", class="linkVid margin-bottom-15") Mengejar Pesawat dengan Kereta Bandara
+					p.
+						Waktu tempuh kereta dari Stasiun Sudirman Baru menuju Bandara Soekarno-Hatta sekitar 54 menit.
+			.shortcutBorderBottom.margin-bottom-25
+			.row
+				.col-md-9
+					ul.foto-list
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link") Infrastruktur
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+				.col-md-3
+					h3 Foto Terpopuler
+					ul.list-terpopuler
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb2.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb1.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+						li
+							a
+								figure
+									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
+								p Megahnya Stadion Utama Gelora Bung Karno
+			.shortcutBorderTop.margin-bottom-25
+			.row
+				.col-md-12.text-center
+					a(href="#" class="btn width-50 xs-width-full") Ke Halaman Foto
+
+block myscript
+	// build:js scripts/multimedia.js
+	script(src="scripts/multimedia.js")
+	// endbuild

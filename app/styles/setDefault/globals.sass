@@ -6,7 +6,7 @@ html,body
 		background-color: #ced3cc
 	.hitam
 		background-color: #191a1e
-	.putihLink
+	.putihLink, .putih
 		color: white
 	figure
 		// overflow-y: hidden
@@ -194,7 +194,7 @@ html,body
 			li
 				display: inline-block
 	.topik-link
-		padding: 5px 10px
+		padding: 6px 10px
 		margin-bottom: 5px
 		font-family: robotoMedium
 		font-size: 11px
@@ -202,7 +202,46 @@ html,body
 		text-transform: uppercase
 		display: inline-block
 		background: $yellow-wood
-
+	a.linkVid
+		font-family: robotoRegular
+		margin-bottom: 5px
+		display: block
+		cursor: pointer
+		font-size: 17px
+		line-height: 1.4
+		color: $black
+	div.layerBox
+		display: inline-block
+		vertical-align: middle
+		width: 22px
+		height: 16px
+		> span
+			position: relative
+			display: block
+			width: 18px
+			height: 14px
+			background-color: white
+			box-shadow: 1.5px 1.5px 0 rgba(0,0,0,.5)
+			&:before,
+			&:after,
+				position: absolute
+				content: ''
+				width: 18px
+				height: 14px
+				background-color: white
+				box-shadow: 1.5px 1.5px 0 rgba(0,0,0,.5)
+			&:before
+				top: 3px
+				left: 3px
+				z-index: -1
+			&:after
+				top: 6px
+				left: 6px
+				z-index: -2
+		&.oneImg
+				&:before,
+				&:after,
+					display: none
 	.followSosmed
 		position: relative
 		span
@@ -219,6 +258,7 @@ html,body
 				display: inline-block
 				&:last-child
 					margin-right: 0
+					margin-bottom: 0
 				a
 					display: block
 					width: 28px
@@ -290,12 +330,35 @@ html,body
 			+border-radius(3px)
 			+box-shadow(0,0,10px, rgba(0,0,0,.15))
 			background: white
-
+	.topik-terkait
+		padding: 15px
+		margin-bottom: 20px
+		background-color: #f2f2f2
+		width: 100%
+		+clearit
+		span
+			display: inline-block
+			vertical-align: middle
+		strong
+			margin-bottom: 10px
+			font-family: robotoMedium
+			display: block
+		ul
+			li
+				display: inline-block
+				margin-right: 2px
+				a
+					font-family: robotoRegular
+					font-size: 15px
+					line-height: 1.4
+					color: $black
 	p.infoArtikel
 		margin-bottom: 10px
 		display: inline-block
 		font-size: 15px
 		color: #727272
+		span
+			display: inline-block
 		strong
 			font-family: robotoMedium
 			font-weight: bold

@@ -1,0 +1,23 @@
+.foto-head
+   position: relative
+.foto-list
+	width: 100%
+	+clearit
+	margin-bottom: 5px
+	li
+		padding: 10px
+		+breakpoint(wide)
+			+ownGrid(2, 3%)
+		+breakpoint(tablet)
+			+ownGrid(2, 3%)
+		+breakpoint(mobile)
+         +ownGrid(1, 0)
+         margin-bottom: 25px
+		box-shadow: 0 2px 10px rgba(0,0,0,.15)
+		a:not(.topik-link):not(.linkVid)
+			display: block
+			overflow: hidden
+			margin-bottom: 10px
+			img
+				width: 100%
+				display: block
