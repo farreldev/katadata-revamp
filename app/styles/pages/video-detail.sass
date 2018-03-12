@@ -1,26 +1,80 @@
 .video-detail
 	.video-head-detail
+		position: relative
+		padding-bottom: 56.25%
 		margin-bottom: 25px
-		background-color: $black
-		.topik-link
-			margin: 10px 0
-		h1
-			font-size: 29px	  
-		p
-			color: white
-		.topik-terkait
-			padding: 15px 0
-			background-color: transparent
-			color: white
-			+clearit
-			span
-				font-family: robotoRegular
-				display: inline-block
+		iframe
+			position: absolute
+			width: 100%
+			height: 100%
+		.videoInfo
+			position: absolute
+			top: 0
+			right: 0
+			width: 28%
+			height: 100%
+			background-color: rgba(0,0,0,.75)
+			transition: right .3s ease-in-out
+			// overflow-y: auto
+			&:before
+				position: inherit
+				content: '\f101'
+				top: 55px
+				left: -30px
+				width: 30px
+				height: 40px
+				line-height: 40px
+				text-align: center
+				font-size: 23px
+				font-family: fontawesome
 				color: white
-				width: 50px
-			ul
-				float: right
-				width: calc(100% - 50px)
-				li
-					a
-						color: $tw
+				cursor: pointer
+				border-top-left-radius: 5px
+				border-bottom-left-radius: 5px
+				background-color: rgba(0,0,0,.75)
+			&.closeInfo
+				right: -28%
+				transition: right .3s ease-in-out
+				&:before
+					content: '\f100'
+			+breakpoint(tablet)
+				width: 35%
+				&.closeInfo
+					right: -35%
+			+breakpoint(mobile)
+				width: 75%
+				&.closeInfo
+					right: -75%
+			+breakpoint(small-mobile)
+				width: 88%
+				&.closeInfo
+					right: -88%
+			.infoWrapper
+				padding: 20px
+				width: 100%
+				height: 100%
+				overflow-y: auto
+				.topik-link
+					margin: 0 0 10px
+				h1
+					font-size: 29px	  
+				p
+					color: white
+					&.infoArtikel
+						display: block
+				.topik-terkait
+					padding: 15px 0
+					background-color: transparent
+					color: white
+					+clearit
+					span
+						font-family: robotoRegular
+						display: inline-block
+						color: white
+						width: 50px
+					ul
+						float: right
+						width: calc(100% - 50px)
+						li
+							a
+								color: $tw

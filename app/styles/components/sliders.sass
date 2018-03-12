@@ -102,18 +102,19 @@
 
 .arrowNavigation4
 	@extend .arrowNavigation3
+	top: 45%
+	transform: translateY(-45%)
 	.prevArrowNav4,
 	.nextArrowNav4
 		position: inherit
 		text-align: center
 		cursor: pointer
-		+box-shadow(0,2px,10px,rgba(0,0,0,.35))
 		i
 			font-size: 50px
 			color: white
 		+breakpoint(mobile)
 			i
-				font-size: 18px
+				font-size: 30px
 	.prevArrowNav4
 		left: -50px
 		+breakpoint(mobile)
@@ -296,31 +297,27 @@
 	background-color: #000
 	.video-slider
 		width: 100%
-		height: 46vw
-		min-height: 40vw
+		height: 100%
+		// min-height: 40vw
 		opacity: 0
 		visibility: hidden
 		-webkit-transition: all 1.2s ease
 		transition: all 1.2s ease
-		+breakpoint(mobile)
-			height: 75vw
-		+breakpoint(small-mobile)
-			height: 60vw
 		&.slick-initialized 
 			opacity: 1
 			visibility: visible
-			
 		.slick-slide 
 			position: relative
-			height: 46vw
-			+breakpoint(mobile)
-				height: 75vw
-			+breakpoint(small-mobile)
-				height: 60vw
+			height: 100%
 			&::before
-				background-color: black
-				opacity: 0.3
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
 				z-index: 1
+				background-color: rgba(0,0,0,.5)
 			.loading 
 				font-family: robotoMedium
 				position: absolute
@@ -328,73 +325,81 @@
 				left: 50%
 				transform: translate(-50%, -50%)
 				display: inline-block
-			video
-				display: block
-				position: absolute
-				top: 50%
-				left: 50%
-				min-width: 100%
-				min-height: 100%
-				width: auto
-				height: auto
-				-webkit-transform: translate(-50%, -50%)
-				transform: translate(-50%, -50%)
-			iframe
-				position: relative
-				// pointer-events: none
 			figure
+				margin-bottom: 0
 				position: relative
 				height: 100%
-				background: salmon
-			&.slide-image
-				opacity: 0
-				height: 100%
-				background-size: cover
-				background-position: center
-				-webkit-transition: all 0.8s ease
-				transition: all 0.8s ease
-			&.slide-image
-				&.show 
-					opacity: 1
-			&.image-entity 
-				width: 100%
-				opacity: 0
-				visibility: hidden
-			&.slide-media 
-				-webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
-				animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
+				&.slide-image
+					opacity: 0
+					height: 100%
+					background-size: cover
+					background-position: center
+					-webkit-transition: all 0.8s ease
+					transition: all 0.8s ease
+					&.show 
+						opacity: 1
+					&.slide-media 
+						-webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
+						animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
+						.image-entity
+							display: block
+							width: 100%
+							opacity: 0
+							visibility: hidden
 			&.slick-active 
 				z-index: 1
 				.slide-media 
-					-webkit-animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1)
 					animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1)
 				.caption 
 					opacity: 1
-					-webkit-transform: translateY(0)
-					transform: translateY(0)
-					-webkit-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s
-					transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s
+					top: 48%
+					left: 50%
+					transform: translate(-50%, -48%)				
+					transition: all .5s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s
+					+breakpoint(mobile)
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
 		.caption
 			position: absolute
-			top: 44%
-			left: 5%
-			text-align: center
-			padding: 20px
-			border: 3px solid
-			color: #fff
+			display: inline-block
+			width: 80px
+			height: 80px
 			margin: 0
+			top: 0
+			left: 50%
+			border: 3px solid rgba(255,255,255, 1)
+			background-color: rgba(255,0,23,.85)
+			border-radius: 50%
 			font-size: 40px
 			font-weight: bold
 			letter-spacing: 0.02em
 			opacity: 0
 			z-index: 1
-			-webkit-transition: all 0.3s ease
+			transform: translate(-50%, 0)
 			transition: all 0.3s ease
-			-webkit-transform: translateY(100px)
-			transform: translateY(100px)
-
-
+			+breakpoint(mobile)
+				width: 50px
+				height: 50px
+			&:focus
+				outline: none
+			&:before
+				font-family: fontawesome
+				position: inherit
+				top: 50%
+				left: 55%
+				transform: translate(-55%,-50%)
+				content: ''
+				border-style: solid;
+				border-width: 15px 0 15px 20px;
+				border-color: transparent transparent transparent #fff;
+				+breakpoint(mobile)
+					border-width: 11px 0 11px 11px;
 		.slick-dots
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -50px
 			text-align: center
 			padding: 15px 0
 			li 

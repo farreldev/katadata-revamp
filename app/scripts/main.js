@@ -1,5 +1,11 @@
 (function($) {
   var kd = (function() {
+
+    var slideWrapper = $('.video-slider'),
+          iframes = slideWrapper.find('.embed-player'),
+          lazyImages = slideWrapper.find('.slide-image'),
+          lazyCounter = 0;
+
     function kdSlider() {
       $('.berita-slide').slick({
         infinite: true,
@@ -119,6 +125,29 @@
           // instead of a settings object
         ]
       });
+
+      slideWrapper.slick({ // fade:true,
+        //  autoplay: true,
+        autoplaySpeed: 10000, lazyLoad: 'progressive', speed: 600, prevArrow: '.prevArrowNav4', nextArrow: '.nextArrowNav4', dots: true, cssEase: 'cubic-bezier(0.87, 0.03, 0.41, 0.9)' });
+      // arrows: false,
+    }
+
+    
+    slideWrapper.on('lazyLoaded', function(event,slick,image,imageSource) {
+      lazyCounter++;
+      if (lazyCounter === lazyImages.length) {
+        lazyImages.addClass('show');
+        slideWrapper.slick('slickPlay');
+      }
+    });
+
+    var btnTrigger = document.querySelector('div.videoInfo');
+    if(btnTrigger) {
+      btnTrigger.addEventListener('click', function(ev) {
+        if(ev.offsetX < btnTrigger.offsetWidth) {
+          btnTrigger.classList.toggle('closeInfo');
+        }
+      }, false);
     }
 
     var ua = navigator.userAgent.toLowerCase();
@@ -235,27 +264,9 @@
 
     $('#datetimepicker1').datetimepicker();
 
-    function tinyEditor() {
-      tinymce.init({
-        selector: 'textarea#addArticle',
-        height: 300,
-        menubar: true,
-        plugins: [
-          'advlist autolink autosave link image lists charmap print preview hr anchor pagebreak',
-          'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-          'table contextmenu directionality emoticons template textcolor paste fullpage textcolor colorpicker textpattern'
-        ],
-        toolbar1:
-          'newdocument fullpage | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect',
-        content_css: [
-          '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-          '//www.tinymce.com/css/codepen.min.css'
-        ]
-      });
-    }
+    
 
     kdSlider();
     btnGoUp();
-    tinyEditor();
   })();
 })(jQuery);
