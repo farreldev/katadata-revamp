@@ -48,7 +48,7 @@ html,body
 				margin-bottom: 0
 		ul
 			margin-bottom: 10px
-			display: inline-block     
+			display: inline-block
 			+breakpoint(mobile)
 				margin-top: 10px
 				margin-left: 0
@@ -72,6 +72,8 @@ html,body
 						border: 1px solid $orange
 		&.match-margin
 			padding-left: 48px
+			+breakpoint(desktop)
+				padding-left: 55px
 			+breakpoint(mobile)
 				padding-left: 0
 	a
@@ -149,11 +151,13 @@ html,body
 			font-size: 19px
 	a.goUp
 		position: fixed
+		bottom: 20px
 		// top: -45px
-		right: 15px
+		right: 5px
 		display: inline-block
 		width: 40px
 		height: 40px
+		opacity: 0
 		text-align: center
 		background-color: $blue-pastel
 		// background-color: rgba(198,162,72,.9)

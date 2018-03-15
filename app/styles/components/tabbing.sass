@@ -38,17 +38,21 @@
 						bottom: 0
 						left: 0
 						background-color: rgba(0,0,0,.3)
-					.playing
+					a
 						position: absolute
 						top: 50%
 						left: 50%
 						transform: translate(-50%, -50%)
-						width: 80px
-						height: 80px
 						display: inline-block
-						background: url('../images/icons/icon-play.png') center center no-repeat
-						background-size: cover
 						z-index: 2
+						&.playing
+							background: url('../images/icons/youtube-play.png') center center no-repeat
+							width: 64px
+							height: 46px
+						&.cam
+							background: url('../images/icons/photo-camera.png') center center no-repeat
+							width: 64px
+							height: 58px
 				h4
 					font-size: 25px
 					margin-bottom: 8px
