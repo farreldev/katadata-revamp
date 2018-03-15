@@ -10,24 +10,50 @@
   font-smoothing: antialiased
   text-rendering: optimizeLegibility
 
-html, body
-  box-sizing: border-box
-  min-height: 100%
-  
-html
-  position: relative
+html, body, .wrapper, main
+  height: 100%
 
 body
-  .wrapper
+  .wrapper // Container Main
+    position: relative
     overflow: hidden
-    main
-      // margin-bottom: 600px
-      .contentWrapper
-        // padding: 90px 0 70px
-        padding: 0 0 70px
+    main // Scroller
+      position: relative
+      overflow-y: auto
+      .contentWrapper // Scroller Inner
+        position: relative
+
+// *,
+// *:after,
+// *:before
+//   box-sizing: border-box
+//   -webkit-font-smoothing: antialiased
+//   font-smoothing: antialiased
+//   text-rendering: optimizeLegibility
+
+// html, body
+//   box-sizing: border-box
+//   min-height: 100%
+  
+// html
+//   position: relative
+
+// body
+//   .wrapper
+//     position: relative
+//     overflow: hidden
+//     height: 100%
+//     main
+//       // margin-bottom: 600px
+//       .contentWrapper
+//         // padding: 90px 0 70px
+//         padding: 0 0 70px
 
 /* Customize container */
 .container
+  +breakpoint(mobile)
+    padding-left: 15px
+    padding-right: 15px
   +breakpoint(laptop)
     width: 1200px
   +breakpoint(desktop)

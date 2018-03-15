@@ -28,6 +28,7 @@
                   position: relative
                   cursor: pointer
                   padding: 0
+                  font-size: 15px
 
                & + label:before
                   content: ''
@@ -36,7 +37,7 @@
                   vertical-align: text-top
                   width: 25px
                   height: 25px
-                  border-radius: 1px
+                  border-radius: 50%
                   // border: 1px solid #999
                   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2)
                   transition: all .2s ease-in-out
@@ -45,7 +46,7 @@
                & + label:after
                   position: absolute
                   content: '✔'
-                  top: 5px
+                  top: 6px
                   left: 7px
                   color: white
                   transform: scale(0)
@@ -59,7 +60,7 @@
                   transition: all .2s ease-in-out
                
                // Box focus
-               &:focus + label:before
+               // &:focus + label:before
                   // box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12) 
                   // box-shadow: 0 0 0 3px rgba(0,174,239, 0.12)
                   // border: 2px solid rgba(0,174,239, .15)
@@ -71,26 +72,27 @@
                   transition: all .2s ease-in-out
                   border: none
                
-               // Disabled
-               &:disabled + label
-                  color: #b8b8b8
-                  cursor: auto
-
-               // Disabled
-               &:disabled + label:before
-                  box-shadow: none
-                  background: #ddd
-               
-               &:disabled:checked + label:after
-                  color: #bbb
-
                &:checked + label:after
                   content: '✔'
                   position: absolute
-                  top: 5px
+                  top: 6px
                   left: 7px
                   color: white
                   transform: scale(1)
+               
+               // Disabled
+               // &:disabled + label
+               //    color: #b8b8b8
+               //    cursor: auto
+
+               // Disabled
+               // &:disabled + label:before
+               //    box-shadow: none
+               //    background: #ddd
+               
+               // &:disabled:checked + label:after
+               //    color: #bbb
+
          article
             display: inline-block
             vertical-align: top
