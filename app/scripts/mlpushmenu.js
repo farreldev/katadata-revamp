@@ -116,16 +116,16 @@
 				ev.preventDefault();
 				if( self.open ) {
 					self._resetMenu();
-					$(".humburger-btn").toggleClass("humTrigger");
+					$('.humburger-btn').toggleClass('humTrigger');
 				}
 				else {
 					self._openMenu();
-					$(".humburger-btn").toggleClass("humTrigger");
+					$('.humburger-btn').toggleClass('humTrigger');
 					// the menu should close if clicking somewhere on the body (excluding clicks on the menu)
 					document.addEventListener( self.eventtype, function( ev ) {
 						if( self.open && !hasParent( ev.target, self.el.id ) ) {
 							bodyClickFn( this );
-							$(".humburger-btn").toggleClass("humTrigger");
+							$('.humburger-btn').toggleClass('humTrigger');
 						}
 					} );
 				}

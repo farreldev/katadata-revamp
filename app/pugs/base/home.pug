@@ -30,13 +30,14 @@ html.no-js(lang="id")
 				|  browser. Please 
 				a(href="http://browsehappy.com/") upgrade your browser
 				|  to improve your experience.
+				
 		div(id="mainWrapper" class="wrapper")
 			#mp-pusher.mp-pusher
+				header
+					include ../includes/header.pug
 				include ../includes/kd-menu-nav.pug
 				a(href="#" class="goUp")
 					i(class="fa fa-chevron-up")
-				header
-					include ../includes/header.pug
 				main
 					.contentWrapper
 						block content
@@ -65,15 +66,9 @@ html.no-js(lang="id")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js")
-		block myscript
-		// endbuild
-
-		// build:js scripts/mlpushmenu.js
 		script(src="scripts/mlpushmenu.js")
-		// endbuild
-
-		// build:js scripts/classie.js
 		script(src="scripts/classie.js")
+		block myscript
 		// endbuild
 
 		// build:js scripts/main.js

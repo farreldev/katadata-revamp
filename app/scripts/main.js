@@ -54,6 +54,7 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
+        dots: true,
         prevArrow: '.prevArrowNav3',
         nextArrow: '.nextArrowNav3',
         responsive: [
@@ -150,8 +151,8 @@ $(function() {
       }, false);
     }
 
-    var $tinggiFooter = $(".contentWrapper").find(".footer").height();
-    $(".wrapper .contentWrapper").css("paddingBottom", $tinggiFooter + 30);
+    var $tinggiFooter = $('.contentWrapper').find('.footer').height();
+    $('.wrapper .contentWrapper').css('paddingBottom', $tinggiFooter + 30);
 
     // var ua = navigator.userAgent.toLowerCase();
     // var $tinggi = $('.footer').height();
@@ -231,52 +232,55 @@ $(function() {
       });
     }
 
-    $('#tgl-lahir').datetimepicker();
+    function kdTime() {
+      $('#tgl-lahir').datetimepicker();
+  
+      $('#fromDate').datetimepicker({ format: 'DD-MM-YYYY' });
+      $('#toDate').datetimepicker({
+        format: 'DD-MM-YYYY',
+        useCurrent: false
+      });
+  
+      $('#fromDate').on('dp.change', function(ed) {
+        $('#toDate')
+          .data('DateTimePicker')
+          .minDate(ed.date);
+      });
+  
+      $('#toDate').on('dp.change', function(ed) {
+        $('#fromDate')
+          .data('DateTimePicker')
+          .maxDate(ed.date);
+      });
+  
+      $('.chooseSchedule').click(function() {
+        if ($('#sevenDay').is(':checked') || $('#thirdTeen').is(':checked')) {
+          $('#fromDate, #toDate').prop('disabled', true);
+        } else {
+          $('#fromDate, #toDate').removeAttr('disabled');
+        }
+      });
+  
+      $('button[type="reset"]').on('click', function() {
+        $('#fromDate, #toDate').removeAttr('disabled');
+      });
+      // $('#datetimepicker1').datetimepicker();
+    }
 
-    $('#fromDate').datetimepicker();
-    $('#toDate').datetimepicker({
-      useCurrent: false
-    });
-
-    $('#fromDate').on('dp.change', function(ed) {
-      $('#toDate')
-        .data('DateTimePicker')
-        .minDate(ed.date);
-    });
-
-    $('#toDate').on('dp.change', function(ed) {
-      $('#fromDate')
-        .data('DateTimePicker')
-        .maxDate(ed.date);
-    });
-
-    $('.chooseSchedule').click(function() {
-      if ($('#sevenDay').is(':checked') || $('#thirdTeen').is(':checked')) {
-        $('#fromDate').prop('disabled', true);
-        $('#toDate').prop('disabled', true);
-      } else {
-        $('#fromDate').removeAttr('disabled');
-        $('#toDate').removeAttr('disabled');
-      }
-    });
-
-    $('button[type="reset"]').on('click', function() {
-      $('#fromDate').removeAttr('disabled');
-      $('#toDate').removeAttr('disabled');
-    });
 
     if (screen.width > 768) {
       $('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li, .video-list li, .foto-list li').matchHeight();
     }
 
-    $('#datetimepicker1').datetimepicker();
     new mlPushMenu(
-      document.getElementById("mp-menu"),
-      document.getElementById("trigger"),
-      { type: "cover" }
+      document.getElementById('mp-menu'),
+      document.getElementById('trigger'),
+      { type: 'cover' }
     );
+    
     kdSlider();
     btnGoUp();
+    kdTime();
     
   })();
 });

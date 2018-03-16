@@ -1,4 +1,5 @@
 .detail-artikel
+	margin-bottom: 25px
 	.wrapperDetailArtikel
 		margin-bottom: 20px
 		position: relative
@@ -87,8 +88,10 @@
 			font-family: robotoMedium
 			font-size: 20px
 		article.textArticle
-			width: 87%
+			width: 655px
 			margin: 0 0 0 auto
+			+breakpoint(desktop)
+				width: 720px
 			+breakpoint(mobile)
 				width: 100%
 			p

@@ -44,7 +44,7 @@
 		opacity: 0
 
 .mp-pusher::after
-	background: rgba(0, 0, 0, 0.3)
+	background: rgba(0, 0, 0, 0.7)
 	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s
 
 .mp-level::after
@@ -99,7 +99,30 @@
 
 .mp-level-open:not(.mp-level-overlay)
 	overflow-y: auto
-/* content style
+	&::-webkit-scrollbar-button
+		display: none
+		height: 13px
+		border-radius: 0px
+		background-color: #AAA
+		&:hover
+			background-color: #AAA
+
+	&::-webkit-scrollbar-thumb
+		background-color: #2e2e2e
+		// background-color: rgb(198,162,72)
+		border-radius: 10px
+		&:hover
+			background-color: lighten(#2e2e2e, 3%)
+
+	&::-webkit-scrollbar-track
+		background-color: #000
+		// &:hover
+		// 	background-color: lighten(#272727, 2%)
+
+	&::-webkit-scrollbar
+		width: 7px
+		
+	/* content style */
 
 .mp-menu
 	ul
@@ -160,14 +183,18 @@
 	&.hasSub
 		&::before
 			font-family: fontawesome
-			left: 12px
-			font-size: 20px
-			line-height: 2.35
-			content: '\f101'
+			left: 10px
+			font-size: 14px
+			line-height: 3.5
+			content: '\f054'
 			color: white
+			opacity: .5
+			transition: opacity .5s ease
 			display: inline-block
 		&:hover
 			&::before
+				opacity: 1
+				transition: opacity .5s ease
 				color: rgb(198,162,72)
 
 .mp-level > ul > li:first-child > a
@@ -212,9 +239,17 @@
 		position: absolute
 		content: "\f137"
 		right: 10px
+		opacity: .5
+		transition: opacity .5s ease
 		line-height: .9
 		font-size: 1.3em
 		color: rgb(198,162,72)
+	&:hover
+		&::after
+			transition: opacity .5s ease
+			opacity: 1
+			color: rgb(198,162,72)
+
 
 .mp-menu .mp-level.mp-level-overlay > .mp-back
 	background: transparent

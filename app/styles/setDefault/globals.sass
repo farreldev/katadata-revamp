@@ -71,11 +71,27 @@ html,body
 						color: white
 						border: 1px solid $orange
 		&.match-margin
-			padding-left: 48px
-			+breakpoint(desktop)
-				padding-left: 55px
-			+breakpoint(mobile)
-				padding-left: 0
+			strong
+				text-align: right
+				margin-top: 12px
+				margin-right: 0
+				margin-bottom: 0
+				width: calc(100% - (655px + 15px))
+				+breakpoint(desktop)
+					width: calc(100% - (720px + 15px))
+				+breakpoint(mobile)
+					margin-top: 0
+			ul
+				margin-top: 0
+				float: right
+				width: 655px
+				+breakpoint(desktop)
+					width: 720px
+				+breakpoint(mobile)
+					margin: 10px 0
+					float: none
+					width: 100%
+			
 	a
 		font-family: robotoMedium
 		color: #0070c9
