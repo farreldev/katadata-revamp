@@ -2,8 +2,7 @@
 	.recentArticle
 		.recentArtWrap
 			position: relative
-			padding: 35px 0 10px
-			margin-bottom: 25px
+			padding: 0 0 25px
 			@extend %thin-line-custom-bottom
 			ul
 				li
@@ -12,6 +11,9 @@
 					margin-bottom: 10px
 					+borderDot
 					+noBorderDot
+					+breakpoint(mobile)
+						&:last-child
+							margin-bottom: 25px
 			.opini-head
 				border-bottom: 1px solid #ddd
 				margin-bottom: 10px
@@ -40,17 +42,17 @@
 					strong
 						display: inline-block
 						margin-bottom: 7px
-						font-family: robotoMedium
-						font-weight: 700
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+						font-weight: 500
 					p
-						font-family: robotoLight
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoLight
 						font-size: 16px
+						font-weight: 300
 	.berita-terbaru
-		margin-bottom: 25px
 		a
-			font-family: robotoRegular
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+			font-weight: 400
 	.berita-terpopuler
-		margin-bottom: 25px
 		ul
 			+clearit
 			border-bottom: 1px solid #ddd
@@ -64,10 +66,13 @@
 					padding: 10px
 					margin-bottom: 10px
 					border: 1px solid #ddd
+					&:last-child
+						margin-bottom: 25px
 				strong
 					float: left
-					font-family: robotoBold
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoBold
 					font-size: 36px
+					font-weight: 700
 					// display: inline-block
 					vertical-align: top
 					color: $blue-light
@@ -75,13 +80,15 @@
 				a
 					float: right
 					padding-top: 3px
-					font-family: gothamNarr_book
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-size: 17px
+					font-weight: 400
 					line-height: 1.3
 					width: 88%
 					color: $black
 	.ekono
-		margin-bottom: 25px
+		+breakpoint(mobile)
+			margin-bottom: 0
 	.spotBanner
 		.spotBannerWrap
 			position: relative
@@ -92,7 +99,6 @@
 				img
 					width: 100%
 	.opini
-		margin-bottom: 30px
 		ul
 			li
 				padding: 10px
@@ -124,8 +130,9 @@
 					width: calc(100% - 90px)
 					a
 						margin-bottom: 10px
-						font-family: gothamNarr_book
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 						font-size: 17px
+						font-weight: 400
 						display: block
 						line-height: 1.4
 						color: $black
@@ -161,7 +168,7 @@
 	// 					img
 	// 						width: 100%
 	// 				a
-	// 					font-family: gothamNarr_book
+	// 					font-family: robotoRegular
 	// 					font-size: 17px
 	// 					line-height: 1.4
 	// 					color: $black
@@ -191,7 +198,7 @@
 	// 					color: white
 	// 					+border-radius(50%)
 	// 				a
-	// 					font-family: gothamNarr_book
+	// 					font-family: robotoRegular
 	// 					font-size: 20px
 	// 					line-height: 1.4
 	// 					color: $black
@@ -199,7 +206,6 @@
 	// 					font-size: 15px
 
 	.telaah
-		margin-bottom: 30px
 		.blockView
 			position: relative
 			padding-bottom: 25px
@@ -240,8 +246,9 @@
 					a
 						margin-bottom: 5px
 						display: block
-						font-family: gothamNarr_book
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 						font-size: 20px
+						font-weight: 400
 						line-height: 1.4
 						color: $black
 			a.btn
@@ -272,7 +279,8 @@
 						height: 7px
 						background: white
 				h4
-					font-family: robotoMedium
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+					font-weight: 500
 					margin-bottom: 10px
 					a
 						font-size: 20px
@@ -280,7 +288,7 @@
 						color: white
 				p:not(.infoArtikel)
 					color: white
-					font-family: robotoRegular
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-size: 16px
 			ul
 				padding: 15px 0
@@ -289,8 +297,9 @@
 					a
 						margin-bottom: 5px
 						display: block
-						font-family: gothamNarr_book
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 						font-size: 20px
+						font-weight: 400
 						line-height: 1.4
 						color: $black
 			a.btn
