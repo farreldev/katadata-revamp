@@ -14,7 +14,7 @@
 		font-family: fontawesome
 		width: 35px
 		height: 35px
-		border: 1pxsolid#aeaeae
+		border: 1px solid #aeaeae
 		color: #727272
 		+border-radius(5px)
 		text-align: center
@@ -45,7 +45,7 @@
 		height: 50px
 		text-align: center
 		cursor: pointer
-		border: 3pxsolidwhite
+		border: 3px solid white
 		+border-radius(50%)
 		+box-shadow(0,2px,10px,rgba(0,0,0,.35))
 		i
@@ -158,8 +158,9 @@
 				a
 					display: block
 					margin-top: 20px
-					font-family: gothamNarr_book
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-size: 17px
+					font-weight: 400
 					line-height: 1.3
 					color: $black
 
@@ -204,8 +205,9 @@
 				padding: 5px
 				a
 					display: block
-					font-family: gothamNarr_book
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-size: 17px
+					font-weight: 400
 					line-height: 1.4
 					color: $black
 
@@ -228,9 +230,10 @@
 					display: block
 					width: 100%
 				figcaption
-					padding: 5px 0
-					font-family: robotoRegular
+					padding: 10px 0
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-size: 11px
+					font-weight: 400
 					text-transform: uppercase
 					float: right
 					color: white
@@ -267,12 +270,10 @@
 					cursor: pointer
 					border-radius: 50%
 					/* border: 2px solid #fff */
-					-webkit-box-shadow: 0 0 0 0 transparent
 					box-shadow: 0 0 0 0 transparent
 					vertical-align: middle
 					color: #aaa
 					background-color: #aaa
-					-webkit-transition: all 0.3s ease
 					transition: all 0.3s ease
 					opacity: 0.5
 					&:focus
@@ -314,8 +315,9 @@
 			// 		z-index: -3
 			p
 				margin-left: 15px
-				font-family: robotoRegular
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 				font-size: 30px
+				font-weight: 400
 				display: inline-block
 				vertical-align: middle
 				color: white
@@ -351,7 +353,8 @@
 				z-index: 1
 				background-color: rgba(0,0,0,.5)
 			.loading 
-				font-family: robotoMedium
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+				font-weight: 500
 				position: absolute
 				top: 50%
 				left: 50%
@@ -366,12 +369,10 @@
 					height: 100%
 					background-size: cover
 					background-position: center
-					-webkit-transition: all 0.8s ease
 					transition: all 0.8s ease
 					&.show 
 						opacity: 1
-					&.slide-media 
-						-webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
+					&.slide-media
 						animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
 						.image-entity
 							display: block
@@ -420,7 +421,7 @@
 				position: inherit
 				top: 50%
 				left: 55%
-				transform: translate(-55%,-50%)
+				transform: translate(-55%, -50%)
 				content: ''
 				border-style: solid;
 				border-width: 15px 0 15px 20px;
@@ -445,12 +446,11 @@
 					cursor: pointer
 					border-radius: 50%
 					/* border: 2px solid #fff */
-					-webkit-box-shadow: 0 0 0 0 transparent
 					box-shadow: 0 0 0 0 transparent
 					vertical-align: middle
 					color: #aaa
+					font-size: 0
 					background-color: #aaa
-					-webkit-transition: all 0.3s ease
 					transition: all 0.3s ease
 					opacity: 0.5
 					&:focus
@@ -462,6 +462,7 @@
 						background: #00aeef
 						color: #00aeef
 						box-shadow: 0 0 0 2px #fff
+						font-size: 0
 						opacity: 1
 
 		@-webkit-keyframes slideIn 

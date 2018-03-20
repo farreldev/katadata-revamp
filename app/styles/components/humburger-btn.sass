@@ -3,9 +3,8 @@
 	margin-right: 15px
 	div.humburger-btn
 		position: relative
-		top: 1px
 		display: inline-block
-		vertical-align: top
+		vertical-align: middle
 		margin-right: 10px
 		width: 22px
 		height: 14px
@@ -13,7 +12,8 @@
 		+breakpoint(mobile)
 			position: absolute
 			margin-right: 0
-			top: 1px
+			top: 50%
+			transform: translateY(-50%)
 			left: 0
 		span
 			position: absolute

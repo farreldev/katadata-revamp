@@ -6,6 +6,28 @@ $(function() {
           lazyImages = slideWrapper.find('.slide-image'),
           lazyCounter = 0;
 
+    var $fotoList = $('.foto-slider'),
+        slideCount = null;
+
+    $fotoList.on('init', function (event, slick) {
+      slideCount = slick.slideCount;
+      $('.counter-text').find('.totImg').text(slideCount);
+      setCurrentCounter(slick.currentSlide);
+    });
+
+    $fotoList.on('beforeChange', function(
+      event,
+      slick,
+      currentSlide,
+      nextSlide
+    ) {
+      setCurrentCounter(nextSlide);
+    });
+
+    function setCurrentCounter(imgN) {
+      $('.counter-text').find('.currImg').text(imgN + 1);
+    }
+
     function kdSlider() {
       $('.berita-slide').slick({
         infinite: true,
@@ -49,12 +71,13 @@ $(function() {
         ]
       });
 
-      $('.foto-slider').slick({
+      $fotoList.slick({
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         dots: true,
+        adaptiveHeight: true,
         prevArrow: '.prevArrowNav3',
         nextArrow: '.nextArrowNav3',
         responsive: [
@@ -131,6 +154,7 @@ $(function() {
         //  autoplay: true,
         autoplaySpeed: 10000, lazyLoad: 'progressive', speed: 600, prevArrow: '.prevArrowNav4', nextArrow: '.nextArrowNav4', dots: true, cssEase: 'cubic-bezier(0.87, 0.03, 0.41, 0.9)' });
       // arrows: false,
+
     }
 
     
@@ -150,6 +174,8 @@ $(function() {
         }
       }, false);
     }
+
+    // Counter Slider img
 
     var $tinggiFooter = $('.contentWrapper').find('.footer').height();
     $('.wrapper .contentWrapper').css('paddingBottom', $tinggiFooter + 30);
@@ -232,6 +258,21 @@ $(function() {
       });
     }
 
+    function searcPanel() {
+      $('#txtSearch').on('input', function() {
+        if ($(this).val() !== '') {
+          $('a.clearTxt').fadeIn(500);
+        } else {
+          $('a.clearTxt').fadeOut(200);
+        }
+      });
+
+      $('.clearTxt').on('click', function(event) {
+        event.preventDefault();
+        $('#txtSearch').val('').siblings('.clearTxt').fadeOut(200);
+      });
+    }
+
     function kdTime() {
       $('#tgl-lahir').datetimepicker();
   
@@ -266,21 +307,49 @@ $(function() {
       });
       // $('#datetimepicker1').datetimepicker();
     }
-
-
+    
     if (screen.width > 768) {
       $('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li, .video-list li, .foto-list li').matchHeight();
     }
 
-    new mlPushMenu(
+    var myMnu = new mlPushMenu(
       document.getElementById('mp-menu'),
       document.getElementById('trigger'),
       { type: 'cover' }
     );
+
+    $('.btn-hum').on('click', function() {
+      if($('.layerSearch').hasClass('openSearch')) {
+        $('.layerSearch').toggleClass('openSearch');
+        $('.wwNavigation-overlay').fadeOut();
+      }
+    });
+
+    $('.cari-btn').on('click', function() {
+      // eve.preventDefault();
+      if (myMnu.open) {
+        myMnu._resetMenu();
+        $('.humburger-btn').toggleClass('humTrigger');
+        $('.layerSearch').toggleClass('openSearch');
+        $('.wwNavigation-overlay').fadeIn();
+      } else {
+        $('.layerSearch').toggleClass('openSearch');
+        $('.wwNavigation-overlay').fadeIn();
+        if (!$('.layerSearch').hasClass('openSearch')) {
+          $('.wwNavigation-overlay').fadeOut(300);
+        }
+      }
+    });
+
+    $('.wwNavigation-overlay').on('click', function() {
+    	$('.layerSearch').toggleClass('openSearch');
+    	$('.wwNavigation-overlay').fadeOut();
+    });
     
     kdSlider();
     btnGoUp();
     kdTime();
+    searcPanel();
     
   })();
 });
