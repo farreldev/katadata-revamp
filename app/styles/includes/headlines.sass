@@ -5,16 +5,19 @@
 		padding-bottom: 30px
 		+breakpoint(mobile)
 			padding-bottom: 10px
+		figure:not([class='thumb-article-img'])
+			+breakpoint(tablet)
+				margin-bottom: 40px
+		article
+			+breakpoint(tablet)
+				margin-bottom: 20px
 	
 .headlines
 	.headlinesWrapper
 		@extend %line-custom-bottom
-	article
-		+breakpoint(tablet)
-			margin-bottom: 20px
-		p
-			+breakpoint(mobile)
-				margin-bottom: 20px
+		// p
+		// 	+breakpoint(mobile)
+		// 		margin-bottom: 20px
 	a.hl-pict
 		display: inline-block
 		width: 100%

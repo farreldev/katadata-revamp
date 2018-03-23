@@ -2,8 +2,9 @@
 	position: relative
 	+clearit
 	h2
-		font-family: robotoRegular
+		font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 		font-size: 42px
+		font-weight: 500
 		display: inline-block
 		vertical-align: middle
 		// margin-right: 50px
@@ -33,6 +34,9 @@
 		margin-left: 95px
 		font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 		font-weight: 500
+		line-height: 1.4
+		+breakpoint(mobile)
+			margin-left: 0
 	article
 		+clearit
 		margin-bottom: 12px
@@ -78,12 +82,15 @@
 			margin-left: 0
 			margin-bottom: 15px
 	&.no-breadcrumb
-		margin-top: 90px
+		// margin-top: 90px
+		margin-top: 10px
+		+breakpoint(mobile)
+			margin-top: 0
 		.linkIndex
 			float: none
-			margin-top: 15px
+			margin-top: 20px
 			+breakpoint(mobile)
-				margin-top: 8px
+				margin-top: 12px
 .topik-pil
 	display: block
 	padding: 20px 0
@@ -113,7 +120,8 @@
 	top: -25px
 	padding-top: 10px
 	.head-and-caption
-		margin-top: 95px
+		// margin-top: 95px
+		margin-top: 18px
 		h2
 			margin-bottom: 0
 			vertical-align: baseline

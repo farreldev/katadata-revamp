@@ -18,6 +18,7 @@
 
 .mp-level
 	position: absolute
+	padding-bottom: 50px
 	top: 0
 	left: 0
 	width: 100%
@@ -140,7 +141,7 @@
 		padding: 10px
 		// color: rgba(0, 0, 0, 0.4)
 		color: white
-		background: darken($yellow-wood, 20%)
+		background: $blue-light
 		font-size: 2em
 		// text-shadow: 0 0 1px rgba(0, 0, 0, 0.1)
 	&.mp-overlap h2::before
@@ -177,12 +178,21 @@
 		color: white
 		transition: background 0.3s, box-shadow 0.3s
 	&.otherLinks h2
-		position: relative
-		padding: 5px
 		@extend %line-custom-bottom
-		background: transparent
+		position: relative
+		padding: 15px 0 18px 34px
+		color: $blue-light
+		background-color: $black
 		z-index: -1
-		opacity: .7
+		&:before
+			position: absolute
+			top: 13px
+			left: 12px
+			content: '::'
+			font-family: Arial
+		&:after
+			height: 5px
+		// opacity: .7
 		// text-transform: capitalize
 		// background-color: $blue-sea
 		// color: white
@@ -200,9 +210,9 @@
 		&::before
 			font-family: fontawesome
 			left: 10px
-			font-size: 14px
-			line-height: 3.5
-			content: '\f054'
+			font-size: 15px
+			line-height: 3.3
+			content: '\f138'
 			color: white
 			opacity: .5
 			transition: opacity .5s ease
@@ -211,7 +221,7 @@
 			&::before
 				opacity: 1
 				transition: opacity .5s ease
-				color: rgb(198,162,72)
+				color: $blue-light
 
 // .mp-level > ul > li:first-child > a
 // 	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.2)
@@ -225,9 +235,11 @@
 		color: darken(white, 10%)
 
 .mp-menu ul li a:hover, .mp-level > ul > li:first-child > a:hover
-	background: rgba(255, 255, 255, 0.01)
+	background: rgba(255, 255, 255, 0.03)
+	// background-color: #000
 	text-decoration: none
-	color: rgb(198,162,72)
+	// color: rgb(198,162,72)
+	color: $blue-light
 	// box-shadow: inset 0 -1px rgba(0, 0, 0, 0)
 
 .mp-menu .mp-level.mp-level-overlay > ul > li > a
@@ -247,7 +259,8 @@
 .mp-back
 	background: rgba(255, 255, 255, 0.03)
 	outline: none
-	color: rgb(198,162,72)
+	// color: rgb(198,162,72)
+	color: $blue-light
 	text-transform: uppercase
 	letter-spacing: 1px
 	font-weight: 700
@@ -266,12 +279,14 @@
 		transition: opacity .5s ease
 		line-height: .9
 		font-size: 1.3em
-		color: rgb(198,162,72)
+		// color: rgb(198,162,72)
+		color: $blue-light
 	&:hover
 		&::after
 			transition: opacity .5s ease
 			opacity: 1
-			color: rgb(198,162,72)
+			// color: rgb(198,162,72)
+			color: $blue-light
 
 
 .mp-menu .mp-level.mp-level-overlay > .mp-back

@@ -25,6 +25,7 @@ html.no-js(lang="id")
 		// build:js scripts/vendor/modernizr.js
 		script(src="/bower_components/modernizr/modernizr.js")
 		// endbuild
+		
 	body
 		//if IE
 			p.browserupgrade
@@ -36,7 +37,7 @@ html.no-js(lang="id")
 				
 		div(id="mainWrapper" class="wrapper")
 			#mp-pusher.mp-pusher
-				header
+				header.timbul
 					include ../includes/header.pug
 				include ../includes/kd-menu-nav.pug
 				a(href="#" class="goUp")
@@ -71,6 +72,7 @@ html.no-js(lang="id")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js")
 		script(src="scripts/mlpushmenu.js")
 		script(src="scripts/classie.js")
+		script(src="scripts/scrolling.js")
 		block myscript
 		// endbuild
 
