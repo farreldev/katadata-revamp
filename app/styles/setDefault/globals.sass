@@ -13,9 +13,8 @@ html,body
 	figure
 		// overflow-y: hidden
 		width: 100%
-		margin-bottom: 18px
+		margin-bottom: 20px
 		&.thumb-article-img
-			margin-bottom: 20px
 			height: 175px
 			max-height: 280px
 			width: 100%
@@ -141,11 +140,11 @@ html,body
 			font-weight: 500
 	h1,
 	h2
-		font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
-		font-weight: 400
+		font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+		font-weight: 500
 		a
-			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
-			font-weight: 400
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+			font-weight: 500
 			color: $black
 	h1
 		margin-bottom: 20px
@@ -316,6 +315,10 @@ html,body
 					background-color: $insta
 					&:hover
 						background-color: darken($insta, 5%)
+				a[class*="gg-plus"]
+					background-color: $gg
+					&:hover
+						background-color: darken($gg, 5%)
 				a[class*="linkedin"]
 					background-color: $lnkd
 					&:hover

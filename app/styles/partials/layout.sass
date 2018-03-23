@@ -6,8 +6,8 @@
 *:after,
 *:before
   box-sizing: border-box
-  -webkit-font-smoothing: antialiased
-  font-smoothing: antialiased
+  // -webkit-font-smoothing: antialiased
+  // font-smoothing: antialiased
   text-rendering: optimizeLegibility
 
 html, body, .wrapper, main
@@ -18,10 +18,14 @@ body
     position: relative
     overflow: hidden
     main // Scroller
+      padding-top: 73px
       position: relative
       overflow-y: auto
+      +breakpoint(mobile)
+        padding-top: 57px
       .contentWrapper // Scroller Inner
         position: relative
+        height: auto
 
 // *,
 // *:after,

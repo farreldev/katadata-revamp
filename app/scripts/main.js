@@ -15,12 +15,7 @@ $(function() {
       setCurrentCounter(slick.currentSlide);
     });
 
-    $fotoList.on('beforeChange', function(
-      event,
-      slick,
-      currentSlide,
-      nextSlide
-    ) {
+    $fotoList.on('beforeChange', function(event,slick,currentSlide,nextSlide) {
       setCurrentCounter(nextSlide);
     });
 

@@ -1,15 +1,17 @@
 header
 	position: fixed
 	top: 0
+	left: 0
 	width: 100%
-	height: auto
-	display: block
+	transition: top .4s ease
 	z-index: 7
+	&.scrollingUp
+		top: -73px
 	.main-head
 		position: relative
 		padding: 12px 0
 		background: $blue
-		// border-bottom: 5px solid $blue-light
+		border-bottom: 6px solid $blue-light
 		color: white
 		// +box-shadow(0, 1px, 7px, rgba(0,0,0,.2))
 		+clearit
@@ -49,10 +51,13 @@ header
 				&.logo-brand
 					display: inline-block
 					margin-bottom: 0
-				img
-					width: 220px
+					width: 200px
+					height: 38px
 					+breakpoint(mobile)
-						width: 155px
+						width: 150px
+						height: auto
+				img
+					width: 100%
 		.right-main-head
 			float: right
 			a.btn
@@ -75,7 +80,7 @@ header
 
 	.layerSearch
 		position: fixed
-		top: 13px
+		top: -61px
 		padding: 10px 10px
 		width: 100%
 		text-align: center
@@ -83,9 +88,7 @@ header
 		background-color: $blue-light
 		z-index: 2
 		&.openSearch
-			top: 67px
-		+breakpoint(mobile)
-			top: 3px
+			top: 65px
 
 	.wwNavigation-overlay
 		position: fixed
