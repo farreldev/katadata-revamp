@@ -2,6 +2,19 @@
 	.foto-slider-wrapper
 		padding: 0 0 20px
 		margin-bottom: 50px
+		.arrowNavigation3
+			width: 150px
+			top: 17px
+			left: 50%
+			transform: translateX(-50%)
+			.prevArrowNav3,
+			.nextArrowNav3
+				i
+					font-size: 35px
+			.prevArrowNav3
+				left: 0
+			.nextArrowNav3
+				right: 0
 		.counter-text
 			padding: 20px 0
 			margin: 0 auto
@@ -14,8 +27,27 @@
 				font-size: 25px
 				font-weight: 500
 		.foto-slider
+			.item-slide
+				figure
+					margin-bottom: 30px
+					figcaption
+						padding: 8px 0 12px
+						font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+						font-size: 10px
+						font-weight: 400
+						text-transform: uppercase
+						float: right
+						color: white
+				p
+					width: 75%
+					color: white
+					font-size: 15px
+					+breakpoint(mobile)
+						width: auto
 			.slick-dots
 				bottom: -70px
+				+breakpoint(mobile)
+					bottom: -62px
 	.pengantar-foto
 		position: relative
 		+breakpoint(mobile)

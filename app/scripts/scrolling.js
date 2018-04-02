@@ -22,10 +22,12 @@ function hasScrolled() {
    
   if (st > lastScrollTop && st > navbarHeight) {
     // Scroll Down
-    $('header').removeClass('timbul').addClass('scrollingUp');
+    $('header#header').removeClass('timbul').addClass('scrollingUp');
   } else {
-    if (st + $('main').height() < $('.contentWrapper').height()) {
-      $('header').removeClass('scrollingUp').removeClass('timbul');
+    if (st + $('main').height() < $('.contentWrapper').height() || st === 0) {
+      $('header#header')
+        .removeClass('scrollingUp')
+        .addClass('timbul');
     }
   }
 

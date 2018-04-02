@@ -2,6 +2,9 @@ extends base/home
 include components/mixings
 
 block content
+	.container
+		.center-belt.on-header
+			img(src="images/banners/centerBelt728x90.jpg", alt="")
 	.second-head
 		.container
 			.second-head-left.pull-left
@@ -31,7 +34,7 @@ block content
 						.col-md-4.col-sm-7
 							a(href="#", alt="{topik}", class="topik-link") Energi
 							h2
-								a(href="detail-artikel.html") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								a(href="detail-artikel.html", class="lockIcon") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
 							article
 								p.infoArtikel 
 									| Oleh 
@@ -46,7 +49,7 @@ block content
 									| Arief Kamaludin/Katadata
 						.col-md-3.col-sm-12
 							.otherBanner.clear-top-padding.no-top-border
-								img(src="images/banners/e-filing.jpg", alt="")
+								img(src="images/banners/r.jpg", alt="")
 							//- include includes/artikel-terpopuler
 							//- figure.thumb-article-img
 							//- 	img(src="images/thumb-img/thumb1.jpg", alt="")
@@ -70,7 +73,7 @@ block content
 									img(src="images/thumb-img/thumb3.jpg", alt="")
 							a(href="#", alt="{topik}", class="topik-link") Energi
 							h4
-								a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+								a(href="#", class="lockIcon") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
 						.col-md-3.col-sm-6
 							ul
 								li
@@ -97,6 +100,9 @@ block content
 									strong Muhammad Firman
 									p.
 										Dosen Departemen Ekonomika dan Bisnis UGM
+		.container
+			.center-belt
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
 		section.berita-terbaru
 			.container.posRelative
 				h3 Berita Terbaru Lainnya
@@ -155,6 +161,9 @@ block content
 		//- 		.spotBannerWrap
 		//- 			figure
 		//- 				img(src="images/banners/banner1.jpg", alt="")
+		.container
+			.center-belt
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
 		section.ekono
 			.container.posRelative
 				h3 Ekonografik
@@ -215,9 +224,12 @@ block content
 					.col-md-3
 						.otherBanner
 							a(href="")
-								img(src="images/banners/bannerSmall2.gif", alt="")
+								img(src="images/banners/r.jpg", alt="")
 							a(href="")
-								img(src="images/banners/bannerSmall1.gif", alt="")
+								img(src="images/banners/r.jpg", alt="")
+		.container
+			.center-belt
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
 		section.otherKatalog.margin-bottom-25.abu
 			.container
 				.row
@@ -310,7 +322,10 @@ block content
 										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
 					.col-md-3
 						.otherBanner.no-top-border
-							img(src="images/banners/bannerSmall3.png", alt="")
+							img(src="images/banners/r.jpg", alt="")
+		.container
+			.center-belt
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
 		section.newsletter
 			.container
 				.row
@@ -339,6 +354,7 @@ block content
 						figure
 							img(src="images/avatar/opini-jokowi-pict.jpg", alt="")
 						article
+							strong Opini
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -346,6 +362,7 @@ block content
 						figure
 							img(src="images/avatar/opini-jk-pict.jpg", alt="")
 						article
+							strong Opini
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -353,6 +370,7 @@ block content
 						figure
 							img(src="images/avatar/opini-menteri-pict.jpg", alt="")
 						article
+							strong Wawancara
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -360,6 +378,7 @@ block content
 						figure
 							img(src="images/avatar/opini-pict1.jpg", alt="")
 						article
+							strong Opini
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -367,6 +386,7 @@ block content
 						figure
 							img(src="images/avatar/opini-pict3.jpg", alt="")
 						article
+							strong Wawancara
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -374,6 +394,7 @@ block content
 						figure
 							img(src="images/avatar/opini-pict2.jpg", alt="")
 						article
+							strong Opini
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -381,13 +402,15 @@ block content
 						figure
 							img(src="images/avatar/woman-thumb.png", alt="")
 						article
+							strong Opini
 							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split kasdas dasdd asdasd dasasd
+								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
 					li
 						figure
 							img(src="images/avatar/opini-pict1.jpg", alt="")
 						article
+							strong Wawancara
 							a(href="#").
 								Menjawab Keraguan Terhadap Gross Split
 							p Prahoro Nurtjahyo
@@ -483,19 +506,19 @@ block content
 							.row
 								.col-md-4.col-sm-4
 									img(src="images/thumb-img/thumb7.jpg", alt="")
-									a(href="#").
+									a(href="#", class="lockIcon").
 										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
 								.col-md-4.col-sm-4
 									img(src="images/thumb-img/thumb9.jpg", alt="")
-									a(href="#").
+									a(href="#", class="lockIcon").
 										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
 								.col-md-4.col-sm-4
 									img(src="images/thumb-img/thumb4.jpg", alt="")
-									a(href="#").
+									a(href="#", class="lockIcon").
 										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
 					.col-md-3
 						.otherBanner.no-top-border
-							img(src="images/banners/bannerSmall3.png", alt="")
+							img(src="images/banners/r.jpg", alt="")
 		section.telaah
 			.container
 				span.lineCaption2
@@ -541,6 +564,9 @@ block content
 										Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
 									p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
 							a(href="" class="btn btn-block") Analisis Lainnya
+		.container
+			.center-belt
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
 		section.slideTabbing.hitam
 			.container
 				.wrapperTabbing.whiteText
@@ -551,8 +577,9 @@ block content
 							.tabs-content
 								#tab-1.tab-content.margin-mm-bottom-20
 									figure
-										img(src="images/multimedia/video-migas.png", alt="")
-										a(href="#" class="cam")
+										a(href="#")
+											img(src="images/multimedia/video-migas.png", alt="")
+											span.cam
 									.followSosmed
 										span.hidden-xs.
 											Ikuti Kami:
