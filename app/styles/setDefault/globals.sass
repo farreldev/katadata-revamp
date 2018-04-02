@@ -94,7 +94,18 @@ html,body
 					margin: 10px 0
 					float: none
 					width: 100%
-			
+	a.lockIcon
+		position: relative
+		&:after
+			position: absolute
+			bottom: 0
+			margin-left: 3px
+			content: '\e900'
+			font-family: icomoon
+			font-size: 17px
+			line-height: 1.6
+			font-weight: bold
+			color: $black
 	a
 		font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 		font-weight: 500
@@ -206,10 +217,26 @@ html,body
 				color: $black
 				line-height: 1.4
 	h4
-		font-size: 1.08rem
-		line-height: 1.3
+		font-size: 17px
+		line-height: 1.4
 		a
 			color: $black
+	article.fotoInfo
+		padding: 15px
+		position: absolute
+		left: 20px
+		bottom: 20px
+		background-color: rgba(0,0,0,.7)
+		z-index: 3
+		a,p
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+			font-size: 15px
+			font-weight: 500
+			display: inline-block
+			vertical-align: middle
+			color: white
+		a,p
+			margin-left: 10px
 	.paySuport
 		float: left
 		span
@@ -270,10 +297,25 @@ html,body
 				top: 6px
 				left: 6px
 				z-index: -2
-		&.oneImg
+		&.bigFigure
+			width: 30px
+			height: 24px
+			> span
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoBold
+				font-size: 14px
+				font-weight: 500
+				text-align: center
+				line-height: 20px
+				width: 26px
+				height: 20px
 				&:before,
-				&:after,
-					display: none
+				&:after
+					width: 26px
+					height: 20px
+		&.oneImg
+			&:before,
+			&:after,
+				display: none
 	.followSosmed
 		position: relative
 		span

@@ -304,7 +304,7 @@ $(function() {
     }
     
     if (screen.width > 768) {
-      $('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li, .video-list li, .foto-list li').matchHeight();
+      $('.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li').matchHeight();
     }
 
     var myMnu = new mlPushMenu(

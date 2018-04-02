@@ -1,11 +1,16 @@
-extends base/for-video-detail
+extends base/home
 include components/mixings
 
 block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Multimedia", "Video", "Industri"])
+			.second-head-right
 	section.video-detail
 		section.video-head-detail
-			iframe(src="https://www.youtube.com/embed/9No-FiEInLA?start=0&amp;autoplay=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
-			.videoInfo.closeInfo
+			iframe(src="https://www.youtube.com/embed/6A3wqN7QECw?start=0&amp;autoplay=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+			.videoInfo
 				.infoWrapper
 					a(href="#", alt="{topik}", class="topik-link") Infrastruktur
 					p.infoArtikel 27 Januari 2018 #[span 15 Foto]
