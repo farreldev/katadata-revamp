@@ -89,17 +89,11 @@ block content
 									h4
 										a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
 						.col-md-3.col-sm-6
-							.opini-head
-								h3 Opini
-								a(href="", class="linkIndex pull-right") Halaman Opini »
-							.opini-body
-								article
-									p.quot
-										| Kalaupun memasukkan variabel gross split sebagai salah satu kriteria penilaian, survei Fraser tidak akan valid dan cenderung bias.
-									img(src="images/avatar/avatar1.png", alt="")
-									strong Muhammad Firman
-									p.
-										Dosen Departemen Ekonomika dan Bisnis UGM
+							h3 Minigrafik
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.minigrafik-body
+								a(href="#")
+									img(src="images/ekonografik/minigrafik.jpg", alt="")
 		.container
 			.center-belt
 				img(src="images/banners/centerBelt728x90.jpg", alt="")
@@ -167,7 +161,7 @@ block content
 		section.ekono
 			.container.posRelative
 				h3 Ekonografik
-				a(href="#", class="linkIndex pull-right") Halaman Ekonografik »
+				a(href="#", class="linkIndex pull-right") Lihat Semua »
 				.arrowNavigation2
 					a.prevArrowNav2
 						i(class="fa fa-chevron-left" aria-hidden="true")
@@ -185,7 +179,7 @@ block content
 					.col-md-9
 						.otherKat
 							h3 Energi
-							a(href="", class="linkIndex pull-right") Halaman Energi »
+							a(href="", class="linkIndex pull-right") Lihat Semua »
 							.row
 								.col-md-4.col-sm-4
 									a(href="")
@@ -204,7 +198,7 @@ block content
 										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
 						.otherKat
 							h3 Digital
-							a(href="", class="linkIndex pull-right") Halaman Digital »
+							a(href="", class="linkIndex pull-right") Lihat Semua »
 							.row
 								.col-md-4.col-sm-4
 									a(href="")
@@ -237,7 +231,7 @@ block content
 						.otherKat.no-padding-top.no-top-border
 							a(href="#") 
 								h3.bg-blue Databoks
-							a(href="#", class="linkIndex no-left-border") #[span Halaman Databoks »]
+							a(href="#", class="linkIndex no-left-border") #[span Lihat Semua »]
 							.row
 								.col-md-3.col-sm-6.margin-tb-bottom-20
 									a(href="#")
@@ -306,7 +300,7 @@ block content
 					.col-md-9
 						.otherKat.no-top-border
 							h3 Makro
-							a(href="", class="linkIndex pull-right") Halaman Makro »
+							a(href="", class="linkIndex pull-right") Lihat Semua »
 							.row
 								.col-md-4.col-sm-4
 									img(src="images/thumb-img/thumb7.jpg", alt="")
@@ -346,74 +340,87 @@ block content
 								img(src="images/recaptcha.png", alt="")
 		section.opini
 			.container
-				a(href="")
-					h3 Opini
-				a(href="", class="linkIndex pull-right") Halaman Opini »
-				ul
-					li
-						figure
-							img(src="images/avatar/opini-jokowi-pict.jpg", alt="")
-						article
-							strong Opini
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-jk-pict.jpg", alt="")
-						article
-							strong Opini
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-menteri-pict.jpg", alt="")
-						article
-							strong Wawancara
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-pict1.jpg", alt="")
-						article
-							strong Opini
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-pict3.jpg", alt="")
-						article
-							strong Wawancara
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-pict2.jpg", alt="")
-						article
-							strong Opini
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/woman-thumb.png", alt="")
-						article
-							strong Opini
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
-					li
-						figure
-							img(src="images/avatar/opini-pict1.jpg", alt="")
-						article
-							strong Wawancara
-							a(href="#").
-								Menjawab Keraguan Terhadap Gross Split
-							p Prahoro Nurtjahyo
+				.row
+					.col-md-9
+						a(href="")
+							h3 Opini
+						a(href="", class="linkIndex pull-right") Lihat Semua »
+						ul
+							li
+								figure
+									img(src="images/avatar/opini-jokowi-pict.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-jk-pict.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-menteri-pict.jpg", alt="")
+								article
+									strong.small-label Wawancara
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict1.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict3.jpg", alt="")
+								article
+									strong.small-label Wawancara
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict2.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							//- li
+							//- 	figure
+							//- 		img(src="images/avatar/woman-thumb.png", alt="")
+							//- 	article
+							//- 		strong Opini
+							//- 		a(href="#").
+							//- 			Menjawab Keraguan Terhadap Gross Split
+							//- 		p Prahoro Nurtjahyo
+							//- li
+							//- 	figure
+							//- 		img(src="images/avatar/opini-pict1.jpg", alt="")
+							//- 	article
+							//- 		strong Wawancara
+							//- 		a(href="#").
+							//- 			Menjawab Keraguan Terhadap Gross Split
+							//- 		p Prahoro Nurtjahyo
+					.col-md-3
+						.kutipan
+							h3.lr-border #[span Kutipan]
+							.opini-body
+								article
+									a(href="#", class="quot").
+										Kalaupun memasukkan variabel gross split sebagai salah satu kriteria penilaian, survei Fraser tidak akan valid dan cenderung bias.
+									img(src="images/avatar/avatar1.png", alt="")
+									strong Muhammad Firman
+									p.
+										Dosen Departemen Ekonomika dan Bisnis UGM
 		//- section.opini
 		//- 	.container
 		//- 		.row
@@ -519,51 +526,85 @@ block content
 					.col-md-3
 						.otherBanner.no-top-border
 							img(src="images/banners/r.jpg", alt="")
-		section.telaah
+		section.databoks-analisis
 			.container
-				span.lineCaption2
-					h3 Telaah
-				.row
-					.col-md-6.matchingHeight.margin-tb-bottom-25
-						.blockView
-							div
-								h2
-									a(href="") Jalan Panjang Blok Mahakam ke Pangkuan Pertamina
+				h3 Analisis Data
+				a(href="", class="linkIndex pull-right") Lihat Semua »
+				.row.headListAnalisis
+					.col-md-4
+						div.itemListAnalisis
+							a(href="#")
+								h4 Indonesia dalam Satu Dekade Deindustrialisasi
 								figure
-									img(src="images/thumb-img/thumb6.jpg", alt="")
-								article
-									p.
-										Selain menjadi peluang buat Pertamina, pengelolaan Blok Mahakam sekaligus pertaruhan reputasi perusahaan pelat merah tersebut.
-									p.infoArtikel.
-										Oleh #[strong Yuliawati] dan #[strong Anggita Rezki Amelia], 1 Januari 2018
-							ul
-								li
-									a(href="").
-										Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
-									p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
-								li
-									a(href="").
-										Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
-									p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
-							a(href="" class="btn btn-block") Telaah Lainnya
-					.col-md-6.matchingHeight
-						.analisisData
-							div
-								h3 #[a(href="") Analisis Data]
-								h4 #[a(href="") Stunting, Ancaman Generasi Masa Depan Indonesia]
-								p.infoArtikel.white Oleh #[strong Nazmi Haddyat Tamara], 1 Januari 2018
-								p.
-									Tingkat stunting sebagai dampak kurang gizi pada balita di Indonesia melampaui batas yang ditetapkan WHO. Kasus stunting banyak ditemukan di daerah dengan kemiskinan tinggi dan tingkat pendidikan yang rendah.
-							ul
-								li
-									a(href="").
-										Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
-									p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
-								li
-									a(href="").
-										Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
-									p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
-							a(href="" class="btn btn-block") Analisis Lainnya
+									img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							p.
+								Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+					.col-md-4
+						div.itemListAnalisis
+							a(href="#")
+								h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								figure
+									img(src="images/analisis/db-head-analisis2.jpg", alt="")
+							p.
+								Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+					.col-md-4
+						div.itemListAnalisis
+							a(href="#")
+								h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								figure
+									img(src="images/analisis/db-head-analisis1.jpg", alt="")
+							p.
+								Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+		//- SECTION TELAAH YANG LAMA
+
+		//- section.telaah
+		//- 	.container
+		//- 		span.lineCaption2
+		//- 			h3 Telaah
+		//- 		.row
+		//- 			.col-md-6.matchingHeight.margin-tb-bottom-25
+		//- 				.blockView
+		//- 					div
+		//- 						h2
+		//- 							a(href="") Jalan Panjang Blok Mahakam ke Pangkuan Pertamina
+		//- 						figure
+		//- 							img(src="images/thumb-img/thumb6.jpg", alt="")
+		//- 						article
+		//- 							p.
+		//- 								Selain menjadi peluang buat Pertamina, pengelolaan Blok Mahakam sekaligus pertaruhan reputasi perusahaan pelat merah tersebut.
+		//- 							p.infoArtikel.
+		//- 								Oleh #[strong Yuliawati] dan #[strong Anggita Rezki Amelia], 1 Januari 2018
+		//- 					ul
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 					a(href="" class="btn btn-block") Telaah Lainnya
+		//- 			.col-md-6.matchingHeight
+		//- 				.analisisData
+		//- 					div
+		//- 						h3 #[a(href="") Analisis Data]
+		//- 						h4 #[a(href="") Stunting, Ancaman Generasi Masa Depan Indonesia]
+		//- 						p.infoArtikel.white Oleh #[strong Nazmi Haddyat Tamara], 1 Januari 2018
+		//- 						p.
+		//- 							Tingkat stunting sebagai dampak kurang gizi pada balita di Indonesia melampaui batas yang ditetapkan WHO. Kasus stunting banyak ditemukan di daerah dengan kemiskinan tinggi dan tingkat pendidikan yang rendah.
+		//- 					ul
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 					a(href="" class="btn btn-block") Analisis Lainnya
 		.container
 			.center-belt
 				img(src="images/banners/centerBelt728x90.jpg", alt="")
@@ -571,7 +612,7 @@ block content
 			.container
 				.wrapperTabbing.whiteText
 					h3.white Multimedia
-					a(href="", class="linkIndex pull-right putihLink") Halaman Multimedia »
+					a(href="", class="linkIndex pull-right putihLink") Lihat Semua »
 					.row
 						.col-md-9.col-xs-12.no-padding-right
 							.tabs-content

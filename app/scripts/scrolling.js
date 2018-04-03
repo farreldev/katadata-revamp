@@ -3,7 +3,7 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
-$('main').scroll(function(event) {
+$(window).scroll(function(event) {
   didScroll = true;
 });
 
@@ -13,10 +13,10 @@ setInterval(function() {
       hasScrolled();
       didScroll = false;
    }
-}, 50);
+}, 250);
 
 function hasScrolled() {
-   var st = $('main').scrollTop();
+   var st = $(window).scrollTop();
    
    if (Math.abs(lastScrollTop - st) <= delta) return;
    
@@ -24,7 +24,7 @@ function hasScrolled() {
     // Scroll Down
     $('header#header').removeClass('timbul').addClass('scrollingUp');
   } else {
-    if (st + $('main').height() < $('.contentWrapper').height() || st === 0) {
+    if (st + $(window).height() < $(document).height() || st === 0) {
       $('header#header')
         .removeClass('scrollingUp')
         .addClass('timbul');
