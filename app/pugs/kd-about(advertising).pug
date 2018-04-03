@@ -1,0 +1,53 @@
+extends base/home
+include components/mixings
+
+block content
+	section.kd-about
+		.hero-banner-about
+			//- a(href="#")
+			//- 	img(src="images/icons/icon-play.png", alt="")
+			figure
+				img(src="images/foto-profil-kd.jpg")
+		.container
+			.row
+				.col-md-2
+					ul.about-side-nav
+						li
+							a(href="kd-about.html") Profil
+						li
+							a(href="kd-about(produk).html") Produk
+						li
+							a(href="kd-about(tim).html") Tim
+						li
+							a(href="") Pedoman Pemberitaan Media Siber
+						li
+							a(href="") Karier
+						li
+							a(href="kd-about(advertising).html" class="select-mnu") Advertising
+						li
+							a(href="kd-about(hubungi).html") Hubungi Kami
+				.col-md-7.about-content
+					article
+						h3 Tim Kami
+						p.
+							Katadata adalah perusahaan media online dan riset di bidang ekonomi dan bisnis. Kami menyajikan berita, informasi, data, dan hasil riset secara mendalam bagi kepentingan para pemimpin bisnis dan pengambil kebijakan. Beberapa berita, informasi dan infografik yang kami sajikan, sering menjadi referensi bagi pemimpin bisnis dan pengambil kebijakan.
+						p Jika Anda berminat beriklan di Katadata, silakan menghubungi:
+						.cperson
+							ul
+								li
+									p Tommy Januarto
+									span +62 817 6441 906
+										a(href="mailto:tommy@katadata.co.id") tommy@katadata.co.id
+								li
+									p Imelda Jane
+									span +62 813 9975 76
+										a(href="mailto:imelda.jane@katadata.co.id") imelda.jane@katadata.co.id
+
+					.prev-next-about
+						a(href="#", class="btn btn-link pull-left")
+							i(class="far fa-angle-double-left")
+							|  [Prev-title-content]
+						a(href="#", class="btn btn-link pull-right")
+							| [Next-title-content] 
+							i(class="far fa-angle-double-right")
+				.col-md-3

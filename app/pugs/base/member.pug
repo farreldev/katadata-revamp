@@ -10,6 +10,7 @@ html.no-js(lang="id")
 		title new_katadata
 		link(rel="apple-touch-icon" href="apple-touch-icon.png")
 		link(rel='stylesheet', href='https://cloud.typography.com/6761036/6309792/css/fonts.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		// Place favicon.ico in the root directory
 		// build:css styles/vendor.css
 		// bower:css
@@ -33,18 +34,20 @@ html.no-js(lang="id")
 				|  to improve your experience.
 				
 		div(id="mainWrapper" class="wrapper")
-			#mp-pusher.mp-pusher
-				header#header.timbul
-					include ../includes/header.pug
-				include ../includes/kd-menu-nav.pug
-				a(href="#" class="goUp")
-					i(class="fa fa-chevron-up")
-				main
-					.contentWrapper
-						.member-area
-							block member-caption
-							block member-content
-						include ../includes/footer.pug
+			//- #mp-pusher.mp-pusher
+			header#header.timbul
+				include ../includes/header.pug
+			//- include ../includes/kd-menu-nav.pug
+			a(href="#" class="goUp")
+				i(class="fa fa-chevron-up")
+			main
+				include ../includes/kd-simple-nav.pug
+				.contentWrapper
+					.member-area
+						block member-caption
+						block member-content
+					include ../includes/footer.pug
+			.wwNavigation-overlay
 		
 		// build:js scripts/vendor.js
 		// bower:js
@@ -69,8 +72,9 @@ html.no-js(lang="id")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js")
-		script(src="scripts/mlpushmenu.js")
-		script(src="scripts/classie.js")
+		//- script(src="scripts/mlpushmenu.js")
+		//- script(src="scripts/classie.js")
+		script(src="scripts/scrolling.js")
 		block myscript
 		// endbuild
 

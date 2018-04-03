@@ -68,6 +68,8 @@
 		.tabs-list-wrapper
 			overflow: auto
 			height: 635px
+			+breakpoint(tablet)
+				height: auto
 			+breakpoint(mobile)
 				height: auto
 			ul.tabs-list
@@ -103,6 +105,21 @@
 							font-weight: 500
 							line-height: 1.4
 							color: $black
+				+breakpoint(tablet)
+					width: auto
+					height: 100%
+					overflow-x: auto
+					white-space: nowrap
+					li.tab-link
+						display: inline-block
+						*display: inline
+						zoom: 1
+						margin-right: 10px
+						&:last-child
+							margin-right: 0
+						article
+							a
+								white-space: pre-wrap
 				+breakpoint(mobile)
 					width: auto
 					height: 100%

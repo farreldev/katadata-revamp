@@ -2,6 +2,33 @@
 
 /* body */
 
+// *,
+// *:after,
+// *:before
+//   box-sizing: border-box
+//   // -webkit-font-smoothing: antialiased
+//   // font-smoothing: antialiased
+//   text-rendering: optimizeLegibility
+
+// html, body, .wrapper, main
+//   height: 100%
+
+// body
+//   .wrapper // Container Main
+//     position: relative
+//     overflow: hidden
+//     main // Scroller
+//       padding-top: 73px
+//       position: relative
+//       overflow-y: auto
+//       +breakpoint(mobile)
+//         padding-top: 57px
+//       &.for-video-detail
+//         padding-top: 0
+//       .contentWrapper // Scroller Inner
+//         position: relative
+//         height: auto
+
 *,
 *:after,
 *:before
@@ -10,50 +37,27 @@
   // font-smoothing: antialiased
   text-rendering: optimizeLegibility
 
-html, body, .wrapper, main
-  height: 100%
+html, body
+  box-sizing: border-box
+  min-height: 100%
+  
+html
+  position: relative
 
 body
-  .wrapper // Container Main
+  .wrapper
     position: relative
     overflow: hidden
-    main // Scroller
+    height: 100%
+    main
       padding-top: 73px
-      position: relative
-      overflow-y: auto
-      +breakpoint(mobile)
-        padding-top: 57px
+      // margin-bottom: 600px
       &.for-video-detail
         padding-top: 0
-      .contentWrapper // Scroller Inner
-        position: relative
-        height: auto
-
-// *,
-// *:after,
-// *:before
-//   box-sizing: border-box
-//   -webkit-font-smoothing: antialiased
-//   font-smoothing: antialiased
-//   text-rendering: optimizeLegibility
-
-// html, body
-//   box-sizing: border-box
-//   min-height: 100%
-  
-// html
-//   position: relative
-
-// body
-//   .wrapper
-//     position: relative
-//     overflow: hidden
-//     height: 100%
-//     main
-//       // margin-bottom: 600px
-//       .contentWrapper
-//         // padding: 90px 0 70px
-//         padding: 0 0 70px
+        .navigasi
+          z-index: 8
+      .contentWrapper
+        width: 100%
 
 /* Customize container */
 .container
