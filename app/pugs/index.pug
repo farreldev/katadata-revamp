@@ -43,10 +43,10 @@ block content
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 						.col-md-5.col-sm-5
-							a(href="" class="hl-pict")
-								img(src="images/article-img/HL-pict.jpg", alt="")
-								p.small.pull-right
-									| Arief Kamaludin/Katadata
+							figure
+								a(href="" class="hl-pict")
+									img(src="images/article-img/HL-pict.jpg", alt="")
+									figcaption Arief Kamaludin/Katadata
 						.col-md-3.col-sm-12
 							.otherBanner.clear-top-padding.no-top-border
 								img(src="images/banners/r.jpg", alt="")
@@ -60,14 +60,14 @@ block content
 			.container
 				.recentArtWrap
 					.row
-						.col-md-3.col-sm-6.margin-tb-bottom-30
+						.col-md-3.col-sm-6.recentArtThumb
 							figure.thumb-article-img
 								a(href="")
 									img(src="images/thumb-img/thumb2.jpg", alt="")
 							a(href="#", alt="{topik}", class="topik-link") Energi
 							h4
 								a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
-						.col-md-3.col-sm-6.margin-tb-bottom-30
+						.col-md-3.col-sm-6.recentArtThumb
 							figure.thumb-article-img
 								a(href="")
 									img(src="images/thumb-img/thumb3.jpg", alt="")
@@ -89,11 +89,14 @@ block content
 									h4
 										a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
 						.col-md-3.col-sm-6
-							h3 Minigrafik
-							a(href="", class="linkIndex pull-right") Lihat Semua »
+							//- h3 Minigrafik
+							//- a(href="", class="linkIndex pull-right") Lihat Semua »
 							.minigrafik-body
 								a(href="#")
 									img(src="images/ekonografik/minigrafik.jpg", alt="")
+								.minigrafik-caption
+									h3 Minigrafik
+									a(href="", class="linkIndex pull-right") Lihat Detail »
 		.container
 			.center-belt
 				img(src="images/banners/centerBelt728x90.jpg", alt="")
@@ -329,7 +332,6 @@ block content
 							strong News Alert
 							p.
 								Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda.
-								Dengan mendaftar, Anda setuju untuk menerima Newsletter dari Katadata. Anda bisa melakukan Unsubscribe kapan pun.
 						//- strong Berlangganan Newsletter Kami
 					.col-md-6
 						form
@@ -431,7 +433,7 @@ block content
 		//- 				h3.hidden-xs Opini Populer
 		//- 		span.lineHor
 		//- 		.row
-		//- 			.col-md-6.matchingHeight
+		//- 			.col-md-6
 		//- 				.opiniLeft
 		//- 					ul
 		//- 						li
@@ -471,9 +473,9 @@ block content
 		//- 								Menjawab Keraguan Terhadap Gross Split
 		//- 							p Prahoro Nurtjahyo
 		//- 					a(href="" class="btn btn-block") Opini Lainnya
-		//- 			.col-md-1.matchingHeight
+		//- 			.col-md-1
 		//- 				span.lineVer
-		//- 			.col-md-5.matchingHeight
+		//- 			.col-md-5
 		//- 				.opiniRight
 		//- 					h3.visible-xs Opini Populer
 		//- 					ul
@@ -533,7 +535,7 @@ block content
 				.row.headListAnalisis
 					.col-md-4
 						div.itemListAnalisis
-							a(href="#")
+							a(href="#", class="analisisTitle")
 								h4 Indonesia dalam Satu Dekade Deindustrialisasi
 								figure
 									img(src="images/analisis/db-head-analisis1.jpg", alt="")
@@ -542,8 +544,8 @@ block content
 							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
 					.col-md-4
 						div.itemListAnalisis
-							a(href="#")
-								h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+							a(href="#", class="analisisTitle")
+								h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio reprehenderit sint deserunt quibusdam culpa!
 								figure
 									img(src="images/analisis/db-head-analisis2.jpg", alt="")
 							p.
@@ -551,7 +553,7 @@ block content
 							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
 					.col-md-4
 						div.itemListAnalisis
-							a(href="#")
+							a(href="#", class="analisisTitle")
 								h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
 								figure
 									img(src="images/analisis/db-head-analisis1.jpg", alt="")

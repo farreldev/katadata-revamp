@@ -11,9 +11,7 @@ block append config
 	mixin ekonoGraphic(imgName, txtLink)
 		div
 			a(href="#")
-				figure
-					a(href="")
-						img(src=pathImg[1]+imgName, alt="" class="img-responsive")
+				img(src=pathImg[1]+imgName, alt="" class="img-responsive")
 			article
 				a(href="#").
 					#{txtLink}

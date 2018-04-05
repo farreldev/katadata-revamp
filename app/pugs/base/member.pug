@@ -21,9 +21,17 @@ html.no-js(lang="id")
 		// build:css styles/main.css
 		link(rel="stylesheet" href="styles/main.css")
 		// endbuild
-		// build:js scripts/vendor/modernizr.js
-		script(src="/bower_components/modernizr/modernizr.js")
-		// endbuild
+
+		//- // build:js scripts/jquery.min.js
+		//- script(src='/bower_components/jquery/dist/jquery.js')
+		//- // endbuild
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
+		//- // build:js scripts/vendor/modernizr.js
+		//- script(src="/bower_components/modernizr/modernizr.js")
+		//- // endbuild
+
 	body
 		//if IE
 			p.browserupgrade
@@ -51,7 +59,6 @@ html.no-js(lang="id")
 		
 		// build:js scripts/vendor.js
 		// bower:js
-		script(src='/bower_components/jquery/dist/jquery.js')
 		script(src='/bower_components/modernizr/modernizr.js')
 		script(src='/bower_components/slick-carousel/slick/slick.js')
 		script(src='/bower_components/matchHeight/dist/jquery.matchHeight.js')

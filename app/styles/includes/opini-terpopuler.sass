@@ -2,7 +2,9 @@ ul.opiniTerpopuler
 	li
 		position: relative
 		display: inline-block
-		margin-bottom: 10px
+		padding-bottom: 15px
+		margin-bottom: 15px
+		width: 100%
 		+borderDot
 		+noBorderDot
 		+clearit
@@ -19,15 +21,18 @@ ul.opiniTerpopuler
 			border-radius: 50%
 			overflow: hidden
 			margin-right: 15px
-			margin-bottom: 35px
 			img
 				width: 100%
-		a
-			display: block
-			margin-bottom: 5px
-			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
-			font-size: 18px
-			line-height: 1.4
-			color: $black
-		p
-			font-size: 14px
+		span
+			display: inline-block
+			float: right
+			width: calc(100% - 85px)
+			a
+				display: block
+				margin-bottom: 5px
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+				font-size: 18px
+				line-height: 1.4
+				color: $black
+			p
+				font-size: 14px

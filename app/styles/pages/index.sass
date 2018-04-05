@@ -4,13 +4,20 @@
 			position: relative
 			padding: 0 0 25px
 			@extend %thin-line-custom-bottom
+			.recentArtThumb
+				+breakpoint(mobile)
+					position: relative
+					margin-bottom: 25px
+					&:nth-child(2)
+						padding-bottom: 15px
+						margin-bottom: 15px
+						+borderDot
 			ul
 				li
 					position: relative
-					padding-bottom: 10px
-					margin-bottom: 10px
+					padding-bottom: 15px
+					margin-bottom: 15px
 					+borderDot
-					+noBorderDot
 					+breakpoint(mobile)
 						&:last-child
 							margin-bottom: 25px

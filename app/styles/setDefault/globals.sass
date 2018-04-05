@@ -17,11 +17,23 @@ html,body
 		background-color: rgba(0,0,0,.55)
 		z-index: 2
 	section
-		margin-bottom: 30px
+		margin-bottom: 25px
 	figure
 		// overflow-y: hidden
 		width: 100%
 		margin-bottom: 20px
+		img
+			display: block
+			width: 100%
+		figcaption
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+			font-size: 10px
+			font-weight: 400
+			padding: 3px 0 5px
+			text-transform: uppercase
+			text-align: right
+			font-size: 10px
+			color: $black
 		&.thumb-article-img
 			height: 175px
 			max-height: 280px
@@ -32,6 +44,7 @@ html,body
 				height: 230px
 			+breakpoint(mobile)
 				height: auto
+				margin-bottom: 10px
 			img
 				width: 100%
 				height: auto
@@ -41,8 +54,11 @@ html,body
 				// +breakpoint(mobile)
 				// 	width: 100%
 				// 	height: auto
-		img
+		a.hl-pict
+			display: inline-block
 			width: 100%
+			overflow: hidden
+			text-decoration: none
 	.tagLink
 		margin-bottom: 10px
 		strong
@@ -439,8 +455,24 @@ html,body
 			+box-shadow(0,0,10px, rgba(0,0,0,.15))
 			background: white
 	.minigrafik-body
+		position: relative
 		img
 			width: 100%
+		.minigrafik-caption
+			padding: 10px
+			position: absolute
+			bottom: 0
+			width: 100%
+			background-color: rgba(0,0,0,.75)
+			+clearit
+			h3
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+				font-size: 20px
+				font-weight: 400
+				margin: 0
+				color: #fff
+			a.linkIndex
+				color: $blue-sea
 	strong.small-label
 		display: inline-block
 		margin-bottom: 5px
@@ -529,7 +561,7 @@ html,body
 				width: 62%
 				margin-bottom: 12px
 		input[type="submit"]
-			padding: 11px 0
+			padding: 9px 0
 			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 			font-weight: 500
 			float: right
@@ -538,18 +570,25 @@ html,body
 				width: 35%
 				margin-bottom: 8px
 		&.inDetail
+			position: relative
+			top: 10px
 			float: left
 			width: 48%
 			padding: 15px 0
-			margin-bottom: 4px
 			margin-right: 18px
-			border-top: 1px solid #ddd
-			border-bottom: 1px solid #ddd
+			margin-bottom: 18px
+			margin-left: -80px
+			border-top: 5px solid $blue-pastel
+			border-bottom: 5px solid $blue-pastel
 			background-color: transparent
 			+breakpoint(tablet)
+				margin-left: 0
 				float: left
 				width: 50%
 			+breakpoint(mobile)
+				position: static
+				margin-left: 0
+				margin-bottom: 15px
 				float: none
 				width: 100%
 			strong
@@ -567,7 +606,7 @@ html,body
 					margin-bottom: 12px
 			.customInput
 				display: inline-block
-				margin: 0 0 7px
+				margin: 0 0 20px
 				width: 100%
 			.recaptha-space
 				margin-bottom: 15px

@@ -1,18 +1,22 @@
 .video-list
-	width: 100%
-	+clearit
 	margin-bottom: 10px
+	+breakpoint(wide)
+		+flexOwnGrid(li, 3, 2.2%, 20)
+	+breakpoint(tablet)
+		+flexOwnGrid(li, 2, 2.4%, 20)
+	+breakpoint(mobile)
+		+flexOwnGrid(li, 1, 0, 25)
 	li
 		padding: 10px
-		min-height: 320px
-		+breakpoint(wide)
-			+ownGrid(3, 2%)
-		+breakpoint(tablet)
-			+ownGrid(2, 2%)
-			min-height: 335px
-		+breakpoint(mobile)
-			+ownGrid(1, 2%)
-			min-height: auto
+		// min-height: 320px
+		// +breakpoint(wide)
+		// 	+ownGrid(3, 2%)
+		// +breakpoint(tablet)
+		// 	+ownGrid(2, 2%)
+			// min-height: 335px
+		// +breakpoint(mobile)
+		// 	+ownGrid(1, 2%)
+		// 	min-height: auto
 		box-shadow: 0 2px 10px rgba(0,0,0,.15)
 		a:not(.topik-link):not(.linkVid)
 			display: block

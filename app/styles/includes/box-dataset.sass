@@ -1,20 +1,25 @@
 ul.boxDataset
-   padding: 0 0 20px
-   margin-bottom: 25px
-   display: block
    border-bottom: 1px solid #ddd
-   +clearit
+   +breakpoint(wide)
+      +flexOwnGrid(li, 3, 3%, 25)
+      margin-bottom: 25px
+   +breakpoint(tablet)
+      +flexOwnGrid(li, 2, 3%, 25)
+      margin-bottom: 25px
+   +breakpoint(mobile)
+      +flexOwnGrid(li, 1, 0, 25)
+      margin-bottom: 25px
    li
       position: relative
       padding: 12px
-      +breakpoint(wide)
-         +ownGrid(3, 3%)
       +box-shadow(0,0,10px,rgba(0,0,0,.15))
-      +breakpoint(tablet)
-         +ownGrid(2, 3%)
-      +breakpoint(mobile)
-         +ownGrid(1, 0)
-         margin-bottom: 25px
+      // +breakpoint(wide)
+      //    +ownGrid(3, 3%)
+      // +breakpoint(tablet)
+      //    +ownGrid(2, 3%)
+      // +breakpoint(mobile)
+      //    +ownGrid(1, 0)
+      //    margin-bottom: 25px
       article
          padding-bottom: 40px
          margin-bottom: 20px
