@@ -358,11 +358,11 @@ $(function() {
       });
     }
 
+    
     if (screen.width > 768) {
-      $(
-        '.matchingHeight, .itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li'
-      ).matchHeight();
+      $('.itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li').matchHeight();
     }
+
 
     // var myMnu = new mlPushMenu(
     //   document.getElementById('mp-menu'),
@@ -403,6 +403,6 @@ $(function() {
     kdTime();
     searcPanel();
     removeEmptyTeks();
-
+    
   })();
 });

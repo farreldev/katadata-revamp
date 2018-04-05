@@ -1,18 +1,17 @@
 .ekonoList
    ul.listGraph
-      +clearit
-      width: 100%
+      +flexOwnGrid(li, 3, 2%, 25)
       li
          padding: 15px
-         +box-shadow(0,0,10px, rgba(0,0,0,.1))
-         +ownGrid(3, 2%)
          border: 1px solid #eee
          transition: box-shadow .3s ease-in-out
-         +breakpoint(tablet)
-            +ownGrid(2, 3%)
-         +breakpoint(mobile)
-            +ownGrid(1, 0)
-            margin-bottom: 30px
+         +box-shadow(0,0,10px, rgba(0,0,0,.1))
+         // +ownGrid(3, 2%)
+         // +breakpoint(tablet)
+         //    +ownGrid(2, 3%)
+         // +breakpoint(mobile)
+         //    +ownGrid(1, 0)
+         //    margin-bottom: 30px
          &:hover
             cursor: pointer
             +box-shadow(0,0,20px, rgba(0,0,0,.25))
@@ -40,6 +39,7 @@
                   a.btn
                      margin-bottom: 12px
                      position: relative
+                     opacity: 0
                      color: #fff
                      display: block
                      transition: all .3s ease-in-out
@@ -51,7 +51,7 @@
                      display: block
                      color: #fff
                      text-align: center
-                     border-radius: 3px
+                     // border-radius: 3px
                      transition: all .3s ease-in-out
                      background-color: #dedede
                      a
@@ -78,6 +78,7 @@
                   transition: all .3s ease-in-out
                   span.btnLinksWrapper
                      a.btn
+                        opacity: 1
                         transition: all .3s ease-in-out
                         top: 0
                      span.share-ekono

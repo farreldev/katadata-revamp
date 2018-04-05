@@ -1,9 +1,11 @@
 .homeEkonografik
 	.ekonoList
 		ul.listGraph
-			li
-
-				+ownGrid(2, 5%)
-				+breakpoint(mobile)
-					+ownGrid(1, 0)
-					margin-bottom: 30px
+			+flexOwnGrid(li, 2, 3%, 25)
+			+breakpoint(mobile)
+				+flexOwnGrid(li, 1, 0, 25)
+			// li
+				// +ownGrid(2, 5%)
+				// +breakpoint(mobile)
+				// 	+ownGrid(1, 0)
+				// 	margin-bottom: 30px

@@ -25,24 +25,27 @@
 					position: absolute
 					bottom: 12px
 	ul.boxAnalisis
-		padding: 0 0 20px
-		margin-bottom: 25px
-		display: block
 		border-bottom: 1px solid #ddd
-		+clearit
+		+breakpoint(wide)
+			+flexOwnGrid(li, 3, 3%, 25)
+			margin-bottom: 25px
+		+breakpoint(tablet)
+			+flexOwnGrid(li, 2, 3%, 25)
+			margin-bottom: 25px
 		+breakpoint(mobile)
-			padding-bottom: 0
+			+flexOwnGrid(li, 1, 0, 25)
+			margin-bottom: 25px
 		li
 			position: relative
 			padding: 12px 12px 35px
 			+box-shadow(0,0,10px,rgba(0,0,0,.15))
-			+breakpoint(wide)
-				+ownGrid(3, 3%)
-			+breakpoint(tablet)
-				+ownGrid(2, 3%)
-			+breakpoint(mobile)
-				+ownGrid(1, 0)
-				margin-bottom: 25px
+			// +breakpoint(wide)
+			// 	+ownGrid(3, 3%)
+			// +breakpoint(tablet)
+			// 	+ownGrid(2, 3%)
+			// +breakpoint(mobile)
+			// 	+ownGrid(1, 0)
+			// 	margin-bottom: 25px
 			article
 				margin-bottom: 10px
 				p
@@ -120,24 +123,27 @@
 					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 					font-weight: 400
 	ul.boxAnalisis
-		padding: 0 0 20px
-		margin-bottom: 25px
-		display: block
 		border-bottom: 1px solid #ddd
-		+clearit
-		+breakpoint(mobile)
-			padding-bottom: 0
+		+breakpoint(wide)
+			+flexOwnGrid(li, 4, 2%, 25)
+			margin-bottom: 25px
+		+breakpoint(tablet)
+			+flexOwnGrid(li, 3, 3%, 25)
+			margin-bottom: 25px
+		+breakpoint(tablet)
+			+flexOwnGrid(li, 1, 0, 25)
+			margin-bottom: 25px
 		li
 			position: relative
 			padding: 12px 12px 35px
 			+box-shadow(0,0,10px,rgba(0,0,0,.15))
-			+breakpoint(wide)
-				+ownGrid(4, 2%)
-			+breakpoint(tablet)
-				+ownGrid(2, 3%)
-			+breakpoint(mobile)
-				+ownGrid(1, 0)
-				margin-bottom: 25px
+			// +breakpoint(wide)
+			// 	+ownGrid(4, 2%)
+			// +breakpoint(tablet)
+			// 	+ownGrid(2, 3%)
+			// +breakpoint(mobile)
+			// 	+ownGrid(1, 0)
+			// 	margin-bottom: 25px
 			article
 				margin-bottom: 10px
 				p
