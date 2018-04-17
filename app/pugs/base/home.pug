@@ -9,6 +9,8 @@ html.no-js(lang="id")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title new_katadata
 		link(rel="apple-touch-icon" href="apple-touch-icon.png")
+		link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+		link(rel='icon', href='/favicon.ico', type='image/x-icon')
 		link(rel='stylesheet', href='https://cloud.typography.com/6761036/6309792/css/fonts.css')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		// Place favicon.ico in the root directory
@@ -41,7 +43,7 @@ html.no-js(lang="id")
 				|  browser. Please 
 				a(href="http://browsehappy.com/") upgrade your browser
 				|  to improve your experience.
-				
+		//- include ../includes/teaser.pug
 		div(id="mainWrapper" class="wrapper")
 			//- #mp-pusher.mp-pusher
 			header#header.timbul
@@ -80,8 +82,9 @@ html.no-js(lang="id")
 		//- script(src="scripts/mlpushmenu.js")
 		//- script(src="scripts/classie.js")
 		script(src="scripts/scrolling.js")
-		block myscript
 		// endbuild
+		
+		block myscript
 
 		// build:js scripts/main.js
 		script(src="scripts/main.js")

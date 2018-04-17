@@ -16,6 +16,7 @@
 						position: relative
 						text-decoration: none
 						z-index: 2
+						+clearit
 						div.layerBox
 							position: relative
 							top: 5px
@@ -24,6 +25,7 @@
 							span
 								color: $black
 						p
+							float: right
 							position: relative
 							font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 							font-size: 22px
@@ -31,6 +33,7 @@
 							color: #fff
 							display: inline-block
 							z-index: 2
+							width: calc(100% - 45px)
 							+breakpoint(mobile)
 								float: right
 								width: calc(100% - 38px)

@@ -2,6 +2,8 @@ html,body
 	input[type="radio"], 
 	input[type="checkbox"]
 		margin: 0
+	.fb_iframe_widget
+		top: 5px
 	.abu
 		background-color: #ced3cc
 	.hitam
@@ -201,6 +203,14 @@ html,body
 		display: inline-block
 		margin-bottom: 20px
 		color: $blue-cap
+		&.italicCap
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoBold
+			font-size: 1.5rem
+			font-style: italic
+			font-weight: 700
+			letter-spacing: -1px
+		&.blue-light
+			color: $blue-light
 		&.white
 			color: white
 		&.bg-blue
@@ -577,7 +587,7 @@ html,body
 			padding: 15px 0
 			margin-right: 18px
 			margin-bottom: 18px
-			margin-left: -80px
+			margin-left: -95px
 			border-top: 5px solid $blue-pastel
 			border-bottom: 5px solid $blue-pastel
 			background-color: transparent

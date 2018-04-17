@@ -7,8 +7,10 @@
 	li
 		display: inline-block
 		margin-right: 5px
+		+breakpoint(mobile)
+			margin-bottom: 15px
 		&:last-child
-				margin-right: 0
+			margin-right: 0
 		a
 			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 			font-size: 14px
@@ -74,6 +76,18 @@
 			background-color: $other
 			&:hover
 				background-color: darken($other, 5%)
+		a[class*="whatsapp"]
+			background-color: $wa
+			&:hover
+				background-color: darken($wa, 5%)
+		a[class*="line"]
+			display: inline-block
+			vertical-align: middle
+			width: auto
+			height: auto
+			img
+				display: block
+				margin-bottom: 6px
 		a[class*="btn-like"]
 			// margin-left: 10px
 			padding: 0 10px
