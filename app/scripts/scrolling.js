@@ -7,9 +7,10 @@ $(window).scroll(function(event) {
   didScroll = true;
 });
 
-
 setInterval(function() {
-   if (didScroll) {
+  var $cekMnu = $('div.humburger-btn').hasClass('humTrigger'),
+      $cekSearch = $('div.layerSearch').hasClass('openSearch');
+   if (didScroll && !$cekMnu && !$cekSearch) {
       hasScrolled();
       didScroll = false;
    }

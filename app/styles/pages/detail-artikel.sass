@@ -9,6 +9,22 @@
 			+breakpoint(mobile)
 				width: auto
 				font-size: 30px
+		article.infoCreated
+			display: inline-block
+			p
+				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoLight
+				font-weight: 300
+				b
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+					font-weight: 500
+			date
+				display: inline-block
+				padding: 7px 0 0
+				font-family: robotoLight
+				font-size: 14px
+				color: #999
+				+breakpoint(mobile)
+					margin-bottom: 25px
 		h3.taiching
 			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
 			font-size: 24px
@@ -51,16 +67,20 @@
 			article
 				display: inline-block
 				vertical-align: middle
-				
 				p
+					padding: 2px 0
 					font-size: 15px
 					margin-bottom: 5px
 					color: #999
+					// b
+					// 	font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+					// 	font-size: 16px
+					// 	font-weight: 500
 					&.infoArtikel
 						margin-bottom: 2px
 				time
 					font-family: robotoLight
-					font-size: 12px
+					font-size: 14px
 					color: #999
 				+breakpoint(mobile)
 					width: calc(100% - 101px)
@@ -123,9 +143,11 @@
 			div[class*="tinyimg"]
 				margin-bottom: 20px
 				> div:nth-child(2)
+					font-family: "Gotham Narrow A","Gotham Narrow B",robotoRegular
+					font-weight: 400
 					padding: 2px 0
-					line-height: 1.3
-					font-size: 14px
+					line-height: 1.4
+					font-size: 12px
 				figure
 					margin-bottom: 0
 			p
@@ -135,11 +157,13 @@
 					font-weight: 400
 			p
 				strong
-					display: block
+					// display: block
 					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 					font-weight: 500
-					margin-bottom: -10px
-
+					// margin-bottom: -10px
+			td
+				p
+					margin-bottom: 0
 			.baca-juga
 				padding: 10px 0
 				margin-bottom: 20px

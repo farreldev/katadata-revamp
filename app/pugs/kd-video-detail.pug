@@ -4,7 +4,9 @@ include components/mixings
 block content
 	section.video-detail
 		section.video-head-detail
-			iframe(src="https://www.youtube.com/embed/9No-FiEInLA?start=0&amp;autoplay=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+			//- iframe(src="https://www.youtube.com/embed/9No-FiEInLA?enablejsapi=1&amp;start=0&amp;autoplay=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+			//- iframe(id="yt" src="https://www.youtube.com/embed/X9ELENWZqLE?enablejsapi=1&controls=1&fs=0&iv_load_policy=3&rel=0&showinfo=1&loop=0" frameborder="0" allowfullscreen)
+			iframe(id="yt" src="https://www.youtube.com/embed/ZpPv7ubYJ5Y?enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
 			.videoInfo.closeInfo
 				.infoWrapper
 					a(href="#", alt="{topik}", class="topik-link") Infrastruktur
@@ -88,6 +90,8 @@ block content
 							span 1:58
 							a.linkVid.
 								Target Pajak Tinggi, Pengusaha Resah
+					.shortcutBorderTop.margin-bottom-25
+					a(href="#" class="btn block-half") Video Lainnya
 				.col-md-3
 					h3 Video Terpopuler
 					ul.list-terpopuler
@@ -116,7 +120,8 @@ block content
 								figure
 									img(src="images/thumb-img/vid-thumb3.jpg", alt="")
 								p Megahnya Stadion Utama Gelora Bung Karno
-			.shortcutBorderTop.margin-bottom-25
-			.row
-				.col-md-12.text-center
-					a(href="#" class="btn width-50 xs-width-full") Video Lainnya
+
+block myscript
+	// build:js scripts/video-yt.js
+	script(src="scripts/video-yt.js")
+	// endbuild
