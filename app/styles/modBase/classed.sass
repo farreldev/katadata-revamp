@@ -109,13 +109,20 @@ $offset: 20;
 
 /* MatchHeight */
 .row
-	&.is-table-row
+	&.is-table-row-top
 		+breakpoint(wide)
 			display: table
 			[class*="col-"]
 				float: none
 				display: table-cell
 				vertical-align: top
+	&.is-table-row-middle
+		+breakpoint(wide)
+			display: table
+			[class*="col-"]
+				float: none
+				display: table-cell
+				vertical-align: middle
 
 @for $i from 1 through $offset
 	.padding-#{5 * $i}

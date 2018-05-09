@@ -240,6 +240,7 @@ $(function() {
 			}
 			$('.layerSearch').toggleClass('openSearch');
 			$('.wwNavigation-overlay').fadeIn();
+			$('#txtSearch').focus();
 		} else {
 			$('.layerSearch').removeClass('openSearch');
 			$('nav.navigasi').removeClass('mnuOpen');
@@ -279,9 +280,10 @@ $(function() {
 		return false;
 	});
 
-	// function teaser() {
+
+	// var teaser = function(n) {
 	//   $("#teaserFlip").hover(function(e) {
-	// 	  e.stopPropagation();
+	// 	//   e.stopPropagation();
 	//       $("#teaserFlip img")
 	//         .stop()
 	//         .animate({ width: "307px", height: "308px" }, 300);
@@ -291,12 +293,14 @@ $(function() {
 	//     }, function() {
 	//       $("#teaserFlip img")
 	//         .stop()
-	//         .animate({ width: "210px", height: "210px" }, 300);
+	//         .animate({ width: n+"px", height: n+"px" }, 300);
 	//       $(".bannerTeaser")
 	//         .stop()
-	//         .animate({ width: "210px", height: "210px" }, 300);
+	//         .animate({ width: n+"px", height: n+"px" }, 300);
 	// 	 });
 	// }
+
+	// (screen.width < 767) ? teaser(170) : teaser(210);
 
 	var $isDetail = $('main').find('div').hasClass('detail-artikel');
 
@@ -450,7 +454,7 @@ $(function() {
 	kdTime();
 	searcPanel();
 	removeEmptyTeks();
-	// teaser();
+	
 
   })();
 });

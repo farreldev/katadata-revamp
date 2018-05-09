@@ -1,0 +1,81 @@
+extends base/home
+include components/mixings
+
+block content
+	section.kd-about
+		.hero-banner-about
+			//- a(href="#")
+			//- 	img(src="images/icons/icon-play.png", alt="")
+			figure
+				img(src="images/foto-profil-kd.jpg")
+		.container
+			.row
+				.col-md-2
+					ul.about-side-nav
+						li
+							a(href="" class="select-mnu") Disclaimer
+				.col-md-7.about-content
+					article
+						p.
+							#[strong Disclaimer] berikut ini menjelaskan perihal website kami. Silakan baca disclaimer ini secara lengkap sebelum menggunakan databoks.katadata.co.id. Dengan menggunakan website ini maka Anda menyetujui  syarat dan ketentuan disclaimer ini. Syarat dan ketentuan yang tercantum di bawah ini mengatur penggunaan layanan online ("Layanan Online") dan material yang tersedia ("Material") di databooks. Istilah "Anda" berarti entitas (mis. Individu, perusahaan, korporasi, kemitraan, pemilik tunggal, dll) atau lembaga pemerintah yang memasuki Perjanjian Berlangganan dengan Databoks.
+							
+						strong Akses Layanan
+						ol
+							li.
+								Kata “Pengguna Bewenang” mengacu pada orang yang memiliki akun secara membeli/membayar (Akun Perusahaan, Premium Akun, Akun Proyek Singkat, Lisensi Kampus, dan Akun Pelajar). Hanya pegawai berwenang, pegawai sementara, pelajar, rekan/anggota, dan  kontraktor yang menjalankan kerja secara eksklusif untuk Anda, yang menuhi syarat mengakses dan menggunakan Layanan Online dan Material. Penyedia layanan professional yang dimiliki Pengguna Berwenang, seperti pengacara, akuntan, agen outsourcing, perusahaan hubungan masyarakat, dan setiap penasihat profesional lainnya secara khusus tidak termasuk dari orang yang memenuhi syarat. Anda menyetujui bahwa informasi login Databoks, termasuk username dan password, hanya dapat digunakan oleh pengguna berwenang kepada siapa Databoks memberikannya dan informasi login tersebut tidak akan dibagikan dengan pengguna lain ataupun Pengguna Berwenang lainnya. Anda bertanggung jawab mengendalikan dan mengatur daftar Pengguna Berwenang dan akan segera memberitahu Databoks untuk menonaktifkan informasi login dari Pengguna Berwenang jika pengguna tersebut sudah tidak memenuhi syarat atau Anda ingin memutus akses Pengguna Berwenang tersebut atas Layanan Online yang ada. Anda bertanggung jawab untuk semua penggunaan Layanan Online yang diakses dengan informasi login Databoks yang diserahkan pada Pengguna Berwenang Anda termasuk biaya terkait oleh Pengguna Berwenang. Anda dapat menggunakan upaya komersil yang wajar untuk mencegah penggunaan tak berwenang atas informasi login Databoks yang ditujukan untuk Pengguna Berwenang Anda dan memberitahukan pihak Databoks, lewat tulisan, jika Anda mencurigai informasi login Anda hilang, dicuri, berbahaya, atau disalahgunakan.
+
+							li.
+								Kata “Anggota” mengacu pada pengguna dengan langganan atau akun gratis (Akun Basic) termasuk pengunjung yang tidak terdaftar pada website karena tidak menyertakan informasi login.  Semua ketentuan yang melarang atau membatasi penggunaan Material untuk Pengguna Berwenang juga berlaku, kecuali dinyatakan lain di sini.
+
+						strong Pemberian Hak
+						ol
+							li 
+								| Pengguna Berwenang diberikan hak terbatas yang non-eksklusif dan non-transferable untuk mengakses dan menggunakan Layanan Online dan Material untuk kepentingan riset yang tersedia bagi Anda. Hak yang diberikan secara eksklusif untuk Pengguna Berwenang adalah sebagai berikut:
+								br
+								| Hak untuk menggunakan Material untuk keperluan riset dan hak untuk menyalin Material dalam analisis, presentasi, dokumen, dan bentuk serupa lainnya dalam riset pengguna;
+								br
+								| Hak untuk menerbitkan dan mendistribusikan Material, kecuali dinyatakan dilarang oleh hukum kekayaan intelektual dan hukum hak cipta yang berlaku;
+								br
+								| Untuk menghindari keraguan, men-download dan menyimpan Material dalam arsip database dilarang. Layanan Online dan Material dilindungi oleh hak cipta, hukum kekayaan intelektual, dan hukum lainnya yang mencegah akses dan penggunaan yang tidak berwenang. Jika Anda bukan Pengguna Berwenang, Anda tidak diizinkan mengakses dan menggunakan Layanan Online yang membutuhkan langganan berbayar untuk keperluan apapun. Jika Anda mengakses dan menggunakan Layanan Online atau Material yang membutuhkan langganan berbayar tanpa otorisasi, akses dan penggunaan Anda akan diatur oleh Syarat dan Ketentuan dan Anda akan bertanggung jawab atas pelanggaran dari Syarat dan Ketentuan Databoks untuk akses yang tidak sah dan pembayaran untuk penggunaan di tingkat harga yang berlaku;
+								br
+								| Hak untuk meng-email, fax, download atau membuat print-out menggunakan Layanan Online dan Material dengan cara apapun yang sah (secara kolektif, "Print-out Berotoritas")
+
+							li 
+								| Anggota dan pengunjung yang tak terdaftar di website Databoks diberikan hak non-eksklusif, non-transferable dan terbatas untuk mengakses dan menggunakan Layanan Online dan Material yang tersedia untuk kebutuhan riset Anda. Penggunaan komersial oleh Anggota dilarang keras. Hak yang diberikan kepada Anggota adalah sebagai berikut
+								br
+								| Hak untuk menggunakan Material untuk kebutuhan riset, dan hak untuk mengimplementasikan Material ke dalam analisis, presentasi, dokumen, dan bentuk serupa lainnya untuk kebutuhan riset;
+								br
+								| Hak untuk menampilkan sejumlah kecil Material secara incidental, tidak berkala untuk tujuan non-komersil, termasuk menampilkan Material di blogs, portal media sosial, dan website non-komersial lainnya, dengan kondisi  Material yang diterbitkan secara langsung menaut ke web Databoks yang dapat diakses secara publik menggunakan kode HTML yang tidak diubah, dimodifikasi, dan berubah fungsi. Anda tidak boleh menggunakan atau menautkan ke databoks.katadata.co.id situs yang tidak tepat, bersifat memfitnah, melanggar, cabul, atau topik, nama, material, atau informasi illegal yang dapat melanggar hak kekayaan intelektual, hak milik, privasi, atau hak publik;
+								br
+								| Segala bentuk penggunaan, distribusi, atau publikasi yang bersifat komersil dilarang keras.
+
+						strong Uptime Situs
+						p.small.
+							Kami mengambil langkah-langkah yang diperlukan untuk memastikan databoks.katadata.co.id tersedia 24 jam setiap hari, 365 hari per tahun. Namun, website kadang mengalami downtime karena server atau isu teknis lainnya. Maka, kami tidak bertanggung jawab jika databoks.katadata.co.id tidak tersedia di saat-saat tersebut.
+
+						strong Batasan Kewajiban
+						ol
+							li
+								| Pihak Databoks tidak bertanggung jawab atas setiap kerugian, cedera, klaim, kewajiban, atau kerusakan apapun, atas hasil dari (a) kesalahan atau kelalaian dari Layanan Online atau Material apapun yang tersedia atau tidak disertakan di sini, (b) tidak tersedianya atau gangguan Layanan Online atau fiturnya atau Material apapun, (c) Penggunaan Layanan Online atau Material oleh Pengguna Berwenang atau Anggota, (d) kerugian atau kerusakan data atau alat apapun yang berhubungan dengan Layanan Online, (e) konten, akurasi, atau kelengkapan Material, tanpa memperhatikan baik Anda menerima asistensi dalam penggunaan Layanan Online dari pihak Databoks, (f) penundaan atau kegagalan yang terjadi dalam performa di luar kendali pihak Databoks, (g) konten apapun yang diterima dari internet bahkan jika diambil atau terhubung dengan Layanan Online
+
+							li
+								| Yang dimaksud Pihak Databoks adalah (a) Semua jajaran pegawai, direktur, subkontraktor, agen suksesor, atau yang ditetapkan Databoks; dan (b) tiap penyedia Material dari pihak ketiga, entitas aliansi pihak ketiga, aliansi mereka, dan pegawai, direktur, subkontraktor, agen, suksesor, atau penyedia Material dari pihak ketiga atau entitas aliansi pihak ketiga atau afiliasinya.
+
+							li
+								| SEJAUH YANG DIIZINKAN OLEH HUKUM YANG BERLAKU, PIHAK DATABOKS TIDAK BERKEWAJIBAN ATAS KLAIM APAPUN YANG MUNCUL ATAU BERHUBUNGAN DENGAN PENGGUNAAN ATAU KETIDAKMAMPUAN PENGGUNAAN LAYANAN ONLINE ATAU MATERIAL ATAU PERJANJIAN BERLANGGANAN INI MELEBIHI KERUSAKAN AKTUAL ATAU JUMLAH PEMBAYARAN YANG ANDA LAKUKAN, JIKA UNTUK AKSES LAYANAN ONLINE (TIDAK TERMASUK PAJAKATAU KEWAJIBAN) ATAU TAUTAN DAN ITEM APAPUN DI LAYANAN ONLINE ATAUDALAM SYARAT DAN KETENTUAN YANG ADA.
+
+							li
+								| DALAM KEADAAAN APAPUN, TERMASUK NAMUN TIDAK TERBATAS PADA KELALAIAN, PIHAK DATABOKS TIDAK AKAN BERTANGGUNG JAWAB ATAS KERUGIAN KHUSUS, LANGSUNG, TIDAK LANGSUNG, INSIDENTAL, CONTOHNYA; HUKUMAN, ATAU KERUSAKAN KONSEKUENSIAL (TERMASUK, TANPA PEMBATASAN, BIAYA PENGACARA) CARA APAPUN AKIBAT DARI, ATAU TIMBUL SEHUBUNGAN DENGAN LAYANAN ONLINE, MATERIAL, ATAU KEGAGALAN PIHAK DATABOKS UNTUK MELALAKUKAN KEWAJIBANNYA. PEMBATASAN TANGGUNG JAWAB TIDAK BERLAKU UNTUK KEWAJIBAN GANTI RUGI PIHAK ATAU PELANGGARAN PROPERTI ATAU PENYALAHGUNAAN DATA KEPEMILIKAN ANGGOTA DATABOKS ATAU PENYEDIA PIHAK KETIGA.
+
+						strong Kebijakan Pembatalan
+						ol
+							li
+								| Langganan berlaku untuk jangka waktu 12 bulan dan akan diperbarui secara otomatis untuk jangka waktu yang terbatas, kecuali telah dibatalkan dalam 6 minggu sebelum berakhir masa berlangganan. Pembayaran untuk durasi layanan keseluruhan akan dilakukan pada awal berlangganan. Selama jangka waktu yang terbatas itu, langganan dapat dibatalkan dalam 2 minggu sebelum berakhirnya bulan tersebut. Pembayaran akan dilakukan pada awal bulan tersebut.
+
+							li
+								| Penambahan informasi atau pengecualian terkait Kebijakan Pembatalan ini akan dinyatakan di pamflet produk yang terdapat di website Databoks.
+
+						strong Detail Kami
+						p Nama bisnis kami: PT Katadata Indonesia
+						p Alamat bisnis kami: Permata Senayan Blok D No. 31, Jl. Tentara Pelajar, Jakarta, Indonesia, 12210
+				.col-md-3

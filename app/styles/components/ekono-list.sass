@@ -1,6 +1,8 @@
 .ekonoList
    ul.listGraph
       +flexOwnGrid(li, 3, 2%, 25)
+      +breakpoint(mobile)
+         +flexOwnGrid(li, 1, 0, 25)
       li
          padding: 15px
          border: 1px solid #eee
