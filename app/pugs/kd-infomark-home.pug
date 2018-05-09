@@ -1,0 +1,69 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Infomark"])
+			.second-head-right
+	section.infomark-home
+		.container
+			.infomarkHead
+				h2 Infomark
+				ul.navInfomark
+					li
+						a(href="#") Tentang Infomark
+					li
+						a(href="#") Layanan/Produk
+					li
+						a(href="#") Klien
+					li
+						a(href="#") Kontak
+			.jumbotron
+				.row.is-table-row-middle
+					.col-md-6
+						article
+							h1 #[span Amplify your stories].
+							p Deskripsi singkat tentang benefit yang diperoleh klien dari layanan Infomark, dan lain-lain.
+							a(href="#" class="btn btn-gos") View all projects
+							a(href="#" class="btn btn-blue-navy") Contact us now
+					.col-md-6
+						img(src="./images/imac.png", alt="", class="img-responsive")
+			.row
+				.col-md-12
+					h3 Latest Projects
+					a(href="#", class="linkIndex pull-right") View archives »
+					ul.free-box-list
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/any", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/tech", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/people", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/arch", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/any", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+						li
+							a(href="#")
+								img(src="https://placeimg.com/640/480/tech", alt="")
+							a.linkVid.
+								Mengejar Pesawat dengan Kereta Bandara
+					.shortcutBorderBottom.margin-bottom-10
+					a(href="#", class="linkIndex pull-right") View archives »

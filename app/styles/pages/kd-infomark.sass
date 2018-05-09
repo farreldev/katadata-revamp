@@ -1,0 +1,74 @@
+.infomark-home
+   .infomarkHead
+      position: relative
+      padding-bottom: 12px
+      margin-bottom: 20px
+      border-bottom: 1px solid #ddd
+      h2
+         margin: 0
+         display: inline-block
+         font-family: "Gotham Narrow A", "Gotham Narrow B", robotoBold
+         font-weight: 500
+         color: $blue-sea
+         +breakpoint(mobile)
+            display: block
+            margin-bottom: 15px
+      ul.navInfomark
+         position: absolute
+         top: 5px
+         right: 0
+         display: inline-block
+         +breakpoint(mobile)
+            position: static
+         li
+            display: inline-block
+            +breakpoint(mobile)
+               &:first-child
+                  a
+                     padding-left: 0
+            a
+               font-family: "Gotham Narrow A", "Gotham Narrow B", robotoLight
+               font-weight: 300
+               color: $black
+               padding: 12px 10px
+               display: block
+   .jumbotron
+      padding: 10px 0 20px
+      margin-bottom: 20px
+      border-radius: 0
+      background-color: transparent
+      border-bottom: 1px solid #ddd
+      article
+         padding-top: 25px
+         +breakpoint(tablet)
+            margin-bottom: 25px
+         +breakpoint(mobile)
+            margin-bottom: 25px
+         h1
+            font-size: 55px
+            span
+               position: relative
+               &:before
+                  position: absolute
+                  top: -10px
+                  left: 0
+                  content: ''
+                  width: 55px
+                  height: 5px
+                  background-color: $yellow-wood
+         p
+            margin-bottom: 25px
+         a.btn
+            margin-right: 15px
+            +breakpoint(mobile)
+               font-size: 16px
+               margin-right: 10px
+               &:last-child
+                  margin-right: 0
+            &.btn-gos
+               background: transparent
+               border: 1px solid #1785c1
+               color: #1785c1
+      img
+         display: block
+         margin: 0 auto

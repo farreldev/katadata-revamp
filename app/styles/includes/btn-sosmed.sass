@@ -77,17 +77,26 @@
 			&:hover
 				background-color: darken($other, 5%)
 		a[class*="whatsapp"]
+			display: none
 			background-color: $wa
 			&:hover
 				background-color: darken($wa, 5%)
+			+breakpoint(tablet)
+				display: inline-block
+			+breakpoint(mobile)
+				display: inline-block
 		a[class*="line"]
-			display: inline-block
+			display: none
 			vertical-align: middle
 			width: auto
 			height: auto
 			img
 				display: block
 				margin-bottom: 6px
+			+breakpoint(tablet)
+				display: inline-block
+			+breakpoint(mobile)
+				display: inline-block
 		a[class*="btn-like"]
 			// margin-left: 10px
 			padding: 0 10px
