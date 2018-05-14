@@ -304,7 +304,21 @@ $(function() {
 
 	var $isDetail = $('main').find('div').hasClass('detail-artikel');
 
-	if($isDetail) tabling();
+	if($isDetail) {
+		tabling();
+		chNewsletterPlace();
+	}
+
+	function chNewsletterPlace() {
+		var parentTxt = document.getElementsByClassName('textArticle')[0];
+		var pTag = parentTxt.getElementsByTagName('p');
+		var nl = document.querySelector('.newsletter.inDetail');
+		var at = document.querySelector('.artikelTerpopuler');
+
+		if(pTag.length <= 5) {
+			at.insertAdjacentElement('afterend', nl);
+		}
+	}
 
 	function tabling() {
 		var  $tbl = $('.textArticle').children('table'), $elC = $('<div/>',{class: 'style2'});
