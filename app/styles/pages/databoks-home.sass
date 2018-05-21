@@ -1,23 +1,45 @@
 .databoks-home
 	.databoks-info
-		padding-right: 20px
-		margin-bottom: 30px
-		display: inline-block
-		width: 80%
-		height: auto
-		+breakpoint(mobile)
-			margin-bottom: 20px      
-			display: block
-			width: 100%
+		padding-bottom: 25px
+		margin-bottom: 25px
+		border-bottom: 1px solid #ddd
 		p
-			margin-bottom: 4px
-		~ a.btn
-			float: right
-			width: 20%
+			margin-bottom: 15px
+			&.lead
+				font-size: 30px
+		a
+			font-size: 18px
+		.databoks-video-intro
+			position: relative
+			padding-bottom: 56.25%
+			width: 100%
+			height: auto
+			+breakpoint(tablet)
+				margin-bottom: 15px
 			+breakpoint(mobile)
-				margin-bottom: 25px
-				display: block
+				margin-bottom: 15px
+			iframe
+				position: absolute
 				width: 100%
+				height: 100%
+		// padding-right: 20px
+		// margin-bottom: 30px
+		// display: inline-block
+		// width: 80%
+		// height: auto
+		// +breakpoint(mobile)
+		// 	margin-bottom: 20px      
+		// 	display: block
+		// 	width: 100%
+		// p
+		// 	margin-bottom: 4px
+		// ~ a.btn
+		// 	float: right
+		// 	width: 20%
+		// 	+breakpoint(mobile)
+		// 		margin-bottom: 25px
+		// 		display: block
+		// 		width: 100%
 	.listing
 		ul
 			li

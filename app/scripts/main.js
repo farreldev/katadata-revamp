@@ -204,7 +204,7 @@ $(function() {
 		});
 	 }
 
-	$('#trigger-mnu').on('click', function(e) {
+	$('.trigger-mnu').on('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
 		if (!$('.humburger-btn').hasClass('humTrigger')) {
@@ -231,7 +231,7 @@ $(function() {
 		e.stopPropagation();
 	});
 
-	$('#cari-btn').click(function() {
+	$('.cari-btn').click(function() {
 		if (!$('.layerSearch').hasClass('openSearch')) {
 			if ($('.humburger-btn').hasClass('humTrigger')) {
 				$('.humburger-btn').removeClass('humTrigger');
@@ -327,6 +327,55 @@ $(function() {
 			$this.wrap($elC);
 		});
 	}
+	
+	var hdr = document.querySelector('header#header');
+	var clnMnu = document.querySelector('.clonedMnuHrz');
+	var slMnu = document.querySelector('nav.navigasi');
+	var lSearch = document.querySelector('div.layerSearch');
+	// var isItScroll = true;
+	
+	// if(screen.width > 768) {
+	// 	if(hdr) {
+	// 		headSticky();
+	// 	} else {
+	// 		slMnu.style.top = "56px";
+	// 	}
+	// }
+	if(hdr) {
+		if(screen.width > 768) headSticky();
+	} else {
+		if(screen.width <= 768) {
+			slMnu.style.top = '50px';
+		} else {
+			slMnu.style.top = '57px';
+		}
+	}
+
+	//   slMnu.style.top = "56px";
+
+	function headSticky() {
+		window.addEventListener('scroll', function(event) {
+			var getY = this.pageYOffset;
+			
+			if (getY > 200) {
+				clnMnu.classList.add('clonedShow');
+			} else {
+				clnMnu.classList.remove('clonedShow');
+			}
+			
+			if(getY > 100) { hdr.classList.add('scrollingUp'); } 
+			else if(getY < 2) { hdr.classList.remove('scrollingUp'); } 
+			else { return;}
+
+			if(!hdr.classList.contains('scrollingUp')) { 
+				slMnu.style.top = '113px';
+				lSearch.removeAttribute('style');
+			} else { 
+				slMnu.style.top = '50px';
+				lSearch.style.top = '50px';
+			}
+		});
+	}
 
 	function btnGoUp() {
 		var $gotoUp = $('a.goUp');
@@ -335,9 +384,9 @@ $(function() {
 			var tinggiMin = 800; // Setting minimal tinggi scroll
 
 			if (topPos > tinggiMin) {
-					$gotoUp.css({ opacity: 1, bottom: 90 });
+				$gotoUp.css({ opacity: 1, bottom: 90 });
 			} else {
-					$gotoUp.css({ opacity: 0, bottom: -100 });
+				$gotoUp.css({ opacity: 0, bottom: -100 });
 			}
 		});
 
@@ -468,7 +517,5 @@ $(function() {
 	kdTime();
 	searcPanel();
 	removeEmptyTeks();
-	
-
   })();
 });
