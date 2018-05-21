@@ -18,6 +18,15 @@ html,body
 		height: 100%
 		background-color: rgba(0,0,0,.55)
 		z-index: 2
+	.cari-btn
+		cursor: pointer
+		display: inline-block
+		i
+			margin-right: 10px
+			color: white
+		a
+			display: inline-block
+			pointer-events: none
 	section
 		margin-bottom: 25px
 	figure
@@ -35,7 +44,7 @@ html,body
 			text-transform: uppercase
 			text-align: right
 			font-size: 10px
-			color: $black
+			color: #999
 		&.thumb-article-img
 			height: 175px
 			max-height: 280px
@@ -76,7 +85,9 @@ html,body
 			width: 180px
 			margin: 0 auto 20px
 	.tagLink
+		position: relative
 		margin-bottom: 10px
+		+clearit
 		strong
 			margin-right: 10px
 			margin-bottom: 10px
@@ -134,6 +145,17 @@ html,body
 					margin: 10px 0
 					float: none
 					width: 100%
+	.sosmedBottomDetail
+		@extend .tagLink
+		ul 
+			li
+				a
+					padding: initial
+					+border-radius(50%)
+					color: white
+					border: none
+					&:hover
+						border: none
 	a.lockIcon
 		position: relative
 		display: block

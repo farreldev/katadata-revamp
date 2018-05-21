@@ -3,19 +3,26 @@ header
 	top: 0
 	left: 0
 	width: 100%
+	max-height: 113px
 	transition: top .4s ease
 	z-index: 7
 	&.scrollingUp
-		top: -73px
+		// top: -67px
+		top: -112px
+	// +breakpoint(mobile)clear
+
+	// 	&.scrollingUp
+	// 		top: -73px
 	.main-head
 		position: relative
 		padding: 12px 0
 		background: $blue
-		border-bottom: 6px solid $blue-light
 		color: white
-		// +box-shadow(0, 1px, 7px, rgba(0,0,0,.2))
+		// +box-shadow(0, 2px, 10px, rgba(0,0,0,.25))
 		+clearit
 		z-index: 3
+		+breakpoint(mobile)
+			border-bottom: 5px solid $blue-light
 		.left-main-head,
 		.center-main-head,
 		.right-main-head
@@ -25,14 +32,6 @@ header
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
-			.cari-btn
-				cursor: pointer
-				display: inline-block
-				i
-					margin-right: 10px
-				a
-					display: inline-block
-					pointer-events: none
 			a
 				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 				font-weight: 500
@@ -41,7 +40,8 @@ header
 				font-size: .85em
 				color: white
 		.center-main-head
-			position: absolute !important
+			// position: absolute !important
+			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
@@ -83,7 +83,27 @@ header
 		&.openSearch
 			opacity: 1
 			top: 65px
-	
+	.mnu-horz
+		background-color: $blue-light
+		+breakpoint(mobile)
+			display: none
+		ul
+			li
+				padding: 0 14px 0 0
+				display: inline-block
+				a
+					padding: 15px 0
+					font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
+					font-weight: 400
+					font-size: 15px
+					color: #fff
+					display: block
+				&:nth-child(1)
+					a
+						padding-left: 0
+				&:last-child
+					a
+						padding-right: 0
 header#header-alt-1
 	opacity: 1
 	position: absolute
@@ -133,3 +153,30 @@ header#header-alt-1
 	&.hilang
 		opacity: 0
 		top: -200px
+	.mnu-horz
+		display: none
+
+header#header-alt-2 ~ main
+	padding-top: 57px
+	+breakpoint(mobile)
+		padding-top: 50px
+header#header-alt-2
+	.main-head
+		padding: 10px 0
+		border-bottom: 6px solid $blue-light
+		// +box-shadow(0, 1px, 10px, rgba(0,0,0,.25))
+		.left-main-head,
+		.center-main-head,
+		.right-main-head
+			// padding: 10px 0
+			padding: 0
+		.center-main-head
+			a
+				&.logo-brand
+					width: 190px
+					+breakpoint(mobile)
+						width: 166px
+						height: auto
+	.layerSearch
+		&.openSearch
+			top: 50px

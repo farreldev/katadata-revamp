@@ -68,37 +68,38 @@ block append config
 					.col-md-2.col-sm-12
 						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch3(namePages)
-		section.formSearch.sectionGray
-			form
-				.row
-					.col-md-4.col-sm-6
-						.form-group
-							input(type="text" class="form-control" placeholder="Kata kunci")
-					.col-md-2.col-sm-6
-						.form-group
-							label
-								select(class="form-control")
-									option(selected="selected") Pilih Topik..
-									option Topik Satu
-									option Topik Dua
-									option Topik Tiga
-					.col-md-2.col-sm-6
-						.form-group
-							label
-								select(class="form-control")
-									option(selected="selected") Pilih Subtopik..
-									option Topik Satu
-									option Topik Dua
-									option Topik Tiga
-					.col-md-2.col-sm-6
-						.form-group
-							label
-								select(class="form-control")
-									option(selected="selected") Provinsi
-									option Aceh
-									option Batam
-					.col-md-2.col-sm-12
-						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
+		.container
+			section.formSearch.sectionGray
+				form
+					.row
+						.col-md-6.col-sm-6
+							.form-group
+								input(type="text" class="form-control" placeholder="Kata kunci")
+						.col-md-2.col-sm-6
+							.form-group
+								label
+									select(class="form-control")
+										option(selected="selected") Pilih Topik..
+										option Topik Satu
+										option Topik Dua
+										option Topik Tiga
+						//- .col-md-2.col-sm-6
+						//- 	.form-group
+						//- 		label
+						//- 			select(class="form-control")
+						//- 				option(selected="selected") Pilih Subtopik..
+						//- 				option Topik Satu
+						//- 				option Topik Dua
+						//- 				option Topik Tiga
+						.col-md-2.col-sm-6
+							.form-group
+								label
+									select(class="form-control")
+										option(selected="selected") Provinsi
+										option Aceh
+										option Batam
+						.col-md-2.col-sm-12
+							input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch2(namePages2)
 		section.formSearch
 			form
@@ -151,7 +152,6 @@ block append config
 									option Topik Tiga
 					.col-md-2.col-sm-6
 						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages2)
-
 	mixin formSearch5
 		section.formSearch.otherStyle
 			form

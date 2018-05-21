@@ -1,22 +1,33 @@
-extends base/home
+extends base/databoks
 include components/mixings
 
 block content
 	.hero-banner-databoks
 		article
 			h2 Databoks
-			p Permudah urusan Anda dengan data-data dari kami
-			a(href="#" class="btn btn-blue") Putar Video
-	.container
+			+formSearch3('Data')
+			//- p Permudah urusan Anda dengan data-data dari kami
+			//- a(href="#" class="btn btn-blue") Putar Video
+	//- .container
 	section.databoks-home
 		.container
-			.row
-				.col-md-10.col-md-offset-1
-					article.databoks-info
-						p.
-							Databoks dibuat dengan tujuan untuk memudahkan perusahaan, pelaku bisnis, periset, pelajar, pemerintah dan media untuk mencari dan mengolah data ekonomi dan bisnis secara cepat untuk berbagai keperluan, seperti presentasi, pembuatan laporan dan memperkuat pemberitaan di media.#[br]#[a(href="#") Selengkapnya tentang Databoks »]
-					a(href="" class="btn btn-blue") Subscribe
-			+formSearch3('Dataset')
+			.databoks-info
+				p.lead.text-center Presentasi. Laporan. Memperkuat pemberitaan. Gunakan data kami! 
+				.row
+					.col-md-8
+						.databoks-video-intro
+							iframe(src="https://www.youtube.com/embed/CJvJ_JK2u8M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+					.col-md-4
+						article
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rerum recusandae vel minima autem, aperiam ratione, necessitatibus quaerat quos ducimus voluptas! Dicta fuga deleniti doloremque libero corrupti error eum corporis voluptatem facere. Dignissimos iure accusamus nesciunt id similique cum eos voluptatem voluptatibus ut corrupti omnis aut delectus, unde possimus voluptate!
+							a(href="#") Selengkapnya tentang Databoks »
+
+				//- .col-md-10.col-md-offset-1
+					//- article.databoks-info
+					//- 	p.
+					//- 		Databoks dibuat dengan tujuan untuk memudahkan perusahaan, pelaku bisnis, periset, pelajar, pemerintah dan media untuk mencari dan mengolah data ekonomi dan bisnis secara cepat untuk berbagai keperluan, seperti presentasi, pembuatan laporan dan memperkuat pemberitaan di media.#[br]#[a(href="#") Selengkapnya tentang Databoks »]
+					//- a(href="" class="btn btn-blue") Subscribe
 			.row
 				.col-md-9.listing
 					h3 Statistik »

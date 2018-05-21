@@ -7,7 +7,7 @@ html.no-js(lang="id")
 		meta(charset="utf-8")
 		meta(name="description" content="")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		title New Katadata
+		title new_katadata
 		link(rel="apple-touch-icon" href="apple-touch-icon.png")
 		link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
 		link(rel='icon', href='/favicon.ico', type='image/x-icon')
@@ -20,20 +20,21 @@ html.no-js(lang="id")
 		link(rel='stylesheet', href='/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')
 		// endbower
 		// endbuild
+
 		// build:css styles/main.css
 		link(rel="stylesheet" href="styles/main.css")
 		// endbuild
-
+		
 		//- // build:js scripts/jquery.min.js
 		//- script(src='/bower_components/jquery/dist/jquery.js')
 		//- // endbuild
-
+		
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
 		//- // build:js scripts/vendor/modernizr.js
 		//- script(src="/bower_components/modernizr/modernizr.js")
 		//- // endbuild
-
+		
 	body
 		//if IE
 			p.browserupgrade
@@ -42,20 +43,18 @@ html.no-js(lang="id")
 				|  browser. Please 
 				a(href="http://browsehappy.com/") upgrade your browser
 				|  to improve your experience.
-				
+		//- include ../includes/teaser.pug
 		div(id="mainWrapper" class="wrapper")
 			//- #mp-pusher.mp-pusher
-			header#header.timbul
-				include ../includes/header.pug
-			//- include ../includes/kd-menu-nav.pug
+			//- header#header.timbul
+			header#header-alt-2
+				include ../includes/header-for-databoks.pug
 			a(href="#" class="goUp")
 				i(class="fa fa-chevron-up")
 			main
 				include ../includes/kd-simple-nav.pug
 				.contentWrapper
-					.member-area
-						block member-caption
-						block member-content
+					block content
 					include ../includes/footer.pug
 			.wwNavigation-overlay
 		
@@ -85,9 +84,9 @@ html.no-js(lang="id")
 		//- script(src="scripts/classie.js")
 		//- script(src="scripts/scrolling.js")
 		// endbuild
-
-		block myscript
 		
+		block myscript
+
 		// build:js scripts/main.js
 		script(src="scripts/main.js")
 		// endbuild

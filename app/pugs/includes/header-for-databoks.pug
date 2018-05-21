@@ -1,0 +1,32 @@
+.main-head
+	.container
+		.left-main-head
+			.btn-hum.trigger-mnu
+				div.humburger-btn
+					span
+					span
+					span
+				a(href="" class="hidden-xs") Menu
+			#cari-btn.cari-btn.hidden-xs
+				i(class="fa fa-search" aria-hidden="true")
+				a(href="" class="hidden-xs") Search
+		.center-main-head
+			a(href="index.html", class="logo-brand")
+				img(src="./images/new-logo-putih.svg")
+		.right-main-head
+			a(href="", class="mm-sign-in visible-xs")
+			//- i(class="fa fa-search" aria-hidden="true")
+			//- a(href="" class="hidden-xs") Search
+			//- div.kdNetwork.hidden-xs
+			//- 	a Jejaring Katadata
+			a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") subscribe
+			a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") login
+
+.layerSearch
+	form
+		.lineInput
+			input(type="text" id="txtSearch" placeholder="Kata kunci")
+			a(href="#" class="magnifyGlass")
+				i(class="fa fa-search") 
+			a(href="#" class="clearTxt")
+				i(class="fa fa-times-circle")

@@ -59,8 +59,14 @@
 						margin: 0 auto 10px
 					img
 						width: 100%
-				+breakpoint(mobile)
+				+breakpoint(tablet)
+					margin-bottom: 25px
 					position: static
+					transform: none
+				+breakpoint(mobile)
+					margin-bottom: 0
+					position: static
+					transform: none
 				// a
 				// 	float: right
 				// 	width: calc(100% - 166px)
@@ -112,6 +118,8 @@
 				border: none
 				+breakpoint(mobile)
 					margin-top: 0
+		+breakpoint(tablet)
+			padding: 0
 		+breakpoint(mobile)
 			padding: 0
 	.berita-terbaru
