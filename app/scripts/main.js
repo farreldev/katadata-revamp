@@ -177,6 +177,7 @@ $(function() {
 
 	 // Counter Slider img
 
+    /*** Sticky Footer ***/
 	 function stickyFooter() {
 		var ua = navigator.userAgent.toLowerCase();
 		var $tinggiFooter = $('.contentWrapper').find('.footer').height();
@@ -191,21 +192,24 @@ $(function() {
 		  }
 		}
 	 }
+    /*** End ***/
 
 	 window.onload = stickyFooter;
 	 window.onresize = stickyFooter;
 
-	 function removeEmptyTeks() {
-		$('p').each(function() {
-		  var $this = $(this);
-		  if ($this.html().replace(/\s|&nbsp;/g, '').length == 0) {
-			 $this.remove();
-		  }
-		});
-	 }
+   /*** Remove Empty tag P ***/
+   function removeEmptyTeks() {
+   	$('p').each(function() {
+   	   var $this = $(this);
+   	   if ($this.html().replace(/\s|&nbsp;/g, '').length == 0) {
+            $this.remove();
+   	  }
+   	});
+    }
+   /*** End ***/
 
 	$('.trigger-mnu').on('click', function(e) {
-		e.preventDefault();
+      e.preventDefault();
 		e.stopPropagation();
 		if (!$('.humburger-btn').hasClass('humTrigger')) {
 			if ($('.layerSearch').hasClass('openSearch')) {
@@ -280,6 +284,32 @@ $(function() {
 		return false;
 	});
 
+   /*** Tab Embed Script ***/
+
+   let anchor = document.querySelectorAll('.tab-captions li a');
+   let contentTabs = document.querySelectorAll('.tab-contents span');
+
+   Array.from(anchor).forEach(function(elem, key) {
+
+      elem.addEventListener('click', function(e) {
+         e.preventDefault();
+
+         let href = e.target.getAttribute('href');
+
+         if(this.className.indexOf('tab-current') == -1) {
+
+            for(var i=0;i<anchor.length;i++) {
+               anchor[i].classList.remove('tab-current');
+               contentTabs[i].classList.remove('visible');
+            }
+            this.classList.add('tab-current');
+            document.getElementById(href).classList.add('visible');
+         }
+
+      });
+   })
+   /*** End ***/
+
 
 	// var teaser = function(n) {
 	//   $("#teaserFlip").hover(function(e) {
@@ -327,13 +357,13 @@ $(function() {
 			$this.wrap($elC);
 		});
 	}
-	
+
 	var hdr = document.querySelector('header#header');
 	var clnMnu = document.querySelector('.clonedMnuHrz');
 	var slMnu = document.querySelector('nav.navigasi');
 	var lSearch = document.querySelector('div.layerSearch');
 	// var isItScroll = true;
-	
+
 	// if(screen.width > 768) {
 	// 	if(hdr) {
 	// 		headSticky();
@@ -353,30 +383,33 @@ $(function() {
 
 	//   slMnu.style.top = "56px";
 
+   /*** Head Sticky ***/
 	function headSticky() {
 		window.addEventListener('scroll', function(event) {
 			var getY = this.pageYOffset;
-			
+
 			if (getY > 200) {
 				clnMnu.classList.add('clonedShow');
 			} else {
 				clnMnu.classList.remove('clonedShow');
 			}
-			
-			if(getY > 100) { hdr.classList.add('scrollingUp'); } 
-			else if(getY < 2) { hdr.classList.remove('scrollingUp'); } 
+
+			if(getY > 100) { hdr.classList.add('scrollingUp'); }
+			else if(getY < 2) { hdr.classList.remove('scrollingUp'); }
 			else { return;}
 
-			if(!hdr.classList.contains('scrollingUp')) { 
+			if(!hdr.classList.contains('scrollingUp')) {
 				slMnu.style.top = '113px';
 				lSearch.removeAttribute('style');
-			} else { 
+			} else {
 				slMnu.style.top = '50px';
 				lSearch.style.top = '50px';
 			}
 		});
 	}
+   /*** End ***/
 
+   /*** Button Go to Up ***/
 	function btnGoUp() {
 		var $gotoUp = $('a.goUp');
 		$(window).scroll(function() {
@@ -396,7 +429,9 @@ $(function() {
 			return false;
 		});
 	}
+   /*** End ***/
 
+   /*** Search Box ***/
 	function searcPanel() {
 		$('#txtSearch').on('input', function() {
 			if ($(this).val() !== '') {
@@ -411,6 +446,7 @@ $(function() {
 			$('#txtSearch').val('').siblings('.clearTxt').fadeOut(200);
 		});
 	}
+   /*** End ***/
 
 	function kdTime() {
 		$('#tgl-lahir').datetimepicker({ format: 'DD-MM-YYYY' });
@@ -485,9 +521,9 @@ $(function() {
 	// tag.src = 'https://www.youtube.com/iframe_api';
 	// var firstST = document.getElementsByTagName('script')[0];
 	// firstST.parentNode.insertBefore(tag, firstST);
-	
+
 	// console.log(firstST);
-	
+
 	// function onYouTubeIframeAPIReady() {
 	//   var player = new YT.Player('yt', {
 	//     events: {
