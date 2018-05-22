@@ -96,7 +96,7 @@ gulp.task('extras', () => {
   return gulp.src([
     'app/*',
     '!app/*.bak',
-    '!app/pugs',    
+    '!app/pugs',
     '!app/*.html',
     '!app/pugs/**/*.pug'
   ], {
@@ -125,7 +125,7 @@ gulp.task('serve', () => {
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
-    gulp.watch('app/pugs/**/*.pug', ['puggs']);    
+    gulp.watch('app/pugs/**/*.pug', ['puggs']);
     gulp.watch('app/styles/**/*.sass', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
