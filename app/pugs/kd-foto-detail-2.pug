@@ -1,0 +1,70 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Multimedia", "Foto", "Infrastruktur"])
+			.second-head-right
+				ul.btn-sosmed.margin-min-top-10.hidden-xs
+					li
+						a(href="#" class="facebook" title="Facebook")
+							i(class="fa fa-facebook" aria-hidden="true")
+					li
+						a(href="#" class="twitter" title="Twitter")
+							i(class="fa fa-twitter" aria-hidden="true")
+					li
+						a(href="#" class="linkedin" title="Linkedin")
+							i(class="fa fa-linkedin" aria-hidden="true")
+					li
+						a(href="#" class="g-plus" title="Google Plus")
+							i(class="fa fa-google-plus" aria-hidden="true")
+					//- li
+					//- 	a(href="#" class="link-chain" title="Copy Link")
+					//- 		i(class="fa fa-link" aria-hidden="true")
+					li
+						a(href="#" class="whatsapp" title="Whatsapp")
+							i(class="fa fa-whatsapp" aria-hidden="true")
+					li
+						a(href="#" class="line" title="Line")
+							img(src="images/icons/Line_Icon.png", alt="Line Chats")
+	section.foto-detail
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					.pengantar-foto
+						h1 Mengejar Pesawat dengan Kereta Bandara
+						p.infoArtikel 27 Januari 2018 #[span 15 Foto]
+						p 
+							strong Waktu tempuh kereta dari Stastiun Sudirman Baru menuju Bandara Soekarno-Hatta sekitar 54 menit.
+						p.
+							Presiden Joko Widodo (Jokowi) meresmikan kereta Bandara Soekarno-Hatta, Selasa, 2 Januari kemarin. Berdasarkan Peraturan Presiden (Perpres) Nomor 83 Tahun 2011, Kereta Api Indonesia (KAI) bersama PT Angkasa Pura II (Persero) membentuk anak usaha bernama PT Railink untuk mengoperasikan kereta bandara.
+						a(href="#" class="btn btn-block margin-bottom-40") Selengkapnya
+			.row
+				.col-md-8.col-md-offset-2
+					figure
+						img(src="images/foto-slides/foto-slide1.jpg", alt="", srcset="")
+						figcaption Foto: Agung Rajasa/Antara
+			.row.margin-bottom-30
+				.col-md-6.col-md-offset-3
+					p Caption foto. Rencananya, kereta bandara akan terintegrasi dengan Mass Rapid Transit (MRT), Light Rail Transit (LRT), TransJakarta, hingga Kereta Rel Listrik (KRL) Commuter Line.
+			.row
+				.col-md-8.col-md-offset-2
+					figure
+						img(src="images/foto-slides/foto-slide1.jpg", alt="", srcset="")
+						figcaption Foto: Agung Rajasa/Antara
+			.row.margin-bottom-30
+				.col-md-6.col-md-offset-3
+					p Caption foto. Rencananya, kereta bandara akan terintegrasi dengan Mass Rapid Transit (MRT), Light Rail Transit (LRT), TransJakarta, hingga Kereta Rel Listrik (KRL) Commuter Line.
+block myscripts
+	script.
+		window.sr = ScrollReveal();
+		sr.reveal('.foto-detail .row', {
+			opacity: 0,
+			easing: 'ease',
+			duration: 1500,
+			mobile: true,
+			origin: 'bottom',
+			distance: '80px'
+		});

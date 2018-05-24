@@ -29,39 +29,69 @@
 			// 		margin-bottom: 15px
 	section.sprint
 		position: relative
-		padding: 18px 0 10px
+		padding: 18px 0 18px
 		background-color: #191a1e
 		margin-bottom: 35px
 		div[class|="col"]
 			+clearit
 			+breakpoint(mobile)
 				margin-bottom: 25px
-			&:nth-child(4)
-				text-align: center
-				margin-bottom: 0
+			// &:nth-child(4)
+			// 	text-align: center
+			// 	margin-bottom: 0
 			a:not([class="topik-link"])
 				&:hover
 					color: #fff
 			.bicara-data
-				position: absolute
+				position: relative
 				top: -18px
-				left: 50%
-				transform: translateX(-50%)
+				height: auto
+				// position: absolute
+				// left: 0
+				// transform: translateX(-50%)
+				&:before
+					position: absolute
+					top: 50%
+					content: ''
+					width: 100%
+					height: 1px
+					transform: translateY(-50%)
+					background-color: #474a55
+					z-index: 1
+				+breakpoint(mobile)
+					&:before
+						display: none
 				a:nth-child(1)
+					position: relative
 					display: block
-					// float: left
-					width: 250px
-					margin: 0 auto
+					padding-right: 15px
+					background-color: #191a1e
+					width: 195px
+					z-index: 2
+					// margin: 0 auto
 					// margin-right: 16px
-					+breakpoint(mobile)
-						float: none
-						position: static
-						margin: 0 auto 10px
 					img
 						width: 100%
+					+breakpoint(mobile)
+						position: static
+						padding-right: 0
+						margin: 0 auto 10px
+				a.linkIndex
+					padding: 7px 0 7px 15px
+					position: absolute
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+					background-color: #191a1e
+					color: $blue-sea
+					z-index: 2
+					&:hover
+						color: #fff
+						text-decoration: none
 				+breakpoint(tablet)
 					margin-bottom: 25px
-					position: static
+					position: relative
+					top: 0
 					transform: none
 				+breakpoint(mobile)
 					margin-bottom: 0
@@ -113,15 +143,17 @@
 						font-weight: 500
 						color: $blue-light2
 			a.btn
-				margin-top: calc((135px / 2) - 39px)
+				// margin-top: calc((135px / 2) - 39px)
 				background-color: $blue-light2
 				border: none
 				+breakpoint(mobile)
 					margin-top: 0
+					width: 100%
 		+breakpoint(tablet)
 			padding: 0
+			padding-bottom: 15px
 		+breakpoint(mobile)
-			padding: 0
+			padding-bottom: 0
 	.berita-terbaru
 		a
 			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoRegular
