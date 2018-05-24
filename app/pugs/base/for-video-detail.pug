@@ -59,13 +59,16 @@ html.no-js(lang="id")
 		
 		// build:js scripts/vendor.js
 		// bower:js
+		script(src='/bower_components/jquery/dist/jquery.js')
 		script(src='/bower_components/modernizr/modernizr.js')
 		script(src='/bower_components/slick-carousel/slick/slick.js')
 		script(src='/bower_components/matchHeight/dist/jquery.matchHeight.js')
 		script(src='/bower_components/moment/moment.js')
 		script(src='/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')
+		script(src='/bower_components/scrollreveal/dist/scrollreveal.js')
 		// endbower
 		// endbuild
+		
 		// build:js scripts/plugins.js
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js")
 		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js")
@@ -82,10 +85,11 @@ html.no-js(lang="id")
 		//- script(src="scripts/mlpushmenu.js")
 		//- script(src="scripts/classie.js")
 		//- script(src="scripts/scrolling.js")
+		block myplugins
 		// endbuild
-
-		block myscript
 
 		// build:js scripts/main.js
 		script(src="scripts/main.js")
 		// endbuild
+
+		block myscripts

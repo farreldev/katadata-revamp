@@ -59,14 +59,16 @@ block content
 		section.sprint
 			.container
 				.row
-					.col-md-4
+					.col-md-12 
 						.bicara-data
 							a(href="#")
 								img(src="images/label-bicara-data-250.png", alt="")
 							//- strong Logo Sprint di Putaran Akhir
 							//- a(href="#")
 							//- 	p Laporan khusus seputar kinerja Pemerintahan Jokowi-JK di akhir masa jabatan.
-					.col-md-4
+							a(href="", class="linkIndex hidden-xs") Selengkapnya »
+				.row
+					.col-md-3
 						figure.avt
 							a(href="#")
 								img(src="images/avatar/woman-thumb.png", alt="")
@@ -75,7 +77,25 @@ block content
 							a(href="#")
 								p.lead JOKO WIDODO, Presiden Republik Indonesia
 								p “Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin”
-					.col-md-4
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead JOKO WIDODO, Presiden Republik Indonesia
+								p “Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin”
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead JOKO WIDODO, Presiden Republik Indonesia
+								p “Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin”
+					.col-md-3
 						figure.avt
 							a(href="#")
 								img(src="images/avatar/woman-thumb.png", alt="")
@@ -92,8 +112,8 @@ block content
 					//- 		a(href="#", class="topik-link") Energi
 					//- 		a(href="#")
 					//- 			p Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
-					//- .col-md-2
-					//- 	a(href="#" class="btn") Selengkapnya »
+					.col-xs-12.visible-xs
+						a(href="#" class="btn") Selengkapnya »
 		section.recentArticle
 			.container
 				.recentArtWrap
@@ -210,7 +230,7 @@ block content
 					a.nextArrowNav2
 						i(class="fa fa-chevron-right" aria-hidden="true")
 				.ekonoGraphics
-					+ekonoGraphic('ekono1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+ekonoGraphic('minigrafik.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019', 'miniGraph', 'Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.')
 					+ekonoGraphic('ekono2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
 					+ekonoGraphic('ekono1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+ekonoGraphic('ekono2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
@@ -597,7 +617,7 @@ block content
 				h3 Analisis Data
 				a(href="", class="linkIndex pull-right") Lihat Semua »
 				.row.headListAnalisis
-					.col-md-4
+					.col-md-4.col-sm-4
 						div.itemListAnalisis
 							a(href="#", class="analisisTitle")
 								h4 Indonesia dalam Satu Dekade Deindustrialisasi
@@ -606,16 +626,16 @@ block content
 							p.
 								Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
 							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
-					.col-md-4
+					.col-md-4.col-sm-4
 						div.itemListAnalisis
 							a(href="#", class="analisisTitle")
-								h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio reprehenderit sint deserunt quibusdam culpa!
+								h4 Indonesia dalam Satu Dekade Deindustrialisasi
 								figure
 									img(src="images/analisis/db-head-analisis2.jpg", alt="")
 							p.
 								Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
 							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
-					.col-md-4
+					.col-md-4.col-sm-4
 						div.itemListAnalisis
 							a(href="#", class="analisisTitle")
 								h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
@@ -687,6 +707,7 @@ block content
 										a(href="#")
 											img(src="images/multimedia/video-migas.png", alt="")
 											span.cam
+											figcaption Contoh teks judul untuk gambar atau video di section multimedia pada halaman home atau index
 									.followSosmed
 										span.hidden-xs.
 											Ikuti Kami:

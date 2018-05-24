@@ -8,10 +8,12 @@ block append config
 				a(href="#").
 					#{txtLink}
 
-	mixin ekonoGraphic(imgName, txtLink)
+	mixin ekonoGraphic(imgName, txtLink, cn, txtPar)
 		div
-			a(href="#")
+			a(href="#" class=cn)
 				img(src=pathImg[1]+imgName, alt="" class="img-responsive")
+				span #{txtLink}
+				p #{txtPar}
 			article
 				a(href="#").
 					#{txtLink}

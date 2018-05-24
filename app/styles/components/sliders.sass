@@ -179,6 +179,7 @@
 	.slick-list
 		margin: 0 -15px
 		div
+			position: relative
 			> a
 				margin-bottom: 10px
 				position: relative
@@ -213,6 +214,20 @@
 				+breakpoint(small-mobile)
 					width: auto
 					height: 554px
+				&.miniGraph
+					img
+						position: relative
+						margin-bottom: 15px
+						width: 100%
+						height: auto
+					span
+						display: block
+						margin-bottom: 15px
+						line-height: 1.4
+						color: $black
+				&.miniGraph ~ article
+					display: none
+
 			article
 				padding: 5px
 				a
@@ -270,11 +285,11 @@
 			right: 0
 			text-align: center
 			padding: 15px 0
-			li 
+			li
 				display: inline-block
 				vertical-align: top
 				margin: 0 8px
-				button 
+				button
 					width: 16px
 					height: 16px
 					border: none
@@ -290,7 +305,7 @@
 					opacity: 0.5
 					&:focus
 						outline: none
-					&:hover 
+					&:hover
 						opacity: 1
 				&.slick-active
 					button
@@ -356,10 +371,10 @@
 		visibility: hidden
 		-webkit-transition: all 1.2s ease
 		transition: all 1.2s ease
-		&.slick-initialized 
+		&.slick-initialized
 			opacity: 1
 			visibility: visible
-		.slick-slide 
+		.slick-slide
 			position: relative
 			height: 100%
 			&::before
@@ -371,7 +386,7 @@
 				height: 100%;
 				z-index: 1
 				background-color: rgba(0,0,0,.5)
-			.loading 
+			.loading
 				font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
 				font-weight: 500
 				position: absolute
@@ -389,7 +404,7 @@
 					background-size: cover
 					background-position: center
 					transition: all 0.8s ease
-					&.show 
+					&.show
 						opacity: 1
 					&.slide-media
 						animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1)
@@ -398,15 +413,15 @@
 							width: 100%
 							opacity: 0
 							visibility: hidden
-			&.slick-active 
+			&.slick-active
 				z-index: 1
-				.slide-media 
+				.slide-media
 					animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1)
-				.caption 
+				.caption
 					opacity: 1
 					top: 48%
 					left: 50%
-					transform: translate(-50%, -48%)				
+					transform: translate(-50%, -48%)
 					transition: all .5s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s
 					+breakpoint(mobile)
 						top: 50%
@@ -454,11 +469,11 @@
 			bottom: -50px
 			text-align: center
 			padding: 15px 0
-			li 
+			li
 				display: inline-block
 				vertical-align: top
 				margin: 0 8px
-				button 
+				button
 					width: 16px
 					height: 16px
 					border: none
@@ -474,7 +489,7 @@
 					opacity: 0.5
 					&:focus
 						outline: none
-					&:hover 
+					&:hover
 						opacity: 1
 				&.slick-active
 					button
@@ -484,28 +499,27 @@
 						font-size: 0
 						opacity: 1
 
-		@-webkit-keyframes slideIn 
+		@-webkit-keyframes slideIn
 			from
 				filter: blur(15px)
 			to
 				filter: blur(0)
 
-		@keyframes slideIn 
+		@keyframes slideIn
 			from
 				filter: blur(15px)
-			
+
 			to
 				filter: blur(0)
 
-		@-webkit-keyframes slideOut 
+		@-webkit-keyframes slideOut
 			from
 				filter: blur(0)
 			to
 				filter: blur(15px)
 
-		@keyframes slideOut 
+		@keyframes slideOut
 			from
 				filter: blur(0)
 			to
 				filter: blur(15px)
-  
