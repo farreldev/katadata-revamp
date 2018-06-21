@@ -153,11 +153,12 @@
 							margin-right: 0
 						article
 							a
-								white-space: pre-wrap
+								white-space: no-wrap
 				+breakpoint(mobile)
 					width: auto
 					height: 100%
 					overflow-x: auto
+					-webkit-overflow-scrolling: touch
 					white-space: nowrap
 					li.tab-link
 						display: inline-block

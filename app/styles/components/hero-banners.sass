@@ -55,14 +55,27 @@
 	a
 		position: absolute
 		display: inline-block
-		width: 60px
-		height: 60px
+		padding: 12px 14px
+		border: 1px solid #fff
 		top: 50%
 		left: 50%
+		background-color: rgba(0,0,0,.5)
 		transform: translate(-50%, -50%)
 		z-index: 2
 		img
-			width: 100%
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			width: auto
+			height: 27px
+		span
+			display: inline-block
+			vertical-align: middle
+			color: #fff
+		&:focus
+			outline: none
+		&:hover
+			background-color: rgba(0,134,188, .35)
 	&:after
 		position: absolute
 		content: ''

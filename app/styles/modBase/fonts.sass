@@ -1,8 +1,8 @@
 @each $name, $file in $font_family
 	@if $font_idx==1
-		$font_default: $name;
-		$font_idx: 2;
-		  
+		$font_default: $name
+		$font_idx: 2
+
 	@font-face
 		font-family: $name
 		src: url('#{$file}.eot')
