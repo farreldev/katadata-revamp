@@ -1,0 +1,17 @@
+.tags-template
+	.head-and-caption
+		+clearit
+		img
+			display: inline-block
+			width: 250px
+			margin: 0 0 25px
+			+breakpoint(mobile)
+				display: block
+				margin: 0 auto 25px
+		.desc-tags
+			font-family: "Gotham Narrow A", "Gotham Narrow B", robotoMedium
+			font-weight: 500
+			float: right
+			width: calc(100% - 550px)
+			+breakpoint(mobile)
+				width: auto

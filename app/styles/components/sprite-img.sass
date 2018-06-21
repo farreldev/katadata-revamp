@@ -1,139 +1,197 @@
-%thumbnail-sprite
-   a
-      padding: 0 10px 10px
-      display: block
-      text-align: center
-      text-decoration: none
-      cursor: pointer
-      color: $blue-light
-      transition: color .3s ease-in-out
-      .icoico
-         height: 68px
-         margin: 0 auto
-         display: block
-         background: url("../images/icons/sprite-topik.png") no-repeat
-         &.ico-agro
-            width: 80px
-            background-position: 3px 5px
-            transition: all .3s ease-in-out
-         &.ico-demog
-            width: 55px
-            background-position: -82px 5px
-            transition: all .3s ease-in-out
-         &.ico-energi
-            width: 60px
-            background-position: -152px 5px
-            transition: all .3s ease-in-out
-         &.ico-kerja
-            width: 50px
-            background-position: -228px 5px
-            transition: all .3s ease-in-out
-         &.ico-laut
-            width: 60px
-            background-position: -296px 5px
-            transition: all .3s ease-in-out
-         &.ico-uang
-            width: 60px
-            background-position: -367px 5px
-            transition: all .3s ease-in-out
-         &.ico-moneter
-            width: 60px
-            background-position: -440px 5px
-            transition: all .3s ease-in-out
-         &.ico-pasar
-            width: 60px
-            background-position: -510px 5px
-            transition: all .3s ease-in-out
-         &.ico-pdb
-            width: 60px
-            background-position: -582px 5px
-            transition: all .3s ease-in-out
-         &.ico-tekno
-            width: 60px
-            background-position: -654px 5px
-            transition: all .3s ease-in-out
-         &.ico-dagang
-            width: 60px
-            background-position: -728px 5px
-            transition: all .3s ease-in-out
-         &.ico-all
-            width: 150px
-            background-position: -800px 5px
-            transition: all .3s ease-in-out
-   &:hover
-      background-color: $blue-sea
-      border: 1px solid $blue-sea
-      +box-shadow(0, 2px, 12px,rgba(0,0,0,.35))
-      transition: all .3s ease-in-out
-      a
-         color: white
-         transition: color .3s ease-in-out
-         .ico-agro
-            background-position: 3px -55px
-            transition: background-position .3s ease-in-out
-         .ico-demog
-            background-position: -82px -55px
-            transition: background-position .3s ease-in-out
-         .ico-energi
-            background-position: -152px -55px
-            transition: background-position .3s ease-in-out
-         .ico-kerja
-            background-position: -228px -55px
-            transition: background-position .3s ease-in-out
-         .ico-laut
-            background-position: -296px -55px
-            transition: background-position .3s ease-in-out
-         .ico-uang
-            background-position: -367px -55px
-            transition: background-position .3s ease-in-out
-         .ico-moneter
-            background-position: -440px -55px
-            transition: background-position .3s ease-in-out
-         .ico-pasar
-            background-position: -510px -55px
-            transition: background-position .3s ease-in-out
-         .ico-pdb
-            background-position: -582px -55px
-            transition: background-position .3s ease-in-out
-         .ico-tekno
-            background-position: -654px -55px
-            transition: background-position .3s ease-in-out
-         .ico-dagang
-            background-position: -728px -55px
-            transition: background-position .3s ease-in-out
-         .ico-all
-            background-position: -799px -55px
-            transition: background-position .3s ease-in-out
-.sprite-ico
-   width: 100%
-   height: 100%
-   +clearit
-   li
-      display: inline-block
-      border: 1px solid #ddd
-      background-color: white
-      transition: all .3s ease-in-out
-      +breakpoint(wide)
-         +ownGrid(6, 1.8%)
-      +breakpoint(tablet)
-         +ownGrid(4, 2%)
-      +breakpoint(mobile)
-         +ownGrid(1, 2%)
-      @extend %thumbnail-sprite
+// %thumbnail-sprite
+// 	a
+// 		padding: 0 10px 10px
+// 		display: block
+// 		text-align: center
+// 		text-decoration: none
+// 		cursor: pointer
+// 		color: $blue-light
+// 		transition: color .3s ease-in-out
+// 		.icoico
+// 			height: 68px
+// 			margin: 0 auto
+// 			display: block
+// 			background: url("../images/icons/sprite-topik.png") no-repeat
+// 			&.ico-agro
+// 				width: 80px
+// 				background-position: 3px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-demog
+// 				width: 55px
+// 				background-position: -82px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-energi
+// 				width: 60px
+// 				background-position: -152px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-kerja
+// 				width: 50px
+// 				background-position: -228px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-laut
+// 				width: 60px
+// 				background-position: -296px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-uang
+// 				width: 60px
+// 				background-position: -367px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-moneter
+// 				width: 60px
+// 				background-position: -440px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-pasar
+// 				width: 60px
+// 				background-position: -510px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-pdb
+// 				width: 60px
+// 				background-position: -582px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-tekno
+// 				width: 60px
+// 				background-position: -654px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-dagang
+// 				width: 60px
+// 				background-position: -728px 5px
+// 				transition: all .3s ease-in-out
+// 			&.ico-all
+// 				width: 150px
+// 				background-position: -800px 5px
+// 				transition: all .3s ease-in-out
+// 	&:hover
+// 		background-color: $blue-sea
+// 		border: 1px solid $blue-sea
+// 		+box-shadow(0, 2px, 12px,rgba(0,0,0,.35))
+// 		transition: all .3s ease-in-out
+// 		a
+// 			color: white
+// 			transition: color .3s ease-in-out
+// 			.ico-agro
+// 				background-position: 3px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-demog
+// 				background-position: -82px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-energi
+// 				background-position: -152px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-kerja
+// 				background-position: -228px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-laut
+// 				background-position: -296px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-uang
+// 				background-position: -367px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-moneter
+// 				background-position: -440px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-pasar
+// 				background-position: -510px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-pdb
+// 				background-position: -582px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-tekno
+// 				background-position: -654px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-dagang
+// 				background-position: -728px -55px
+// 				transition: background-position .3s ease-in-out
+// 			.ico-all
+// 				background-position: -799px -55px
+// 				transition: background-position .3s ease-in-out
 
-.sprite-ico-all
-   width: 100%
-   height: 100%
-   margin-bottom: 25px
-   li
-      display: inline-block
-      border: 1px solid #ddd
-      background-color: white
-      transition: all .3s ease-in-out
-      +breakpoint(wide)
-         +ownGrid(4, 2%)
-      +breakpoint(tablet)
-         +ownGrid(3, 2%)
-      +breakpoint(mobile)
-         +ownGrid(1, 2%)
-      @extend %thumbnail-sprite
+%thumbnail
+	a
+		padding: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		text-decoration: none
+		cursor: pointer
+		p
+			font-family: robotoRegular
+			color: $black
+			transition: color .3s ease-in-out
+			font-size: 16px
+		&:hover
+			p
+				color: $blue-sea
+		figure
+			margin-bottom: 10px
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 50px
+			img
+				width: auto
+				height: auto
+
+// .sprite-ico
+// 	width: 100%
+// 	height: 100%
+// 	+clearit
+// 	li
+// 		display: inline-block
+// 		border: 1px solid #ddd
+// 		background-color: white
+// 		transition: all .3s ease-in-out
+// 		+breakpoint(wide)
+// 			+ownGrid(6, 1.8%)
+// 		+breakpoint(tablet)
+// 			+ownGrid(4, 2%)
+// 		+breakpoint(mobile)
+// 			+ownGrid(1, 2%)
+// 		@extend %thumbnail-sprite
+
+// .sprite-ico-all
+// 	width: 100%
+// 	height: 100%
+// 	margin-bottom: 25px
+// 	li
+// 		display: inline-block
+// 		border: 1px solid #ddd
+// 		background-color: white
+// 		transition: all .3s ease-in-out
+// 		+breakpoint(wide)
+// 			+ownGrid(4, 2%)
+// 		+breakpoint(tablet)
+// 			+ownGrid(3, 2%)
+// 		+breakpoint(mobile)
+// 			+ownGrid(1, 2%)
+// 		@extend %thumbnail-sprite
+
+.thumb-ico-topik
+	width: 100%
+	height: 100%
+	+breakpoint(wide)
+		+flexOwnGrid('li', 6, 1.5%, 18)
+	+breakpoint(tablet)
+		+flexOwnGrid('li', 4, 1.5%, 12)
+	+breakpoint(mobile)
+		+flexOwnGrid('li', 1, 0, 18)
+	li
+		border: 1px solid #ddd
+		@extend  %thumbnail
+		transition: all .3s ease-in-out
+		&:hover
+			// background-color: #eeffff
+			background-color: #ffffff
+			// border: 1px solid $blue-sea
+			border: 1px solid #fff
+			box-shadow: 0 0 28px -3px rgba(0,0,0,.17)
+	&.grid-4
+		+breakpoint(wide)
+			+flexOwnGrid('li', 4, 1.5%, 18)
+		+breakpoint(tablet)
+			+flexOwnGrid('li', 3, 1.5%, 12)
+			margin-bottom: 20px
+		+breakpoint(mobile)
+			+flexOwnGrid('li', 1, 0, 18)
+			margin-bottom: 15px
+
