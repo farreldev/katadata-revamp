@@ -411,7 +411,7 @@ $(function() {
 				}
 
 				if (!hdr.classList.contains('scrollingUp')) {
-					slMnu.style.top = '113px';
+					// slMnu.style.top = '113px';
 					lSearch.removeAttribute('style');
 				} else {
 					slMnu.style.top = '50px';
