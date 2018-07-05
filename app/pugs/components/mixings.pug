@@ -192,6 +192,24 @@ block append config
 					.col-md-2.col-sm-6.tb-no-padding-right.padding-mm-right-15
 						a(href="", class="btn btn-block btn-blue-pastel")
 							i(class="fa fa-search") 
+	mixin formSearch7(namePages7)
+		section.formSearch.otherStyle
+			form
+				.row
+					.col-md-10.no-padding-right.col-sm-6.padding-mm-right-15
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6.tb-no-padding-right.padding-mm-right-15
+						input(type="submit" class="btn btn-block btn-blue-pastel" value=namePages7)
+	mixin formSearch8(namePages8)
+		section.formSearch
+			form
+				.row
+					.col-md-10.no-padding-right.col-sm-6.padding-mm-right-15
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6.tb-no-padding-right.padding-mm-right-15
+						input(type="submit" class="btn btn-block btn-blue-pastel" value=namePages8)
 	mixin kdLogin
 		.login-wrapper
 			.formSearch.removeBorder

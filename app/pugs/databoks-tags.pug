@@ -5,53 +5,14 @@ block content
 	.whiteHead
 		.container
 			.head-and-caption
-				h2 Databoks #[small / Statistik]
+				h2 Databoks #[small / #ekspor]
 	.container
-		+formSearch2('Statistik')
-	section.databoks-statistik
+		+formSearch8('Cari Statistik')
+	section.databoks-tags
 		.container
 			.row
-				.col-md-9.big-chart
-					h3 Statistik Terkini
-					//- p.small 1 Jan 2018
-					p.latestStatistik Peringkat Membaik, Risiko Investasi Indonesia Terus Turun
-					figure
-						img(src="images/databoks/statistik.jpg", alt="")
-					ul.btn-sosmed.margin-bottom-15.pull-right.xs-float-none
-						li
-							a(href="#" class="facebook" title="Facebook")
-								i(class="fa fa-facebook" aria-hidden="true")
-								span Share
-						li
-							a(href="#" class="twitter" title="Twitter")
-								i(class="fa fa-twitter" aria-hidden="true")
-								span Tweet
-						li
-							a(href="#" class="linkedin" title="Linkedin")
-								i(class="fa fa-linkedin" aria-hidden="true")
-								span Linkedin
-						li
-							a(href="#" class="g-plus" title="Google Plus")
-								i(class="fa fa-google-plus" aria-hidden="true")
-								span Email
-						li
-							a(href="#" class="link-chain" title="Copy Link")
-								i(class="fa fa-link" aria-hidden="true")
-								span Copy URl
-					.clearfix
-					h4 1 Jan 2018
-					p.
-						Membaiknya peringkat utang pemerintah dalam mata uang asing membuat persepsi risiko investasi di Indonesia semakin menurun. Ini tercermin dari turunnya Credit Default Swap (CDS) surat utang Indonesia untuk tenor lima tahun hingga di bawah level 100 sejak akhir November 2017. Alhasil, imbal hasil surat utang Indonesia kini juga turun di kisaran 6 persen.
-				.col-md-3.stat-desc
-					p.
-						Dari ekonomi sampai teknologi, kami menyajikan statistik-statistik penting dan populer yang telah melalui proses analisis dan verifikasi data. Statistik yang kami kumpulkan ini telah dikelompokkan sesuai kategori yang mewakilinya, guna mempermudah pencarian Anda. Kami mengumpulkan dan memperbarui semua statistik secara berkala sehingga Anda tidak ketinggalan perkembangan terkini data dari tiap kategori tersebut.
-					p.text-note.
-						Seluruh data yang disajikan di Databoks boleh Anda gunakan secara cuma-cuma.
-			.row
-				.col-md-12
-					.shortcutBorderBottomCustom.margin-bottom-30
-			.row
-				.col-md-9.listing.margin-mm-top-20
+				.col-md-9.listing
+					h3 Statistik Topik Demografi
 					ul
 						li
 							span
@@ -130,28 +91,28 @@ block content
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
 							figure
 								img(src="images/databoks/statistik.jpg", alt="")
-					a(href="#" class="btn block-half") Statistik Lainnya
+					a(href="#" class="btn block-half margin-bottom-25") Statistik Lainnya
 				.col-md-3
-					.kaitan-list.margin-mm-top-20
+					.kaitan-list
 						h3 Statistik Terpopuler
 						ul
 							li
 								figure
-									img(src="images/thumb-img/thumb1.jpg", alt="")
+									img(src="images/databoks/stat-thumb.png", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
 							li
 								figure
-									img(src="images/thumb-img/thumb3.jpg", alt="")
+									img(src="images/databoks/stat-thumb.png", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
 							li
 								figure
-									img(src="images/thumb-img/thumb2.jpg", alt="")
+									img(src="images/databoks/stat-thumb.png", alt="")
 								a(href="").
 									Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
-			.shortcutBorderTop.margin-top-25.padding-top-35
-			.row
-				.col-md-12
-					h3 Pilihan Topik
-					include includes/link-topik2
+			//- .shortcutBorderTop.margin-top-25.padding-top-35
+			//- .row
+			//- 	.col-md-12
+			//- 		h3 Pilihan Topik
+			//- 		include includes/link-topik2
