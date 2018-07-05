@@ -366,7 +366,7 @@ $(function() {
 			});
 		}
 
-		var hdr = document.querySelector('header#header');
+		var hdr = document.querySelector('#header');
 		var clnMnu = document.querySelector('.clonedMnuHrz');
 		var slMnu = document.querySelector('nav.navigasi');
 		var lSearch = document.querySelector('div.layerSearch');

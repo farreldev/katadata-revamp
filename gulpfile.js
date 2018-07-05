@@ -124,6 +124,7 @@ gulp.task('extras', () => {
 	return gulp.src([
 		'app/*',
 		'!app/*.bak',
+		'!app/pugs',
 		'!app/pugs/*.pug',
 		'!app/pugs/**/*.pug',
 		'!app/*.html'
@@ -220,6 +221,13 @@ gulp.task('wiredep', () => {
 		}))
 		// .pipe(gulp.dest('app'));
 		.pipe(gulp.dest('app/pugs/base'));
+});
+
+gulp.task('rm_unuse_css', () => {
+	return gulp.src('dist/styles/*.css')
+		.pipe($.purifycss(['dist/scripts/*.js', 'dist/*.html']))
+		.pipe($.cssnano({ safe: true, autoprefixer: true }))
+		.pipe(gulp.dest('dist/purified'))
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {

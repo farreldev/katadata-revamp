@@ -3,13 +3,26 @@
 		display: block
 	.big-chart
 		margin-bottom: 30px
+		+clearit
 		figure
 			margin-bottom: 15px
+		h4
+			width: 150px
+			float: left
+			font-weight: 400
+			+breakpoint(mobile)
+				margin-bottom: 10px
+				float: none
+				width: auto
 		p
-			margin-left: 118px
+			// margin-left: 118px
+			width: calc(100% - 150px)
+			margin: 0 0 0 auto
 			margin-bottom: 5px
+			font-weight: 400
 			+breakpoint(mobile)
 				margin-left: 0
+				width: auto
 		p.latestStatistik
 			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 			font-size: 20px
@@ -26,6 +39,8 @@
 				margin-right: 0
 				margin-bottom: 5px
 				display: block
+		+breakpoint(mobile)
+			margin-bottom: 0
 	.stat-desc
 		padding-bottom: 20px
 		p
@@ -47,4 +62,5 @@
 			height: 5px
 			background-color: $blue-sec-head2
 		+breakpoint(mobile)
+			display: none
 			margin-bottom: 20px

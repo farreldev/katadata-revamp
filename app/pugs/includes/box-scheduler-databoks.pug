@@ -1,0 +1,34 @@
+.box-scheduler.filterInDataboks
+	strong Filter
+	form
+		.radio
+			label(for="statistik")
+				input#statistik(type='radio', class="chooseSchedule", name='optionsRadios', value='option3')
+				|	Statistik
+		.radio.margin-bottom-15
+			label(for="dataset")
+				input#dataset(type='radio', class="chooseSchedule", name='optionsRadios', value='option3')
+				|	Dataset
+		.form-group
+			label
+				select(class="form-control")
+					option(selected="selected") Kategori..
+					option Kategori Satu
+					option Kategori Dua
+					option Kategori Tiga
+		.form-group
+			label
+				select(class="form-control")
+					option(selected="selected") Sub Industri..
+					option Sub Satu
+					option Sub Dua
+					option Sub Tiga
+		.form-group
+			label
+				select(class="form-control")
+					option(selected="selected") Tags..
+					option Tags Satu
+					option Tags Dua
+					option Tags Tiga
+		button(class="btn btn-blue-pastel", type="submit") Terapkan
+		button(class="btn btn-link", type="reset") Hapus filter

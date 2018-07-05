@@ -1,4 +1,4 @@
-.detail-artikel
+.detail-artikel, .detail-artikel-ekono
 	.wrapperDetailArtikel
 		position: relative
 		margin-bottom: 20px
@@ -245,3 +245,34 @@
 				// 	input[type="submit"]
 				// 		float: none
 				// 		width: 100%
+		.advertiser
+			width: 655px
+			margin: 0 0 0 auto
+			border-top: 1px solid #ddd
+			padding: 25px 0
+			+clearit
+			figure
+				margin-right: 25px
+				display: inline-block
+				width: 150px
+				height: auto
+				img
+					display: block
+					width: 100%
+					height: auto
+			article
+				float: right
+				width: calc(100% - 175px)
+			+breakpoint(desktop)
+				width: 720px
+			+breakpoint(ipad)
+				width: 100%
+			+breakpoint(tablet)
+				width: 100%
+			+breakpoint(mobile)
+				width: 100%
+				figure
+					width: 100%
+				article
+					float: none
+					width: 100%
