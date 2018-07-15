@@ -1,24 +1,35 @@
 .pg-style-2-wrapper
-   .pg-style-2
-      padding: 8px 10px
-      border-radius: 3px
-      display: inline-block
-      text-decoration: none
-      background-color: $blue-cap
-      color: white
-      &:hover
-         background-color: $blue-sec-head2
-      &.prev:before,
-      &.next:after
-         font-family: fontawesome
-      &.prev:before
-         content: '\f104'
+	.pg-style-2
+		padding: 8px 10px
+		border-radius: 3px
+		display: inline-block
+		text-decoration: none
+		background-color: $blue-cap
+		color: white
+		&:hover
+			background-color: $blue-sec-head2
+		&.prev:before,
+		&.next:after
+			font-family: fontawesome
+		&.prev:before
+			content: '\f104'
 
-      &.next:after
-         content: '\f105'
-   span
-      padding: 8px 12px
-      margin: 0 2px
-      font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-      font-weight: 400
-      display: inline-block
+		&.next:after
+			content: '\f105'
+	span
+		padding: 8px 12px
+		margin: 0 2px
+		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+		font-weight: 400
+		display: inline-block
+		input[type="text"]
+			padding: 3px 4px
+			font-size: 14px
+			text-align: center
+			margin: 0 5px
+			width: 42px
+			color: darken($blue-sea, 7%)
+			border: 1px solid #ddd
+			box-shadow: 3px 3px 0 rgba(0,0,0,.08)
+			&:focus
+				outline: none

@@ -46,13 +46,14 @@
 		border-bottom: 1px solid #ddd
 		display: block
 		p
+			width: 150px
 			display: inline-block
 		p.strong
 			float: right
 			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 			font-size: 18px
 			font-weight: 500
-			width: 86.5%
+			width: calc(100% - 150px)
 			+breakpoint(tablet)
 				margin-top: 10px
 				width: 100%
@@ -61,12 +62,18 @@
 				margin-top: 0
 				margin-bottom: 0
 
-	p.detailTaiching
-		padding-left: 114px
-		margin-bottom: 20px
+	div.detailTaiching
+		display: block
+		width: calc(100% - 150px)
+		margin: 0 0 0 auto
+		overflow: hidden
+		p
+			margin-bottom: 20px
 		+breakpoint(tablet)
+			width: auto
 			padding-left: 0
 		+breakpoint(mobile)
+			width: auto
 			padding-left: 0
 	p
 		&.sendMail

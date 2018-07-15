@@ -1,0 +1,29 @@
+ol.breadcrumb-custom
+   margin: 0
+   padding: 8px 0
+   li
+      // margin-right: 0
+      display: inline-block
+      font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+      font-size: 22px
+      font-weight: 400
+      &:before
+         content: '/ '
+         padding: 0 3px
+      a
+         display: inline-block
+         font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+         font-size: 25px
+         font-weight: 400
+         &:hover
+            text-decoration: none
+      &:first-child
+         &:before
+            display: none
+         a
+            font-size: 42px
+            font-weight: 500
+      &.currentLi
+         color: $navy-light
+         &:before
+            color: $black

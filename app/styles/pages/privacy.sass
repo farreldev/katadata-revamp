@@ -1,0 +1,30 @@
+.privacy
+   a.btn
+      float: right
+      background-color: #f7f7f7
+      border-radius: 30px
+      img
+         position: relative
+         top: 2px
+      +breakpoint(mobile)
+         float: none
+         position: relative
+         top: 5px
+         left: 50%
+         transform: translateX(-50%)
+         margin-bottom: 20px
+   article
+      padding: 20px
+      margin-bottom: 20px
+      height: 500px
+      min-height: 400px
+      overflow-y: auto
+      box-shadow: inset 0 0 17px rgba(0,0,0,.1)
+      h3
+         line-height: 1.4
+      p
+         margin-bottom: 25px
+         line-height: 1.5
+      +breakpoint(mobile)
+         height: 400px
+         min-height: 300px
