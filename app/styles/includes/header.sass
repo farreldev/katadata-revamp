@@ -80,9 +80,13 @@ header
 		transition: all .3s ease-in-out
 		background-color: $blue-light
 		z-index: 2
+		.lineInput
+			display: none
 		&.openSearch
 			opacity: 1
 			top: 65px
+			.lineInput
+				display: block
 	.mnu-horz
 		background-color: $blue-light
 		+breakpoint(mobile)
@@ -138,18 +142,18 @@ header#header-alt-1
 	.layerSearch
 		background-color: transparent
 		opacity: 0
-		top: 64px
+		top: 0
 		transform: scaleX(0)
 		transform-origin: center
 		transition: all .3s ease-in-out
-		&.openSearch
-			opacity: 1
-			transform: scaleX(1)
-			top: 64px
 		.lineInput
 			width: 960px
 			+breakpoint(mobile)
 				width: 100%
+		&.openSearch
+			opacity: 1
+			transform: scaleX(1)
+			top: 64px
 	&.hilang
 		opacity: 0
 		top: -200px

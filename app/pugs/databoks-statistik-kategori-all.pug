@@ -5,7 +5,8 @@ block content
 	.whiteHead
 		.container
 			.head-and-caption
-				h2 Databoks #[small / Statistik]
+				//- h2 Databoks #[small / Statistik]
+				+breadcrumb-custom(['Databoks','Statistik', 'kategori-all'])
 	.container
 		+formSearch2('Statistik')
 	section.databoks-statistik

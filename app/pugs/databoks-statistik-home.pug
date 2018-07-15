@@ -5,7 +5,8 @@ block content
 	.whiteHead
 		.container
 			.head-and-caption
-				h2 Databoks #[small / Statistik]
+				//- h2 #[a(href="#") Databoks] #[small / Statistik]
+				+breadcrumb-custom(['Databoks','Statistik'])
 	.container
 		+formSearch2('Statistik')
 	section.databoks-statistik
@@ -14,7 +15,7 @@ block content
 				.col-md-9.big-chart
 					h3 Statistik Terkini
 					//- p.small 1 Jan 2018
-					p.latestStatistik Peringkat Membaik, Risiko Investasi Indonesia Terus Turun
+					a(href="#" class="latestStatistik") Peringkat Membaik, Risiko Investasi Indonesia Terus Turun
 					figure
 						img(src="images/databoks/statistik.jpg", alt="")
 					ul.btn-sosmed.margin-bottom-15.pull-right.xs-float-none

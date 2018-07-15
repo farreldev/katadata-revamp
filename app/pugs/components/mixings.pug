@@ -27,6 +27,16 @@ block append config
 							a(href="index.html") #{nameUrl}
 					else
 						li.active #{nameUrl}
+
+	mixin breadcrumb-custom(nameUrls)
+		- var itung = nameUrls.length
+		ol.breadcrumb-custom
+			each nameUrl, idx in nameUrls
+					if idx !== itung - 1
+						li
+							a(href="index.html") #{nameUrl}
+					else
+						li.currentLi #{nameUrl}
 	
 
 	mixin topikPil(nameTopik)
