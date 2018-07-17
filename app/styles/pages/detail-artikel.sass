@@ -126,8 +126,9 @@
 		.detail-article-caption
 			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 			font-size: 20px
-			font-weight: 400
+			font-weight: 500
 			line-height: 1.4
+			color: $black
 			width: 70%
 			+breakpoint(mobile)
 				width: auto
@@ -163,12 +164,13 @@
 				margin-bottom: 20px
 				a
 					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-					font-weight: 400
+					font-weight: 500
 			p
 				strong
 					// display: block
 					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 					font-weight: 500
+					color: $black
 					// margin-bottom: -10px
 			td
 				p
@@ -263,6 +265,11 @@
 			article
 				float: right
 				width: calc(100% - 175px)
+				h4
+					margin-bottom: 15px
+					font-weight: 500
+					font-size: 20px
+					line-height: 1.4
 			+breakpoint(desktop)
 				width: 720px
 			+breakpoint(ipad)
