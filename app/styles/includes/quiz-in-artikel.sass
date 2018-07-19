@@ -21,7 +21,7 @@
 		top: -17px
 		left: 0
 		right: 0
-		margin-bottom: 15px
+		margin-bottom: 25px
 		background: $blue url('../images/new-kd-pattern.png') no-repeat
 		height: 76px
 		transform: skewY(-3deg)
@@ -35,27 +35,57 @@
 			+breakpoint(mobile)
 				top: 55%
 				transform: skewY(3deg) translateY(-55%)
+		img
+			position: absolute
+			top: 50px
+			right: 20px
+			width: 72px
+			border-radius: 8px
+			transform: skewY(3deg)
+			+breakpoint(mobile)
+				top: 35px
 	div.content-kuis
+		width: 80%
+		margin-left: auto
+		margin-right: auto
 		margin-bottom: 25px
-		display: flex
-		justify-content: center
+		+clearit
 		a
-			flex-basis: 190px
+			margin-right: 20px
+			border-radius: 10px
+			width: 250px
+			display: inline-block
+			box-shadow: 2px 2px 10px rgba(0,0,0,.1)
 			img
 				display: inline-block
 				vertical-align: top
 				border-radius: 10px
 				width: 100%
-			&:nth-child(1)
-				display: block
-				margin-right: 10px
-				border-radius: 10px
-				box-shadow: 2px 2px 10px rgba(0,0,0,.1)
-			&:nth-child(2)
-				margin-left: 10px
-				font-size: 17px
+			+breakpoint(mobile)
+				width: auto
+				margin-right: 0
+		span
+			float: right
+			width: calc(100% - 270px)
+			a
+				font-size: 16px
 				line-height: 1.4
 				color: $black
+			p
+				font-size: 15px
+				line-height: 1.6
+				color: $black
+			+breakpoint(mobile)
+				float: none
+				width: auto
+			
+		a:nth-of-type(1)
+			font-size: 19px
+			margin-bottom: 10px
+			border-radius: 0
+			box-shadow: none
+		+breakpoint(mobile)
+			width: 86%
 	article
 		padding: 10px
 		p
