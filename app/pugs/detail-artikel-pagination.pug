@@ -1,0 +1,190 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Berita", "Pertambangan"])
+			.second-head-right
+	.detail-artikel
+		.container
+			.wrapperDetailArtikel
+				.row
+					.col-md-12
+						h1.width-65.xs-width-auto.
+							5 Alasan Perlu Akuisisi Freeport
+						article.infoCreated
+							p Reporter: #[b Nama Reporter]
+							p Editor: #[b Name Editor]
+							date 23 Agustus 2017, 20:02 WIB
+						//- p.infoArtikel.
+						//- 	Oleh #[strong Yuliawati], 1 Januari 2018
+						ul.btn-sosmed.pull-right.xs-float-none
+							li
+								a(href="#" class="facebook" title="Facebook")
+									i(class="fa fa-facebook" aria-hidden="true")
+							li
+								a(href="#" class="twitter" title="Twitter")
+									i(class="fa fa-twitter" aria-hidden="true")
+							li
+								a(href="#" class="linkedin" title="Linkedin")
+									i(class="fa fa-linkedin" aria-hidden="true")
+							li
+								a(href="#" class="g-plus" title="Google Plus")
+									i(class="fa fa-google-plus" aria-hidden="true")
+							//- li
+							//- 	a(href="#" class="link-chain" title="Copy Link")
+							//- 		i(class="fa fa-link" aria-hidden="true")
+							li
+								a(href="#" class="whatsapp" title="Whatsapp")
+									i(class="fa fa-whatsapp" aria-hidden="true")
+							li
+								a(href="#" class="line" title="Line")
+									img(src="images/icons/Line_Icon.png", alt="Line Chats")
+							//- li
+							//- 	a.btn-like
+							//- 		i(class="fa fa-thumbs-up" aria-hidden="true")
+							//- 		|	like 312
+				.row
+					.col-md-12
+						//- .tweetLine
+						//- 	ul
+						//- 		li
+						//- 			a(href="").
+						//- 				Grab menggandeng PT Visionet Internasional agar dapat menggunakan lisensi uang elektronik OVO untuk kembali menghidupkan GrabPay.
+						//- 		li
+						//- 			a(href="").
+						//- 				Sebelum dengan OVO, Grab pada Rabu (13/12) lalu juga mengumumkan kerja sama dengan perusahaan aplikasi pembayaran mobile milik Yusuf Mansur, PayTren.
+						.shortcutBorderBottom.margin-bottom-10.margin-top-20
+						p.detail-article-caption.
+							Aksi korporasi PT Indonesia Asahan Aluminium (Inalum) untuk mengakuisisi 51,2% saham PT Freeport Indonesia dinilai akan menguntungkan ekonomi Indonesia.
+						.shortcutBorderBottom.margin-top-10
+				.row.margin-top-30
+					.col-md-8
+						figure.mainDetailPict
+							img(src="images/article-img/freeport.jpg")
+							figcaption (Katadata)
+							//- small.
+							//- 	Caption here. Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
+						article.textArticle
+							+pagination('center-block')
+							p.
+								Setelah tarik ulur lebih dari dua dekade, divestasi 51 persen saham PT Freeport Indonesia (PTFI) akhirnya menemui titik terang. Pada 12 Juli lalu, PT Indonesia Asahan Alumunium (Inalum), Rio Tinto, dan Freeport McMoran Inc (FCX) menandatangani pokok-pokok perjanjian atau Head of Agreement (HoA) terkait proses divestasi tersebut.
+							p.
+								Dalam perjanjian tersebut, Inalum akan membeli 40 persen hak partisipasi Rio Tinto di PTFI dan 9,36 persen saham PT Indocopper Investasi yang dipegang FCX. Langkah Inalum tersebut menarik perhatian banyak kalangan. Selain karena dana pembelian yang mencapai US$ 3,85 miliar atau sekitar Rp 55,9 triliun, juga dilakukan sebelum kontrak berakhir pada 2021. 
+							p.
+								Hasil penghimpunan data dan informasi yang dilakukan Tim Riset Katadata menunjukkan ada lima alasan mengapa akuisisi PTFI penting dilakukan. Simak kelima alasan berikut ini.
+							
+							include includes/newsletter-in-detail
+							
+							p.
+								Chief Executive Officer (CEO) Go-Jek Nadiem Makarim berharap, Go-Pay bakal terus memimpin industri jasa dompet digital dan proses pembayaran independen. “Inisiatif ini merupakan langkah strategis dalam memperkuat pondasi dan langkah kami di industri fintech Indonesia,” kata Nadiem dalam keterangan resmi, Jakarta, Jumat (15/12).
+							
+							+pagination('center-block')
+							
+						.sosmedBottomDetail.match-margin
+							strong.
+								Share
+							ul.btn-sosmed
+								li
+									a(href="#" class="facebook" title="Facebook")
+										i(class="fa fa-facebook" aria-hidden="true")
+								li
+									a(href="#" class="twitter" title="Twitter")
+										i(class="fa fa-twitter" aria-hidden="true")
+								li
+									a(href="#" class="linkedin" title="Linkedin")
+										i(class="fa fa-linkedin" aria-hidden="true")
+								li
+									a(href="#" class="g-plus" title="Google Plus")
+										i(class="fa fa-google-plus" aria-hidden="true")
+								//- li
+								//- 	a(href="#" class="link-chain" title="Copy Link")
+								//- 		i(class="fa fa-link" aria-hidden="true")
+								li
+									a(href="#" class="whatsapp" title="Whatsapp")
+										i(class="fa fa-whatsapp" aria-hidden="true")
+								li
+									a(href="#" class="line" title="Line")
+										img(src="images/icons/Line_Icon.png", alt="Line Chats")
+						.tagLink.match-margin
+							strong.
+								Tags
+							ul
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Blue Bird
+								li
+									a(href="#") Uber
+								li
+									a(href="#") Pemerintah
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Go-Jek
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Go-Jek
+						//- .quiz-in-artikel
+						//- 	.quiz-head-label
+						//- 		h3 Kuis Katadata
+						//- 	article
+						//- 		p Siapakah Pendiri Tencent?
+						//- 	form
+						//- 		table
+						//- 			tr
+						//- 				td 
+						//- 					input(type="radio" id="switch_1" name="qz_switch" value="yes")
+						//- 					label(for="switch_1") Abu Nawas
+						//- 				td
+						//- 					input(type="radio" id="switch_2" name="qz_switch" value="yes")
+						//- 					label(for="switch_2") Abu Nawas
+						//- 			tr
+						//- 				td
+						//- 					input(type="radio" id="switch_3" name="qz_switch" value="yes")
+						//- 					label(for="switch_3") Abu Nawas
+						//- 				td
+						//- 					input(type="radio" id="switch_4" name="qz_switch" value="yes")
+						//- 					label(for="switch_4") Abu Nawas
+					#sideBarDetail.col-md-4
+						.kaitan-list.margin-bottom-25
+							h3 Terkait
+							ul
+								li
+									figure
+										img(src="images/thumb-img/thumb1.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+								li
+									figure
+										img(src="images/thumb-img/thumb3.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+								li
+									figure
+										img(src="images/thumb-img/thumb2.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+						include includes/artikel-terpopuler
+		section.baca-juga
+			.container.posRelative
+				h3 Baca Juga
+				a(href="#", class="linkIndex") #[span Indeks »]
+				.arrowNavigation
+					a.prevArrowNav
+						i(class="fa fa-chevron-left" aria-hidden="true")
+					a.nextArrowNav
+						i(class="fa fa-chevron-right" aria-hidden="true")
+				//- slider
+				.berita-slide
+					+otherNews('thumb1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+					+otherNews('thumb3.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')

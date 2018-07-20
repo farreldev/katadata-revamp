@@ -38,6 +38,37 @@ block append config
 					else
 						li.currentLi #{nameUrl}
 	
+	mixin pagination(align)
+		div(class="kd-paging-nav "+align)
+			ul.paging-wrapper
+				li.pagination__item.first
+					//- a.pagination__link.first(href='#')  Pertama
+					a.pagination__link.first(href='#')
+					
+				li.pagination__item.previous
+					a.pagination__link.previous(href='#')
+
+					// Daftar Paging
+					
+				li.pagination__item.page-is-active
+					a.pagination__link(href='#') 1
+				li.pagination__item
+					a.pagination__link(href='#') 2
+				li.pagination__item
+					a.pagination__link(href='#') 3
+				li.pagination__item
+					a.pagination__link(href='#') 4
+				//- li.pagination__item
+				//-    a.pagination__link(href='#') 5
+					
+					// End Daftar Paging
+
+				li.pagination__item.next
+					a.pagination__link.next(href='#')
+
+				li.pagination__item.last
+					//- a.pagination__link.last(href='#')  Terakhir
+					a.pagination__link.last(href='#')
 
 	mixin topikPil(nameTopik)
 		- var itung = nameTopik.length

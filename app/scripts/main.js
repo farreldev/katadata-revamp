@@ -318,7 +318,7 @@ $(function() {
 
 		// var teaser = function(n) {
 		//   $("#teaserFlip").hover(function(e) {
-		// 	//   e.stopPropagation();
+				// e.stopPropagation();
 		//       $("#teaserFlip img")
 		//         .stop()
 		//         .animate({ width: "307px", height: "308px" }, 300);
@@ -345,21 +345,23 @@ $(function() {
 		}
 
 		function chNewsletterPlace() {
+
 			var parentTxt = document.getElementsByClassName('textArticle')[0];
 			var pTag = parentTxt.getElementsByTagName('p');
 			var nl = document.querySelector('.newsletter.inDetail');
-			var at = document.querySelector('.artikelTerpopuler');
+			var moveEl = document.querySelector('#sideBarDetail');
 
-			if (pTag.length <= 5) {
-				at.insertAdjacentElement('afterend', nl);
-			}
+			if(pTag.length <= 5) {
+				if(nl !== null) {
+					moveEl.appendChild(nl);
+				}
+				return false
+			};
 		}
 
 		function tabling() {
 			var $tbl = $('.textArticle').children('table'),
-				$elC = $('<div/>', {
-					class: 'style2'
-				});
+				$elC = $('<div/>', { class: 'style2' });
 			$tbl.each(function(i) {
 				var $this = $(this);
 				$this.wrap($elC);
@@ -370,6 +372,7 @@ $(function() {
 		var clnMnu = document.querySelector('.clonedMnuHrz');
 		var slMnu = document.querySelector('nav.navigasi');
 		var lSearch = document.querySelector('div.layerSearch');
+		
 		// var isItScroll = true;
 
 		// if(screen.width > 768) {
@@ -379,6 +382,7 @@ $(function() {
 		// 		slMnu.style.top = "56px";
 		// 	}
 		// }
+
 		if (hdr) {
 			if (screen.width > 768) headSticky();
 		} else {
@@ -412,6 +416,7 @@ $(function() {
 
 				if (!hdr.classList.contains('scrollingUp')) {
 					// slMnu.style.top = '113px';
+					slMnu.removeAttribute('style');
 					lSearch.removeAttribute('style');
 				} else {
 					slMnu.style.top = '50px';

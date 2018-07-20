@@ -44,11 +44,11 @@
 							display: inline-block
 							z-index: 4
 							&.playing
-								background: url('../images/icons/youtube-play.png') center center no-repeat
+								background: url('../images/icons/media-small-icon1.png') center -66px no-repeat
 								width: 64px
 								height: 46px
 							&.cam
-								background: url('../images/icons/photo-camera.png') center center no-repeat
+								background: url('../images/icons/media-small-icon1.png') center 0 no-repeat
 								width: 64px
 								height: 58px
 							+breakpoint(mobile)
@@ -127,11 +127,12 @@
 								img
 									display: block
 									width: 100%
-						img
+						span
 							display: inline-block
 							width: 24px
 							margin-right: 10px
 						a
+							position: relative
 							float: right
 							width: calc(100% - 34px)
 							font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
@@ -139,6 +140,19 @@
 							font-weight: 500
 							line-height: 1.4
 							color: $black
+							&:before
+								position: absolute
+								top: 0
+								left: -33px
+								content: ''
+								width: 24px
+								height: 24px
+							&.vid
+								&:before
+									background: url('../images/icons/media-small-icon2.png') 0 26px
+							&.pic
+								&:before
+									background: url('../images/icons/media-small-icon2.png') 0 0
 				+breakpoint(tablet)
 					width: auto
 					height: 100%

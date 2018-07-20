@@ -135,6 +135,7 @@
 		article.textArticle
 			width: 655px
 			margin: 0 0 0 auto
+			+clearit
 			+breakpoint(desktop)
 				width: 720px
 			+breakpoint(ipad)
@@ -175,8 +176,9 @@
 			td
 				p
 					margin-bottom: 0
-			ol,ul
-				padding-left: 25px
+			ol,
+			ul:not([class="paging-wrapper"])
+				padding-left: 35px
 				margin-bottom: 30px
 				li
 					font-family: "Gotham Narrow A","Gotham Narrow B",'Roboto'
@@ -206,12 +208,14 @@
 						a
 							line-height: 1.4
 							color: $black
-		.artikelTerpopuler ~ .newsletter.inDetail
-			float: none
-			width: 85%
-			margin: 0 auto 25px
-			+breakpoint(mobile)
-				width: 100%
+			.kd-paging-nav
+				text-align: center
+				ul.paging-wrapper
+					padding-left: 0
+					margin-bottom: 10px
+				li
+					padding-left: 0
+		
 			// .newsletter
 				// &.inDetail
 				// 	float: left
@@ -283,3 +287,11 @@
 				article
 					float: none
 					width: 100%
+
+#sideBarDetail
+	.newsletter.inDetail
+		float: none
+		width: 85%
+		margin: 0 auto 25px
+		+breakpoint(mobile)
+			width: 100%
