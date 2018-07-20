@@ -19,6 +19,7 @@ block content
 						li
 							a(href="#") Databoks
 					+formSearch5
+					+pagination('pull-right')
 					ul
 						li
 							span
@@ -104,33 +105,6 @@ block content
 										Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
 								p.
 									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
-					.kd-paging-nav
-						ul.paging-wrapper
-							li.pagination__item.first
-								a.pagination__link.first(href='#')  Pertama
-								
-							li.pagination__item.previous
-								a.pagination__link.previous(href='#')
-
-								// Daftar Paging
-								
-							li.pagination__item
-								a.pagination__link(href='#') 1
-							li.pagination__item
-								a.pagination__link(href='#') 2
-							li.pagination__item.page-is-active
-								a.pagination__link(href='#') 3
-							li.pagination__item
-								a.pagination__link(href='#') 4
-							li.pagination__item
-								a.pagination__link(href='#') 5
-								
-								// End Daftar Paging
-
-							li.pagination__item.next
-								a.pagination__link.next(href='#')
-
-							li.pagination__item.last
-								a.pagination__link.last(href='#')  Terakhir 
+					+pagination('pull-right')
 				.col-md-3
 					include includes/box-scheduler
