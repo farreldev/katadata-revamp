@@ -204,6 +204,42 @@ $(function() {
 		}
 		/*** End ***/
 
+		/* Function Collapse paragraph */
+
+		var elemDom = $('.pengantar-foto article p');
+		var elemDomHeight = elemDom.eq(0).height();
+		var autoHeight = $('.pengantar-foto article').css('height', 'auto').height();
+		
+		$('.pengantar-foto article').css({ height: elemDomHeight + 12 })
+		
+		var sts = false;
+
+		$('#collapseBtn').click(function(e) {
+			e.preventDefault();
+
+			if(!sts) {
+				sts = true;
+				showHide($('.pengantar-foto article'), autoHeight);
+				console.log(sts);
+			} else {
+				sts = false;
+				showHide($('.pengantar-foto article'), elemDomHeight + 12)
+				console.log(sts);
+			}
+		})
+		
+		function showHide(ele, h) {
+			$(ele).animate({
+				height: h
+			}, 300);
+		}
+
+		/* End Function */
+
+
+
+
+
 		$('.trigger-mnu').on('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
@@ -512,6 +548,17 @@ $(function() {
 			$('.itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li').matchHeight();
 		}
 
+		function fotoReveal() {
+			window.sr = ScrollReveal();
+			sr.reveal('.foto-detail .fotoStory div', {
+				opacity: 0,
+				easing: 'ease',
+				duration: 1500,
+				mobile: true,
+				origin: 'bottom',
+				distance: '80px'
+			});
+		}
 
 		// var myMnu = new mlPushMenu(
 		//   document.getElementById('mp-menu'),
@@ -587,5 +634,6 @@ $(function() {
 		kdTime();
 		searcPanel();
 		removeEmptyTeks();
+		fotoReveal();
 	})();
 });
