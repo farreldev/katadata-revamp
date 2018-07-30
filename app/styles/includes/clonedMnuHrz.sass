@@ -28,21 +28,49 @@
 			width: auto
 			ul
 				li
-					padding: 0 14px 0 0
+					position: relative
+					padding: 0
 					display: inline-block
 					a
-						padding: 12px 0
+						padding: 15px 12px
 						font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 						font-weight: 500
 						font-size: 15px
 						color: #fff
 						display: block
-					&:nth-child(1)
+						text-decoration: none
+						&:hover
+							background-color: darken($blue, 5%)
+					// &:nth-child(1)
+					// 	a
+					// 		padding-left: 0
+					// &:last-child
+					// 	a
+					// 		padding-right: 0
+					&.mnu-horz-sub
 						a
-							padding-left: 0
-					&:last-child
-						a
-							padding-right: 0
+							padding-right: 18px
+						&:after
+							position: absolute
+							top: 14px
+							right: 0
+							font-family: Fontawesome
+							content: '\f0d7'
+							color: #fff
+					ul
+						padding: 0
+						position: absolute
+						top: -999px
+						width: 220px
+						background-color: $blue
+						z-index: 0
+						li
+							display: block
+					&:hover
+						ul
+							top: 47px
+							a
+								padding: 15px
 		.clonedMnuHrzRight
 			// width: 160px
 			width: auto
