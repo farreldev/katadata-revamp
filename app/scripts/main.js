@@ -220,10 +220,12 @@ $(function() {
 			if(!sts) {
 				sts = true;
 				showHide($('.pengantar-foto article'), autoHeight);
+				$(this).text('Tampilkan lebih sedikit')
 				console.log(sts);
 			} else {
 				sts = false;
 				showHide($('.pengantar-foto article'), elemDomHeight + 12)
+				$(this).text('Selengkapnya')
 				console.log(sts);
 			}
 		})
@@ -548,17 +550,17 @@ $(function() {
 			$('.itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li').matchHeight();
 		}
 
-		function fotoReveal() {
-			window.sr = ScrollReveal();
-			sr.reveal('.foto-detail .fotoStory div', {
-				opacity: 0,
-				easing: 'ease',
-				duration: 1500,
-				mobile: true,
-				origin: 'bottom',
-				distance: '80px'
-			});
-		}
+		// function fotoReveal() {
+		// 	window.sr = ScrollReveal();
+		// 	sr.reveal('.foto-detail .fotoStory div.fotoItem', {
+		// 		opacity: 0,
+		// 		easing: 'ease',
+		// 		duration: 1500,
+		// 		mobile: true,
+		// 		origin: 'bottom',
+		// 		distance: '80px'
+		// 	});
+		// }
 
 		// var myMnu = new mlPushMenu(
 		//   document.getElementById('mp-menu'),
@@ -634,6 +636,6 @@ $(function() {
 		kdTime();
 		searcPanel();
 		removeEmptyTeks();
-		fotoReveal();
+		// fotoReveal();
 	})();
 });

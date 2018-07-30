@@ -42,6 +42,15 @@
 				bottom: -70px
 				+breakpoint(mobile)
 					bottom: -62px
+	ul.foto-list
+		+breakpoint(wide)
+			+flexOwnGrid(li, 2, 3%, 25)
+		+breakpoint(tablet)
+			+flexOwnGrid(li, 2, 3.2%, 25)
+		+breakpoint(mobile)
+			+flexOwnGrid(li, 1, 0, 25)
+		~ a.btn
+				margin-bottom: 10px
 	.pengantar-foto
 		position: relative
 		+breakpoint(mobile)
@@ -100,3 +109,10 @@
 					font-size: 16px
 					+breakpoint(mobil)
 						width: 100%
+		ul.foto-list
+			+breakpoint(wide)
+				+flexOwnGrid(li, 4, 3%, 25)
+			+breakpoint(tablet)
+				+flexOwnGrid(li, 2, 3.2%, 25)
+			+breakpoint(mobile)
+				+flexOwnGrid(li, 1, 0, 25)
