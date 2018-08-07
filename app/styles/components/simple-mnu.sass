@@ -15,28 +15,6 @@
 	z-index: 4
 	+breakpoint(tablet)
 		top: 159px
-	&::-webkit-scrollbar-button
-		display: none
-		height: 13px
-		border-radius: 0px
-		background-color: #AAA
-		&:hover
-			background-color: #AAA
-
-	&::-webkit-scrollbar-thumb
-		background-color: #2c2c2c
-		// background-color: rgb(198,162,72)
-		border-radius: 10px
-		&:hover
-			background-color: lighten(#2c2c2c, 3%)
-
-	&::-webkit-scrollbar-track
-		background-color: #000
-		// &:hover
-		// 	background-color: lighten(#272727, 2%)
-
-	&::-webkit-scrollbar
-		width: 7px
 		
 	@include breakpoint(mobile)
 		top: 63px
@@ -70,15 +48,15 @@
 				font-weight: 400
 				text-decoration: none
 				text-transform: uppercase
-				color: #fff
+				// color: #fff
+				color: darken(#fff, 18%)
 				z-index: 2
 				&:hover 
-					color: $blue-pastel
+					color: $blue-sea
 				
 				@include breakpoint(mobile) 
 					padding: 15px 22px
 					
-			
 			// &:before 
 			// 	position: absolute
 			// 	content: ''
@@ -91,54 +69,128 @@
 			// 	// background: rgba(20, 9, 54, 0.5)
 			// 	// border-left: 2px solid $orange
 			// 	transition: all .3s ease-in-out
+
 			&.otherListMnu
 				padding: 7px 15px
-				font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+				font-family: "Gotham Narrow A", "Gotham Narrow B", Roboto
 				font-size: 14px
-				font-weight: 300
+				font-weight: 500
 				text-transform: uppercase
 				color: #fff
-				background: rgba(0,176,234,0.9)
-				background: -moz-linear-gradient(left, rgba(0,176,234,0.9) 0%, rgba(0,176,234,0) 90%, rgba(0,176,234,0) 100%)
-				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,176,234,0.9)), color-stop(90%, rgba(0,176,234,0)), color-stop(100%, rgba(0,176,234,0)))
-				background: -webkit-linear-gradient(left, rgba(0,176,234,0.9) 0%, rgba(0,176,234,0) 90%, rgba(0,176,234,0) 100%)
-				background: -o-linear-gradient(left, rgba(0,176,234,0.9) 0%, rgba(0,176,234,0) 90%, rgba(0,176,234,0) 100%)
-				background: -ms-linear-gradient(left, rgba(0,176,234,0.9) 0%, rgba(0,176,234,0) 90%, rgba(0,176,234,0) 100%)
-				background: linear-gradient(to right, rgba(0,176,234,0.9) 0%, rgba(0,176,234,0) 90%, rgba(0,176,234,0) 100%)
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b0ea', endColorstr='#00b0ea', GradientType=1 )
-			&.hasSub 
+				background: rgba(0, 174, 239,.5)
+				background: -moz-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 174, 239,.5)), color-stop(90%, rgba(0, 174, 239,0)), color-stop(100%, rgba(0, 174, 239,0)))
+				background: -webkit-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				background: -o-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				background: -ms-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				background: linear-gradient(to right, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#00aeef', GradientType=1 )
+			&.hasSub
 				ul li a 
-							font-size: 16px
+					font-size: 16px
+				// &:after 
+				// 	cursor: pointer
+				// 	font-family: Fontawesome
+				// 	font-size: 16px
+				// 	color: white
+				// 	position: absolute
+				// 	top: 5px
+				// 	right: 0
+				// 	// transition: transform .4s ease-in-out               
+				// 	content: '\f078'
+				// 	padding: 10px
+				// 	// border-radius: 50%
+				// 	background-color: $blue-sea
 				&:after 
 					cursor: pointer
 					font-family: Fontawesome
-					font-size: 16px
-					color: white
+					font-size: 12px
+					color: darken(#fff, 18%)
 					position: absolute
-					top: 5px
-					right: 0
-					// transition: transform .4s ease-in-out               
+					top: 10px
+					right: 20px
+					transition: transform .4s ease-in-out        
 					content: '\f078'
-					padding: 10px
-					// border-radius: 50%
-					background-color: $blue-sea
+					width: 25px
+					height: 25px
+					text-align: center
+					line-height: 20px
+					border-radius: 50%
+					border: 2px solid darken(#fff, 18%)
 				
 				&.subClose
 					> a
-						color: $blue-pastel
+						color: $blue-sea
 					&:after 
-						// transform: rotate(-180deg)
-						content: '\f077'
+						transform: rotate(-180deg)
+						// content: '\f077'
 						color: #fff
 
 			&.hasSub:hover 
 				li
 					&:before 
 						display: none
-						
+			
+			&.hasSubHalf
+				// max-height: 280px
+				// overflow-y: hidden
+				ul 
+					margin-left: 38px
+					display: block
+					+noBorderDot
+					li
+						a.toggleShow
+							text-transform: capitalize
+							padding: 10px
+							font-size: 15px
+							color: $yellow_wood
+						ul
+							margin-left: 10px
+							li
+								padding-left: 15px
+								color: #fff
+								a
+									padding: 12px 15px 12px 15px
+									font-size: 15px
+								&:before
+									position: absolute
+									content: '\f046'
+									top: 50%
+									left: 0
+									transform: translateY(-50%)
+									font-family: Fontawesome
+									font-size: 13px
+									color: darken(#fff, 30%)
+								&:hover
+									&:before
+										color: $blue-sea
+					
 			&:hover
 				&:before 
 					transform: scaleX(1)
+
+	&::-webkit-scrollbar-button
+		display: none
+		height: 13px
+		border-radius: 0px
+		background-color: #AAA
+		&:hover
+			background-color: #AAA
+
+	&::-webkit-scrollbar-thumb
+		background-color: #2c2c2c
+		// background-color: rgb(198,162,72)
+		border-radius: 10px
+		&:hover
+			background-color: lighten(#2c2c2c, 3%)
+
+	&::-webkit-scrollbar-track
+		background-color: #000
+		// &:hover
+		// 	background-color: lighten(#272727, 2%)
+
+	&::-webkit-scrollbar
+		width: 7px
 					
 	&.mnuOpen 
 		left: 0
