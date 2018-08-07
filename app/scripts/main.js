@@ -238,7 +238,31 @@ $(function() {
 
 		/* End Function */
 
+		function topikExpand(n) {
+			let $lh = $('.hasSubHalf ul li ul li').height()
+			let $lp = $('.hasSubHalf ul li ul li').parent()
+			var $ah = $lp.css('height', 'auto').height();
+			let cekToggle;
 
+			$lp.css({
+				'overflow-y': 'hidden',
+				height: $lh * n
+			})
+
+			$('a.toggleShow').click(function(e) {
+				e.preventDefault();
+
+				if(cekToggle) {
+					showHide($lp, $lh * n)
+					$(this).text('Topik Lainnya..')
+					cekToggle = false
+				} else {
+					showHide($lp, $ah)
+					$(this).text('Tampilkan beberapa..')
+					cekToggle = true
+				}
+			})
+		}
 
 
 
@@ -636,6 +660,7 @@ $(function() {
 		kdTime();
 		searcPanel();
 		removeEmptyTeks();
+		topikExpand(5);
 		// fotoReveal();
 	})();
 });
