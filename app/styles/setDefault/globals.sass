@@ -70,14 +70,22 @@ html,body
 			width: 100%
 			overflow: hidden
 			text-decoration: none
-	a.lbl_kd6
+	a.addLabel // lbl_kd6
 		position: absolute
 		display: block
+		text-align: center
 		top: 10px
 		right: 30px
-		width: 200px
+		width: 170px
+		span
+			font-size: 15px
+			margin-bottom: 7px
+			display: block
+			color: #777
 		img
 			width: 100%
+		&:hover
+			text-decoration: none
 		+breakpoint(tablet)
 			right: 30px
 		+breakpoint(mobile)
