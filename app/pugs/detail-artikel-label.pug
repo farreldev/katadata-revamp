@@ -7,6 +7,32 @@ block content
 			.second-head-left.pull-left
 				+breadcrumb(["Home", "Library", "Data"])
 			.second-head-right
+				ul.btn-sosmed.hidden-xs
+					li
+						a(href="#" class="facebook" title="Facebook")
+							i(class="fa fa-facebook" aria-hidden="true")
+					li
+						a(href="#" class="twitter" title="Twitter")
+							i(class="fa fa-twitter" aria-hidden="true")
+					li
+						a(href="#" class="linkedin" title="Linkedin")
+							i(class="fa fa-linkedin" aria-hidden="true")
+					li
+						a(href="#" class="g-plus" title="Google Plus")
+							i(class="fa fa-google-plus" aria-hidden="true")
+					li
+						a(href="#" class="link-chain" title="Copy Link")
+							i(class="fa fa-link" aria-hidden="true")
+					li
+						a(href="#" class="whatsapp" title="Whatsapp")
+							i(class="fa fa-whatsapp" aria-hidden="true")
+					li
+						a(href="#" class="line" title="Line")
+							img(src="images/icons/Line_Icon.png", alt="Line Chats")
+					li
+					//- 	a.btn-like
+					//- 		i(class="fa fa-thumbs-up" aria-hidden="true")
+					//- 		|	like 312
 	.detail-artikel
 		.container
 			.wrapperDetailArtikel
@@ -20,9 +46,10 @@ block content
 							date 23 Agustus 2017, 20:02 WIB
 						//- p.infoArtikel.
 						//- 	Oleh #[strong Yuliawati], 1 Januari 2018
-						a(href="#", class="lbl_kd6") 
+						a(href="#", class="addLabel")
+							span Di persembahkan oleh:
 							img(src="images/label_kd6.png")
-						ul.btn-sosmed.pull-right.xs-float-none
+						ul.btn-sosmed.pull-right.xs-float-none.visible-xs
 							li
 								a(href="#" class="facebook" title="Facebook")
 									i(class="fa fa-facebook" aria-hidden="true")

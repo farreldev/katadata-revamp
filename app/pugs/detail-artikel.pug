@@ -139,6 +139,17 @@ block content
 								strong Ambisi Go-Jek untuk Go-Pay
 							p.
 								Tak tinggal diam melihat rivalnya bangkit, Go-Jek segera unjuk gigi. Hanya berselang sehari dari pengumuman kemitraan Grab dan OVO, Go-Jek langsung menyatakan akuisisi tiga startup fintech sekaligus; Midtrans, Kartuku, dan Mapan.
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero accusamus praesentium mollitia quod dolorem, earum magnam quas possimus placeat ratione deserunt delectus sunt quaerat dignissimos fugit dolores, aspernatur quam.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet magni atque fuga autem tempora.
+							.wrap-parallax
+								img.parallax(src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=1360&q=80")
+								h2.parallax-info Lorem ipsum dolor sit amet.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus commodi, placeat ipsam maxime nobis inventore architecto itaque reiciendis obcaecati totam, magnam natus vero optio.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore impedit ducimus odio, repellendus modi, error cum, exercitationem optio ipsam consequuntur aut. Non repellat rem doloribus corporis, accusamus illo, atque unde ipsam nulla necessitatibus saepe.
 							ul
 								li Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, commodi?
 								li Quidem velit fugiat nesciunt perspiciatis voluptatem a, debitis facere iusto.
@@ -304,3 +315,23 @@ block content
 					+otherNews('thumb3.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+otherNews('thumb2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
 					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+
+block myscripts
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js")
+	script.
+		var parallax = new Rellax('.parallax', {
+			center: true
+		});
+		
+	script.
+		window.sr = ScrollReveal();
+		sr.reveal('h2.parallax-info', {
+			opacity: 0,
+			easing: 'cubic-bezier(.72,.01,.33,1)',
+			duration: 1500,
+			reset: true,
+			distance: '-50px',
+			mobile: true,
+			origin: 'bottom',
+			distance: '80px'
+		});

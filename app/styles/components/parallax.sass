@@ -1,0 +1,42 @@
+.wrap-parallax
+	position: relative
+	overflow: hidden
+	margin-bottom: 15px
+	width: 100%
+	height: 400px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 400px
+		background: rgba(0,0,0,.3)
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.85+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 100%) // FF3.6-15
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.70) 100%) // Chrome10-25,Safari5.1-6
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.70) 100%) // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d9000000',GradientType=0 ) // IE6-9
+		z-index: 1
+	img.parallax
+		position: absolute
+		left: 0
+		right: 0
+		width: 100%
+		height: 520px
+		object-fit: cover
+		// background-image: url('https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=1360&q=80')
+		
+		// background-attachment: fixed
+		// background-position: center center
+		// background-size: cover
+	h2.parallax-info
+		padding: 10px 12px
+		position: absolute
+		text-align: right
+		bottom: 10px
+		right: 25px
+		width: 250px
+		border: 2px solid #fff
+		color: #fff
+		z-index: 2
+		+breakpoint(mobile)
+			width: 170px

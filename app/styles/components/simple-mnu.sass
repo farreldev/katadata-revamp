@@ -108,7 +108,7 @@
 					color: darken(#fff, 18%)
 					position: absolute
 					top: 10px
-					right: 20px
+					right: 12px
 					transition: transform .4s ease-in-out        
 					content: '\f078'
 					width: 25px
@@ -142,7 +142,9 @@
 						a.toggleShow
 							text-transform: capitalize
 							padding: 10px
-							font-size: 15px
+							font-size: 14px
+							letter-spacing: .3px
+							font-weight: bold
 							color: $yellow_wood
 						ul
 							margin-left: 10px
@@ -154,12 +156,13 @@
 									font-size: 15px
 								&:before
 									position: absolute
-									content: '\f046'
-									top: 50%
+									// content: '\f046'
+									content: '•'
+									top: 5px
 									left: 0
-									transform: translateY(-50%)
-									font-family: Fontawesome
-									font-size: 13px
+									// transform: translateY(-50%)
+									// font-family: Fontawesome
+									font-size: 25px
 									color: darken(#fff, 30%)
 								&:hover
 									&:before
