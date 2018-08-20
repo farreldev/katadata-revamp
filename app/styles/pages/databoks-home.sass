@@ -3,12 +3,23 @@
 		padding-bottom: 25px
 		margin-bottom: 25px
 		border-bottom: 1px solid #ddd
+		h2
+			margin-bottom: 10px
+			font-weight: 400
+			font-size: 50px
 		p
 			margin-bottom: 15px
 			&.lead
-				font-size: 30px
+				font-weight: 400
+				font-size: 24px
 		a
 			font-size: 18px
+			&.btn
+				margin-right: 15px
+				+breakpoint(mobile)
+					width: 100%
+					margin-right: 0
+					margin-bottom: 15px
 		.databoks-video-intro
 			position: relative
 			padding-bottom: 56.25%

@@ -38,7 +38,8 @@ block append config
 					else
 						li.currentLi #{nameUrl}
 	
-	mixin pagination(align)
+	mixin pagination(align, jml)
+		- var n = 1
 		div(class="kd-paging-nav "+align)
 			ul.paging-wrapper
 				li.pagination__item.first
@@ -49,17 +50,13 @@ block append config
 					a.pagination__link.previous(href='#')
 
 					// Daftar Paging
-					
-				li.pagination__item.page-is-active
-					a.pagination__link(href='#') 1
-				li.pagination__item
-					a.pagination__link(href='#') 2
-				li.pagination__item
-					a.pagination__link(href='#') 3
-				li.pagination__item
-					a.pagination__link(href='#') 4
-				//- li.pagination__item
-				//-    a.pagination__link(href='#') 5
+				while n <= jml
+					if n==1
+						li.pagination__item.page-is-active
+							a.pagination__link(href='#')=n++
+					else
+						li.pagination__item
+							a.pagination__link(href='#')=n++
 					
 					// End Daftar Paging
 
@@ -111,38 +108,37 @@ block append config
 					.col-md-2.col-sm-12
 						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch3(namePages)
-		.container
-			section.formSearch.sectionGray
-				form
-					.row
-						.col-md-6.col-sm-6
-							.form-group
-								input(type="text" class="form-control" placeholder="Kata kunci")
-						.col-md-2.col-sm-6
-							.form-group
-								label
-									select(class="form-control")
-										option(selected="selected") Pilih Topik..
-										option Topik Satu
-										option Topik Dua
-										option Topik Tiga
-						//- .col-md-2.col-sm-6
-						//- 	.form-group
-						//- 		label
-						//- 			select(class="form-control")
-						//- 				option(selected="selected") Pilih Subtopik..
-						//- 				option Topik Satu
-						//- 				option Topik Dua
-						//- 				option Topik Tiga
-						.col-md-2.col-sm-6
-							.form-group
-								label
-									select(class="form-control")
-										option(selected="selected") Provinsi
-										option Aceh
-										option Batam
-						.col-md-2.col-sm-12
-							input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
+		section.formSearch.sectionGray
+			form
+				.row
+					.col-md-6.col-sm-6
+						.form-group
+							input(type="text" class="form-control" placeholder="Kata kunci")
+					.col-md-2.col-sm-6
+						.form-group
+							label
+								select(class="form-control")
+									option(selected="selected") Pilih Topik..
+									option Topik Satu
+									option Topik Dua
+									option Topik Tiga
+					//- .col-md-2.col-sm-6
+					//- 	.form-group
+					//- 		label
+					//- 			select(class="form-control")
+					//- 				option(selected="selected") Pilih Subtopik..
+					//- 				option Topik Satu
+					//- 				option Topik Dua
+					//- 				option Topik Tiga
+					.col-md-2.col-sm-6
+						.form-group
+							label
+								select(class="form-control")
+									option(selected="selected") Provinsi
+									option Aceh
+									option Batam
+					.col-md-2.col-sm-12
+						input(type="submit" class="btn btn-block btn-blue-pastel" value="Cari "+namePages)
 	mixin formSearch2(namePages2)
 		section.formSearch
 			form
