@@ -144,7 +144,8 @@ block content
 							p.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet magni atque fuga autem tempora.
 							.wrap-parallax
-								img.parallax(src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=1360&q=80")
+								//- img.parallax(src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=1360&q=80")
+								img.parallax(src="images/parallax1.jpg")
 								h2.parallax-info Lorem ipsum dolor sit amet.
 							p.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus commodi, placeat ipsam maxime nobis inventore architecto itaque reiciendis obcaecati totam, magnam natus vero optio.
@@ -317,11 +318,18 @@ block content
 					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
 
 block myscripts
-	script(src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js")
 	script.
-		var parallax = new Rellax('.parallax', {
-			center: true
-		});
+		let parallxElem = document.querySelector('.parallax');
+		
+		if(parallxElem) {
+			kdParallax(parallxElem);
+		}
+
+		function kdParallax(elem) {
+			var parallax = new Rellax(elem, {
+				center: true
+			});
+		}
 		
 	script.
 		window.sr = ScrollReveal();
