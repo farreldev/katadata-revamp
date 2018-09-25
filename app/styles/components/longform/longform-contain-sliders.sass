@@ -1,0 +1,73 @@
+.longform-contain-sliders
+	position: relative
+	width: 100%
+	overflow: hidden
+	margin-bottom: 20px
+	div.item
+		figure
+			position: relative
+			margin-bottom: -6px
+			overflow: hidden
+			width: 592px
+			height: auto
+			a
+				position: relative
+				overflow: hidden
+				outline: none
+				display: inline-block
+				width: 582px
+				height: auto
+				&:before
+					position: absolute
+					content: ''
+					width: 100%
+					height: 100%
+					transition: all .5s ease-in-out
+					background-color: rgba(0,0,0,.7)
+					// +breakpoint(mobile)
+					// 	background-color: transparent
+				img
+					// position: absolute
+					display: block
+					width: 100%
+					height: 100%
+				+breakpoint(mobile)
+					width: auto
+					height: 200px
+					img
+						width: auto
+						height: 100%
+			figcaption
+				font-size: 15px
+				line-height: 1.4
+				text-align: left
+				display: block
+				color: #727272
+				transition: all .5s ease-in-out
+				opacity: 0
+				text-transform: initial
+				padding: 5px 5px 15px
+			// +breakpoint(desktop)
+			// 	height: 215px
+			// +breakpoint(wide)
+			// 	height: 190px
+			// +breakpoint(tablet)
+			// 	height: 175px
+			+breakpoint(mobile)
+				width: 100%
+				height: auto
+	.slick-slider
+		overflow: hidden
+	.slick-slide
+		margin: 0 10px
+		&.slick-center
+			figure
+				a
+					&:before
+						transition: all .5s ease-in-out
+						background-color: rgba(0,0,0,0)
+			figcaption
+				transition: all .5s ease-in-out
+				opacity: 1
+	.slick-list
+		margin: -10px

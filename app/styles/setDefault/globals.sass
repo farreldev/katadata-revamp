@@ -89,7 +89,7 @@ html,body
 			right: 30px
 		+breakpoint(mobile)
 			position: static
-			width: 180px
+			float: none
 			margin: 0 auto 20px
 	.tagLink
 		position: relative
@@ -349,16 +349,30 @@ html,body
 			vertical-align: middle
 			li
 				display: inline-block
-	.topik-link
-		padding: 6px 10px
-		margin-bottom: 5px
+	.topik-link, span.lbl-sponsor
 		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 		font-size: 11px
 		font-weight: 500
-		color: white
-		text-transform: uppercase
 		display: inline-block
+		letter-spacing: .05px
+		padding: 6px 10px
+		margin-bottom: 5px
+		text-transform: uppercase
+	span.lbl-sponsor
+		padding: 7px 0 0
+		font-family: 'Roboto'
+		font-weight: 400
+		color: $black
+		// background-color: #f0f0f0
+	.topik-link
+		margin-right: 10px
+		color: white
 		background: $yellow-wood
+		&.sponsor
+			// color: $black
+			// background-color: #f0f0f0
+			color: #fff
+			background-color: #0F52BA
 	a.linkVid
 		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 		font-size: 17px

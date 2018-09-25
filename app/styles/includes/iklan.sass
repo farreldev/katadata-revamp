@@ -1,0 +1,90 @@
+.center-belt
+	margin-bottom: 25px
+	width: 100%
+	text-align: center
+	background-color: #f2f2f2
+	a
+		display: inline-block
+		img
+			max-width: 100%
+			display: block
+	&.on-header
+		// margin-top: 25px
+		margin-top: 55px
+		margin-bottom: 0
+		+breakpoint(mobile)
+			margin-top: 10px
+			margin-bottom: 15px
+	+breakpoint(mobile)
+		img
+			max-width: 100%
+			height: auto
+		// &.on-header
+		// 	img
+		// 		margin: 0 auto
+		// 		width: 320px
+		// 		height: 100px
+	// +breakpoint(small-mobile)
+	// 	&.on-header
+	// 		.container
+	// 			padding: 0
+	// 			img
+	// 				margin: 0 auto
+	// 				width: 320px
+	// 				height: 100px
+
+.otherBanner
+	position: relative
+	padding-top: 69px
+	width: 100%
+	+breakpoint(mobile)
+		padding-top: 35px
+	@extend %thin-line-custom-top
+	&.clear-top-padding
+		padding-top: 0
+	img
+		display: inline-block
+		margin-bottom: 25px
+		width: 100%
+
+.stickyBanner
+	position: fixed
+	bottom: 0
+	width: 100%
+	z-index: 3
+	perspective: 1200px
+	.wrapStickyBanner
+		position: relative
+		transition: transform .5s ease-in-out
+		transform-origin: bottom center
+		transform: rotateX(90deg)
+		&.openStickyBanner
+			transition: transform .5s ease-in-out
+			transform: rotateX(0deg)
+		// animation:
+		// 	name: stickyAnim
+		// 	duration: 1.5s
+		// 	timing-function: ease-in-out
+		// 	iteration-count: infinite
+			// fill-mode: forwards
+		a
+			display: inline-block
+			&.closeAds
+				position: absolute
+				top: -20px
+				right: 0
+				padding: 3px 6px
+				font-size: 14px
+				color: #fff
+				background-color: $blue-sea
+		.center-belt
+			margin-bottom: 0
+			background-color: rgba(255,255,255,.7)
+
+// @keyframes stickyAnim
+// 	0%
+// 		transform: rotateX(90deg)
+// 	50%
+// 		transform: rotateX(0deg)
+// 	100%
+// 		transform: rotateX(90deg)

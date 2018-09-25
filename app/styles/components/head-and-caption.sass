@@ -85,6 +85,19 @@
 			font-size: 14px
 		img
 			max-height: 75px
+		img:nth-of-type(1)
+			margin-right: 15px
+		
+		+breakpoint(mobile)
+			position: static
+			img
+				margin-bottom: 15px
+				width: 220px
+				max-height: initial
+			img:nth-of-type(1)
+				margin-right: 0
+
+			
 	p
 		&.sendMail
 			float: right

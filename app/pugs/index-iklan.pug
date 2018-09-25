@@ -1,0 +1,810 @@
+extends base/home
+include components/mixings
+
+block content
+	.center-belt.on-header
+		.container
+			img(src="images/banners/centerBelt728x90.jpg", alt="")
+	.second-head.atHome
+		.container
+			.second-head-left.pull-left
+				include includes/trending
+			.second-head-right
+				.followSosmed
+					span.
+						Ikuti Kami:
+					ul
+						li
+							a(href="#" class="facebook")
+								i(class="fa fa-facebook")
+						li
+							a(href="#" class="twitter")
+								i(class="fa fa-twitter")
+						li
+							a(href="#" class="instagram")
+								i(class="fa fa-instagram")
+						li
+							a(href="#" class="linkedin")
+								i(class="fa fa-linkedin")
+	.homeKD
+		section.headlines
+			.container
+				.headlinesWrapper
+					.row
+						.col-md-4.col-sm-7
+							a(href="#", alt="{topik}", class="topik-link") Energi
+							h2
+								a(href="detail-artikel.html", class="lockIcon") Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+							article
+								p.infoArtikel 
+									| Oleh 
+									strong Yuliawati
+									|, 1 Januari 2018
+								p.
+									Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
+						.col-md-5.col-sm-5
+							figure
+								a(href="" class="hl-pict")
+									img(src="images/article-img/HL-pict.jpg", alt="")
+									figcaption Arief Kamaludin/Katadata
+						.col-md-3.col-sm-12
+							
+							.otherBanner.clear-top-padding.no-top-border
+								img(src="images/banners/r.jpg", alt="")
+
+							//- include includes/artikel-terpopuler
+							//- figure.thumb-article-img
+							//- 	img(src="images/thumb-img/thumb1.jpg", alt="")
+							//- a(href="#", alt="{topik}", class="topik-link") Energi
+							//- h4
+							//- 	a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+		section.sprint
+			.container
+				.row
+					.col-md-12 
+						.bicara-data
+							a(href="#")
+								img(src="images/label-bicara-data-250.png", alt="")
+							//- strong Logo Sprint di Putaran Akhir
+							//- a(href="#")
+							//- 	p Laporan khusus seputar kinerja Pemerintahan Jokowi-JK di akhir masa jabatan.
+							a(href="", class="linkIndex hidden-xs") Selengkapnya »
+				.row
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead Peluang Hilang, kalau Hanya Berpikir Politik
+								p Joko Widodo #[span Presiden Republik Indonesia]
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead Peluang Hilang, kalau Hanya Berpikir Politik
+								p Joko Widodo #[span Presiden Republik Indonesia]
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead Peluang Hilang, kalau Hanya Berpikir Politik
+								p Joko Widodo #[span Presiden Republik Indonesia]
+					.col-md-3
+						figure.avt
+							a(href="#")
+								img(src="images/avatar/woman-thumb.png", alt="")
+						article
+							//- strong.small-label Wawancara
+							a(href="#")
+								p.lead Peluang Hilang, kalau Hanya Berpikir Politik
+								p Joko Widodo #[span Presiden Republik Indonesia]
+					//- .col-md-4
+					//- 	figure
+					//- 		a(href="#")
+					//- 			img(src="images/thumb-img/thumb1.jpg", alt="")
+					//- 	article
+					//- 		a(href="#", class="topik-link") Energi
+					//- 		a(href="#")
+					//- 			p Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					.col-xs-12.visible-xs
+						a(href="#" class="btn") Selengkapnya »
+		section.recentArticle
+			.container
+				.recentArtWrap
+					.row
+						.col-md-3.col-sm-6.infoMarkNews
+							figure.thumb-article-img
+								a(href="")
+									img(src="images/thumb-img/ipa.jpg", alt="")
+							h4
+								a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+						//- .col-md-3.col-sm-6.recentArtThumb
+						//- 	figure.thumb-article-img
+						//- 		a(href="")
+						//- 			img(src="images/thumb-img/thumb2.jpg", alt="")
+						//- 	a(href="#", alt="{topik}", class="topik-link") Energi
+						//- 	h4
+						//- 		a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+						.col-md-3.col-sm-6.recentArtThumb
+							figure.thumb-article-img
+								a(href="")
+									img(src="images/thumb-img/thumb3.jpg", alt="")
+							a(href="#", alt="{topik}", class="topik-link sponsor") Energi
+							h4
+								a(href="#", class="lockIcon") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+							span.lbl-sponsor Artikel Bersponsor
+						.col-md-3.col-sm-6
+							ul
+								li
+									a(href="#", alt="{topik}", class="topik-link") Energi
+									h4
+										a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+								li
+									a(href="#", alt="{topik}", class="topik-link") Energi
+									h4
+										a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+								li
+									a(href="#", alt="{topik}", class="topik-link") Energi
+									h4
+										a(href="#") Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi
+						.col-md-3.col-sm-6
+							//- h3 Minigrafik
+							//- a(href="", class="linkIndex pull-right") Lihat Semua »
+							.minigrafik-body
+								a(href="#")
+									span.miniPlay
+									img(src="images/ekonografik/minigrafik.jpg", alt="")
+								.minigrafik-caption
+									h3 Minigrafik
+									//- a(href="", class="linkIndex pull-right") Lihat Detail »
+		.center-belt
+			.container
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
+		section.berita-terbaru
+			.container.posRelative
+				h3 Berita Terbaru Lainnya
+				a(href="#", class="linkIndex") #[span Indeks »]
+				.arrowNavigation
+					a.prevArrowNav
+						i(class="fa fa-chevron-left" aria-hidden="true")
+					a.nextArrowNav
+						i(class="fa fa-chevron-right" aria-hidden="true")
+				//- slider
+				.berita-slide
+					+otherNews('thumb1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+					+otherNews('thumb3.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+				.shortcutBorderBottom.margin-top-5
+		section.berita-terpopuler
+			.container
+				h3 Berita Terpopuler
+				ul
+					li
+						strong 1
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 2
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 3
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 4
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 5
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+					li
+						strong 6
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 7
+						a(href="").
+							Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019
+					li
+						strong 8
+						a(href="").
+							Mata Uang Digital Ripple Makin Populer, Lonjakan Harga Lampaui Bitcoin
+		//- div.spotBanner
+		//- 	.container
+		//- 		.spotBannerWrap
+		//- 			figure
+		//- 				img(src="images/banners/banner1.jpg", alt="")
+		.center-belt
+			.container
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
+		section.ekono
+			.container.posRelative
+				h3 Ekonografik
+				a(href="#", class="linkIndex pull-right") Lihat Semua »
+				.arrowNavigation2
+					a.prevArrowNav2
+						i(class="fa fa-chevron-left" aria-hidden="true")
+					a.nextArrowNav2
+						i(class="fa fa-chevron-right" aria-hidden="true")
+				.ekonoGraphics
+					+ekonoGraphic('minigrafik.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019', 'miniGraph', 'Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.')
+					+ekonoGraphic('ekono2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+					+ekonoGraphic('ekono1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+ekonoGraphic('ekono2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					//- +ekonoGraphic('ekono1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+		section.otherKatalog
+			.container
+				.row
+					.col-md-9
+						.otherKat
+							h3 Energi
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.row
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb7.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb9.jpg", alt="")
+									a(href="#").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb4.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+					.col-md-3
+						.otherBanner
+							a(href="")
+								img(src="images/banners/trio-lestari.jpg", alt="")
+				.row
+					.col-md-9
+						.otherKat
+							h3 Digital
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.row
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb5.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb8.jpg", alt="")
+									a(href="#").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									a(href="")
+										img(src="images/thumb-img/thumb6.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+					.col-md-3.pertukaran-konten
+						include includes/widget-link-content
+		.center-belt
+			.container
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
+		section.otherKatalog.margin-bottom-25.abu
+			.container
+				.row
+					.col-md-12
+						.otherKat.no-padding-top.no-top-border
+							a(href="#") 
+								h3.bg-blue Databoks
+							a(href="#", class="linkIndex no-left-border") #[span Lihat Semua »]
+							.row
+								.col-md-3.col-sm-6.margin-tb-bottom-20
+									a(href="#")
+										img(src="images/databoks/thumb-graph1.jpg", alt="")
+										| 29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-3.col-sm-6.margin-tb-bottom-20
+									a(href="#")
+										img(src="images/databoks/thumb-graph2.jpg", alt="")
+										| Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-3.col-sm-6.margin-tb-bottom-20
+									a(href="#")
+										img(src="images/databoks/thumb-graph3.jpg", alt="")
+										| 29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-3.col-sm-6.margin-tb-bottom-20
+									a(href="#")
+										img(src="images/databoks/thumb-graph1.jpg", alt="")
+										| 29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		//- section.slideTabbing.abu
+		//- 	.container
+		//- 		.wrapperTabbing
+		//- 			h3 Databoks
+		//- 			a(href="", class="linkIndex pull-right") Halaman Ekonografik »
+		//- 			.row.no-gap
+		//- 				.col-md-9
+		//- 					.tabs-content
+		//- 						#tab-1.tab-content
+		//- 							figure
+		//- 								img(src="images/databoks/big-graph1.jpg", alt="")
+		//- 							h4
+		//- 								a(href="#") 29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		//- 							p.
+		//- 								Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
+		//- 						#tab-2.tab-content
+									
+		//- 						#tab-3.tab-content
+									
+		//- 				.col-md-3
+		//- 					ul.tabs-list
+		//- 						li.tab-link(data-tab="tab-1")
+		//- 							article
+		//- 								figure
+		//- 									img(src="images/databoks/thumb-graph1.jpg", alt="")
+		//- 								a(href="#").
+		//- 									29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		//- 						li.tab-link(data-tab="tab-2")
+		//- 							article
+		//- 								figure
+		//- 									img(src="images/databoks/thumb-graph2.jpg", alt="")
+		//- 								a(href="#").
+		//- 									29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		//- 						li.tab-link(data-tab="tab-3")
+		//- 							article
+		//- 								figure
+		//- 									img(src="images/databoks/thumb-graph3.jpg", alt="")
+		//- 								a(href="#").
+		//- 									29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		//- 						li.tab-link(data-tab="tab-3")
+		//- 							article
+		//- 								figure
+		//- 									img(src="images/databoks/thumb-graph1.jpg", alt="")
+		//- 								a(href="#").
+		//- 									29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		section.otherKatalog
+			.container
+				.row
+					.col-md-9
+						.otherKat.no-top-border
+							h3 Makro
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.row
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb7.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb9.jpg", alt="")
+									a(href="#").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb4.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+						.otherKat
+							h3 Nasional
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.row
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb7.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb9.jpg", alt="")
+									a(href="#").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb4.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+					.col-md-3
+						.otherBanner.no-top-border
+							img(src="images/banners/r300x600.jpg", alt="")
+		.center-belt
+			.container
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
+		section.newsletter
+			.container
+				.row
+					.col-md-6
+						img(src="images/icons/bel.png", alt="")
+						article
+							strong News Alert
+							p.
+								Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda.
+						//- strong Berlangganan Newsletter Kami
+					.col-md-6
+						form
+							.customInput.withBorder
+								input(type="email" name="" placeholder="Email anda...")
+							input(type="submit" name="" value="Daftar" class="btn btn-blue-pastel")
+							.recaptha-space
+								img(src="images/recaptcha.png", alt="")
+		section.opini
+			.container
+				.row
+					.col-md-9
+						a(href="")
+							h3 Opini
+						a(href="", class="linkIndex pull-right") Lihat Semua »
+						ul
+							li
+								figure
+									img(src="images/avatar/opini-jokowi-pict.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-jk-pict.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-menteri-pict.jpg", alt="")
+								article
+									strong.small-label Wawancara
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict1.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict3.jpg", alt="")
+								article
+									strong.small-label Wawancara
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							li
+								figure
+									img(src="images/avatar/opini-pict2.jpg", alt="")
+								article
+									strong.small-label Opini
+									a(href="#").
+										Menjawab Keraguan Terhadap Gross Split
+									p Prahoro Nurtjahyo
+							//- li
+							//- 	figure
+							//- 		img(src="images/avatar/woman-thumb.png", alt="")
+							//- 	article
+							//- 		strong Opini
+							//- 		a(href="#").
+							//- 			Menjawab Keraguan Terhadap Gross Split
+							//- 		p Prahoro Nurtjahyo
+							//- li
+							//- 	figure
+							//- 		img(src="images/avatar/opini-pict1.jpg", alt="")
+							//- 	article
+							//- 		strong Wawancara
+							//- 		a(href="#").
+							//- 			Menjawab Keraguan Terhadap Gross Split
+							//- 		p Prahoro Nurtjahyo
+					.col-md-3
+						.kutipan
+							h3.lr-border #[span Kutipan]
+							.opini-body
+								article
+									a(href="#", class="quot").
+										Kalaupun memasukkan variabel gross split sebagai salah satu kriteria penilaian, survei Fraser tidak akan valid dan cenderung bias.
+									img(src="images/avatar/avatar1.png", alt="")
+									strong Muhammad Firman
+									p.
+										Dosen Departemen Ekonomika dan Bisnis UGM
+		//- section.opini
+		//- 	.container
+		//- 		.row
+		//- 			.col-md-6
+		//- 				h3 Opini
+		//- 			.col-md-1
+		//- 			.col-md-5
+		//- 				h3.hidden-xs Opini Populer
+		//- 		span.lineHor
+		//- 		.row
+		//- 			.col-md-6
+		//- 				.opiniLeft
+		//- 					ul
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarMale1.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split
+		//- 							p Prahoro Nurtjahyo
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarMale2.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split
+		//- 							p Prahoro Nurtjahyo
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarMale2.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split
+		//- 							p Prahoro Nurtjahyo
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarFemale1.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split kasdas dasdd asdasd dasasd
+		//- 							p Prahoro Nurtjahyo
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarFemale1.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split
+		//- 							p Prahoro Nurtjahyo
+		//- 						li
+		//- 							figure
+		//- 								img(src="images/avatar/avatarMale1.png", alt="")
+		//- 							a(href="#").
+		//- 								Menjawab Keraguan Terhadap Gross Split
+		//- 							p Prahoro Nurtjahyo
+		//- 					a(href="" class="btn btn-block") Opini Lainnya
+		//- 			.col-md-1
+		//- 				span.lineVer
+		//- 			.col-md-5
+		//- 				.opiniRight
+		//- 					h3.visible-xs Opini Populer
+		//- 					ul
+		//- 						li
+		//- 							span 1
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p Oleh Prahoro Nurtjahyo
+		//- 						li
+		//- 							span 2
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p Oleh Prahoro Nurtjahyo
+		//- 						li
+		//- 							span 3
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p Oleh Prahoro Nurtjahyo
+		//- 						li
+		//- 							span 4
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p Oleh Prahoro Nurtjahyo
+		//- 						li
+		//- 							span 5
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p Oleh Prahoro Nurtjahyo
+		section.otherKatalog.margin-bottom-25.abu
+			.container
+				.row
+					.col-md-9
+						.otherKat.no-top-border
+							a(href="" class="brand-microsite")
+								img(src="images/dinside-logo.png", alt="")
+							a(href="", class="linkIndex pull-right margin-top-10") Website D-Inside »
+							.row
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb7.jpg", alt="")
+									a(href="#", class="lockIcon").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb9.jpg", alt="")
+									a(href="#", class="lockIcon").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb4.jpg", alt="")
+									a(href="#", class="lockIcon").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+					.col-md-3
+						.otherBanner.no-top-border
+							img(src="images/banners/r.jpg", alt="")
+		
+		section.otherKatalog.no-margin-bottom
+			.container
+				.row
+					.col-md-9
+						.otherKat.no-top-border.no-padding-top
+							h3 Kuis
+							a(href="", class="linkIndex pull-right") Lihat Semua »
+							.row
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb7.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb9.jpg", alt="")
+									a(href="#").
+										Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+								.col-md-4.col-sm-4
+									img(src="images/thumb-img/thumb4.jpg", alt="")
+									a(href="#").
+										29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+					.col-md-3
+
+		.container
+			.shortcutBorderBottom.margin-bottom-25
+		section.databoks-analisis
+			.container
+				h3 Analisis Data
+				a(href="", class="linkIndex pull-right") Lihat Semua »
+				.row.headListAnalisis
+					.col-md-3.col-sm-3
+						div.itemListAnalisis
+							a(href="#", class="analisisTitle")
+								figure
+									img(src="images/analisis/db-head-analisis1.jpg", alt="")
+								//- h4 Indonesia dalam Satu Dekade Deindustrialisasi
+								h4 Lorem ipsum, dolor sit amet consectetur adipisicing.
+							article
+								//- p.
+								//- 	Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+								p.
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem saepe, iure ducimus voluptates fugit blanditiis odit magnam quasi quae doloremque!
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+					.col-md-3.col-sm-3
+						div.itemListAnalisis
+							a(href="#", class="analisisTitle")
+								figure
+									img(src="images/analisis/db-head-analisis2.jpg", alt="")
+								//- h4 Indonesia dalam Satu Dekade Deindustrialisasi
+								h4 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							//- p.
+							//- 	Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus ab quaerat quibusdam porro nihil aperiam cum alias.
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+					.col-md-3.col-sm-3
+						div.itemListAnalisis
+							a(href="#", class="analisisTitle")
+								figure
+									img(src="images/analisis/db-head-analisis1.jpg", alt="")
+								//- h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								h4 Lorem, ipsum dolor sit amet consectetur adipisicing.
+							//- p.
+							//- 	Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam magni tempora ducimus modi, praesentium eaque!
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+					.col-md-3.col-sm-3
+						div.itemListAnalisis
+							a(href="#", class="analisisTitle")
+								figure
+									img(src="images/analisis/db-head-analisis1.jpg", alt="")
+								//- h4 Membidik Potensi Pengembangan Bisnis Fintech di Indonesia
+								h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, odio?
+							//- p.
+							//- 	Sekitar 20 tahun lalu, sektor manufaktur Indonesia dipuji Bank Dunia karena menjanjikan ekonomi berkualitas. Sekarang, kondisinya sedang meredup. Sektor ini dalam 10 tahun terakhir tumbuh lambat.
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nam fuga debitis, est labore enim vel.
+							p.infoArtikel Oleh #[strong Agus Dwi Darmawan], 6 Januari 2018
+		//- SECTION TELAAH YANG LAMA
+
+		//- section.telaah
+		//- 	.container
+		//- 		span.lineCaption2
+		//- 			h3 Telaah
+		//- 		.row
+		//- 			.col-md-6.matchingHeight.margin-tb-bottom-25
+		//- 				.blockView
+		//- 					div
+		//- 						h2
+		//- 							a(href="") Jalan Panjang Blok Mahakam ke Pangkuan Pertamina
+		//- 						figure
+		//- 							img(src="images/thumb-img/thumb6.jpg", alt="")
+		//- 						article
+		//- 							p.
+		//- 								Selain menjadi peluang buat Pertamina, pengelolaan Blok Mahakam sekaligus pertaruhan reputasi perusahaan pelat merah tersebut.
+		//- 							p.infoArtikel.
+		//- 								Oleh #[strong Yuliawati] dan #[strong Anggita Rezki Amelia], 1 Januari 2018
+		//- 					ul
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 					a(href="" class="btn btn-block") Telaah Lainnya
+		//- 			.col-md-6.matchingHeight
+		//- 				.analisisData
+		//- 					div
+		//- 						h3 #[a(href="") Analisis Data]
+		//- 						h4 #[a(href="") Stunting, Ancaman Generasi Masa Depan Indonesia]
+		//- 						p.infoArtikel.white Oleh #[strong Nazmi Haddyat Tamara], 1 Januari 2018
+		//- 						p.
+		//- 							Tingkat stunting sebagai dampak kurang gizi pada balita di Indonesia melampaui batas yang ditetapkan WHO. Kasus stunting banyak ditemukan di daerah dengan kemiskinan tinggi dan tingkat pendidikan yang rendah.
+		//- 					ul
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 						li
+		//- 							a(href="").
+		//- 								Menggugat Survei Fraser  Berdasarkan Manfaat Gross Split
+		//- 							p.infoArtikel Oleh #[strong Yuliawati], 1 Januari 2018
+		//- 					a(href="" class="btn btn-block") Analisis Lainnya
+		.center-belt
+			.container
+				img(src="images/banners/centerBelt728x90.jpg", alt="")
+		section.slideTabbing.hitam
+			.container
+				.wrapperTabbing.whiteText
+					h3.white Multimedia
+					a(href="", class="linkIndex pull-right putihLink") Lihat Semua »
+					.row
+						.col-md-9.col-xs-12.no-padding-right.padding-mm-right-10
+							.tabs-content
+								#tab-1.tab-content.margin-mm-bottom-20
+									figure
+										a(href="#")
+											img(src="images/multimedia/video-migas.png", alt="")
+											span.cam
+											figcaption Contoh teks judul untuk gambar atau video di section multimedia pada halaman home atau index
+									.followSosmed
+										span.hidden-xs.
+											Ikuti Kami:
+										ul
+											li
+												a(href="#" class="facebook")
+													<i class="fa fa-facebook"></i>
+											li
+												a(href="#" class="twitter")
+													<i class="fa fa-twitter"></i>
+										a(href="", class="linkIndex pull-right putihLink") Buka di halaman Multimedia »
+								#tab-2.tab-content
+									
+								#tab-3.tab-content
+									
+						.col-md-3.col-xs-12
+							.tabs-list-wrapper
+								ul.tabs-list
+									li.tab-link(data-tab="tab-1")
+										article
+											figure
+												a(href="#")
+													img(src="images/multimedia/thumb-vid1.jpg", alt="")
+											//- img(src="images/icons/video-icon.png", alt="")
+											a(href="#" class="vid")
+												|  29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+									li.tab-link(data-tab="tab-2")
+										article
+											figure
+												a(href="#")
+													img(src="images/multimedia/thumb-vid2.jpg", alt="")
+											//- img(src="images/icons/cam-icon.png", alt="")
+											a(href="#" class="pic")
+												|  29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+									li.tab-link(data-tab="tab-3")
+										article
+											figure
+												a(href="#")
+													img(src="images/multimedia/video-migas.png", alt="")
+											//- img(src="images/icons/cam-icon.png", alt="")
+											a(href="#" class="vid")
+												|  29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+									li.tab-link(data-tab="tab-3")
+										article
+											figure
+												a(href="#")
+													img(src="images/multimedia/video1.jpg", alt="")
+											//- img(src="images/icons/video-icon.png", alt="")
+											a(href="#" class="pic")
+												|  29 Perusahaan Pelat Merah Digabung jadi 5 Holding
+		
