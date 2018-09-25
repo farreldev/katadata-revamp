@@ -1,0 +1,108 @@
+block config
+	- var pathImg = ['images/thumb-img/', 'images/ekonografik/']
+
+doctype html
+html.no-js(lang="id")
+	head
+		meta(charset="utf-8")
+		meta(name="description" content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="theme-color" content="#082556")
+		title new_katadata
+		link(rel="apple-touch-icon" href="apple-touch-icon.png")
+		//- link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+		link(rel='icon', href='/favicon.png', type='image/x-icon')
+		//- link(rel='stylesheet', href='https://cloud.typography.com/6761036/6309792/css/fonts.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700,800')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		// Place favicon.ico in the root directory
+		// build:css styles/vendor.css
+		// bower:css
+		link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick.css')
+		link(rel='stylesheet', href='/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')
+		link(rel='stylesheet', href='/bower_components/fancybox/dist/jquery.fancybox.min.css')
+		// endbower
+		// endbuild
+
+		// build:css styles/main.css
+		link(rel="stylesheet" href="styles/main.css")
+		// endbuild
+
+		// build:css styles/longform.css
+		link(rel="stylesheet" href="styles/longform.css")
+		// endbuild
+
+		//- // build:js scripts/jquery.min.js
+		//- script(src='/bower_components/jquery/dist/jquery.js')
+		//- // endbuild
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		
+
+		//- // build:js scripts/vendor/modernizr.js
+		//- script(src="/bower_components/modernizr/modernizr.js")
+		//- // endbuild
+		
+	body
+		//if IE
+			p.browserupgrade
+				| You are using an 
+				strong outdated
+				|  browser. Please 
+				a(href="http://browsehappy.com/") upgrade your browser
+				|  to improve your experience.
+				
+		div(id="mainWrapper" class="wrapper")
+			header#header-alt-1
+				include ../includes/header.pug
+			a(href="#" class="goUp")
+				i(class="fa fa-chevron-up")
+			main.for-longform
+				include ../includes/kd-simple-nav.pug
+				.contentWrapper
+					block content
+					include ../includes/footer.pug
+				.wwNavigation-overlay
+		
+		// build:js scripts/vendor.js
+		// bower:js
+		script(src='/bower_components/jquery/dist/jquery.js')
+		script(src='/bower_components/modernizr/modernizr.js')
+		script(src='/bower_components/slick-carousel/slick/slick.js')
+		script(src='/bower_components/matchHeight/dist/jquery.matchHeight.js')
+		script(src='/bower_components/moment/moment.js')
+		script(src='/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')
+		script(src='/bower_components/scrollreveal/dist/scrollreveal.js')
+		script(src='/bower_components/fancybox/dist/jquery.fancybox.min.js')
+		// endbower
+		// endbuild
+		
+		// build:js scripts/plugins.js
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js")
+		//- script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js")
+		//- script(src="scripts/mlpushmenu.js")
+		//- script(src="scripts/classie.js")
+		//- script(src="scripts/scrolling.js")
+		block myplugins
+		// endbuild
+
+		// build:js scripts/main.js
+		script(src="scripts/main.js")
+		// endbuild
+
+		// build:js scripts/longform.js
+		script(src="scripts/longform.js")
+		// endbuild
+
+		block myscripts
