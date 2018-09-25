@@ -1,0 +1,173 @@
+%cap-foto
+  display: block
+  padding: 5px 10px
+  font-size: 14px
+  text-align: left
+  line-height: 1.4
+  color: #777
+  text-transform: capitalize
+
+%quote-in-other-component
+  aside.longform-quote
+    float: right
+    margin-right: -12rem
+
+%quote-not-in-other-component
+  aside.longform-quote
+    display: none
+
+.longform-content
+  position: relative
+  &.paragraph
+    figure
+      figcaption
+        @extend %cap-foto
+        padding: 5px 0
+    p
+      margin-bottom: 20px
+    
+    .video-container
+      position: relative
+      padding-bottom: 56.25%
+      margin-bottom: 20px
+      height: 0
+      overflow: hidden
+      iframe
+        margin-bottom: 35px
+        position: absolute
+        width: 100%
+        height: 100%
+    .html5Video
+      margin-bottom: 10px
+      video
+        width: 100%
+        height: auto
+      figcaption
+        @extend %cap-foto
+        padding: 5px 0
+    p.lf-dropcap:first-letter
+      color: $yellow-wood
+      float: left
+      font-family: 'Fira Sans'
+      font-size: 5.5rem
+      font-weight: 800
+      line-height: 76px
+      padding-top: 4px
+      padding-right: 10px
+      padding-left: 0
+  &.foto
+    position: relative
+    @extend %quote-in-other-component
+    figure
+      span
+        position: relative
+        display: inline-block
+        width: 100%
+        height: 100%
+        .media-title
+          position: absolute
+          padding: 0 25px
+          left: 0
+          bottom: 7%
+          width: 70%
+          strong
+            display: block
+            font-family: 'Fira Sans'
+            font-size: 2.5rem
+            font-weight: 700
+            line-height: 1.4
+            color: $yellow-wood
+            small
+              display: block
+              font-size: 2.2rem
+          p
+            color: #fff
+          +breakpoint(mobile)
+            padding: 0 15px
+            bottom: 10%
+            strong
+              width: 100%
+              font-size: 1.5rem
+            p
+              display: none
+        &:before
+          position: absolute
+          content: ''
+          width: 100%
+          height: 100%
+          background: rgba(0,0,0,0)
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%)
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(35%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.7)))
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%)
+          background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%)
+          background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%)
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%)
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 )
+      figcaption
+        @extend %cap-foto
+    +breakpoint(mobile)
+      figure
+        figcaption
+          padding: 5px 0
+  &.local-video
+    div[class|="col"]
+      margin-bottom: 30px
+      @extend %quote-in-other-component
+      video
+        width: 100%
+        height: auto
+      figcaption
+        @extend %cap-foto
+      +breakpoint(mobile)
+        margin-bottom: 20px
+        figcaption
+          padding: 5px 0
+  &.graphChart
+    div[class|="col"]
+      @extend %quote-in-other-component
+      +breakpoint(mobile)
+        padding: 0
+  &.youtuber
+    div[class|="col"]
+      margin-bottom: 30px
+      @extend %quote-in-other-component
+      +breakpoint(mobile)
+        margin-bottom: 20px
+      .video-container
+        position: relative
+        padding-bottom: 56.25%
+        height: 0
+        overflow: hidden
+        iframe
+          margin-bottom: 35px
+          position: absolute
+          width: 100%
+          height: 100%
+      figcaption
+        @extend %cap-foto
+      +breakpoint(mobile)
+        figcaption
+          padding: 5px 0
+  &.timeline
+    div[class|="col"]
+      margin-bottom: 30px
+      @extend %quote-in-other-component
+      +breakpoint(mobile)
+        margin-bottom: 20px
+      .timeline-container
+        position: relative
+        padding-bottom: 56.25%
+        height: 0
+        overflow: hidden
+        iframe
+          margin-bottom: 35px
+          position: absolute
+          width: 100%
+          height: 100%
+
+  &.local-video,
+  &.youtuber,
+  &.foto,
+  &.graphChart,
+    div[class*="col-md-12"]
+      @extend %quote-not-in-other-component

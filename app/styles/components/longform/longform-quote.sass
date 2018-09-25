@@ -1,0 +1,32 @@
+aside.longform-quote
+  float: left
+  width: 11.55rem
+  margin-left: -12rem
+  margin-bottom: 30px
+  padding: 0 1rem
+  blockquote
+    position: relative
+    padding-bottom: 5px
+    margin-bottom: 5px
+    border-bottom: 5px solid #ddd
+    font-family: 'Fira Sans'
+    line-height: 1.5
+    font-size: 18px
+    font-weight: 700
+    color: #999
+    &:before
+      font-family: 'Fira Sans'
+      position: absolute
+      content: '“'
+      top: -3.5rem
+      left: 0
+      font-size: 5rem
+      font-weight: 700
+      color: $blue-pastel
+  span.quote-source
+    font-size: 11px
+    strong
+      display: block
+      line-height: 1.4
+  +breakpoint(mobile)
+    display: none
