@@ -1,0 +1,22 @@
+.itemList
+  position: relative
+  padding: 15px 15px 74px
+  +box-shadow(0,0,10px, rgba(0,0,0,.15))
+  +breakpoint(mobile)
+    margin-bottom: 25px
+    .itemList:last-of-type
+      margin-bottom: 0
+  a
+    color: $black
+    h4
+      font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 15px
+  p
+    font-size: 16px
+    margin-bottom: 20px
+    &.infoArtikel
+      margin-bottom: 0
+      position: absolute
+      bottom: 12px

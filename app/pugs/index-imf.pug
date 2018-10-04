@@ -1,0 +1,160 @@
+extends base/imf
+include components/mixings
+
+block content
+	.imf-header
+		.container
+			section.head
+				a(href="")
+					img(src="images/imf-logo.png", alt="")
+				h3 Laporan Khusus
+			section.imf-headline
+				.left
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+				.right
+					h2
+						a(href="#", title="title") Everything you need to know to follow the 2018 Annual Meetings
+					p.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi id ratione repudiandae molestias amet nemo dolor iure eum non labore nostrum accusamus adipisci aspernatur, dicta veritatis reiciendis suscipit accusantium nobis beatae obcaecati aliquid, quae voluptas. Dolores maxime perspiciatis nesciunt totam, qui eaque? Ut, reiciendis.
+					div.followSosmed.white #[span Bagikan:]
+						ul
+							li
+								a(class="facebook" href="#")
+									i(class="fa fa-facebook")
+							li
+								a(class="twitter" href="#")
+									i(class="fa fa-twitter")
+							li
+								a(class="linkedin" href="#")
+									i(class="fa fa-linkedin")
+							li
+								a(class="gg-plus" href="#")
+									i(class="fa fa-google-plus")
+	section.imf-berita
+		.container
+			h3 Berita Terbaru
+			.row.is-table-row-top
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Everything you need to know to follow the 2018 Annual Meetings
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Everything you need to know to follow the 2018 Annual Meetings
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Everything you need to know to follow the 2018 Annual Meetings
+			.row.is-table-row-top
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, magni!
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				.col-md-4.item-berita
+					figure
+						a(href="#", title="title") 
+							img(src="https://source.unsplash.com/random/640x360", alt="alt")
+					a(href="#", title="title").
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+			.row
+				.col-md-4
+				.col-md-4
+					a(href="#" class="btn btn-block bradius-5") Berita Lainnya »
+				.col-md-4
+			.shortcutBorderBottom.margin-top-30
+	section.imf-grafik-video
+		.container.posRelative
+			h3 Infografik &amp; Video
+			.arrowNavigationImf
+				a.prevArrowNav#prevArrowNav
+					i(class="fa fa-chevron-left" aria-hidden="true")
+				a.nextArrowNav#nextArrowNav
+					i(class="fa fa-chevron-right" aria-hidden="true")
+			.imf-grafik-video-slides
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="https://www.youtube.com/watch?v=r9iUwkUMbgE&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0" data-fancybox)
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+	section.imf-foto
+		.container.posRelative
+			h3 Foto
+			.arrowNavigationImf
+				a.prevArrowNav#prevArrowNav2
+					i(class="fa fa-chevron-left" aria-hidden="true")
+				a.nextArrowNav#nextArrowNav2
+					i(class="fa fa-chevron-right" aria-hidden="true")
+			.imf-foto-slides
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+				div
+					figure
+						a(href="")
+							img(src="https://source.unsplash.com/random/640x360", alt="")
+					article
+						a(href="#").
+							Everything you need to know to follow the 2018 Annual Meetings
+
+block myscripts
+	// build:js scripts/imf.js
+	script(src="scripts/imf.js")
+	// endbuild

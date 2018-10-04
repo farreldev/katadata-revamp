@@ -1,0 +1,74 @@
+.imf-header
+  background-color: $imf-color1
+  section.head
+    position: relative
+    padding: 25px 0 15px
+    border-bottom: 5px solid $imf-color2
+    margin-bottom: 0
+    h3
+      font-family: 'Fira Sans'
+      font-weight: 700
+      font-size: 25px
+      position: absolute
+      right: 0
+      bottom: 20px
+      text-transform: uppercase
+      color: #fff
+      margin-bottom: 0
+    +breakpoint(mobile)
+      padding-top: 20px
+      padding-bottom: 20px
+      h3
+        padding: 5px 9px
+        font-size: 17px
+        right: auto
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -17px
+        background-color: $imf-color2
+    +breakpoint(small-mobile)
+      h3
+        // padding: 5px 9px
+        font-size: 15px
+        // right: auto
+        // left: 50%
+        // transform: translateX(-50%)
+        // bottom: -17px
+        // background-color: $imf-color2
+  section.imf-headline
+    padding: 40px 0
+    margin-bottom: 0
+    display: flex
+    justify-content: space-between
+    .left
+      padding-right: 10px
+      width: 50%
+      figure
+        margin-bottom: 0
+        a
+          display: inline-block
+          img
+            display: block
+            width: 100%
+    .right
+      padding-left: 10px
+      width: 50%
+      p,h2,a
+        font-family: 'Fira Sans'
+        color: #fff
+      h2
+        a
+          font-weight: 700
+          font-size: 35px
+      p
+        margin-bottom: 20px
+        font-size: 19px
+    +breakpoint(mobile)
+      flex-direction: column
+      .left, .right
+        width: 100%
+      .left
+        margin-bottom: 15px
+        padding-right: 0
+      .right
+        padding-left: 0

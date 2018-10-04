@@ -192,7 +192,11 @@ header#header-alt-2 ~ main
 	padding-top: 57px
 	+breakpoint(mobile)
 		padding-top: 50px
-header#header-alt-2
+header#header-imf ~ main
+	padding-top: 50px
+	+breakpoint(mobile)
+		padding-top: 44px
+header#header-alt-2, header#header-imf
 	.main-head
 		padding: 10px 0
 		border-bottom: 6px solid $blue-light
@@ -212,3 +216,6 @@ header#header-alt-2
 	.layerSearch
 		&.openSearch
 			top: 50px
+header#header-imf
+	.main-head
+		border-bottom: none

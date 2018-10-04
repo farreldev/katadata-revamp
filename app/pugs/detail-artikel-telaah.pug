@@ -1,0 +1,348 @@
+extends base/home
+include components/mixings
+
+block content
+	.second-head.no-margin-bottom
+		.container
+			.second-head-left.pull-left
+				+breadcrumb(["Home", "Library", "Data"])
+			.second-head-right
+	.detail-artikel
+		.wrapperDetailArtikel
+			.head-detail-telaah.padding-top-15(style="background-color: #f0f0f0")
+				.container
+					.row
+						.col-md-12
+							h1.width-65.xs-width-auto.
+								Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela
+							article.infoCreated
+								p Reporter: #[b Nama Reporter]
+								p Editor: #[b Name Editor]
+								date 23 Agustus 2017, 20:02 WIB
+							//- p.infoArtikel.
+							//- 	Oleh #[strong Yuliawati], 1 Januari 2018
+							ul.btn-sosmed.pull-right.xs-float-none
+								li
+									a(href="#" class="facebook" title="Facebook")
+										i(class="fa fa-facebook" aria-hidden="true")
+								li
+									a(href="#" class="twitter" title="Twitter")
+										i(class="fa fa-twitter" aria-hidden="true")
+								li
+									a(href="#" class="linkedin" title="Linkedin")
+										i(class="fa fa-linkedin" aria-hidden="true")
+								li
+									a(href="#" class="g-plus" title="Google Plus")
+										i(class="fa fa-google-plus" aria-hidden="true")
+								//- li
+								//- 	a(href="#" class="link-chain" title="Copy Link")
+								//- 		i(class="fa fa-link" aria-hidden="true")
+								li
+									a(href="#" class="whatsapp" title="Whatsapp")
+										i(class="fa fa-whatsapp" aria-hidden="true")
+								li
+									a(href="#" class="line" title="Line")
+										img(src="images/icons/Line_Icon.png", alt="Line Chats")
+								//- li
+								//- 	a.btn-like
+								//- 		i(class="fa fa-thumbs-up" aria-hidden="true")
+								//- 		|	like 312
+					.row
+						.col-md-12
+							//- .tweetLine
+							//- 	ul
+							//- 		li
+							//- 			a(href="").
+							//- 				Grab menggandeng PT Visionet Internasional agar dapat menggunakan lisensi uang elektronik OVO untuk kembali menghidupkan GrabPay.
+							//- 		li
+							//- 			a(href="").
+							//- 				Sebelum dengan OVO, Grab pada Rabu (13/12) lalu juga mengumumkan kerja sama dengan perusahaan aplikasi pembayaran mobile milik Yusuf Mansur, PayTren.
+							.shortcutBorderBottom.margin-bottom-10.margin-top-20
+							p.detail-article-caption.
+								Sebelum dengan OVO, Grab pada Rabu (13/12) lalu juga mengumumkan kerja sama dengan perusahaan aplikasi pembayaran mobile milik Yusuf Mansur, PayTren.
+							.shortcutBorderBottom.margin-top-10
+			.telaah-hero-image
+				figure.mainDetailPict
+					img(src="https://source.unsplash.com/random/1024x768")
+					figcaption (Arief Kamaludin/Katadada)
+					small.
+						Caption here. Industri dalam negeri akan tumbuh. Kemudian industri-industri tersebut bisa memberikan pendapatan lagi bagi negara melalui pajak.
+			.container
+				.row.margin-top-30
+					.col-md-8
+						article.textArticle
+							p.lf-dropcap.
+								Go-Jek sendiri sebenarnya tak pernah mengurus lisensi itu. Namun, perusahaan yang dipimpin Nadiem Makarim tersebut dengan cerdik telah mengambil langkah antisipasi dengan akuisisi startup financial technology (fintech) PonselPay milik PT MVCommerce (PT Dompet Anak Bangsa) pada akhir 2016 lalu. Meski tak populer, PonselPay sudah mendapat izin penerbitan e-money dari BI sejak 2014.
+							p.
+								Lisensi e-money PonselPay itulah yang kemudian digunakan oleh GoPay. Alhasil, ketika beberapa perusahaan teknologi seperti Grab, Tokopedia, hingga Bukalapak tersandung masalah lisensi, Go-Pay bisa tetap tenang melenggang.
+							section.newsletter.inDetail
+								//- img(src="images/icons/bel.png", alt="")
+								strong News Alert
+								p.
+									Dapatkan informasi terkini seputar ekonomi dan bisnis langsung lewat email Anda
+								form
+									.customInput.withBorder
+										input(type="email" name="" placeholder="Email anda...")
+									//- p.small.
+									//- 	Dengan mendaftar, Anda setuju untuk menerima Newsletter dari Katadata. Anda bisa melakukan Unsubscribe kapan pun.
+									.recaptha-space
+										img(src="images/recaptcha.png", alt="")
+									input(type="submit" name="" value="Daftar" class="btn btn-blue-pastel")
+							p
+								strong GrabPay Mati Suri, Lalu Bangkit Lagi
+							p.
+								Hampir dua bulan ‘mati suri’ karena saldo yang tak bisa diisi, #[a(href="#") GrabPay akhirnya menemukan jalan keluar]. Grab menggandeng PT Visionet Internasional agar dapat menggunakan lisensi uang elektronik OVO untuk kembali menghidupkan GrabPay.
+							p.
+								“Mulai hari ini, penumpang Grab dapat kembali mengisi ulang GrabPay Credits dan menggunakan 'GrabPay, powered by OVO’ untuk membayar perjalanan mereka yang dipesan dengan aplikasi Grab,” Managing Director GrabPay Southeast Asia Jason Thompson, Kamis (14/12).
+							table
+								tbody
+									tr
+										td
+											p
+												strong Sektor
+										td
+											p
+												strong Pangsa Pasar (%)
+									tr
+										td
+											p Pembayaran
+										td
+											p 42,22
+									tr
+										td
+											p Pembiayaan
+										td
+											p 17,78
+									tr
+										td
+											p Agregator
+										td
+											p 12,59
+							p.
+								#[a(href="#") Grab dan OVO sama-sama terafiliasi dengan Grup Lippo]. Pada Grab, konglomerasi milik keluarga Riady ini menanamkan modal sebesar US$ 100 juta melalui Venturra Capital (VC). PT Visionet International, penerbit OVO, berada di bawah naungan LippoX yang merupakan perusahaan digital payment milik Grup Lippo.
+							section.baca-juga
+								h4 Baca Juga
+								ul
+									li
+										a(href="#") Tiga pulau disulap jadi kapal induk TNI bakal beroperasi 2019 
+									li
+										a(href="#") Kemenprin usul kemenkeu pangkas penerimaan negara di masela
+							p.
+								Sebelum dengan OVO, Grab pada Rabu (13/12) lalu juga mengumumkan kerja sama dengan perusahaan aplikasi pembayaran mobile milik Yusuf Mansur, PayTren. Kerja sama keduanya bertujuan untuk membangun jaringan perusahaan mikro besar di Indonesia dengan target member mencapai 3 juta pengusaha.
+							.tinyimg2
+								div
+									figure
+										a(href="#")
+											img(src="images/article-img/detail-pict1.jpg")
+								div Lorem ipsum, dolor sit amet consectetur adipisicing. (Agung Samosir|KATADATA)
+							p.
+								#[a(href="#") Sementara pada awal 2017 lalu, Grab juga mengakuisisi Kudo]. Startup online to offline (O2O) ini diakuisisi demi membantu Grab memperluas jangkauan operasionalnya
+
+							p
+								strong Ambisi Go-Jek untuk Go-Pay
+							p.
+								Tak tinggal diam melihat rivalnya bangkit, Go-Jek segera unjuk gigi. Hanya berselang sehari dari pengumuman kemitraan Grab dan OVO, Go-Jek langsung menyatakan akuisisi tiga startup fintech sekaligus; Midtrans, Kartuku, dan Mapan.
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero accusamus praesentium mollitia quod dolorem, earum magnam quas possimus placeat ratione deserunt delectus sunt quaerat dignissimos fugit dolores, aspernatur quam.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet magni atque fuga autem tempora.
+							.wrap-parallax
+								//- img.parallax(src="https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a87674644cd4f622df5c57facbccf1e&auto=format&fit=crop&w=1360&q=80")
+								img.parallax(src="images/parallax1.jpg")
+								h2.parallax-info Lorem ipsum dolor sit amet.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus commodi, placeat ipsam maxime nobis inventore architecto itaque reiciendis obcaecati totam, magnam natus vero optio.
+							p.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore impedit ducimus odio, repellendus modi, error cum, exercitationem optio ipsam consequuntur aut. Non repellat rem doloribus corporis, accusamus illo, atque unde ipsam nulla necessitatibus saepe.
+							ul
+								li Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, commodi?
+								li Quidem velit fugiat nesciunt perspiciatis voluptatem a, debitis facere iusto.
+								li Totam aspernatur consectetur, aut minima saepe reiciendis corrupti fuga repudiandae?
+								li Inventore debitis facere architecto dolorum enim temporibus. Minima, vero error.
+								li Delectus placeat blanditiis mollitia voluptate ducimus veritatis distinctio aliquam deleniti.
+							p.
+								Chief Executive Officer (CEO) Go-Jek Nadiem Makarim berharap, Go-Pay bakal terus memimpin industri jasa dompet digital dan proses pembayaran independen. “Inisiatif ini merupakan langkah strategis dalam memperkuat pondasi dan langkah kami di industri fintech Indonesia,” kata Nadiem dalam keterangan resmi, Jakarta, Jumat (15/12).
+							table
+								tbody
+									tr
+										td
+											p
+												strong Sektor
+										td
+											p
+												strong Pangsa Pasar (%)
+									tr
+										td
+											p Pembayaran
+										td
+											p 42,22
+									tr
+										td
+											p Pembiayaan
+										td
+											p 17,78
+									tr
+										td
+											p Agregator
+										td
+											p 12,59
+									tr
+										td
+											p Personal/Financial Planning
+										td
+											p 8,15
+									tr
+										td
+											p Crowdfunding
+										td
+											p 8,15
+									tr
+										td
+											p Lainnya
+										td
+											p 11,11
+							p.
+								#[a(href="#") Seperti yang dilakukan Grab dengan Kudo dan Paytren], akuisisi ketiga fintech oleh Go-Jek itu dipastikan akan memperkuat basis transaksi Go-Pay, baik online maupun offline.
+							p.
+								Menurut Nadiem, akusisi ini menjadi lompatan perusahaan dari penyedia layanan transportasi hingga menguasai teknologi multi-platform yang fokus pada pembayaran digital. Kartuku, Midtrans, dan Mapan tercatat memproses total transaksi lebih dari Rp 67,5 triliun per tahun melalui kartu kredit, debit, maupun dompet digital.
+							p.
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id qui dolores facere placeat ut eaque cum doloribus excepturi ex libero.
+						.sosmedBottomDetail.match-margin
+							strong.
+								Share
+							ul.btn-sosmed
+								li
+									a(href="#" class="facebook" title="Facebook")
+										i(class="fa fa-facebook" aria-hidden="true")
+								li
+									a(href="#" class="twitter" title="Twitter")
+										i(class="fa fa-twitter" aria-hidden="true")
+								li
+									a(href="#" class="linkedin" title="Linkedin")
+										i(class="fa fa-linkedin" aria-hidden="true")
+								li
+									a(href="#" class="g-plus" title="Google Plus")
+										i(class="fa fa-google-plus" aria-hidden="true")
+								//- li
+								//- 	a(href="#" class="link-chain" title="Copy Link")
+								//- 		i(class="fa fa-link" aria-hidden="true")
+								li
+									a(href="#" class="whatsapp" title="Whatsapp")
+										i(class="fa fa-whatsapp" aria-hidden="true")
+								li
+									a(href="#" class="line" title="Line")
+										img(src="images/icons/Line_Icon.png", alt="Line Chats")
+						.tagLink.match-margin
+							strong.
+								Tags
+							ul
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Blue Bird
+								li
+									a(href="#") Uber
+								li
+									a(href="#") Pemerintah
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Go-Jek
+								li
+									a(href="#") Go-Pay
+								li
+									a(href="#") Go-Jek
+						//- .quiz-in-artikel
+						//- 	.quiz-head-label
+						//- 		h3 Kuis Katadata
+						//- 	article
+						//- 		p Siapakah Pendiri Tencent?
+						//- 	form
+						//- 		table
+						//- 			tr
+						//- 				td 
+						//- 					input(type="radio" id="switch_1" name="qz_switch" value="yes")
+						//- 					label(for="switch_1") Abu Nawas
+						//- 				td
+						//- 					input(type="radio" id="switch_2" name="qz_switch" value="yes")
+						//- 					label(for="switch_2") Abu Nawas
+						//- 			tr
+						//- 				td
+						//- 					input(type="radio" id="switch_3" name="qz_switch" value="yes")
+						//- 					label(for="switch_3") Abu Nawas
+						//- 				td
+						//- 					input(type="radio" id="switch_4" name="qz_switch" value="yes")
+						//- 					label(for="switch_4") Abu Nawas
+						.advertiser
+							figure
+								img(src="images/zurich.jpg", alt="")
+							article
+								h4 Lorem ipsum dolor sit amet. lorem
+								p.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum possimus modi et eum dolorum inventore nisi cupiditate. Nemo sequi quae harum a architecto consectetur voluptatibus incidunt #[a(href="#") Testing] eaque numquam magnam!
+					#sideBarDetail.col-md-4
+						.kaitan-list.margin-bottom-25
+							h3 Terkait
+							ul
+								li
+									figure
+										img(src="images/thumb-img/thumb1.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+								li
+									figure
+										img(src="images/thumb-img/thumb3.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+								li
+									figure
+										img(src="images/thumb-img/thumb2.jpg", alt="")
+									a(href="").
+										Tiga Pulau Disulap jadi Kapal Induk TNI Bakal Beroperasi 2019
+									p.infoArtikel 1 Januari 2018
+						include includes/artikel-terpopuler
+		section.baca-juga
+			.container.posRelative
+				h3 Baca Juga
+				a(href="#", class="linkIndex") #[span Indeks »]
+				.arrowNavigation
+					a.prevArrowNav
+						i(class="fa fa-chevron-left" aria-hidden="true")
+					a.nextArrowNav
+						i(class="fa fa-chevron-right" aria-hidden="true")
+				//- slider
+				.berita-slide
+					+otherNews('thumb1.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+					+otherNews('thumb3.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb2.jpg', 'Tiga Pulau Disulap Jadi Kapal Induk TNI Bakal Beroperasi 2019')
+					+otherNews('thumb1.jpg', 'Kemenperin Usul Kemenkeu Pangkas Penerimaan Negara di Masela')
+
+block myscripts
+	script.
+		let parallxElem = document.querySelector('.parallax');
+		
+		if(parallxElem) {
+			kdParallax(parallxElem);
+		}
+
+		function kdParallax(elem) {
+			var parallax = new Rellax(elem, {
+				center: true
+			});
+		}
+		
+	script.
+		window.sr = ScrollReveal();
+		sr.reveal('h2.parallax-info', {
+			opacity: 0,
+			easing: 'cubic-bezier(.72,.01,.33,1)',
+			duration: 1500,
+			reset: true,
+			distance: '-50px',
+			mobile: true,
+			origin: 'bottom',
+			distance: '80px'
+		});
