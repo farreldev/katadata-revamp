@@ -6,6 +6,8 @@ html,body
 		top: 5px
 	.abu
 		background-color: #ced3cc
+	.light-grey
+		background-color: #f0f0f0
 	.hitam
 		background-color: #191a1e
 	.putihLink, .putih
@@ -215,6 +217,15 @@ html,body
 		font-weight: 400
 		line-height: 1.5
 		color: $blTxt
+		&.lf-dropcap:first-letter
+      // color: $yellow-wood
+      float: left
+      font-size: 5.5rem
+      font-weight: 800
+      line-height: 72px
+      padding-top: 4px
+      padding-right: 10px
+      padding-left: 0
 		span
 			display: block
 			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
@@ -499,6 +510,34 @@ html,body
 				// 		background-color: $lnkd
 				// 		&:hover
 				// 			background-color: darken($lnkd, 5%)
+		&.white
+			span
+				font-family: 'Fira Sans'
+				font-size: 14px
+				font-weight: 600
+				color: #fff
+			i
+				color: #2d374c
+			a[class*="facebook"]
+				background-color: #fff
+				&:hover
+					background-color: darken(#fff, 5%)
+			a[class*="twitter"]
+				background-color: #fff
+				&:hover
+					background-color: darken(#fff, 5%)
+			a[class*="instagram"]
+				background-color: #fff
+				&:hover
+					background-color: darken(#fff, 5%)
+			a[class*="gg-plus"]
+				background-color: #fff
+				&:hover
+					background-color: darken(#fff, 5%)
+			a[class*="linkedin"]
+				background-color: #fff
+				&:hover
+					background-color: darken(#fff, 5%)
 	span.lineCaption2
 		position: relative
 		display: block

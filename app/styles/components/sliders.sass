@@ -30,6 +30,48 @@
 			i
 				color: white
 
+.arrowNavigationImf
+	position: absolute
+	top: -5px
+	right: 10px
+	z-index: 3
+	+breakpoint(mobile)
+		top: -5px
+		right: 15px
+	.prevArrowNav,
+	.nextArrowNav
+		display: inline-block
+		font-family: fontawesome
+		width: 35px
+		height: 35px
+		border: 1px solid #aeaeae
+		color: #727272
+		// +border-radius(5px)
+		text-align: center
+		cursor: pointer
+		background-color: rgba(255,255,255,.5)
+		&:focus
+			outline: none
+		i
+			line-height: 35px
+		&:hover
+			background-color: $imf-color2
+			border: 1px solid $imf-color2
+			i
+				color: white
+		+breakpoint(mobile)
+			width: 30px
+			height: 30px
+			i
+				line-height: 30px
+	.prevArrowNav
+		border-right: none
+		border-top-left-radius: 6px
+		border-bottom-left-radius: 6px
+	.nextArrowNav
+		border-top-right-radius: 6px
+		border-bottom-right-radius: 6px
+
 .arrowNavigation2
 	position: absolute
 	top: 45%
@@ -166,7 +208,46 @@
 					font-weight: 500
 					line-height: 1.3
 					color: $black
-
+.imf-grafik-video-slides, .imf-foto-slides
+	width: 100%
+	overflow: hidden
+	.slick-slider
+		overflow: hidden
+	.slick-slide
+		margin: 10px
+	.slick-list
+		margin: -10px
+		div
+			figure
+				margin-bottom: -6px
+				position: relative
+				overflow: hidden
+				width: 100%
+				+breakpoint(desktop)
+					height: 320px
+				+breakpoint(wide)
+					height: 220px
+				+breakpoint(tablet)
+					height: 175px
+				+breakpoint(mobile)
+					height: 180px
+				img
+					position: absolute
+					width: auto
+					height: 100%
+					+breakpoint(mobile)
+						width: 100%
+						height: auto
+			article
+				margin-bottom: 20px
+				a
+					display: block
+					margin-top: 20px
+					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Fira Sans'
+					font-size: 21px
+					font-weight: 600
+					line-height: 1.3
+					color: $imf-color2
 .ekonoGraphics
 	width: 100%
 	overflow: hidden

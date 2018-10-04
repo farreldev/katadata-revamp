@@ -1,4 +1,9 @@
 $(function(){
+
+  $('.longform-contain-sliders').on('click', function(e){
+    e.preventDefault();
+  })
+
   $('.longform-contain-sliders').slick({
     infinite: true,
     slidesToShow: 1,
@@ -8,6 +13,7 @@ $(function(){
     centerMode: true,
     speed: 1500,
     adaptiveHeight: true,
+    focusOnSelect: true,
     variableWidth: true,
     prevArrow: '.prevArrowNav',
     nextArrow: '.nextArrowNav',
@@ -17,6 +23,7 @@ $(function(){
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          focusOnSelect: true,
           infinite: true,
           autoplay: false,
           prevArrow: '.prevArrowNav',
@@ -28,6 +35,7 @@ $(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          focusOnSelect: true,
           autoplay: false,
           prevArrow: '.prevArrowNav',
           nextArrow: '.nextArrowNav'
@@ -40,6 +48,7 @@ $(function(){
           slidesToScroll: 1,
           variableWidth: false,
           adaptiveHeight: true,
+          focusOnSelect: true,
           autoplay: false,
           prevArrow: '.prevArrowNav',
           nextArrow: '.nextArrowNav'
