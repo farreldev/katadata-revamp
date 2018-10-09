@@ -2,6 +2,7 @@
 	position: relative
 	top: 0
 	padding: 0 0 10px
+	height: auto
 	// margin-top: 90px
 	// margin-top: 18px
 	margin-top: 58px
@@ -12,13 +13,8 @@
 		margin-top: 90px
 	+breakpoint(mobile)
 		margin-top: 10px
-	&.atHome
-		margin-top: 10px
-	&.databoks
-		margin-top: 20px
-	&.detail-telaah
-		margin-bottom: 0
 	.second-head-left
+		position: relative
 		.trending
 			position: relative
 			top: 5px
@@ -62,3 +58,21 @@
 						font-size: 12px
 	.second-head-right
 		float: right
+	&.atHome
+		margin-top: 10px
+		+clearit
+		.second-head-left
+			position: relative
+			time
+				padding-top: 7px
+				display: block
+				vertical-align: middle
+				+breakpoint(mobile)
+					padding-top: 0
+					margin-bottom: 20px
+					display: block
+					text-align: center
+	&.databoks
+		margin-top: 20px
+	&.detail-telaah
+		margin-bottom: 0

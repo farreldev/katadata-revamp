@@ -64,7 +64,41 @@ $(function(){
       scrollTop: $dest.position().top
     }, 800, 'swing');
   });
+
+  if(window.screen.width < 420) {
+    window.addEventListener('load', function() {
+      $('span.toggle-dftr-isi').addClass('out');
+      $('.daftar-isi').addClass('goOut');
+    })
+  }
   
+  $('span.toggle-dftr-isi').on('click', function () {
+		$(this).toggleClass('out'), $(this).parent().toggleClass('goOut')
+	});
+
+  var $sidebar   = $('#daftar-isi'), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+
+    $('.daftar-isi a[href*="#"]').on('click', function (e) {
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 800), e.preventDefault()
+    })
+
   // let vid = document.getElementById('html5video');
   //  vid.play()
 

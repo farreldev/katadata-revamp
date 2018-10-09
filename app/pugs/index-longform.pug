@@ -20,7 +20,19 @@ block content
 						a(href="#" class="linkedin")
 							i(class="fa fa-linkedin")
 			.binder
-				.longform-content.paragraph
+				#daftar-isi.daftar-isi(style='margin-top: 0px;')
+					span.toggle-dftr-isi
+					ul
+						li
+							a(href='#jdl01') Judul Pertama
+						li
+							a(href='#jdl02') Judul ke Dua
+						li
+							a(href='#jdl03') Judul ke Tiga
+						li
+							a(href='#jdl04') Judul ke Empat
+
+				.longform-content.paragraph#jdl01
 					.row.no-gap
 						.col-md-6.col-md-offset-3
 							p.lf-dropcap.
@@ -76,7 +88,7 @@ block content
 						.col-md-6.col-md-offset-3
 							p.
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident quod odit, tempora consequuntur, quidem corrupti, obcaecati in cumque nihil quo? Nesciunt laboriosam eos voluptatum dolorem, quia sequi. Cum nesciunt ea possimus molestias alias, voluptatum rerum ab adipisci! Labore voluptate ipsum et, dignissimos facilis sed modi rerum nisi! Perferendis, asperiores.
-				.longform-content.local-video
+				.longform-content.local-video#jdl02
 					.row.no-gap
 						.col-md-12
 							video(src="videos/timelapse.mp4" type="video/mp4" playsinline autoplay muted loop)
@@ -97,7 +109,7 @@ block content
 								iframe(src="https://www.youtube.com/embed/tdwbYGe8pv8?start=101&amp;rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 							figcaption.
 								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-				.longform-content.paragraph
+				.longform-content.paragraph#jdl03
 					.row.no-gap
 						.col-md-6.col-md-offset-3
 							p.
@@ -128,7 +140,7 @@ block content
 					//-     .timeline-container
 								//- buat timeline
 								//- iframe
-				.longform-content.foto
+				.longform-content.foto#jdl04
 					.row.no-gap
 						.col-md-12
 							//- video(src="videos/teaser-video.mp4" type="video/mp4" preload="metadata" controls poster="videos/teaser.jpg")

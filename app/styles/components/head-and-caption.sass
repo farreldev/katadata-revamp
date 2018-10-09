@@ -20,6 +20,25 @@
 			font-weight: 300
 			// letter-spacing: 1px
 			color: $black
+	ul.lang
+		position: absolute
+		top: 25px
+		right: 0
+		li
+			margin: 0
+			display: inline-block
+			border-right: 1px solid #ddd
+			a
+				padding: 0 5px
+				display: block
+				font-size: 16px
+				color: #999
+				&.active
+					color: $blue
+			&:last-child
+				border-right: none
+				a
+					padding: 0 3px
 	span
 		margin-bottom: 20px
 		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
