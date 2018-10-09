@@ -1,0 +1,44 @@
+.daftar-isi
+  position: absolute
+  top: 0
+  right: 0
+  width: 250px
+  height: 100%
+  z-index: 3
+  transition: all 0.35s ease-in-out
+  &.goOut
+    transition: all 0.35s ease-in-out
+    right: -250px
+  span
+    position: inherit
+    display: inline-block
+    left: -32px
+    width: 32px
+    height: 30px
+    color: #fff
+    cursor: pointer
+    z-index: 2
+    background: #c4a333
+    background-image: url(../images/icons/close-open-list-sprite.png)
+    background-repeat: no-repeat
+    &.toggle-dftr-isi
+      transition: all .3s ease-in-out
+      background-position: 8.5px 6.5px
+      &.out
+        transition: all .3s ease-in-out
+        background-position: -16px 6.5px
+  ul
+    width: 100%
+    li
+      margin-bottom: 1px
+      border-left: 3px solid #c4a333
+      background-color: hsla(0, 0%, 89%, 0.7)
+      a
+        padding: 13px 12px
+        display: block
+        font: 600 16px Fira Sans
+        color: #111
+        &:hover
+          text-decoration: none
+      &:hover a
+        color: #c4a333
