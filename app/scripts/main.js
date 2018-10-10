@@ -46,7 +46,7 @@ $(function() {
       $('.berita-slide').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         autoplay: false,
         prevArrow: '.prevArrowNav',
         nextArrow: '.nextArrowNav',
@@ -647,9 +647,7 @@ $(function() {
     }
 
     if (screen.width > 768) {
-      $(
-        '.itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li'
-      ).matchHeight();
+      $('.itemListAnalisis, .sprite-ico li, .berita-terpopuler ul li, .opini ul li, .itemList').matchHeight();
     }
 
     // function fotoReveal() {

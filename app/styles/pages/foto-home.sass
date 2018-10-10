@@ -42,3 +42,11 @@
 			bottom: -55px
 			+breakpoint(mobile)
 				bottom: -45px
+
+	ul.foto-list
+		+breakpoint(wide)
+			+flexOwnGrid(li, 2, 3%, 25)
+		+breakpoint(tablet)
+			+flexOwnGrid(li, 2, 3.2%, 25)
+		+breakpoint(mobile)
+			+flexOwnGrid(li, 1, 0, 25)
