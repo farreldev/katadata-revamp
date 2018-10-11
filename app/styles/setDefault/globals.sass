@@ -84,7 +84,8 @@ html,body
 			display: block
 			color: #777
 		img
-			max-height: 90px
+			// max-height: 90px
+			max-height: 70px
 		&:hover
 			text-decoration: none
 		+breakpoint(tablet)
@@ -521,23 +522,33 @@ html,body
 			a[class*="facebook"]
 				background-color: #fff
 				&:hover
-					background-color: darken(#fff, 5%)
+					background-color: $fb
+					i
+						color: #fff
 			a[class*="twitter"]
 				background-color: #fff
 				&:hover
-					background-color: darken(#fff, 5%)
+					background-color: $tw
+					i
+						color: #fff
 			a[class*="instagram"]
 				background-color: #fff
 				&:hover
-					background-color: darken(#fff, 5%)
+					background-color: $insta
+					i
+						color: #fff
 			a[class*="gg-plus"]
 				background-color: #fff
 				&:hover
-					background-color: darken(#fff, 5%)
+					background-color: $gg
+					i
+						color: #fff
 			a[class*="linkedin"]
 				background-color: #fff
 				&:hover
-					background-color: darken(#fff, 5%)
+					background-color: $lnkd
+					i
+						color: #fff
 	span.lineCaption2
 		position: relative
 		display: block
