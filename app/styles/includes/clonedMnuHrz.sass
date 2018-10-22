@@ -11,19 +11,26 @@
 	+breakpoint(mobile)
 		display: none
 	.clonedWrapp
-		padding: 25px 0
+		// padding: 25px 0
 		position: relative
-		+clearit
+		display: flex
+		justify-content: space-between
+		// +clearit
+		// .clonedMnuHrzLeft
+		// 	position: absolute
+		// 	width: 80px
+		// 	top: 50%
+		// 	transform: translateY(-50%)
 		.clonedMnuHrzLeft
-			position: absolute
-			width: 80px
-			top: 50%
-			transform: translateY(-50%)
+			display: flex
+			align-items: center
+			flex: 1
 		.clonedMnuHrzCenter
-			position: absolute
-			top: 50%
-			left: 20%
-			transform: translate(-20%, -50%)
+			flex: 10
+			// position: absolute
+			// top: 50%
+			// left: 20%
+			// transform: translate(-20%, -50%)
 			// width: calc(100% - (80px + 160px))
 			width: auto
 			ul
@@ -32,15 +39,15 @@
 					padding: 0
 					display: inline-block
 					a
-						padding: 15px 12px
+						padding: 18px 12px
 						font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 						font-weight: 500
-						font-size: 15px
+						font-size: 14px
 						color: #fff
 						display: block
 						text-decoration: none
 						&:hover
-							background-color: darken($blue, 5%)
+							background-color: darken($blue, 7%)
 					// &:nth-child(1)
 					// 	a
 					// 		padding-left: 0
@@ -71,13 +78,18 @@
 							top: 47px
 							a
 								padding: 15px
+					&.selected
+						background-color: $orange
 		.clonedMnuHrzRight
+			display: flex
+			align-items: center
+			flex: 1
 			// width: 160px
-			width: auto
-			position: absolute
-			top: 50%
-			right: 0
-			transform: translateY(-50%)
+			// width: auto
+			// position: absolute
+			// top: 50%
+			// right: 0
+			// transform: translateY(-50%)
 			a.btn
 				font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 				font-weight: 500
