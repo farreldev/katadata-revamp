@@ -22,9 +22,9 @@
 		left: -100%
 		overflow-y: auto
 
-	ul 
+	> ul
 		position: relative
-		padding: 20px 0
+		padding: 20px 0 12px
 		ul 
 			position: relative
 			padding: 0
@@ -71,19 +71,19 @@
 			// 	transition: all .3s ease-in-out
 
 			&.otherListMnu
-				padding: 7px 15px
+				padding: 2px 15px
 				font-family: "Gotham Narrow A", "Gotham Narrow B", Roboto
 				font-size: 14px
 				font-weight: 500
 				text-transform: uppercase
 				color: #fff
 				background: rgba(0, 174, 239,.5)
-				background: -moz-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
-				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 174, 239,.5)), color-stop(90%, rgba(0, 174, 239,0)), color-stop(100%, rgba(0, 174, 239,0)))
-				background: -webkit-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
-				background: -o-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
-				background: -ms-linear-gradient(left, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
-				background: linear-gradient(to right, rgba(0, 174, 239,.5) 0%, rgba(0, 174, 239,0) 90%, rgba(0, 174, 239,0) 100%)
+				background: -moz-linear-gradient(left, rgba(112, 112, 112,.5) 0%, rgba(112, 112, 112,0) 90%, rgba(112, 112, 112,0) 100%)
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(112, 112, 112,.5)), color-stop(90%, rgba(112, 112, 112,0)), color-stop(100%, rgba(112, 112, 112,0)))
+				background: -webkit-linear-gradient(left, rgba(112, 112, 112,.5) 0%, rgba(112, 112, 112,0) 90%, rgba(112, 112, 112,0) 100%)
+				background: -o-linear-gradient(left, rgba(112, 112, 112,.5) 0%, rgba(112, 112, 112,0) 90%, rgba(112, 112, 112,0) 100%)
+				background: -ms-linear-gradient(left, rgba(112, 112, 112,.5) 0%, rgba(112, 112, 112,0) 90%, rgba(112, 112, 112,0) 100%)
+				background: linear-gradient(to right, rgba(112, 112, 112,.5) 0%, rgba(112, 112, 112,0) 90%, rgba(112, 112, 112,0) 100%)
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#00aeef', GradientType=1 )
 			&.hasSub
 				ul li a 
@@ -172,6 +172,45 @@
 				&:before 
 					transform: scaleX(1)
 
+	.foot-nav
+		margin-left: 35px
+		margin-bottom: 22px
+		> ul
+			padding-top: 0
+			margin-bottom: 10px
+			li
+				a
+					padding-top: 7px
+					padding-bottom: 7px
+					font-family: Roboto
+					text-transform: initial
+					font-size: 15px
+					font-weight: 400
+					display: block
+					color: #d1d1d1
+		.followSosmed
+			margin-bottom: 15px
+			span
+				color: #d1d1d1
+			ul
+				margin-left: 5px
+				li
+					margin-left: 0
+					margin-right: 5px
+					a
+						width: 24px
+						height: 24px
+						i
+							font-size: 13px
+							line-height: 25px
+		p, a
+			font-family: Roboto
+			font-size: 13px
+			color: #999
+		p
+			margin-bottom: 5px
+		a
+			font-weight: 400
 	&::-webkit-scrollbar-button
 		display: none
 		height: 13px
