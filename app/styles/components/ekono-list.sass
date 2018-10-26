@@ -4,6 +4,7 @@
 		+breakpoint(mobile)
 			+flexOwnGrid(li, 1, 0, 25)
 		> li
+			position: relative
 			padding: 15px
 			border: 1px solid #eee
 			transition: box-shadow .3s ease-in-out
@@ -14,6 +15,32 @@
 			// +breakpoint(mobile)
 			//    +ownGrid(1, 0)
 			//    margin-bottom: 30px
+			.foot-list-graph
+				position: absolute
+				left: 0
+				bottom: 15px
+				width: 100%
+				+clearit
+				a.btn
+					margin-left: 15px
+					margin-bottom: 0
+				ul.btn-sosmed
+					position: inherit
+					top: 5px
+					right: 15px
+					li
+						margin-right: 3px
+						margin-bottom: 0
+						width: auto
+						display: inline-block
+						a
+							color: #fff
+				+breakpoint(mobile)
+					a.btn
+						padding: 7px 10px
+						font-size: 14px
+					ul.btn-sosmed
+						top: 3px
 			&:hover
 				cursor: pointer
 				+box-shadow(0,0,20px, rgba(0,0,0,.25))
