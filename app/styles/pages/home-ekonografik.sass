@@ -4,30 +4,8 @@
 			+flexOwnGrid(li, 2, 3%, 25)
 			+breakpoint(mobile)
 				+flexOwnGrid(li, 1, 0, 25)
-			.foot-list-graph
-				+clearit
-				margin-top: 20px
-				a.btn
-					margin-bottom: 0
-				ul.btn-sosmed
-					position: relative
-					top: 5px
-					float: right
-					li
-						margin-right: 3px
-						margin-bottom: 0
-						width: auto
-						display: inline-block
-						a
-							color: #fff
-				+breakpoint(mobile)
-					text-align: center
-					a.btn
-						margin-bottom: 12px
-					ul.btn-sosmed
-						position: static
-						top: auto
-						float: none
+			> li
+				padding-bottom: 75px
 		a.btn
 			margin-bottom: 25px
 			// li
@@ -35,3 +13,8 @@
 				// +breakpoint(mobile)
 				// 	+ownGrid(1, 0)
 				// 	margin-bottom: 30px
+.detail-artikel-ekono
+	.ekonoList
+		ul.listGraph:not([class*='btn-sosmed'])
+			> li
+				padding-bottom: 75px
