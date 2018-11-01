@@ -171,7 +171,12 @@
 .berita-slide
 	width: 100%
 	overflow: hidden
-	.slick-slider
+	visibility: hidden
+	max-height: 350px
+	&.slick-initialized
+		visibility: visible
+		max-height: none
+	&.slick-slider
 		overflow: hidden
 	.slick-slide
 		margin: 10px

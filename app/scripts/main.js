@@ -212,32 +212,32 @@ $(function() {
     // Counter Slider img
 
     /*** Sticky Footer ***/
-    function stickyFooter() {
-      var ua = navigator.userAgent.toLowerCase();
-      var $tinggiFooter = $('.contentWrapper')
-        .find('.footer')
-        .height();
+    // function stickyFooter() {
+    //   var ua = navigator.userAgent.toLowerCase();
+    //   var $tinggiFooter = $('.contentWrapper')
+    //     .find('.footer')
+    //     .height();
 
-      $('.wrapper .contentWrapper').css('paddingBottom', $tinggiFooter + 25);
+    //   $('.wrapper .contentWrapper').css('paddingBottom', $tinggiFooter + 25);
 
-      if (ua.indexOf('safari') != -1) {
-        if (ua.indexOf('chrome') > -1) {
-          $('.wrapper .contentWrapper').css(
-            'paddingBottom',
-            $tinggiFooter + 25
-          );
-        } else {
-          $('.wrapper .contentWrapper').css(
-            'paddingBottom',
-            $tinggiFooter + 25
-          );
-        }
-      }
-    }
+    //   if (ua.indexOf('safari') != -1) {
+    //     if (ua.indexOf('chrome') > -1) {
+    //       $('.wrapper .contentWrapper').css(
+    //         'paddingBottom',
+    //         $tinggiFooter + 25
+    //       );
+    //     } else {
+    //       $('.wrapper .contentWrapper').css(
+    //         'paddingBottom',
+    //         $tinggiFooter + 25
+    //       );
+    //     }
+    //   }
+    // }
     /*** End ***/
 
-    window.onload = stickyFooter;
-    window.onresize = stickyFooter;
+    // window.onload = stickyFooter;
+    // window.onresize = stickyFooter;
 
     /*** Remove Empty tag P ***/
     function removeEmptyTeks() {
@@ -734,7 +734,7 @@ $(function() {
     searcPanel();
     removeEmptyTeks();
     topikExpand(5);
-    stickyBanner();
+    // stickyBanner();
     // kdParallax();
   })();
 });

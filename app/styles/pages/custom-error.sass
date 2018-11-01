@@ -1,0 +1,162 @@
+section.kd-404
+	padding: 70px 0 100px
+	margin-bottom: 0
+	background-color: $blue-light
+	+breakpoint(mobile)
+		padding: 20px 0 30px
+	p
+		margin-bottom: 35px
+		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+		font-size: 45px
+		font-weight: 400
+		line-height: 1.2
+		color: #ffffff
+	.errRight
+		width: 100%
+		text-align: right
+		padding-right: 70px
+		+breakpoint(mobile)
+			margin-top: 30px
+			text-align: center
+			padding-right: 0
+		h2.err404
+			margin-bottom: 0
+			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+			font-size: 200px
+			letter-spacing: -5px
+			line-height: .9
+			font-weight: 900
+			color: #637e88
+			+breakpoint(mobile)
+				font-size: 170px
+		span
+			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+			font-size: 15px
+			font-weight: 400
+			color: #637e88
+
+section.kd-404-v2
+	margin-bottom: 0
+	width: 100vw
+	height: calc(100vh - 68px)
+	background-image: url('../images/custom-error-img/404-v2.png')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center bottom
+	+breakpoint(mobile)
+		height: calc(100vh - 100px)
+		background-size: cover
+		background-position: center bottom
+		
+section.kd-504
+	margin-bottom: 0
+	display: flex
+	justify-content: center
+	height: calc(100vh - 68px)
+	.wrapper-504
+		position: relative
+		img
+			position: absolute
+			&.fitting
+				top: 30px
+				width: 150px
+				margin-left: -75px
+				+breakpoint(mobile)
+					top: -15px
+					width: 120px
+					margin-left: -60px
+			&.alert-message
+				top: 180px
+				width: 225px
+				margin-left: -112.5px
+				+breakpoint(mobile)
+					top: 120px
+					width: 170px
+					margin-left: -85px
+			&.man-504
+				width: 300px
+				margin-left: -150px
+				z-index: -1
+				bottom: 0
+				opacity: 0
+				+breakpoint(mobile)
+					bottom: 0
+					width: 290px
+					margin-left: -145px
+				+breakpoint(small-mobile)
+					bottom: 0
+					width: 250px
+					margin-left: -125px
+
+
+section.kd-500
+	margin-bottom: 0
+	padding: 5em
+	position: relative
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	// height: 100vh
+	img
+		width: 60%
+	+breakpoint(mobile)
+		img
+			width: calc(100vw - 30px)
+
+@keyframes bounceInLeft
+  from, 60%, 75%, 90%,
+  to
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  0%
+    opacity: 0
+    transform: translate3d(-3000px, 0, 0)
+
+  60%
+    opacity: 1
+    transform: translate3d(25px, 0, 0)
+
+  75%
+    transform: translate3d(-10px, 0, 0)
+
+  90%
+    transform: translate3d(5px, 0, 0)
+
+  to
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInDown
+  from
+    opacity: 0
+    transform: translate3d(0, -100%, 0)
+
+  to
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translate3d(0, 30%, 0)
+  to
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+@keyframes zoomIn
+  from
+    opacity: 0
+    transform: scale3d(0.3, 0.3, 0.3)
+  50%
+    opacity: 1
+
+.zoomIn
+  animation: zoomIn 3s 1s both
+
+.fadeInUp
+  animation: fadeInUp 3s 1.5s forwards
+
+.fadeInDown
+  animation: fadeInDown 3s 
+
+.bounceInLeft
+  animation: bounceInLeft 1.3s both
