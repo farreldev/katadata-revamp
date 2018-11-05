@@ -455,7 +455,7 @@ $(function() {
 
     if ($isDetail) {
       tabling();
-      chNewsletterPlace();
+      // chNewsletterPlace();
     }
 
     function chNewsletterPlace() {
@@ -734,7 +734,7 @@ $(function() {
     searcPanel();
     removeEmptyTeks();
     topikExpand(5);
-    // stickyBanner();
+    stickyBanner();
     // kdParallax();
   })();
 });
