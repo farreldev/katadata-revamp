@@ -3,7 +3,7 @@
 		position: relative
 		margin-bottom: 20px
 		position: relative
-		border-bottom: 1px solid #ddd
+		// border-bottom: 1px solid #ddd
 		h1
 			font-size: 45px
 			// width: 65%
@@ -300,10 +300,38 @@
 					float: none
 					width: 100%
 
-#sideBarDetail
 	.newsletter.inDetail
-		float: none
-		width: 85%
-		margin: 0 auto 25px
+		display: flex
+		width: 655px
+		margin: 0 0 25px calc(100% - 655px)
+		article
+			flex: 5
+			float: none
+		form
+			flex: 7
+			text-align: right
+			align-self: center
+			.customInput
+				width: 70%
+				margin-right: 5px
+				margin-bottom: 0
+			input.btn
+				width: auto
+				padding-left: 10px
+				padding-right: 10px
 		+breakpoint(mobile)
 			width: 100%
+			margin: 0 0 25px
+			display: block
+			article
+				display: block
+				width: 100%
+			form
+				text-align: left
+				display: block
+				width: 100%
+				.customInput
+					width: 100%
+					margin-bottom: 12px
+				input.btn
+					width: 100%
