@@ -139,7 +139,7 @@ gulp.task('serve', () => {
 	runSequence(['clean', 'wiredep'], ['puggs', 'styles', 'scripts', 'fonts'], () => {
 		browserSync.init({
 			notify: false,
-			port: 9000,
+			port: 9001,
 			server: {
 				baseDir: ['.tmp', 'app'],
 				routes: {

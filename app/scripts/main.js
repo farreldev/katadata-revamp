@@ -112,10 +112,10 @@ $(function() {
       $('.ekonoGraphics').slick({
         infinite: false,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         autoplay: false,
-        prevArrow: false, // .prevArrowNav2
-        nextArrow: false, // .nextArrowNav2
+        prevArrow: '.prevArrowNav2', // .prevArrowNav2
+        nextArrow: '.nextArrowNav2', // .nextArrowNav2
         responsive: [
           {
             breakpoint: 1024,
@@ -297,7 +297,6 @@ $(function() {
 
       $('a.toggleShow').click(function(e) {
         e.preventDefault();
-
         if (cekToggle) {
           showHide($lp, $lh * n);
           $(this).html('Topik Lainnya <i class="fa fa-chevron-down"></i>');
