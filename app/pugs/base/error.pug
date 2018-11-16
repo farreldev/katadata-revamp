@@ -14,8 +14,7 @@ html.no-js(lang="id")
 		//- link(rel='icon', href='/favicon.ico', type='image/x-icon')
 		link(rel='icon', href='/favicon.png', type='image/x-icon')
 		//- link(rel='stylesheet', href='https://cloud.typography.com/6761036/6309792/css/fonts.css')
-		//- link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
-		link(href='https://fonts.googleapis.com/css?family=Hind:400,500,700|Roboto:400,500,700,900', rel='stylesheet')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		// Place favicon.ico in the root directory
 		// build:css styles/vendor.css
@@ -52,15 +51,12 @@ html.no-js(lang="id")
 		div(id="mainWrapper" class="wrapper")
 			//- #mp-pusher.mp-pusher
 			//- header#header.timbul
-			header#header
-				include ../includes/header.pug
 			a(href="#" class="goUp")
 				i(class="fa fa-chevron-up")
 			main
 				include ../includes/kd-simple-nav2.pug
 				.contentWrapper
 					block content
-					include ../includes/footer.pug
 			.wwNavigation-overlay
 		
 		// build:js scripts/vendor.js

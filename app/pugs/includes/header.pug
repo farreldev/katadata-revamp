@@ -1,26 +1,27 @@
 .main-head
 	.container
-		.left-main-head
-			.btn-hum.trigger-mnu
-				div.humburger-btn
-					span
-					span
-					span
-				a(href="" class="hidden-xs") Menu
-			#cari-btn.cari-btn.hidden-xs
-				i(class="fa fa-search" aria-hidden="true")
-				a(href="" class="hidden-xs") Search
-		.center-main-head
-			a(href="index.html", class="logo-brand")
-				img(src="./images/new-logo-putih.svg")
-		.right-main-head
-			a(href="", class="mm-sign-in visible-xs")
-			//- i(class="fa fa-search" aria-hidden="true")
-			//- a(href="" class="hidden-xs") Search
-			//- div.kdNetwork.hidden-xs
-			//- 	a Jejaring Katadata
-			a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") subscribe
-			a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") login
+		.wrap-navbar
+			.left-main-head
+				.btn-hum.trigger-mnu
+					div.humburger-btn
+						span
+						span
+						span
+					a(href="" class="hidden-xs") Menu
+				#cari-btn.cari-btn.hidden-xs
+					i(class="fa fa-search" aria-hidden="true")
+					a(href="" class="hidden-xs") Search
+			.center-main-head
+				a(href="index.html", class="logo-brand")
+					img(src="./images/new-logo-putih.svg")
+			.right-main-head
+				a(href="", class="mm-sign-in visible-xs")
+				//- i(class="fa fa-search" aria-hidden="true")
+				//- a(href="" class="hidden-xs") Search
+				//- div.kdNetwork.hidden-xs
+				//- 	a Jejaring Katadata
+				a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") subscribe
+				a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") login
 
 .layerSearch
 	form
@@ -32,41 +33,47 @@
 				i(class="fa fa-times-circle")
 .mnu-horz
 	.container
-		ul
-			li
-				a(href="#") Beranda
-			li.selected
-				a(href="#") Prahara Lippo
-			li
-				a(href="#") Makro
-			li
-				a(href="#") Nasional
-			li
-				a(href="#") Energi
-			li
-				a(href="#") Digital
-			li
-				a(href="#") Ekonomi Kreatif
-			li
-				a(href="#") Infografik
-			li.mnu-horz-sub
-				a(href="#") Lainnya
-				ul
-					li
-						a(href="#") Opini &amp; Wawancara
-					li
-						a(href="#") Analisis
-					li
-						a(href="#") Multimedia
-					li
-						a(href="#") Special Report
-					li
-						a(href="#") Databoks
-					li
-						a(href="#") Kuis
-					li
-						a(href="#") Indeks Berita
-.clonedMnuHrz
+		.mnu-horz-wrapper
+			ul
+				li.selected
+					a(href="#") Beranda
+				li
+					a(href="#") Prahara Lippo
+				li
+					a(href="#") Makro
+				li
+					a(href="#") Nasional
+				li
+					a(href="#") Energi
+				li
+					a(href="#") Digital
+				li
+					a(href="#") Ekonomi Kreatif
+				li
+					a(href="#") Infografik
+				li.mnu-horz-sub
+					a(href="#") Lainnya
+					ul
+						li
+							a(href="#") Opini &amp; Wawancara
+						li
+							a(href="#") Analisis
+						li
+							a(href="#") Multimedia
+						li
+							a(href="#") Special Report
+						li
+							a(href="#") Databoks
+						li
+							a(href="#") Kuis
+						li
+							a(href="#") Indeks Berita
+			time #[span Kamis, 23 Oktober 2018]
+
+include market-ticker
+
+
+.cloned
 	.container
 		.clonedWrapp
 			.clonedMnuHrzLeft
@@ -79,9 +86,9 @@
 					i(class="fa fa-search" aria-hidden="true")
 			.clonedMnuHrzCenter
 				ul
-					li
-						a(href="#") Beranda
 					li.selected
+						a(href="#") Beranda
+					li
 						a(href="#") Prahara Lippo
 					li
 						a(href="#") Makro

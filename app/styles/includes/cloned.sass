@@ -1,8 +1,11 @@
-.clonedMnuHrz
-	position: relative
+.cloned
+	position: fixed
+	width: 100%
 	top: -163px
-	opacity: 0
-	background-color: $blue
+	opacity: 1
+	// background-color: $blue
+	background-color: #fff
+	box-shadow: 0 1px 20px rgba(0,0,0,.15)
 	transition: all .5s ease-in-out
 	z-index: 2
 	&.clonedShow
@@ -25,6 +28,13 @@
 			display: flex
 			align-items: center
 			flex: 1
+			.btn-hum.trigger-mnu
+				div.humburger-btn
+					span
+						background: $black
+			.cari-btn
+				i
+					color: $black
 		.clonedMnuHrzCenter
 			flex: 10
 			// position: absolute
@@ -43,7 +53,8 @@
 						font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 						font-weight: 500
 						font-size: 14px
-						color: #fff
+						// color: #fff
+						color: $black
 						display: block
 						text-decoration: none
 						&:hover
@@ -59,7 +70,7 @@
 							padding-right: 18px
 						&:after
 							position: absolute
-							top: 14px
+							top: 16px
 							right: 0
 							font-family: Fontawesome
 							content: '\f0d7'
@@ -70,6 +81,7 @@
 						top: -999px
 						width: 220px
 						background-color: $blue
+						box-shadow: 0 5px 10px rgba(0,0,0,.15)
 						z-index: 0
 						li
 							display: block
@@ -79,7 +91,15 @@
 							a
 								padding: 15px
 					&.selected
-						background-color: $orange
+						// background-color: $orange
+						&:after
+							position: absolute
+							content: ''
+							left: 0
+							bottom: 0
+							width: 100%
+							height: 3px
+							background-color: $poison
 		.clonedMnuHrzRight
 			display: flex
 			align-items: center

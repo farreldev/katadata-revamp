@@ -495,6 +495,7 @@ $(function() {
     // 	}
     // }
 
+    /* Head Sticky Responsive Setup */
     if (hdr) {
       if (screen.width > 768) headSticky();
     } else {
@@ -518,22 +519,22 @@ $(function() {
           clnMnu.classList.remove('clonedShow');
         }
 
-        if (getY > 100) {
-          hdr.classList.add('scrollingUp');
-        } else if (getY < 2) {
-          hdr.classList.remove('scrollingUp');
-        } else {
-          return;
-        }
+        // if (getY > 100) {
+        //   hdr.classList.add('scrollingUp');
+        // } else if (getY < 2) {
+        //   hdr.classList.remove('scrollingUp');
+        // } else {
+        //   return;
+        // }
 
-        if (!hdr.classList.contains('scrollingUp')) {
-          // slMnu.style.top = '113px';
-          slMnu.removeAttribute('style');
-          lSearch.removeAttribute('style');
-        } else {
-          slMnu.style.top = '50px';
-          lSearch.style.top = '50px';
-        }
+        // if (!hdr.classList.contains('scrollingUp')) {
+        //   // slMnu.style.top = '113px';
+        //   slMnu.removeAttribute('style');
+        //   lSearch.removeAttribute('style');
+        // } else {
+        //   slMnu.style.top = '50px';
+        //   lSearch.style.top = '50px';
+        // }
       });
     }
     /*** End ***/
@@ -733,7 +734,7 @@ $(function() {
     searcPanel();
     removeEmptyTeks();
     topikExpand(5);
-    stickyBanner();
+    // stickyBanner();
     // kdParallax();
   })();
 });

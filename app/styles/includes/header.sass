@@ -1,75 +1,69 @@
 header
-	position: fixed
+	position: relative
 	top: 0
 	left: 0
 	width: 100%
-	max-height: 113px
+	height: auto
+	// max-height: 113px
 	transition: top .4s ease
 	z-index: 7
 	&.scrollingUp
 		// top: -67px
+		transition: top .4s ease
 		top: -112px
 	// +breakpoint(mobile)clear
 
 	// 	&.scrollingUp
 	// 		top: -73px
 	.main-head
-		position: relative
+		// position: relative
 		padding: 12px 0
 		background: $blue
 		color: white
-		// +box-shadow(0, 2px, 10px, rgba(0,0,0,.25))
-		+clearit
 		z-index: 3
 		+breakpoint(mobile)
 			border-bottom: 5px solid $blue-light
-		.left-main-head,
-		.center-main-head,
-		.right-main-head
-			// padding: 10px 0
-			padding: 6px 0
-		.left-main-head
-			position: absolute
-			top: 50%
-			transform: translateY(-50%)
-			a
-				font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-				font-weight: 500
-				text-decoration: none
-				text-transform: uppercase
-				font-size: .85em
-				color: white
-		.center-main-head
-			// position: absolute !important
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			a
-				&.logo-brand
-					display: inline-block
-					margin-bottom: 0
-					width: 249px
-					height: auto
-					+breakpoint(mobile)
-						width: 166px
-						height: auto
+		.wrap-navbar
+			display: flex
+			justify-content: space-between
+			.left-main-head
+				flex: 4
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				a
+					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+					font-weight: 500
+					text-decoration: none
+					text-transform: uppercase
+					font-size: .85em
+					color: white
+			.center-main-head
+				flex: 4
+				display: flex
+				justify-content: center
+				align-items: center
+				a.logo-brand
 					img
-						width: 100%
-		.right-main-head
-			float: right
-			a.btn
-				font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-				font-weight: 500
-				text-transform: uppercase
-				font-size: .85em
-				color: white
-			a
-				&.mm-sign-in
-					background: url('../images/icons/icon-signin.svg') no-repeat
-					text-align: center
-					width: 24px
-					height: 24px
+						height: 32px
+			.right-main-head
+				flex: 4
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				a.btn
+					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+					font-weight: 500
+					text-transform: uppercase
+					font-size: .85em
+					color: white
+				a
+					&.mm-sign-in
+						background: url('../images/icons/icon-signin.svg') no-repeat
+						text-align: center
+						width: 24px
+						height: 24px
+
 	.layerSearch
 		position: fixed
 		top: -100px
@@ -88,56 +82,77 @@ header
 			.lineInput
 				display: block
 	.mnu-horz
-		background-color: $blue-light
+		background-color: #fff
+		border-bottom: 1px solid #ccc
 		+breakpoint(mobile)
 			display: none
-		ul
-			li
-				padding: 0
-				position: relative
-				display: inline-block
-				a
-					padding: 15px 12px
-					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-					font-weight: 500
-					font-size: 15px
-					color: #fff
-					display: block
-					text-decoration: none
-					&:hover
-						background-color: darken($blue-light, 5%)
-				&.mnu-horz-sub
-					a
-						padding-right: 18px
-					&:after
-						position: absolute
-						top: 14px
-						right: 3px
-						font-family: Fontawesome
-						content: '\f0d7'
-						color: #fff
-				// &:nth-child(1)
-				// 	a
-				// 		padding-left: 0
-				// &:last-child
-				// 	a
-				// 		padding-right: 0
-				ul
+		.mnu-horz-wrapper
+			display: flex
+			justify-content: space-between
+			color: #444
+			ul
+				li
 					padding: 0
-					position: absolute
-					top: -999px
-					width: 220px
-					background-color: $blue-light
-					z-index: 0
-					li
+					position: relative
+					display: inline-block
+					a
+						padding: 15px 12px
+						font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+						font-weight: 500
+						font-size: 15px
+						color: $black
 						display: block
-				&:hover
-					ul
-						top: 45px
+						text-decoration: none
+						&:hover
+							background-color: darken(#fff, 5%)
+					&.mnu-horz-sub
 						a
-							padding: 15px
-				&.selected
-					background-color: $orange
+							padding-right: 18px
+						&:after
+							position: absolute
+							top: 13px
+							right: 3px
+							font-family: Fontawesome
+							content: '\f0d7'
+							color: $black
+					// &:nth-child(1)
+					// 	a
+					// 		padding-left: 0
+					// &:last-child
+					// 	a
+					// 		padding-right: 0
+					ul
+						padding: 0
+						position: absolute
+						top: -999px
+						width: 220px
+						background-color: #fff
+						z-index: 0
+						box-shadow: 0 5px 10px rgba(0,0,0,.15)
+						li
+							display: block
+					&:hover
+						ul
+							top: 45px
+							a
+								padding: 15px
+					&.selected
+						&:after
+							position: absolute
+							content: ''
+							left: 0
+							bottom: 0
+							width: 100%
+							height: 3px
+							background-color: $poison
+			time
+				font-family: 'Hind'
+				font-size: 13px
+				font-weight: 500
+				color: #666
+				text-transform: uppercase
+				display: flex
+				align-items: center
 header#header-alt-1
 	opacity: 1
 	position: absolute
@@ -191,7 +206,7 @@ header#header-alt-1
 		display: none
 
 header#header-alt-2 ~ main
-	padding-top: 57px
+	// padding-top: 57px
 	+breakpoint(mobile)
 		padding-top: 50px
 header#header-imf ~ main

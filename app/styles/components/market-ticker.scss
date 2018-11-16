@@ -1,0 +1,55 @@
+.market-ticker {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  // padding: 20px;
+  .market-ticker-wrapper {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      padding-top: 3px;
+      flex: 12;
+      display: flex;
+      align-items: center;
+      li {
+        color: $text-color;
+        margin-right: 31px;
+        font-family: 'Hind';
+        font-size: 14px;
+        strong,span {
+          margin: 0;
+          font-size: 14px;
+          font-family: 'Hind';
+          display: inline-block;
+          vertical-align: bottom;
+        }
+        strong {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        span {
+          color: #FF0000
+        }
+      }
+    }
+    a {
+      flex: 2;
+      padding: 10px 0;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      background-color: $poison;
+      span {
+        position: relative;
+        top: -1px;
+        display: inline-block;
+      }
+      &:hover {
+        text-decoration: none;
+        background-color: darken($poison, 5%);
+      }
+    }
+  }
+}
