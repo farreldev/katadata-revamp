@@ -77,6 +77,12 @@ $offset: 20
 		.margin-#{$value}-#{5 * $i}
 			margin-#{$value}: 5px * $i !important
 
+@for $i from 1 through $offset + 10
+	.bottom-up-#{0 + $i}
+		bottom: 0px + $i
+	.bottom-down#{0 - $i}
+		bottom: 0px - $i
+
 /* Padding */
 .no-padding
 	padding: 0 !important
@@ -147,6 +153,16 @@ $offset: 20
 				float: none
 				display: table-cell
 				vertical-align: middle
+
+/* MatchHeight Flexbox */
+	
+.row
+	&.is-flex-row-top
+		@include breakpoint(wide)
+			display: flex
+			[class*="col-"]
+				float: none
+				align-items: flex-start
 
 @for $i from 1 through $offset
 	.padding-#{5 * $i}

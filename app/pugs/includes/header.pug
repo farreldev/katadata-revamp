@@ -16,12 +16,24 @@
 					img(src="./images/new-logo-putih.svg")
 			.right-main-head
 				a(href="", class="mm-sign-in visible-xs")
+				div.hidden-xs.followSosmed
+					span Ikuti Kami:
+					ul
+						li
+							a(class="facebook" href="#")
+								i(class="fa fa-facebook")
+						li
+							a(class="twitter" href="#")
+								i(class="fa fa-twitter")
+						li
+							a(class="linkedin" href="#")
+								i(class="fa fa-linkedin")
 				//- i(class="fa fa-search" aria-hidden="true")
 				//- a(href="" class="hidden-xs") Search
 				//- div.kdNetwork.hidden-xs
 				//- 	a Jejaring Katadata
-				a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") subscribe
-				a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") login
+				//- a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") subscribe
+				//- a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") login
 
 .layerSearch
 	form
@@ -123,5 +135,26 @@ include market-ticker
 								a(href="#") Indeks Berita
 
 			.clonedMnuHrzRight
-				a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") Daftar
-				a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") Masuk
+				div.hidden-xs.followSosmed
+					span Ikuti Kami:
+					ul
+						li
+							a(class="facebook" href="#")
+								i(class="fa fa-facebook")
+						li
+							a(class="twitter" href="#")
+								i(class="fa fa-twitter")
+						li
+							a(class="linkedin" href="#")
+								i(class="fa fa-linkedin")
+				//- a(href="kd-subscribe.html", class="btn small btn-blue-navy margin-right-10 hidden-xs") Daftar
+				//- a(href="kd-login.html", class="btn small btn-blue-navy hidden-xs") Masuk
+		.market-ticker
+			.market-ticker-wrapper
+				ul
+					li #[strong Asii] 7.025 #[span -25 / -0.35%]
+					li #[strong Bbca] 22.100 #[span +25 / +0.35%]
+					li #[strong Ggrm] 22.100 #[span -25 / -0.35%]
+					li #[strong Asii] 7.025 #[span -25/-0.35%]
+					li #[strong Bbca] 22.100 #[span +25 / +0.35%]
+				a(href="#") Market Data #[span »]

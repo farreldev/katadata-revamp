@@ -197,3 +197,44 @@ textarea.form-control
 				font-size: 20px
 		&.removeBorder
 			border-bottom: 0
+
+.form-group
+	width: 100%
+	height: auto
+	border: 1px solid #ccc
+	padding: 3px
+	display: flex
+	border-radius: 5px
+	justify-content: space-between
+	::-webkit-input-placeholder /* Chrome/Opera/Safari */		
+		color: #ccc
+		height: auto
+		padding: 0
+	::-moz-placeholder /* Firefox 19+ */
+		color: #ccc
+	:-ms-input-placeholder /* IE 10+ */
+		color: #ccc
+	:-moz-placeholder /* Firefox 18- */
+		color: #ccc
+	input
+		flex: 2
+		&[type="submit"]
+			flex: 3
+			font-family: Hind
+			font-weight: 500
+			border: none
+			height: 30px
+			line-height: 30px
+			text-transform: uppercase
+			border-radius: 3px
+			background-color: $green
+			color: #fff
+			&:hover
+				background-color: darken($green, 5%)
+		&[type="email"]
+			font-family: Hind
+			font-size: 14px
+			height: auto
+			padding: 0 3px
+			border: none
+			outline: none

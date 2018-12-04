@@ -45,7 +45,7 @@ header
 				align-items: center
 				a.logo-brand
 					img
-						height: 32px
+						height: 35px
 			.right-main-head
 				flex: 4
 				display: flex
@@ -153,6 +153,21 @@ header
 				text-transform: uppercase
 				display: flex
 				align-items: center
+	.market-ticker
+		.market-ticker-wrapper
+			@include breakpoint(mobile)
+				padding: 10px 0
+				display: inline-block
+				width: 100%
+				ul
+					display: none
+					overflow-x: auto
+					overflow-y: hidden
+					white-space: nowrap
+					li
+						display: inline-block
+				a
+					display: block
 header#header-alt-1
 	opacity: 1
 	position: absolute

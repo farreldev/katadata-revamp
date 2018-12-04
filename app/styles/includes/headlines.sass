@@ -5,24 +5,6 @@
 		padding-bottom: 25px
 		+breakpoint(mobile)
 			padding-bottom: 10px
-		// figure:not([class='thumb-article-img'])
-		// 	a.hl-pict
-		// 		display: inline-block
-		// 		width: 100%
-		// 		overflow: hidden
-		// 		text-decoration: none
-		// 		img
-		// 			display: block
-		// 			width: 100%
-		// 		figcaption
-		// 			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-		// 			font-size: 10px
-		// 			font-weight: 400
-		// 			padding: 3px 0 5px
-		// 			text-transform: uppercase
-		// 			text-align: right
-		// 			font-size: 10px
-		// 			color: $black
 			+breakpoint(tablet)
 				margin-bottom: 25px
 		article
@@ -36,10 +18,7 @@
 	
 .headlines
 	.headlinesWrapper
-		@extend %line-custom-bottom
-		// p
-		// 	+breakpoint(mobile)
-		// 		margin-bottom: 20px
+		// @extend %line-custom-bottom
 .headlines2
 	.headlinesWrapper
 		@extend %thin-line-custom-bottom
@@ -53,3 +32,35 @@
 				color: $black
 		h4
 			margin-bottom: 8px
+
+
+section.headlines
+  padding-top: 25px
+  background-color: #F7F3F9
+  // margin-bottom: 0
+  .headlinesWrapper
+    position: relative
+    h2
+      margin-bottom: 10px
+    article
+      p
+        margin-bottom: 10px
+  div.headline-thumbnails
+    ul
+      +flexOwnGrid('li', 6, 1%, 0)
+      +breakpoint(mobile)
+        +flexOwnGrid('li', 1, 0, 20)
+      li
+        position: relative
+        padding-bottom: 20px
+        figure
+          margin-bottom: 10px
+          a
+            margin-bottom: 0
+        a:not([class='topik-link']):not(:first-of-type)
+          margin-bottom: 15px
+          font-family: 'Roboto'
+          font-weight: 500
+          font-size: 17px
+          line-height: 1.3
+          display: block

@@ -3,10 +3,17 @@ block append config
 		div
 			figure
 				a(href="")
-					img(src=pathImg[0]+imgName, alt="")
+					img(src='https://source.unsplash.com/300x128/?'+imgName, alt="")
 			article
 				a(href="#").
 					#{txtLink}
+	
+	mixin sectionSlider(imgName)
+		div
+			figure
+				a(href="#")
+					img(src="https://source.unsplash.com/300x128/?"+imgName, alt="")
+			a(href="#", title="title") Petronusa Gugat SKK Migas soal Status Blok Selat Panjang
 
 	mixin ekonoGraphic(imgName, txtLink, cn, txtPar)
 		div

@@ -1,5 +1,11 @@
 block config
-	- var pathImg = ['images/thumb-img/', 'images/ekonografik/']
+	- var pathImg = ['images/thumb-img/', 'images/ekonografik/'];
+	- var pictures1 = ['economic', 'energy', 'technology', 'national', 'code'];
+	- var pictures2 = ['programming', 'business', 'bootcamp', 'oil', 'gas'];
+	- var pictures3 = ['market', 'finance', 'national', 'economic', 'creative'];
+	- var pictures4 = ['religion', 'mobile', 'google'];
+	- var pictures5 = ['village', 'state', 'war', 'fintech', 'sosial'];
+	- var pictures = ['economic', 'energy', 'technology', 'national', 'code', 'programming', 'business', 'bootcamp', 'oil', 'gas', 'market', 'finance', 'national', 'economic', 'creative', 'village', 'state', 'war', 'fintech', 'sosial', 'love', 'religion', 'mobile', 'google'];
 
 doctype html
 html.no-js(lang="id")
@@ -7,7 +13,7 @@ html.no-js(lang="id")
 		meta(charset="utf-8")
 		meta(name="description" content="")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		meta(name="theme-color" content="#082556")
+		meta(name="theme-color" content="#042c4b")
 		title new_katadata
 		link(rel="apple-touch-icon" href="apple-touch-icon.png")
 		//- link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
@@ -34,7 +40,7 @@ html.no-js(lang="id")
 		//- script(src='/bower_components/jquery/dist/jquery.js')
 		//- // endbuild
 		
-		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
 		//- // build:js scripts/vendor/modernizr.js
 		//- script(src="/bower_components/modernizr/modernizr.js")
@@ -52,6 +58,9 @@ html.no-js(lang="id")
 		div(id="mainWrapper" class="wrapper")
 			//- #mp-pusher.mp-pusher
 			//- header#header.timbul
+			.center-belt.on-header
+				.container
+					img(src="images/banners/centerBelt1150x250.jpg", alt="")
 			header#header
 				include ../includes/header.pug
 			a(href="#" class="goUp")
@@ -65,7 +74,7 @@ html.no-js(lang="id")
 		
 		// build:js scripts/vendor.js
 		// bower:js
-		script(src='/bower_components/jquery/dist/jquery.js')
+		//- script(src='/bower_components/jquery/dist/jquery.js')
 		script(src='/bower_components/modernizr/modernizr.js')
 		script(src='/bower_components/slick-carousel/slick/slick.js')
 		script(src='/bower_components/matchHeight/dist/jquery.matchHeight.js')

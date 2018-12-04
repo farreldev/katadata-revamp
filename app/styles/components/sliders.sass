@@ -82,12 +82,14 @@
 	.prevArrowNav2,
 	.nextArrowNav2
 		position: inherit
-		background: $blue-light
+		// background: $blue-light
+		background: $blue
 		width: 50px
 		height: 50px
 		text-align: center
 		cursor: pointer
 		border: 3px solid white
+		transition: background .4s ease
 		+border-radius(50%)
 		+box-shadow(0,2px,10px,rgba(0,0,0,.35))
 		i
@@ -100,6 +102,10 @@
 			i
 				font-size: 18px
 				line-height: 37px
+		&.slick-disabled
+      transition: background .4s ease
+      background: #ddd
+      cursor: not-allowed
 	.prevArrowNav2
 		display: none
 		left: -10px
@@ -168,6 +174,60 @@
 		+breakpoint(mobile)
 			right: 5px
 
+.arrowNavigation5
+	position: absolute
+	top: 35%
+	right: 0
+	width: 100%
+	transform: translateY(-35%)
+	background-color: cyan
+	z-index: 3
+		// right: 25px
+	// .prevArrowNav5
+	// 	margin-right: 3px
+	.prevArrowNav5,
+	.nextArrowNav5
+		position: inherit
+		display: inline-block
+		font-family: fontawesome
+		width: 35px
+		height: 35px
+		border-radius: 50%
+		// border: 1px solid #aeaeae
+		// color: #fff
+		color: #333
+		// +border-radius(5px)
+		text-align: center
+		cursor: pointer
+		background-color: rgba(255,255,255,.75)
+		// background-color: $poison
+		&:focus
+			outline: none
+		i
+			line-height: 35px
+		&:hover
+			background-color: darken(rgba(255,255,255,9), 10%)
+			// background-color: $blue-pastel
+			// border: 1px solid $blue-pastel
+			i
+				color: #333
+				// color: white
+		+breakpoint(mobile)
+			i
+				line-height: 36.5px
+	.prevArrowNav5
+		transition: left .4s ease
+		left: -40px
+		box-shadow: 0 2px 10px rgba(0,0,0,.3)
+	.nextArrowNav5
+		transition: right .4s ease
+		right: -40px
+		box-shadow: 0 2px 10px rgba(0,0,0,.3)
+	&.openArrow
+		.prevArrowNav5
+			left: 10px
+		.nextArrowNav5
+			right: 10px
 .berita-slide
 	width: 100%
 	overflow: hidden
@@ -184,20 +244,21 @@
 		margin: -10px
 		div
 			figure
-				margin-bottom: -6px
+				margin-bottom: 5px
 				position: relative
 				overflow: hidden
 				width: 100%
 				+breakpoint(desktop)
 					height: 215px
 				+breakpoint(wide)
-					height: 190px
+					height: 185px
 				+breakpoint(tablet)
 					height: 175px
 				+breakpoint(mobile)
-					height: 180px
+					// height: 180px
 				img
 					position: absolute
+					top: 0
 					width: 100%
 					height: 100%
 					+breakpoint(mobile)
@@ -207,7 +268,7 @@
 				margin-bottom: 20px
 				a
 					display: block
-					margin-top: 20px
+					// margin-top: 20px
 					font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 					font-size: 17px
 					font-weight: 500
@@ -469,12 +530,12 @@
 			position: relative
 			height: 100%
 			&::before
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
 				z-index: 1
 				background-color: rgba(0,0,0,.5)
 			.loading
@@ -548,11 +609,11 @@
 				left: 55%
 				transform: translate(-55%, -50%)
 				content: ''
-				border-style: solid;
-				border-width: 15px 0 15px 20px;
-				border-color: transparent transparent transparent #fff;
+				border-style: solid
+				border-width: 15px 0 15px 20px
+				border-color: transparent transparent transparent #fff
 				+breakpoint(mobile)
-					border-width: 11px 0 11px 11px;
+					border-width: 11px 0 11px 11px
 		.slick-dots
 			position: absolute
 			left: 0
@@ -614,3 +675,84 @@
 				filter: blur(0)
 			to
 				filter: blur(15px)
+
+	section.slide-kanal 
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom: 1px solid #ccc
+	div.sliding-section 
+		width: auto
+		overflow: hidden
+		.slick-slider 
+			overflow: hidden
+		
+		.slick-slide 
+			// width: 294px
+			padding: 0
+			margin: 0 7px
+		
+		.slick-list 
+			padding: 0 70px 0 0
+			margin: 0 -7px
+			> div 
+				position: relative
+				figure 
+					margin-bottom: 0
+					a 
+						// height: 130px
+						height: auto
+						img 
+							width: auto
+							// height: 100%
+						
+					
+					~ a 
+						margin-bottom: 10px
+						display: block
+						font-family: Roboto
+						font-weight: 400
+						font-size: 17px
+
+section.slide-kanal
+	position: relative
+	overflow: hidden
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom: 1px solid #ccc
+	div.sliding-section
+		width: auto
+		overflow: hidden
+		.slick-slider 
+			overflow: hidden
+		.slick-slide 
+			// width: 294px
+			padding: 0
+			margin: 0 7px
+		.slick-list 
+			padding: 0 70px 0 0
+			margin: 0 -7px
+			> div 
+				position: relative
+				figure 
+					margin-bottom: 0
+					a 
+						// height: 130px
+						height: auto
+						img 
+							width: auto
+							// height: 100%
+					~ a 
+						margin-bottom: 10px
+						display: block
+						font-family: Roboto
+						font-weight: 400
+						line-height: 1.2
+						font-size: 17px
+		// &#slideSection-telaah
+		// 	&:hover
+		// 		#slideSection-telaah.prevArrowNav5
+		// 			transition: left .4s ease
+		// 			left: 10px
+			
+		
+	

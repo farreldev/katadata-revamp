@@ -1,8 +1,9 @@
 .center-belt
+	padding: 17px
 	margin-bottom: 25px
 	width: 100%
 	text-align: center
-	background-color: #f2f2f2
+	background-color: #eee
 	a
 		display: inline-block
 		img
@@ -35,13 +36,15 @@
 
 .otherBanner
 	position: relative
-	padding-top: 69px
+	// margin-top: 69px
+	margin-top: 48px
 	width: 100%
 	+breakpoint(mobile)
-		padding-top: 35px
-	@extend %thin-line-custom-top
-	&.clear-top-padding
+		// padding-top: 35px
 		padding-top: 0
+	// @extend %thin-line-custom-top
+	&.clear-top-margin
+		margin-top: 0
 	img
 		display: inline-block
 		margin-bottom: 25px

@@ -176,6 +176,85 @@ $(function() {
         cssEase: 'cubic-bezier(0.87, 0.03, 0.41, 0.9)'
       });
       // arrows: false,
+      function slideKanal(id) {
+        $('#'+id).slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 500,
+          focusOnSelect: true,
+          infinite: true,
+          autoplay: false,
+          prevArrow: '#prev'+id, // #prev(n)
+          nextArrow: '#next'+id, // #next(n)
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: false,
+                prevArrow: '#prev'+id,
+                nextArrow: '#next'+id
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                prevArrow: '#prev'+id,
+                nextArrow: '#next'+id
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                prevArrow: '#prev'+id,
+                nextArrow: '#next'+id
+              }
+            },
+            {
+              breakpoint: 360,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                prevArrow: '#prev'+id,
+                nextArrow: '#next'+id
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      }
+      slideKanal('slideSection-telaah');
+      slideKanal('slideSection-analisis');
+      slideKanal('slideSection-databoks');
+
+      let navigate = document.querySelector('.arrowNavigation5')
+      
+      function kanalHover(id) {
+        let kanal = document.querySelector(`#${id}`)
+        let parent = kanal.parentNode;
+        parent.addEventListener('mouseenter', function(){
+          this.querySelector('.arrowNavigation5').classList.add('openArrow')
+        })
+        parent.addEventListener('mouseleave', function(){
+          this.querySelector('.arrowNavigation5').classList.remove('openArrow')
+        })
+      }
+
+      kanalHover('slideSection-telaah');
+      kanalHover('slideSection-analisis');
+      kanalHover('slideSection-databoks');
     }
 
     let dbHome = document.querySelector('section.databoks-home');
@@ -318,11 +397,13 @@ $(function() {
           $('.wwNavigation-overlay').fadeOut();
         }
         $('nav.navigasi').toggleClass('mnuOpen');
+        $('.wrapper').toggleClass('slidingToRight');
         $('.humburger-btn').toggleClass('humTrigger');
         $('.wwNavigation-overlay').fadeIn();
       } else {
         $('.wwNavigation-overlay').fadeOut();
         $('.humburger-btn').removeClass('humTrigger');
+        $('.wrapper').toggleClass('slidingToRight');
         $('nav.navigasi').toggleClass('mnuOpen');
       }
     });
@@ -343,6 +424,7 @@ $(function() {
         if ($('.humburger-btn').hasClass('humTrigger')) {
           $('.humburger-btn').removeClass('humTrigger');
           $('nav.navigasi').removeClass('mnuOpen');
+          $('.wrapper').removeClass('slidingToRight');
           $('.wwNavigation-overlay').fadeOut();
         }
         $('.layerSearch').toggleClass('openSearch');
@@ -351,6 +433,7 @@ $(function() {
       } else {
         $('.layerSearch').removeClass('openSearch');
         $('nav.navigasi').removeClass('mnuOpen');
+        $('.wrapper').removeClass('slidingToRight');
         $('.wwNavigation-overlay').fadeOut();
       }
     });
@@ -375,6 +458,7 @@ $(function() {
     $('.wwNavigation-overlay').on('click', function() {
       $('.humburger-btn').removeClass('humTrigger');
       $('.layerSearch').removeClass('openSearch');
+      $('.wrapper').removeClass('slidingToRight');
       $('nav.navigasi').removeClass('mnuOpen');
       $('.wwNavigation-overlay').fadeOut();
     });
@@ -481,7 +565,7 @@ $(function() {
     }
 
     var hdr = document.querySelector('#header');
-    var clnMnu = document.querySelector('.clonedMnuHrz');
+    var clnMnu = document.querySelector('.cloned');
     var slMnu = document.querySelector('nav.navigasi');
     var lSearch = document.querySelector('div.layerSearch');
 
@@ -513,7 +597,7 @@ $(function() {
       window.addEventListener('scroll', function(event) {
         var getY = this.pageYOffset;
 
-        if (getY > 200) {
+        if (getY > 600) {
           clnMnu.classList.add('clonedShow');
         } else {
           clnMnu.classList.remove('clonedShow');
@@ -734,7 +818,7 @@ $(function() {
     searcPanel();
     removeEmptyTeks();
     topikExpand(5);
-    // stickyBanner();
+    stickyBanner();
     // kdParallax();
   })();
 });

@@ -31,15 +31,35 @@ html,body
 			pointer-events: none
 	section
 		margin-bottom: 25px
-	figure
-		// overflow-y: hidden
-		width: 100%
+	figure 
+		display: inline-block
 		margin-bottom: 20px
-		img
+		width: 100%
+		overflow: hidden
+		a 
+			display: inline-block
+			width: 100%
+			overflow: hidden
+			&.hl-pict 
+				text-decoration: none
+				img 
+					transition: all .4s ease
+					display: block
+					width: 100%
+				&:hover 
+					img 
+						transition: all .4s ease
+						transform: scale(1.2)
+			&:hover 
+				img 
+					transition: all .4s ease
+					transform: scale(1.2)
+		img 
+			transition: all .4s ease
 			display: block
 			width: 100%
-		figcaption
-			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+		figcaption 
+			font-family: 'Roboto'
 			font-size: 10px
 			font-weight: 400
 			padding: 3px 0 5px
@@ -47,31 +67,48 @@ html,body
 			text-align: right
 			font-size: 10px
 			color: #999
-		&.thumb-article-img
-			height: 175px
-			max-height: 280px
-			width: 100%
-			overflow: hidden
-			+breakpoint(tablet)
-				overflow: hidden
-				height: 230px
-			+breakpoint(mobile)
-				height: auto
-				margin-bottom: 10px
-			img
-				width: 100%
-				height: auto
+	// figure
+		// overflow-y: hidden
+		// width: 100%
+		// margin-bottom: 20px
+		// img
+		// 	display: block
+		// 	width: 100%
+		// figcaption
+		// 	font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+		// 	font-size: 10px
+		// 	font-weight: 400
+		// 	padding: 3px 0 5px
+		// 	text-transform: uppercase
+		// 	text-align: right
+		// 	font-size: 10px
+		// 	color: #999
+		// &.thumb-article-img
+		// 	height: 175px
+		// 	max-height: 280px
+		// 	width: 100%
+		// 	overflow: hidden
+		// 	+breakpoint(tablet)
+		// 		overflow: hidden
+		// 		height: 230px
+		// 	+breakpoint(mobile)
+		// 		height: auto
+		// 		margin-bottom: 10px
+		// 	img
+		// 		width: 100%
+		// 		height: auto
 				// +breakpoint(tablet)
 				// 	width: 100%
 				// 	height: auto
 				// +breakpoint(mobile)
 				// 	width: 100%
 				// 	height: auto
-		a.hl-pict
-			display: inline-block
-			width: 100%
-			overflow: hidden
-			text-decoration: none
+		// a.hl-pict
+		// 	display: inline-block
+		// 	width: 100%
+		// 	overflow: hidden
+		// 	text-decoration: none
+
 	a.addLabel // lbl_kd6
 		position: absolute
 		display: block
@@ -171,22 +208,24 @@ html,body
 		display: block
 		&:after
 			position: absolute
-			bottom: 0
-			margin-left: 3px
+			bottom: 2px
+			margin-left: 5px
 			content: '\e900'
 			font-family: icomoon
 			font-size: 17px
-			line-height: 1.6
+			// line-height: 1.6
 			font-weight: bold
 			color: $black
 	a
 		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
 		font-weight: 500
-		color: #0070c9
+		// color: #0070c9
+		color: $black
 		white-space-collapsing: discard
 		&.linkIndex
 			position: relative
 			display: inline-block
+			color: $grape
 			font-size: 16px
 			padding: 4px 0
 			margin-left: 50px
@@ -218,6 +257,9 @@ html,body
 		font-weight: 400
 		line-height: 1.5
 		color: $blTxt
+		&.sponsor
+			font-size: 13px
+			margin-bottom: 7px
 		&.lf-dropcap:first-letter
       // color: $yellow-wood
       float: left
@@ -233,12 +275,15 @@ html,body
 			font-weight: 500
 	h1,
 	h2
-		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-		font-weight: 500
+		// font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Hind'
+		font-weight: 700
 		color: $black
+		letter-spacing: -0.5px
 		a
-			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-			font-weight: 500
+			// font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
+			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Hind'
+			font-weight: 700
 			color: $black
 	h1
 		margin-bottom: 20px
@@ -254,9 +299,10 @@ html,body
 			color: $black
 	h3
 		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-		font-size: 22px
+		font-size: 19px
 		font-weight: 500
 		display: inline-block
+		text-transform: uppercase
 		margin-bottom: 20px
 		color: $blue-cap
 		&.italicCap
@@ -362,13 +408,13 @@ html,body
 			li
 				display: inline-block
 	.topik-link, span.lbl-sponsor
-		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-		font-size: 11px
+		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Hind'
+		font-size: 15px
 		font-weight: 500
 		display: inline-block
 		letter-spacing: .05px
-		padding: 6px 10px
-		margin-bottom: 5px
+		// padding: 6px 10px
+		margin-bottom: 7px
 		text-transform: uppercase
 	span.lbl-sponsor
 		padding: 7px 0 0
@@ -379,11 +425,14 @@ html,body
 		// background-color: #f0f0f0
 	.topik-link
 		margin-right: 10px
-		color: white
-		background: $yellow-wood
-		&.sponsor
+		color: $black
+		// background: $yellow-wood
+		&.sponsored
 			// color: $black
 			// background-color: #f0f0f0
+			line-height: 13px
+			padding: 3px 5px 2px
+			font-size: 13px
 			color: #fff
 			background-color: #0F52BA
 	a.linkVid
@@ -455,21 +504,21 @@ html,body
 			display: inline-block
 			vertical-align: middle
 			li
-				margin: 0 4px
+				margin: 0 3px
 				display: inline-block
 				&:last-child
 					margin-right: 0
 					margin-bottom: 0
 				a
 					display: block
-					width: 28px
-					height: 28px
+					width: 25px
+					height: 25px
 					text-align: center
 					border-radius: 50%
 					background: salmon
 					i
-						font-size: 16px
-						line-height: 28px
+						font-size: 15px
+						line-height: 25px
 						color: #FFFFFF
 				a[class*="facebook"]
 					background-color: $fb
@@ -652,7 +701,7 @@ html,body
 	p.infoArtikel
 		margin-bottom: 10px
 		display: inline-block
-		font-size: 15px
+		font-size: 13px
 		color: #727272
 		span
 			display: inline-block

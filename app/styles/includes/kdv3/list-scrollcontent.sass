@@ -1,0 +1,79 @@
+.list-scrollcontent
+  span
+    padding-bottom: 25px
+    margin-bottom: 25px
+    display: flex
+    border-bottom: 1px solid #ccc
+    figure 
+      flex: .92
+      // height: 143px
+      margin-bottom: 0
+      img 
+        width: 300px
+    article 
+      flex: 2
+      margin-left: 15px
+      a:not([class='topik-link']):not([class='topik-link sponsored'])
+        display: block
+        margin-bottom: 10px
+        font-family: Roboto
+        font-size: 30px
+        line-height: 1.2
+        font-weight: 500
+        letter-spacing: -0.5px
+    +breakpoint(mobile)
+      flex-direction: column
+      figure
+        margin-bottom: 5px
+        img
+          width: 100%
+      article
+        margin-left: 0
+        a:not([class='topik-link'])
+          font-size: 25px
+    &.video-news
+      flex-direction: column
+      figure 
+        margin-bottom: 7px
+        height: 450px
+        flex: initial
+        a 
+          position: relative
+          button 
+            position: absolute
+            padding: 20px 35px
+            text-align: center
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 2
+            border-radius: 10px
+            font-size: 2.2rem
+            border: none
+            background-color: $blue
+            // border: 2px solid #fff
+            color: #fff
+          
+          &:before 
+            position: absolute
+            content: ''
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background-color: rgba(255,255,255,.2)
+            z-index: 1
+          img
+            width: auto
+            transition: none
+          &:hover 
+            img 
+              transition: none
+              transform: none
+        +breakpoint(mobile) 
+          height: auto
+      article 
+        margin-left: 0
+  a.btn 
+    padding: 15px 0
+  

@@ -1,25 +1,27 @@
-.navigasi 
+nav.navigasi
 	// position: absolute
 	position: fixed
-	width: 283px
+	width: 0
+	height: auto
 	overflow: hidden
 	overflow-y: auto
-	height: auto
-	left: -283px
-	transition: left .3s ease-in-out
-	top: 113px
+	top: 0
+	left: 0
 	bottom: 0
+	transition: width .3s ease-in-out
 	// background: rgba(17, 28, 110, 0.95)
 	// background: rgba(0, 0, 0, 0.90)
-	background: rgba(0, 0, 0, 0.75)
+	// background: rgba(0, 0, 0, 0.75)
+	background: rgba(0, 0, 0, 1)
 	z-index: 4
 	+breakpoint(tablet)
 		top: 159px
 		
 	@include breakpoint(mobile)
-		top: 63px
-		width: 100%
-		left: -100%
+		// top: 63px
+		top: 0
+		width: 0
+		left: 0
 		overflow-y: auto
 
 	> ul
@@ -33,10 +35,12 @@
 			+borderDotVer
 			display: none
 			li
+				// white-space: nowrap
 				a
 					padding: 15px 15px
 					
-		li 
+		li
+			white-space: nowrap
 			position: relative
 			// text-align: center
 			a 
@@ -179,6 +183,7 @@
 			padding-top: 0
 			margin-bottom: 10px
 			li
+				white-space: nowrap
 				a
 					padding-top: 7px
 					padding-bottom: 7px
@@ -190,9 +195,11 @@
 					color: #d1d1d1
 		.followSosmed
 			margin-bottom: 15px
+			white-space: nowrap
 			span
 				color: #d1d1d1
 			ul
+				white-space: nowrap
 				margin-left: 5px
 				li
 					margin-left: 0
@@ -235,7 +242,9 @@
 		width: 7px
 					
 	&.mnuOpen 
-		left: 0
+		// left: 0
+		transition: width .3s ease-in-out
+		width: 300px
 			
 					
 			

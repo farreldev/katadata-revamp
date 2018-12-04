@@ -1,0 +1,52 @@
+.populer 
+  margin-bottom: 25px
+  ul 
+    li 
+      padding-bottom: 12px
+      margin-bottom: 12px
+      border-bottom: 1px solid #ccc
+      display: flex
+      justify-content: space-between
+      &:last-child 
+        border-bottom: 5px solid #ccc
+      span
+        flex: 2
+        display: inline-block
+        text-align: center
+        font-family: 'Roboto'
+        font-weight: 500
+        width: 93px
+        height: 35px
+        line-height: 35px
+        border-radius: 50%
+        color: #fff
+        background-color: $orange
+      a
+        flex: 8 
+        display: block
+        line-height: 1.3
+        margin-left: 10px
+        font-size: 15px
+    +breakpoint(tablet)
+      li
+        span
+          flex: 1
+        a
+          flex: 18
+    +breakpoint(mobile)
+      li
+        span
+          flex: 2
+          // width: 45px
+        a
+          flex: 15
+    +breakpoint(small-mobile)
+      li
+        span
+          flex: 2
+          // width: 50px
+        a
+          flex: 13
+      
+    
+  

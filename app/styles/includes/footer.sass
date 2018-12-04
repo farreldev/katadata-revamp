@@ -1,67 +1,72 @@
-.footer
-	// position: absolute
-	width: 100%
-	height: auto
-	// bottom: 0
-	padding: 20px 0 0
-	color: #777
-	border-top: 10px solid #ddd
-	background: $graygreen
-	.logo-bottom
-		margin-bottom: 30px
-		width: 190px
-	strong
-		margin-bottom: 10px
-		display: inline-block
-		font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-		font-size: 16px
-		font-weight: 500
-		color: $black
-	a
-		strong
-			display: inline-block
-			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-			font-size: 16px
-			font-weight: 500
-			color: $black
-	ul
-		li
-			padding: 0 0 10px
-			&:last-child
-			  +breakpoint(mobile)
-			    margin-bottom: 20px
-			a
-				display: block
-				font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-				font-size: 14px
-				font-weight: 400
-				line-height: 1.4
-				color: $black
-	p.small
-		margin-bottom: 25px
-	.copyright
-		margin-top: 20px
-		padding: 10px 0
-		background: #191a1e
-		text-align: center
-		ul *
-			font-family: "Gotham Narrow A", "Gotham Narrow B", 'Roboto'
-			font-size: 14px
-			font-weight: 300
-		ul
-			padding: 0
-			li
-				padding: 0 10px
+footer 
+	background-color: $bg-footer
+	.flex-footer 
+		display: flex
+		justify-content: space-between
+		padding: 20px 0
+		@include breakpoint(mobile) 
+			flex-direction: column
+		.footer-left 
+			flex: 6
+			a 
 				display: inline-block
-				color: rgba(255,255,255,.7)
-				line-height: 1
-				border-right: 1px solid rgba(255,255,255,.7)
+				vertical-align: middle
+				margin-bottom: 20px
+				img 
+					display: block
+					width: 270px
+			ul   
+				li 
+					margin-right: 10px
+					display: inline-block
+					a 
+						font-family: 'Hind'
+						margin-bottom: 0
+						font-weight: 500
+						font-size: 12px
+						text-transform: uppercase
+						color: #555
 				+breakpoint(mobile)
-					margin-bottom: 7px
-					&:first-child
-						border-right: 0
-				&:last-child
-					border-right: 0
-			a
-				color: rgba(255,255,255,.7)
-				line-height: 1
+					margin-bottom: 25px
+					li
+						display: block
+						a
+							padding: 7px 0
+		.footer-right 
+			flex: 6
+			display: flex
+			align-items: flex-end
+			div 
+				font-family: 'Hind'
+				display: inline-block
+				margin-right: 5px
+				font-size: 14px
+				color: #555
+			div.legal
+				a 
+					padding: 0
+					display: inline-block
+					font-family: 'Roboto'
+					font-size: 14px
+					color: $blue	
+					&:nth-of-type(1)
+						padding-right: 7px
+						margin-right: 7px
+						border-right: 1px solid #777
+			+breakpoint(mobile)
+				align-items: center
+				flex-direction: column
+				div
+					margin-bottom: 10px
+					display: block
+					line-height: 1.3
+					text-align: center
+					span
+						display: block
+				div.legal
+					text-align: center
+					a
+						white-space: nowrap
+			
+		
+	
